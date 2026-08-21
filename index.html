@@ -3672,11 +3672,8 @@ function downloadPDF(date, btnEl) {
   if (oldHeader) oldHeader.remove();
   var tempHeader = document.createElement('div');
   tempHeader.id = 'print-temp-header';
-  tempHeader.innerHTML = '<div style="text-align:center;margin-bottom:4px;">' +
-    '<img src="logo.png" alt="高顿升学" style="max-width:80px;height:auto;display:block;margin:0 auto 2px;">' +
-    '</div>' +
-    '<h1 style="font-size:20px;font-weight:700;margin:0 0 4px;letter-spacing:1px;font-family:-apple-system,BlinkMacSystemFont,PingFang SC,Microsoft YaHei,sans-serif;">高顿升学·每日行业速览</h1>' +
-    '<div style="font-size:12px;color:#718096;margin:0;">精选行业资讯，锚定专业与就业，为孩子的梦想领航，为高薪的好未来蓄力！</div>';
+  tempHeader.innerHTML = '<h1 style="font-size:20px;font-weight:700;margin:0 0 4px;letter-spacing:1px;font-family:-apple-system,BlinkMacSystemFont,PingFang SC,Microsoft YaHei,sans-serif;text-align:center;">高顿升学·每日行业速览</h1>' +
+    '<div style="font-size:12px;color:#718096;margin:0;text-align:center;">精选行业资讯，锚定专业与就业，为孩子的梦想领航，为高薪的好未来蓄力！</div>';
   // 插入到报告内容之前
   if (target) {
     target.parentNode.insertBefore(tempHeader, target);
