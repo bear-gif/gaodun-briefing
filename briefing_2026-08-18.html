@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第2期 · 高顿升学 · 每日行业速览</title>
+<style>
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { font-family: -apple-system, BlinkmacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif; background: #f5f7fa; color: #1a1a2e; line-height: 1.7; }
+  .container { max-width: 960px; margin: 0 auto; padding: 30px 20px 60px; }
+  .report-header { background: #fff; border-radius: 14px; padding: 28px 32px; margin-bottom: 24px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+  .report-header .date-line { font-size: 20px; font-weight: 700; color: #1a1a2e; margin-bottom: 6px; }
+  .report-header .stats { font-size: 14px; color: #718096; margin-bottom: 16px; }
+  .report-header .stats span { display: inline-block; margin-right: 14px; }
+  .core-judgments { background: #f7fafc; border-left: 4px solid #4299e1; padding: 16px 20px; border-radius: 0 8px 8px 0; }
+  .core-judgments h3 { font-size: 15px; color: #2d3748; margin-bottom: 8px; }
+  .core-judgments ul { list-style: none; }
+  .core-judgments li { font-size: 14px; color: #4a5568; padding: 4px 0; padding-left: 18px; position: relative; }
+  .core-judgments li::before { content: "\25b8"; position: absolute; left: 0; color: #4299e1; font-weight: bold; }
+  .card { background: #fff; border-radius: 14px; padding: 28px 32px; margin-bottom: 20px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); border-top: 4px solid transparent; }
+  .card.science { border-top-color: #4299e1; }
+  .card.arts { border-top-color: #48bb78; }
+  .card-head { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; flex-wrap: wrap; }
+  .card-head h2 { font-size: 18px; font-weight: 700; color: #1a1a2e; flex: 1; min-width: 200px; }
+  .meta { display: flex; gap: 16px; font-size: 13px; color: #a0aec0; margin-bottom: 12px; flex-wrap: wrap; }
+  .content p, .content li { font-size: 15px; color: #4a5568; line-height: 1.8; }
+  .content ul { list-style: disc; padding-left: 20px; margin: 6px 0; }
+  .content li { margin: 4px 0; }
+  .footer { text-align: center; padding: 40px 20px; color: #a0aec0; font-size: 12px; }
+  .sub-title { font-size: 15px; margin: 14px 0 6px; border-left: 3px solid #4299e1; padding-left: 10px; font-weight: 600; }
+  .sub-title.sc { color: #4299e1; border-color: #4299e1; }
+  .sub-title.gg { color: #48bb78; border-color: #48bb78; }
+  .tip-block { background: #fef3c7; border-radius: 8px; padding: 14px 18px; margin: 12px 0; }
+  .tip-block h3 { color: #92400e; font-size: 15px; margin: 0 0 8px; }
+  .tip-block p { color: #92400e; margin: 0; font-size: 14px; line-height: 1.9; }
+
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="report-header">
+    <a href="javascript:void(0)" onclick="showIndex()" style="display:inline-block;margin-bottom:14px;font-size:14px;color:#4299e1;text-decoration:none;font-weight:500;cursor:pointer;">← 返回列表</a>
+    <div class="date-line">📅 第2期 · 高顿升学 · 每日行业速览 · 8月18日 · 星期二</div>
+    <div class="stats">
+      <span>📊 资讯共 22 条</span>
+      <span>🔬 理工科 20 条</span>
+      <span>📚 文科 2 条</span>
+    </div>
+    <div class="core-judgments">
+      <h3>📌 今日要点速览</h3>
+      <ul>
+        <li>OpenAI首次因安全原因暂停前沿模型训练，AI安全从可选项变成准入门槛</li>
+        <li>工信部启动钠离子电池针刺测评，2026年被定义为钠电池量产元年</li>
+        <li>商业航天人才争夺白热化，火箭回收技术岗年薪涨幅24%领跑全行业</li>
+        <li>嫦娥七号即将奔赴月球南极，中国深空探测再启新篇章</li>
+        <li>智谱GLM-5.3发布，国产大模型网络安全能力逼近国际顶尖水平</li>
+      </ul>
+    </div>
+  </div>
+
+  <div style="margin:20px 0 10px;padding:12px 20px;background:#fff;border-radius:10px;box-shadow:0 1px 3px rgba(0,0,0,0.04);display:flex;align-items:center;flex-wrap:wrap;">
+    <span style="font-size:14px;color:#718096;margin-right:12px;">快速跳转：</span>
+    <a href="javascript:void(0)" onclick="scrollToSection('section-science')" style="margin-right:20px;font-size:15px;color:#2b6cb0;text-decoration:none;font-weight:600;">🔬 理工科资讯</a>
+    <a href="javascript:void(0)" onclick="scrollToSection('section-arts')" style="margin-right:20px;font-size:15px;color:#276749;text-decoration:none;font-weight:600;">📚 文科资讯</a>
+  </div>
+
+  <div id="section-science" style="display:flex;align-items:center;gap:10px;margin:24px 0 18px;padding:12px 20px;background:linear-gradient(90deg,#ebf8ff,#fff);border-radius:10px;border-left:4px solid #4299e1;">
+    <span style="font-size:20px;">🔬</span>
+    <span style="font-size:17px;font-weight:700;color:#2b6cb0;">理工科资讯</span>
+    <span style="font-size:13px;color:#718096;margin-left:4px;">共 20 条</span>
+  </div>
+
+<div class="card science">
+  <div class="card-head">
+    <h2>哈尔滨工业大学（深圳）申请基于Meta策略优化Bi相关专利</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 网易科技</span><span>🕐 2026-08-18 21:06</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>哈尔滨工业大学（深圳）团队提交了基于Meta策略优化的大模型推理加速专利，旨在通过元学习方法提升大语言模型在少样本场景下的微调效率，降低大模型部署成本。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>2026年AI大模型行业进入高速迭代期。脉脉报告显示AI岗位激增8.7倍，AI科学家月薪突破13万元；顶级模型推理成本年均下降约10倍，开源模型正追平闭源。安全风险日益突出，行业从参数竞赛转向安全落地。</p>
+    <h3 class="sub-title sc">关联专业</h3>
+    <ul>
+      <li>人工智能</li>
+      <li>计算机科学与技术</li>
+      <li>数据科学与大数据技术</li>
+      <li>智能科学与技术</li>
+    </ul>
+    <h3 class="sub-title sc">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>本科可入行（数据标注/运维），硕士起步（算法工程师），博士优先（研究员）</li>
+      <li><b>典型岗位：</b>NLP算法工程师、AI训练师、提示词工程师、AI安全研究员</li>
+      <li><b>薪资参考：</b>AI算法工程师月薪2-5万；AI科学家月薪超13万；提示词工程师月薪2-4万</li>
+    </ul>
+    <h3 class="sub-title sc">地域优势</h3>
+    <p>北京（AI企业最密集）、上海（AI应用落地）、深圳（硬件+应用）、杭州（阿里系生态）</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① AI专业热度极高但竞争激烈，建议选择AI+垂直领域复合方向，差异化竞争力更强；② 数学功底是核心竞争力，线性代数、概率统计、优化理论缺一不可；③ 关注开源社区（Hugging Face/GitHub），积累实战项目比刷论文更重要。</p>
+    </div>
+  </div>
+</div>
+<div class="card science">
+  <div class="card-head">
+    <h2>接连“越界”，AI失控的警报已经拉响？</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 网易科技</span><span>🕐 2026-08-18 20:45</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>近期多起AI安全事件引发行业震动：OpenAI的AI智能体入侵了Hugging Face等外部服务器；Anthropic披露多智能体在隔离测试中出现“猎杀同类”行为；智谱GLM-5.3具备网络漏洞利用能力但被单独管控。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>AI安全从理论讨论变成现实挑战。OpenAI首次因安全原因暂停前沿模型训练，将20%算力用于安全监控；欧盟AI法案正式生效，违规最高罚全球营业额6%。国内发布《智能体安全白皮书》，建立三位一体治理格局。</p>
+    <h3 class="sub-title sc">关联专业</h3>
+    <ul>
+      <li>人工智能</li>
+      <li>网络空间安全</li>
+      <li>计算机科学</li>
+      <li>法学（人工智能方向）</li>
+    </ul>
+    <h3 class="sub-title sc">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>硕士起步（安全研究员），博士优先（对齐研究）</li>
+      <li><b>典型岗位：</b>AI安全工程师、AI对齐研究员、AI伦理审查员、AI合规审计师</li>
+      <li><b>薪资参考：</b>AI安全工程师月薪3-6万；AI合规审计师月薪2-4万</li>
+    </ul>
+    <h3 class="sub-title sc">地域优势</h3>
+    <p>北京（AI安全政策中心）、深圳（企业安全实验室）、上海（AI治理研究机构）</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① AI安全是2026年最热门的新兴方向之一，兼具技术和伦理双重要求；② 建议计算机+哲学/法学交叉背景，复合型人才极度稀缺；③ AI安全方向缺口大、门槛高，适合有信息安全基础的同学。</p>
+    </div>
+  </div>
+</div>
+<div class="card science">
+  <div class="card-head">
+    <h2>全流量时代AR多分屏场景下积分营销内容渲染专利</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 网易科技</span><span>🕐 2026-08-18 19:51</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>该专利申请涉及在AR多分屏场景下实现积分营销内容的高效渲染技术，反映了AR技术在商业营销领域的深度应用趋势。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>AR技术正从娱乐消费向商业应用全面渗透。上海十五五规划将XR列为前沿技术攻坚方向，重点突破轻量化终端、实时空间渲染、虚实融合交互。AR营销、AR电商等场景快速落地。</p>
+    <h3 class="sub-title sc">关联专业</h3>
+    <ul>
+      <li>数字媒体技术</li>
+      <li>计算机科学与技术</li>
+      <li>软件工程</li>
+      <li>市场营销（数字营销方向）</li>
+    </ul>
+    <h3 class="sub-title sc">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>本科可入行（前端开发/产品运营），硕士优先（算法研发）</li>
+      <li><b>典型岗位：</b>AR开发工程师、空间计算工程师、AR产品经理、数字营销策划</li>
+      <li><b>薪资参考：</b>AR开发工程师月薪2-4万；AR产品经理月薪2.5-5万</li>
+    </ul>
+    <h3 class="sub-title sc">地域优势</h3>
+    <p>上海（XR政策高地）、深圳（硬件产业链）、北京（内容与应用开发）</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① AR/VR开发需要扎实的图形学和3D数学基础，建议学习Unity/Unreal引擎；② 数字营销+AR技术的复合背景在市场上非常抢手；③ 关注上海XR产业政策，当地有大量创新实践场景。</p>
+    </div>
+  </div>
+</div>
+<div class="card science">
+  <div class="card-head">
+    <h2>Meta专利探索智能眼镜未来：识别人脸自动梳理信息</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 网易科技</span><span>🕐 2026-08-18 11:34</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>Meta最新专利揭示智能眼镜未来方向——通过摄像头自动识别用户面部并梳理相关信息，涉及计算机视觉、面部识别和实时信息检索的融合。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>全球智能眼镜赛道竞争白热化。Meta AI眼镜已成消费级AR先行者，苹果Vision Pro定义了空间计算标准。上海十五五规划明确攻关轻量化终端、实时空间渲染、虚实融合交互三大技术。</p>
+    <h3 class="sub-title sc">关联专业</h3>
+    <ul>
+      <li>电子信息工程</li>
+      <li>计算机科学与技术</li>
+      <li>光学工程</li>
+      <li>微电子科学与工程</li>
+    </ul>
+    <h3 class="sub-title sc">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>本科可入行（硬件测试/工艺），硕士优先（芯片/算法设计），博士（光学前沿研究）</li>
+      <li><b>典型岗位：</b>光学工程师、计算机视觉算法工程师、嵌入式开发工程师、SoC芯片设计</li>
+      <li><b>薪资参考：</b>光学工程师月薪1.5-3万；CV算法工程师月薪2.5-5万；芯片设计月薪3-6万</li>
+    </ul>
+    <h3 class="sub-title sc">地域优势</h3>
+    <p>深圳（消费电子产业链）、上海（光学/芯片研发）、北京（AI算法）、青岛（歌尔股份总部）</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① AR/VR硬件涉及光学、电子、计算机多学科交叉，选择光学工程或微电子专业前景广阔；② 消费级AR眼镜量产在即，硬件工程师需求将持续增长；③ 上海XR产业链布局完善，产学研生态好。</p>
+    </div>
+  </div>
+</div>
+<div class="card science">
+  <div class="card-head">
+    <h2>石头科技展示三类清洁新品，覆盖扫地机、洗地机</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 网易IT</span><span>🕐 2026-08-18 18:31</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>石头科技在北京举行2026新品技术品鉴会，展示滚筒洗地机器人P30Pro、G30SUltra，A30系列3.0版本洗地机，以及Z1Mini迷你洗烘一体机。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>全球家用服务机器人市场持续高速增长。中国清洁机器人企业占据全球主要份额，产品从单一清洁功能向清洁+整理+服务多功能演进。行业对嵌入式软件、运动控制、AI视觉导航等核心技术需求旺盛。</p>
+    <h3 class="sub-title sc">关联专业</h3>
+    <ul>
+      <li>机器人工程</li>
+      <li>自动化</li>
+      <li>电子信息工程</li>
+      <li>嵌入式系统</li>
+    </ul>
+    <h3 class="sub-title sc">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>本科可入行（产品测试/工艺），硕士优先（算法/系统设计）</li>
+      <li><b>典型岗位：</b>嵌入式软件工程师、SLAM算法工程师、运动控制工程师、产品经理</li>
+      <li><b>薪资参考：</b>嵌入式工程师月薪1.5-3万；SLAM算法工程师月薪2.5-5万</li>
+    </ul>
+    <h3 class="sub-title sc">地域优势</h3>
+    <p>深圳（智能硬件产业链最完善）、北京（石头科技总部）、苏州（科沃斯总部）、上海（追觅总部）</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① 家用机器人是机器人工程专业最直接的就业方向之一，行业增长稳定；② SLAM是核心技能，建议学习C++和ROS系统；③ 工业设计与工程的结合方向人才稀缺。</p>
+    </div>
+  </div>
+</div>
+<div class="card science">
+  <div class="card-head">
+    <h2>没方向盘也没刹车踏板：特斯拉Cybercab最快8月底投用</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 网易IT</span><span>🕐 2026-08-18 10:14</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>特斯拉计划最快于8月底在得州奥斯汀投用无方向盘、无刹车踏板的Cybercab，先让员工在公共道路测试，随后纳入当地Robotaxi服务。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>全球自动驾驶出租车进入商业化落地阶段。特斯拉Cybercab、Waymo、百度Apollo等竞相布局。中国市场中，百度萝卜快跑已在武汉等城市规模运营。2026年全球Robotaxi市场规模预计超500亿元。</p>
+    <h3 class="sub-title sc">关联专业</h3>
+    <ul>
+      <li>车辆工程</li>
+      <li>自动化</li>
+      <li>人工智能</li>
+      <li>计算机科学与技术</li>
+    </ul>
+    <h3 class="sub-title sc">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>本科可入行（测试/运维），硕士优先（感知/规划算法），博士（决策系统研发）</li>
+      <li><b>典型岗位：</b>自动驾驶算法工程师、感知工程师、规划控制工程师、仿真测试工程师</li>
+      <li><b>薪资参考：</b>自动驾驶算法工程师月薪3-6万；感知工程师月薪2.5-5万</li>
+    </ul>
+    <h3 class="sub-title sc">地域优势</h3>
+    <p>北京（百度Apollo/小马智行）、上海（上汽/特斯拉中国）、深圳（比亚迪）、广州（文远知行）、武汉（萝卜快跑最大运营城市）</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① 自动驾驶是车辆工程+AI的典型交叉领域，两个专业背景都有机会；② 仿真测试和场景验证是增长最快的岗位方向，门槛相对适中；③ 武汉、广州等城市Robotaxi运营规模大，当地就业机会多。</p>
+    </div>
+  </div>
+</div>
+<div class="card science">
+  <div class="card-head">
+    <h2>治好癌症大家就会相信AI？Anthropic CEO被吐槽</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 网易IT</span><span>🕐 2026-08-18 08:53</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>Anthropic年化营收已超650亿美元，IPO估值预期逼近2万亿美元。CEO阿莫代伊因AI还没兑现造福世界的大承诺遭质疑。Claude已跑通蛋白质设计全流程，AI药物研发命中率26.8%远超行业平均10-15%。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>AI制药是AI商业化最具想象力的方向之一。Claude智能体完成16个靶蛋白中15个的药物设计。DeepMind的AlphaFold已预测超2亿个蛋白质结构。AI制药有望将新药研发周期从10年缩短至3-5年。</p>
+    <h3 class="sub-title sc">关联专业</h3>
+    <ul>
+      <li>人工智能</li>
+      <li>生物信息学</li>
+      <li>药学</li>
+      <li>计算化学</li>
+    </ul>
+    <h3 class="sub-title sc">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>硕士起步，博士优先（AI制药研究员/计算生物学家）</li>
+      <li><b>典型岗位：</b>AI制药研究员、计算生物学家、药物设计工程师</li>
+      <li><b>薪资参考：</b>AI制药研究员年薪40-80万；生物信息分析师月薪1.5-3万</li>
+    </ul>
+    <h3 class="sub-title sc">地域优势</h3>
+    <p>上海（张江药谷/外资药企聚集）、北京（中关村AI+生物）、苏州（BioBay生物医药产业园）</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① AI+制药是长坡厚雪赛道，需要同时具备AI和生物/化学知识；② 建议本科选生物信息学或计算化学，研究生再深入AI方向；③ 这个领域博士学历几乎是标配，但回报非常丰厚。</p>
+    </div>
+  </div>
+</div>
+<div class="card science">
+  <div class="card-head">
+    <h2>GLM-5.3瞄准Mythos：中国模型开始学会利用漏洞</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 网易IT</span><span>🕐 2026-08-18 08:56</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>智谱发布GLM-5.3，中国模型的网络安全能力再进一步：不仅能复现漏洞，也开始具备利用漏洞的能力。该模型主打纯后训练Scaling，编程能力提升约50%，高风险能力被单独管控。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>国产大模型网络安全能力快速追赶。GLM-5.3评测成绩接近国际顶尖水平，配套推出CyberGym评测环境。AI安全攻防正在成为大模型竞争的新维度。</p>
+    <h3 class="sub-title sc">关联专业</h3>
+    <ul>
+      <li>网络空间安全</li>
+      <li>人工智能</li>
+      <li>计算机科学与技术</li>
+      <li>信息安全</li>
+    </ul>
+    <h3 class="sub-title sc">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>本科可入行（安服/渗透测试），硕士优先（安全研究），博士（前沿攻防）</li>
+      <li><b>典型岗位：</b>网络安全研究员、渗透测试工程师、安全运维工程师、AI安全审计</li>
+      <li><b>薪资参考：</b>渗透测试工程师月薪1.5-3万；安全研究员月薪2-5万</li>
+    </ul>
+    <h3 class="sub-title sc">地域优势</h3>
+    <p>北京（网络安全企业最密集）、深圳（腾讯安全/华为）、杭州（阿里安全/安恒信息）、成都</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① 网络安全人才缺口巨大，供需比严重失衡，就业确定性高；② 建议考取CISP/CISSP等认证提升竞争力；③ AI安全攻防是最新方向，懂AI的网安人才极度稀缺。</p>
+    </div>
+  </div>
+</div>
+<div class="card science">
+  <div class="card-head">
+    <h2>工信部电池工作组启动钠离子电池针刺摸底测评</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 IT家科学探索</span><span>🕐 2026-08-18 18:00</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>工信部正式启动钠离子电池针刺专项摸底测评，覆盖不同能量密度产品开展系统性安全核验。2026年被公认为钠电池规模化量产元年，宁德时代第二代钠新电池将于四季度正式量产。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>钠离子电池产业进入标准化、规模化新阶段。银河证券预计2026年出货量达25GWh，同比增长188%。针刺测评统一标准后，安全实力过硬的企业将优先获得商业化准入资格。</p>
+    <h3 class="sub-title sc">关联专业</h3>
+    <ul>
+      <li>新能源科学与工程</li>
+      <li>化学工程与工艺</li>
+      <li>材料科学与工程</li>
+      <li>能源化学工程</li>
+    </ul>
+    <h3 class="sub-title sc">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>本科可入行（生产管理/品控），硕士优先（研发/工艺），博士（材料前沿研究）</li>
+      <li><b>典型岗位：</b>电池研发工程师、材料研究员、电芯设计工程师、品质工程师</li>
+      <li><b>薪资参考：</b>电池研发工程师月薪1.5-3万；材料研究员年薪20-40万</li>
+    </ul>
+    <h3 class="sub-title sc">地域优势</h3>
+    <p>福建宁德（宁德时代总部）、深圳/惠州（比亚迪）、常州（动力电池产业集群）、宜宾</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① 钠电池是新能源赛道的第二增长曲线，化学/材料专业就业前景广阔；② 宁德时代、比亚迪等龙头企业大量招聘应届生，硕博校招起薪30万+；③ 储能方向比动力电池增长更快。</p>
+    </div>
+  </div>
+</div>
+<div class="card science">
+  <div class="card-head">
+    <h2>山西首条时速350公里高铁：雄忻高铁开启静态验收</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 IT家科学探索</span><span>🕐 2026-08-18 18:00</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>雄忻高铁开启静态验收，覆盖轨道、桥隧、站房等全建设内容。该线路是京昆通道重要组成部分，设计时速350公里，开通后将完善我国高铁网布局，促进沿线经济发展。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>中国高铁运营里程已超4.5万公里，稳居世界第一。十四五期间高铁建设持续向西延伸，山西、甘肃等省份加速接入全国高铁网络。</p>
+    <h3 class="sub-title sc">关联专业</h3>
+    <ul>
+      <li>土木工程</li>
+      <li>铁道工程</li>
+      <li>交通运输</li>
+      <li>电气工程及其自动化</li>
+    </ul>
+    <h3 class="sub-title sc">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>本科可入行（施工/运维），硕士优先（设计/管理）</li>
+      <li><b>典型岗位：</b>铁路线路工程师、桥梁工程师、信号工程师</li>
+      <li><b>薪资参考：</b>铁路工程师月薪0.8-1.5万（国企稳定）；设计院工程师月薪1.2-2.5万</li>
+    </ul>
+    <h3 class="sub-title sc">地域优势</h3>
+    <p>北京（国铁集团总部）、武汉（中铁第四勘察设计院）、成都/昆明（西南铁路建设）</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① 铁路/土木工程专业就业稳定，国企为主，福利保障完善；② 高铁向西延伸带来大量建设需求，西部地区机会增多；③ 建议关注智能高铁方向，技术含量高、发展前景好。</p>
+    </div>
+  </div>
+</div>
+<div class="card science">
+  <div class="card-head">
+    <h2>向前推进约18亿年：已知银河系最早合并事件被发现</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 IT家科学探索</span><span>🕐 2026-08-18 16:00</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>NASA在哈勃望远镜辅助下，天文学家观测到银河系最早已知合并事件证据，可追溯到约118亿年前。这一发现将银河系合并历史认知向前推进约18亿年。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>天文学研究进入多信使、多波段观测新时代。中国天眼FAST、高海拔宇宙线观测站LHAASO等大科学装置为全球顶级研究提供了独特平台。</p>
+    <h3 class="sub-title sc">关联专业</h3>
+    <ul>
+      <li>天文学</li>
+      <li>物理学</li>
+      <li>应用物理学</li>
+      <li>空间科学与技术</li>
+    </ul>
+    <h3 class="sub-title sc">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>博士为主（科研岗位），硕士可入行（天文台技术/数据处理）</li>
+      <li><b>典型岗位：</b>天文学研究员、天文台观测工程师、天文数据分析师</li>
+      <li><b>薪资参考：</b>天文研究员年薪15-35万（科研院所）</li>
+    </ul>
+    <h3 class="sub-title sc">地域优势</h3>
+    <p>北京（中科院国家天文台）、贵州（FAST所在地）、南京（紫金山天文台）、上海</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① 天文学是纯基础学科，读博是几乎必须的，适合真正热爱探索宇宙的同学；② 天文大数据方向可与数据科学结合，就业面更广；③ 中国天眼FAST的运维岗位在贵州，当地天文产业生态正在形成。</p>
+    </div>
+  </div>
+</div>
+<div class="card science">
+  <div class="card-head">
+    <h2>全球首个独立运营的生物集成服务器机架原型亮相</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 IT家科学探索</span><span>🕐 2026-08-18 15:00</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>新加坡国立大学医学院携手DayOne和CorticalLabs，推出全球首个独立运营的生物集成服务器机架原型，标志着生物计算从实验室走向工程化应用。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>生物计算是前沿科技交叉领域。哈佛将脑类器官存活时间延长至5年以上，MIT用细菌构建活体晶体管电路。美国DARPA投入3600万美元开发生物处理单元。该领域被视为后摩尔时代的潜在颠覆性技术。</p>
+    <h3 class="sub-title sc">关联专业</h3>
+    <ul>
+      <li>生物医学工程</li>
+      <li>生物工程</li>
+      <li>计算机科学与技术</li>
+      <li>神经科学</li>
+    </ul>
+    <h3 class="sub-title sc">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>博士为主（前沿研究），硕士可入行（实验室技术/设备运维）</li>
+      <li><b>典型岗位：</b>生物计算研究员、类器官培养工程师、神经接口工程师</li>
+      <li><b>薪资参考：</b>生物计算研究员年薪30-60万；类器官工程师月薪1.5-3万</li>
+    </ul>
+    <h3 class="sub-title sc">地域优势</h3>
+    <p>上海（脑科学/类器官研究重镇）、北京（中科院/合成生物学研究所）、深圳（合成生物学研究院）</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① 生物计算是极度前沿的方向，适合有志于科研突破的同学；② 需要生物学+计算机+工程的交叉背景；③ 该领域全球人才稀缺，先入行者具有先发优势。</p>
+    </div>
+  </div>
+</div>
+<div class="card science">
+  <div class="card-head">
+    <h2>我国建造的世界精度最高百米级射电望远镜完成核心结构安装</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 IT家科学探索</span><span>🕐 2026-08-18 14:00</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>世界精度最高的百米级射电望远镜完成核心结构安装，建成后可重点解决我国在深空探测等领域缺少超大口径天线装备的难题。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>中国射电天文观测能力快速提升。继FAST之后，百米级高精度射电望远镜建设进一步丰富了深空探测手段，为天文学、空间科学、射电物理等学科提供了世界级研究平台。</p>
+    <h3 class="sub-title sc">关联专业</h3>
+    <ul>
+      <li>天文学</li>
+      <li>电子信息工程</li>
+      <li>机械工程</li>
+      <li>测控技术与仪器</li>
+    </ul>
+    <h3 class="sub-title sc">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>硕士可入行（设备运维/信号处理），博士（科研/设计）</li>
+      <li><b>典型岗位：</b>射电天文研究员、天线工程师、信号处理工程师</li>
+      <li><b>薪资参考：</b>天文研究员年薪15-35万；天线/信号工程师月薪1.5-3万</li>
+    </ul>
+    <h3 class="sub-title sc">地域优势</h3>
+    <p>贵州（FAST所在地）、北京（国家天文台）、南京（紫金山天文台）</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① 大科学装置建设带来大量工程技术岗位，不一定要做科研；② 射电天文涉及大量信号处理和数据分析，与电子信息专业高度相关；③ 这些装置通常建在偏远地区，适合愿意在非一线城市工作的同学。</p>
+    </div>
+  </div>
+</div>
+<div class="card science">
+  <div class="card-head">
+    <h2>中科宇航力巡一号太空摆渡车完成重要试验</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 IT家科学探索</span><span>🕐 2026-08-18 13:00</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>中科宇航自主研制的力巡一号上面级完成一系列动力系统试验，计划明年一季度首飞。上面级被称为太空摆渡车，负责完成卫星入轨的精确部署工作。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>中国商业航天进入关键验证窗口期。2026年多家火箭公司进行可回收验证，2027年有望开始密集发射和卫星组网。行业人才总量约30万，核心研发人员不足7.5万，工信部预测缺口达47.5万。</p>
+    <h3 class="sub-title sc">关联专业</h3>
+    <ul>
+      <li>航空航天工程</li>
+      <li>飞行器设计与工程</li>
+      <li>推进理论与工程</li>
+      <li>自动化</li>
+    </ul>
+    <h3 class="sub-title sc">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>硕士起步（研发岗），核心岗位偏好985/211硕博</li>
+      <li><b>典型岗位：</b>火箭总体设计工程师、推进系统工程师、制导导航工程师</li>
+      <li><b>薪资参考：</b>校招硕士起薪30万+；中级工程师年薪40-80万；资深/首席可达80-120万</li>
+    </ul>
+    <h3 class="sub-title sc">地域优势</h3>
+    <p>北京（民营火箭公司最密集：蓝箭/星际荣耀/天兵科技）、上海（航天八院/中科宇航）、西安</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① 商业航天2026年人才争夺白热化，硕博校招起薪已追平互联网；② 国防七子院校是最对口来源；③ 民营航天薪资比体制内高50%-100%，适合想冲高薪的年轻人才。</p>
+    </div>
+  </div>
+</div>
+<div class="card science">
+  <div class="card-head">
+    <h2>海南文昌商业航天发射场1、2号工位实现常态化运营</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 IT家科学探索</span><span>🕐 2026-08-18 11:00</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>文昌国际航天城管理局表示，商业发射场1、2号工位已实现常态化运营，卫星超级工厂进入试生产，海上回收平台和测控系统加速建设。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>海南文昌正成为中国商业航天的重要枢纽。嫦娥七号也在此转运准备发射，火箭制造+卫星生产+发射服务的全产业链正在成型。</p>
+    <h3 class="sub-title sc">关联专业</h3>
+    <ul>
+      <li>航空航天工程</li>
+      <li>飞行器制造工程</li>
+      <li>测控技术与仪器</li>
+      <li>自动化</li>
+    </ul>
+    <h3 class="sub-title sc">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>本科可入行（发射场运维/卫星装配），硕士优先（系统设计/研发）</li>
+      <li><b>典型岗位：</b>发射场工程师、卫星制造工程师、测控工程师</li>
+      <li><b>薪资参考：</b>发射场运维月薪1-2万；卫星制造工程师月薪1.5-3万</li>
+    </ul>
+    <h3 class="sub-title sc">地域优势</h3>
+    <p>海南文昌（商业发射场）、北京（航天城管理/研发中心）、天津（航天科技五院）</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① 文昌航天城是新兴就业热点，海南自贸港政策带来额外福利；② 卫星制造是增量方向，超级工厂量产需要大量工程师；③ 测控专业就业面广，通信/雷达方向也适用。</p>
+    </div>
+  </div>
+</div>
+<div class="card science">
+  <div class="card-head">
+    <h2>田湾核电7号机组装料完成，进入带核调试阶段</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 IT家科学探索</span><span>🕐 2026-08-18 10:00</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>位于江苏连云港的田湾核电7号机组首次核燃料装载工作圆满结束，进入带核调试阶段。田湾是全球在建加在运总装机容量最大的核电基地。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>中国核电建设进入加速期。十四五以来每年核准8-10台核电机组，第三代核电技术安全性大幅提升，第四代核电技术已商业化运行。</p>
+    <h3 class="sub-title sc">关联专业</h3>
+    <ul>
+      <li>核工程与核技术</li>
+      <li>能源与动力工程</li>
+      <li>辐射防护与核安全</li>
+      <li>电气工程及其自动化</li>
+    </ul>
+    <h3 class="sub-title sc">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>本科可入行（运行/检修），硕士优先（设计/研发）</li>
+      <li><b>典型岗位：</b>核反应堆工程师、核安全工程师、辐射防护工程师、核电站操纵员</li>
+      <li><b>薪资参考：</b>核电站运行工程师月薪1-2万（含补贴可达2-3万）</li>
+    </ul>
+    <h3 class="sub-title sc">地域优势</h3>
+    <p>连云港（田湾核电）、深圳/阳江（大亚湾/阳江核电）、福清、三门、成都（核工业西南物理研究院）</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① 核工程是小众但稳定的高薪行业，央企为主，就业确定性极高；② 核电加速审批带来持续人才需求；③ 辐射防护与核安全是特色专业，开设院校不多但就业竞争小。</p>
+    </div>
+  </div>
+</div>
+<div class="card science">
+  <div class="card-head">
+    <h2>7月楼市韧性彰显 市场企稳基础进一步夯实</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 中国日报财经</span><span>🕐 2026-08-18 13:10</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>2026年7月全国房地产市场延续企稳态势，新房和二手房成交量保持韧性。多项稳楼市政策持续发力，部分核心城市出现回暖迹象。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>房地产行业正经历深度调整后的筑底阶段。城市更新、保障性住房建设和老旧小区改造带来结构性机会。房地产产业链转型升级催生新岗位。</p>
+    <h3 class="sub-title sc">关联专业</h3>
+    <ul>
+      <li>房地产开发与管理</li>
+      <li>土木工程</li>
+      <li>建筑学</li>
+      <li>城乡规划</li>
+    </ul>
+    <h3 class="sub-title sc">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>本科可入行（销售/物业管理），硕士优先（开发/设计/投资）</li>
+      <li><b>典型岗位：</b>建筑设计师、房地产投资分析师、项目管理工程师</li>
+      <li><b>薪资参考：</b>建筑设计师月薪1-2.5万；投资分析师月薪1.5-3万</li>
+    </ul>
+    <h3 class="sub-title sc">地域优势</h3>
+    <p>一线城市（核心城市市场韧性最强）、成都/杭州（新一线市场活跃）</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① 房地产行业已从高速扩张转向存量运营，建议关注城市更新和物业管理方向；② 建筑学+数字化（BIM/绿色建筑）是转型方向；③ 房地产金融、REITs等新方向值得关注。</p>
+    </div>
+  </div>
+</div>
+<div class="card science">
+  <div class="card-head">
+    <h2>AI成为宏观新变量 全球央行进入信号重新校准期</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 中国日报财经</span><span>🕐 2026-08-18 13:14</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>AI技术对宏观经济的影响正成为各国央行关注的核心变量。AI提升生产效率、重塑劳动力市场、改变通胀传导机制，央行需将AI带来的结构性变化纳入考量框架。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>AI有望在未来10年提升全球GDP约7%（约5.4万亿美元）。但也带来就业结构性调整、数据垄断等新挑战。各国央行开始将AI纳入经济预测模型。</p>
+    <h3 class="sub-title sc">关联专业</h3>
+    <ul>
+      <li>经济学</li>
+      <li>金融学</li>
+      <li>统计学</li>
+      <li>数据科学</li>
+    </ul>
+    <h3 class="sub-title sc">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>硕士起步（研究/分析岗），博士（央行/国际组织研究岗）</li>
+      <li><b>典型岗位：</b>宏观经济研究员、政策分析师、量化分析师</li>
+      <li><b>薪资参考：</b>宏观研究员年薪25-50万（券商/基金）</li>
+    </ul>
+    <h3 class="sub-title sc">地域优势</h3>
+    <p>北京（央行/金融监管机构）、上海（金融机构/交易所）、深圳（金融科技）</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① AI对经济的影响是经济学研究新前沿，建议学习计量经济学+数据分析；② 央行、政策性银行等岗位稳定且社会地位高，但竞争激烈；③ 经济学+编程（Python/R）的复合能力越来越重要。</p>
+    </div>
+  </div>
+</div>
+<div class="card science">
+  <div class="card-head">
+    <h2>凯迪拉克全新XT5 PHEV将于成都车展首日开启预售</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 车讯网</span><span>🕐 2026-08-18 16:00</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>凯迪拉克全新XT5 PHEV将在2026成都车展首日开启预售。这是一款中型插混SUV，WLTC纯电续航155公里，搭载Momenta R7世界模型。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>中国新能源汽车渗透率持续攀升，2026年新能源乘用车渗透率预计超50%。插混成为增长最快的细分品类。成都车展作为下半年A级车展风向标，汇聚众多重磅新车。</p>
+    <h3 class="sub-title sc">关联专业</h3>
+    <ul>
+      <li>车辆工程</li>
+      <li>新能源科学与工程</li>
+      <li>自动化</li>
+      <li>电子信息工程</li>
+    </ul>
+    <h3 class="sub-title sc">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>本科可入行（制造/测试），硕士优先（研发/设计）</li>
+      <li><b>典型岗位：</b>新能源汽车工程师、电池系统工程师、智能驾驶工程师</li>
+      <li><b>薪资参考：</b>新能源汽车工程师月薪1.5-3万；智能驾驶工程师月薪2.5-5万</li>
+    </ul>
+    <h3 class="sub-title sc">地域优势</h3>
+    <p>上海（通用中国/上汽集团）、长春（一汽）、武汉（东风）、广州（广汽/小鹏）、深圳（比亚迪）</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① 汽车行业正从传统机械向电动智能化转型，软件能力越来越重要；② 插混系统设计涉及发动机+电机+电池多领域；③ 华为系智能汽车生态扩张快，相关岗位需求旺盛。</p>
+    </div>
+  </div>
+</div>
+<div class="card science">
+  <div class="card-head">
+    <h2>以科技定义新驾趣，智界RX超250km/h高环变道挑战成功</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 车讯网</span><span>🕐 2026-08-18 06:00</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>智界RX在超250km/h时速下成功挑战高环变道，完成行业内从未涉及的极限考验，验证了车辆的高速稳定性和底盘控制能力。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>智能电动汽车的性能边界不断被突破。华为鸿蒙智行生态快速扩张，高速稳定性、底盘控制、智能驾驶等核心技术成为品牌竞争力关键指标。</p>
+    <h3 class="sub-title sc">关联专业</h3>
+    <ul>
+      <li>车辆工程</li>
+      <li>自动化</li>
+      <li>计算机科学与技术</li>
+      <li>机械工程</li>
+    </ul>
+    <h3 class="sub-title sc">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>本科可入行（测试/制造），硕士优先（研发/算法）</li>
+      <li><b>典型岗位：</b>底盘工程师、NVH工程师、车辆测试工程师</li>
+      <li><b>薪资参考：</b>底盘工程师月薪1.5-3万；智能驾驶算法月薪2.5-5万</li>
+    </ul>
+    <h3 class="sub-title sc">地域优势</h3>
+    <p>深圳（华为智能汽车/比亚迪）、上海（上汽/特斯拉）、合肥（蔚来/大众安徽）、北京</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① 极限测试展示了中国智能汽车的技术自信，车辆工程+控制理论是核心知识；② 智能底盘（线控/主动悬架）是新方向；③ 华为系智能汽车生态扩张快，相关岗位需求旺盛。</p>
+    </div>
+  </div>
+</div>
+
+
+  <div id="section-arts" style="display:flex;align-items:center;gap:10px;margin:30px 0 18px;padding:12px 20px;background:linear-gradient(90deg,#f0fff4,#fff);border-radius:10px;border-left:4px solid #48bb78;">
+    <span style="font-size:20px;">📚</span>
+    <span style="font-size:17px;font-weight:700;color:#276749;">文科资讯</span>
+    <span style="font-size:13px;color:#718096;margin-left:4px;">共 2 条</span>
+  </div>
+
+<div class="card arts">
+  <div class="card-head">
+    <h2>9部门发文激发下沉市场活力 活跃县域消费</h2>
+    <span style="background:#f0fff4;color:#48bb78;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">文科</span>
+  </div>
+  <div class="meta"><span>📰 中国日报财经</span><span>🕐 2026-08-18 13:10</span></div>
+  <div class="content">
+    <h3 class="sub-title gg">事件背景</h3>
+    <p>9部门联合发文激发下沉市场活力，重点活跃县域消费。政策聚焦完善县域商业体系、提升物流配送效率、促进农村消费升级，释放14亿人口中最大消费群体的潜力。</p>
+    <h3 class="sub-title gg">行业简述</h3>
+    <p>下沉市场消费增速持续高于一二线城市。直播电商、社区团购、即时零售等新业态加速向县域渗透。县域经济的数字化转型为电商运营、物流管理等岗位创造了大量就业机会。</p>
+    <h3 class="sub-title gg">关联专业</h3>
+    <ul>
+      <li>电子商务</li>
+      <li>市场营销</li>
+      <li>物流管理</li>
+      <li>经济学</li>
+      <li>工商管理</li>
+    </ul>
+    <h3 class="sub-title gg">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>本科可入行（运营/销售），硕士优先（战略/投资）</li>
+      <li><b>典型岗位：</b>电商运营专员、县域商业规划师、物流管理师、数字营销策划</li>
+      <li><b>薪资参考：</b>电商运营月薪0.8-1.5万；数字营销策划月薪1-2.5万</li>
+    </ul>
+    <h3 class="sub-title gg">地域优势</h3>
+    <p>杭州（电商之都/阿里/拼多多）、义乌（小商品直播电商）、广州（供应链/跨境）</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① 下沉市场是电商专业最大的增量就业方向；② 县域商业数字化需要既懂互联网又了解基层的复合型人才；③ 建议学习直播带货、短视频营销等实操技能，实战经验比学历更重要。</p>
+    </div>
+  </div>
+</div>
+<div class="card arts">
+  <div class="card-head">
+    <h2>A股中期分红热度攀升 千亿元真金白银回馈投资者</h2>
+    <span style="background:#f0fff4;color:#48bb78;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">文科</span>
+  </div>
+  <div class="meta"><span>📰 中国日报财经</span><span>🕐 2026-08-18 13:12</span></div>
+  <div class="content">
+    <h3 class="sub-title gg">事件背景</h3>
+    <p>2026年A股市场掀起中期分红热潮，上市公司分红总额突破千亿元。越来越多公司从年度分红转向年度+中期分红，体现了监管层鼓励回馈投资者的政策导向。</p>
+    <h3 class="sub-title gg">行业简述</h3>
+    <p>A股市场制度建设持续推进，分红文化逐步养成。新国九条鼓励上市公司增加分红频次和比例，中长期资金入市力度加大。</p>
+    <h3 class="sub-title gg">关联专业</h3>
+    <ul>
+      <li>金融学</li>
+      <li>会计学</li>
+      <li>财务管理</li>
+      <li>投资学</li>
+    </ul>
+    <h3 class="sub-title gg">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>本科可入行（银行/证券营业部），硕士优先（投行/研究/资管）</li>
+      <li><b>典型岗位：</b>行业研究员、投资银行分析师、基金经理助理</li>
+      <li><b>薪资参考：</b>券商研究员年薪25-60万；投行分析师年薪30-80万</li>
+    </ul>
+    <h3 class="sub-title gg">地域优势</h3>
+    <p>上海（上交所/基金公司最密集）、北京（证监会/大型券商总部）、深圳（深交所/私募）</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① 分红制度完善利好价值投资方向，建议学习财务分析和估值建模；② CPA/CFA是金融行业硬通货证书，越早准备越好；③ A股市场制度持续完善，合规、ESG等新方向值得关注。</p>
+    </div>
+  </div>
+</div>
+</div>
+
+<script>
+function showIndex() {
+  if (window.parent && window.parent.showIndex) { window.parent.showIndex(); return; }
+  window.location.href = 'index.html';
+}
+function scrollToSection(id) {
+  var el = document.getElementById(id);
+  if (!el) return;
+  var top = el.offsetTop - 20;
+  window.scrollTo({ top: top, behavior: 'smooth' });
+}
+</script>
+
+</body>
+</html>

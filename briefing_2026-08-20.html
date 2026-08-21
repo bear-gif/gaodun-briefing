@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第4期 · 高顿升学 · 每日行业速览</title>
+<style>
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { font-family: -apple-system, BlinkmacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif; background: #f5f7fa; color: #1a1a2e; line-height: 1.7; }
+  .container { max-width: 960px; margin: 0 auto; padding: 30px 20px 60px; }
+  .report-header { background: #fff; border-radius: 14px; padding: 28px 32px; margin-bottom: 24px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+  .report-header .date-line { font-size: 20px; font-weight: 700; color: #1a1a2e; margin-bottom: 6px; }
+  .report-header .stats { font-size: 14px; color: #718096; margin-bottom: 16px; }
+  .report-header .stats span { display: inline-block; margin-right: 14px; }
+  .core-judgments { background: #f7fafc; border-left: 4px solid #4299e1; padding: 16px 20px; border-radius: 0 8px 8px 0; }
+  .core-judgments h3 { font-size: 15px; color: #2d3748; margin-bottom: 8px; }
+  .core-judgments ul { list-style: none; }
+  .core-judgments li { font-size: 14px; color: #4a5568; padding: 4px 0; padding-left: 18px; position: relative; }
+  .core-judgments li::before { content: "\25b8"; position: absolute; left: 0; color: #4299e1; font-weight: bold; }
+  .card { background: #fff; border-radius: 14px; padding: 28px 32px; margin-bottom: 20px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); border-top: 4px solid transparent; }
+  .card.science { border-top-color: #4299e1; }
+  .card.arts { border-top-color: #48bb78; }
+  .card-head { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; flex-wrap: wrap; }
+  .card-head h2 { font-size: 18px; font-weight: 700; color: #1a1a2e; flex: 1; min-width: 200px; }
+  .meta { display: flex; gap: 16px; font-size: 13px; color: #a0aec0; margin-bottom: 12px; flex-wrap: wrap; }
+  .content p, .content li { font-size: 15px; color: #4a5568; line-height: 1.8; }
+  .content ul { list-style: disc; padding-left: 20px; margin: 6px 0; }
+  .content li { margin: 4px 0; }
+  .footer { text-align: center; padding: 40px 20px; color: #a0aec0; font-size: 12px; }
+  .sub-title { font-size: 15px; margin: 14px 0 6px; border-left: 3px solid #4299e1; padding-left: 10px; font-weight: 600; }
+  .sub-title.sc { color: #4299e1; border-color: #4299e1; }
+  .sub-title.gg { color: #48bb78; border-color: #48bb78; }
+  .tip-block { background: #fef3c7; border-radius: 8px; padding: 14px 18px; margin: 12px 0; }
+  .tip-block h3 { color: #92400e; font-size: 15px; margin: 0 0 8px; }
+  .tip-block p { color: #92400e; margin: 0; font-size: 14px; line-height: 1.9; }
+
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="report-header">
+    <a href="javascript:void(0)" onclick="showIndex()" style="display:inline-block;margin-bottom:14px;font-size:14px;color:#4299e1;text-decoration:none;font-weight:500;cursor:pointer;">← 返回列表</a>
+    <div class="date-line">📅 第4期 · 高顿升学 · 每日行业速览 · 8月20日 · 星期四</div>
+    <div class="stats">
+      <span>📊 资讯共 23 条</span>
+      <span>🔬 理工科 20 条</span>
+      <span>📚 文科 3 条</span>
+    </div>
+    <div class="core-judgments">
+      <h3>📌 今日要点速览</h3>
+      <ul>
+        <li>mRNA癌症疫苗III期临床重大突破，莫得纳股价暴涨177%，个体化肿瘤治疗新时代开启</li>
+        <li>宇树科技CEO王兴兴：具身智能ChatGPT时刻最快2-3年到来</li>
+        <li>DeepSeek采用峰谷定价，大模型算力供需矛盾凸显</li>
+        <li>中国科大团队首次实验观测真空涨落增强超导效应，成果登上《自然》</li>
+        <li>FDA批准自动化采血机器人，医疗机器人从手术室走向日常护理</li>
+      </ul>
+    </div>
+  </div>
+
+  <div style="margin:20px 0 10px;padding:12px 20px;background:#fff;border-radius:10px;box-shadow:0 1px 3px rgba(0,0,0,0.04);display:flex;align-items:center;flex-wrap:wrap;">
+    <span style="font-size:14px;color:#718096;margin-right:12px;">快速跳转：</span>
+    <a href="javascript:void(0)" onclick="scrollToSection('section-science')" style="margin-right:20px;font-size:15px;color:#2b6cb0;text-decoration:none;font-weight:600;">🔬 理工科资讯</a>
+    <a href="javascript:void(0)" onclick="scrollToSection('section-arts')" style="margin-right:20px;font-size:15px;color:#276749;text-decoration:none;font-weight:600;">📚 文科资讯</a>
+  </div>
+
+  <div id="section-science" style="display:flex;align-items:center;gap:10px;margin:24px 0 18px;padding:12px 20px;background:linear-gradient(90deg,#ebf8ff,#fff);border-radius:10px;border-left:4px solid #4299e1;">
+    <span style="font-size:20px;">🔬</span>
+    <span style="font-size:17px;font-weight:700;color:#2b6cb0;">理工科资讯</span>
+    <span style="font-size:13px;color:#718096;margin-left:4px;">共 20 条</span>
+  </div>
+
+<div class="card science">
+  <div class="card-head">
+    <h2>中移动金融科技申请元宇宙信息推送方法专利</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 网易科技</span><span>🕐 2026-08-20 11:41</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>中移动金融科技提交了元宇宙信息推送方法专利，能根据用户位置和偏好精准推送元宇宙场景内容，体现了运营商在元宇宙基础设施层面的技术布局。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>元宇宙正从概念走向产业化落地。运营商凭借网络基础设施优势，在元宇宙的通信层和计算层具有天然优势。中国移动、中国电信等都在积极布局元宇宙相关技术。</p>
+    <h3 class="sub-title sc">关联专业</h3>
+    <ul>
+      <li>通信工程</li>
+      <li>计算机科学与技术</li>
+      <li>数字媒体技术</li>
+      <li>软件工程</li>
+    </ul>
+    <h3 class="sub-title sc">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>本科可入行（开发/运维），硕士优先（算法/架构）</li>
+      <li><b>典型岗位：</b>元宇宙平台开发工程师、通信系统架构师、XR应用开发</li>
+      <li><b>薪资参考：</b>开发工程师月薪2-4万；系统架构师月薪3-6万</li>
+    </ul>
+    <h3 class="sub-title sc">地域优势</h3>
+    <p>北京（中移动金融科技总部）、深圳（华为/中兴）、上海（运营商研究院）</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① 运营商在元宇宙基础设施层面有独特优势，通信+计算机复合背景最对口；② 元宇宙信息推送涉及推荐系统技术，建议学习推荐算法；③ 中国移动研究院是研究岗的好去处。</p>
+    </div>
+  </div>
+</div>
+<div class="card science">
+  <div class="card-head">
+    <h2>Valve Steam Frame VR头显官方教学视频泄露</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 网易科技</span><span>🕐 2026-08-20 07:26</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>Valve下一代VR头显Steam Frame的官方教学视频意外泄露。Steam Frame是Valve继Index之后的新一代VR设备，定位更轻便、价格更亲民。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>VR硬件市场竞争加剧。Meta Quest系列占据消费级市场主导，苹果Vision Pro定义高端空间计算，Valve则聚焦PC VR硬核游戏市场。VR设备正从笨重走向轻便、从昂贵走向亲民。</p>
+    <h3 class="sub-title sc">关联专业</h3>
+    <ul>
+      <li>电子信息工程</li>
+      <li>计算机科学与技术</li>
+      <li>工业设计</li>
+      <li>软件工程</li>
+    </ul>
+    <h3 class="sub-title sc">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>本科可入行（开发/测试），硕士优先（硬件设计/算法）</li>
+      <li><b>典型岗位：</b>VR硬件工程师、交互设计师、VR游戏开发工程师</li>
+      <li><b>薪资参考：</b>VR硬件工程师月薪2-4万；VR游戏开发月薪1.5-3万</li>
+    </ul>
+    <h3 class="sub-title sc">地域优势</h3>
+    <p>上海（VR/游戏企业聚集）、深圳（硬件产业链）、北京（游戏公司总部）</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① VR游戏开发是数字媒体和计算机专业的热门就业方向；② 建议学习Unity/Unreal引擎和3D数学；③ Valve等海外公司也有远程工作岗位，英语能力很重要。</p>
+    </div>
+  </div>
+</div>
+<div class="card science">
+  <div class="card-head">
+    <h2>Meta推出Meta AI原生Mac应用</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 网易科技</span><span>🕐 2026-08-20 06:53</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>Meta推出Meta AI原生Mac应用，支持窗口共享、跨应用交互等功能。这标志着AI助手正从网页端走向桌面原生应用，提供更无缝的用户体验。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>AI助手从网页走向原生应用是趋势。各家厂商（OpenAI、Google、Anthropic）都在推出桌面端AI应用，目标是让AI成为用户的日常生产力工具。</p>
+    <h3 class="sub-title sc">关联专业</h3>
+    <ul>
+      <li>计算机科学与技术</li>
+      <li>软件工程</li>
+      <li>人工智能</li>
+      <li>人机交互</li>
+    </ul>
+    <h3 class="sub-title sc">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>本科可入行（客户端开发），硕士优先（AI算法/系统架构）</li>
+      <li><b>典型岗位：</b>客户端开发工程师、AI产品经理、全栈工程师</li>
+      <li><b>薪资参考：</b>客户端开发月薪2-4万；AI产品经理月薪2.5-5万</li>
+    </ul>
+    <h3 class="sub-title sc">地域优势</h3>
+    <p>北京（互联网企业密集）、上海、深圳、杭州</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① AI应用开发是当前最热门的软件开发方向；② 建议学习Swift/Python以及AI API调用开发；③ 桌面端AI应用的产品设计是新方向，适合对用户体验感兴趣的同学。</p>
+    </div>
+  </div>
+</div>
+<div class="card science">
+  <div class="card-head">
+    <h2>王兴兴谈具身智能ChatGPT时刻：最快或需2至3年</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 网易IT</span><span>🕐 2026-08-20 12:16</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>宇树科技创始人王兴兴在世界机器人大会发表演讲，指出人形机器人尚未大规模推广的核心原因是效率仍低于人工。他判断具身智能的ChatGPT时刻将在2-10年内到来。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>人形机器人产业进入从1到N的关键阶段。2026年上半年全球出货量约1.91万台，中国企业包揽97%。宇树科技上市首日涨460%，但次日大跌18%，市场分歧明显。</p>
+    <h3 class="sub-title sc">关联专业</h3>
+    <ul>
+      <li>机器人工程</li>
+      <li>人工智能</li>
+      <li>自动化</li>
+      <li>机械工程</li>
+    </ul>
+    <h3 class="sub-title sc">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>本科可入行（制造/测试），硕士优先（算法/系统），博士（前沿研究）</li>
+      <li><b>典型岗位：</b>机器人算法工程师、具身智能研究员、运动控制工程师、VLA模型研发</li>
+      <li><b>薪资参考：</b>机器人算法月薪2.5-5万；具身智能研究员月薪3-6万</li>
+    </ul>
+    <h3 class="sub-title sc">地域优势</h3>
+    <p>杭州（宇树科技总部）、北京（智元/银河通用等8家200亿俱乐部成员）、上海、深圳</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① 具身智能岗位暴增15倍，是2026年增速最快的AI细分方向；② 核心挑战是AI大模型与物理世界的对齐问题，需要AI+机器人交叉背景；③ 宇树科技募资近半投向模型研发，软硬件协同是趋势。</p>
+    </div>
+  </div>
+</div>
+<div class="card science">
+  <div class="card-head">
+    <h2>峰时梁文峰，谷时梁文谷：DeepSeek涨价</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 网易IT</span><span>🕐 2026-08-20 11:52</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>DeepSeek从8月17日起采用峰谷定价策略，V4 Flash和V4 Pro开始分时段收费。高峰期价格更高，低谷期更便宜，反映了算力资源的供需变化。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>大模型定价从固定价格走向动态定价，反映了算力成为稀缺资源。模型推理成本虽然年均下降10倍，但需求增长更快，算力供需矛盾依然突出。</p>
+    <h3 class="sub-title sc">关联专业</h3>
+    <ul>
+      <li>人工智能</li>
+      <li>经济学</li>
+      <li>计算机科学</li>
+      <li>数据科学</li>
+    </ul>
+    <h3 class="sub-title sc">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>本科可入行（运维/客服），硕士优先（算法/产品）</li>
+      <li><b>典型岗位：</b>大模型推理优化工程师、AI产品经理、算力调度工程师</li>
+      <li><b>薪资参考：</b>推理优化工程师月薪3-5万；AI产品经理月薪2.5-5万</li>
+    </ul>
+    <h3 class="sub-title sc">地域优势</h3>
+    <p>杭州（DeepSeek/幻方总部）、北京、上海、深圳</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① 大模型推理优化是高价值方向，懂推理加速的工程师极度稀缺；② 峰谷定价反映了算力经济学的新课题；③ 建议学习模型压缩、量化、推理加速等技术。</p>
+    </div>
+  </div>
+</div>
+<div class="card science">
+  <div class="card-head">
+    <h2>mRNA癌症疫苗大突破，莫得纳一天暴涨177%</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 网易IT</span><span>🕐 2026-08-20 10:36</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>莫得纳和默沙东宣布个体化mRNA疗法intismeran联合Keytruda达到无复发生存期主要终点。这是mRNA癌症疫苗在III期临床中的重大突破，消息发布后莫得纳股价一天暴涨177%。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>mRNA技术从新冠疫苗扩展到癌症治疗，开启个体化肿瘤治疗新时代。个体化mRNA疗法根据患者肿瘤突变谱定制疫苗，III期临床结果显示显著改善无复发生存期。全球mRNA药物市场规模预计2030年超500亿美元。</p>
+    <h3 class="sub-title sc">关联专业</h3>
+    <ul>
+      <li>生物医学工程</li>
+      <li>药学</li>
+      <li>生物技术</li>
+      <li>免疫学</li>
+    </ul>
+    <h3 class="sub-title sc">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>硕士起步（研发/临床），博士优先（科学家的/临床总监）</li>
+      <li><b>典型岗位：</b>mRNA研发科学家、临床试验经理、免疫学研究员</li>
+      <li><b>薪资参考：</b>mRNA研发科学家年薪40-80万；临床试验经理年薪30-60万</li>
+    </ul>
+    <h3 class="sub-title sc">地域优势</h3>
+    <p>上海（张江药谷/mRNA企业聚集）、苏州（BioBay）、北京（中关村生物医药）、天津（康希诺）</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① mRNA技术是生物医药领域最确定的创新方向之一；② III期临床成功意味着商业化在即，产业人才需求将大幅增长；③ 建议学习分子生物学和免疫学，博士学历几乎是研发岗的标配。</p>
+    </div>
+  </div>
+</div>
+<div class="card science">
+  <div class="card-head">
+    <h2>DeepSeek Harness更新多模态</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 网易IT</span><span>🕐 2026-08-20 10:41</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>DeepSeek Harness发布v0.1.0-rc.8预览版，增加多模态支持。DeepSeek模型适配器可启用原生视觉能力，Codex和Claude Code都能当子代理，降低了Agent开发门槛。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>AI Agent编排框架竞争升温。DeepSeek Harness、LangChain、CrewAI等框架让开发者可以快速搭建多Agent系统。开源Agent工具链的成熟正在加速AI应用落地。</p>
+    <h3 class="sub-title sc">关联专业</h3>
+    <ul>
+      <li>人工智能</li>
+      <li>计算机科学与技术</li>
+      <li>软件工程</li>
+    </ul>
+    <h3 class="sub-title sc">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>本科可入行（开发/运维），硕士优先（算法/架构）</li>
+      <li><b>典型岗位：</b>AI Agent开发工程师、LLM应用工程师、开源社区贡献者</li>
+      <li><b>薪资参考：</b>AI Agent开发月薪2-4万；LLM应用工程师月薪2.5-5万</li>
+    </ul>
+    <h3 class="sub-title sc">地域优势</h3>
+    <p>杭州（DeepSeek总部）、北京、上海、深圳</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① Agent开发是当前最热的AI应用方向，建议学习LangChain/Harness等框架；② 开源贡献是进入AI行业的好途径；③ Agent编排需要理解多模型协作，系统架构能力很重要。</p>
+    </div>
+  </div>
+</div>
+<div class="card science">
+  <div class="card-head">
+    <h2>Stripe宣布收购OpenRouter：价格约80亿美元</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 网易IT</span><span>🕐 2026-08-20 08:33</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>支付公司Stripe宣布将收购AI模型路由平台OpenRouter，价格约80亿美元。OpenRouter让企业和开发者通过一个平台调用不同公司的AI模型，根据任务复杂度智能选择最优模型。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>AI模型路由和聚合平台成为关键基础设施。随着AI模型数量爆发式增长，企业需要一个统一接口管理多模型调用。AI中间件市场的价值正在被重新定义。</p>
+    <h3 class="sub-title sc">关联专业</h3>
+    <ul>
+      <li>计算机科学</li>
+      <li>软件工程</li>
+      <li>金融学</li>
+      <li>人工智能</li>
+    </ul>
+    <h3 class="sub-title sc">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>本科可入行（开发/运营），硕士优先（架构/产品）</li>
+      <li><b>典型岗位：</b>AI平台架构师、支付系统工程师、AI产品经理</li>
+      <li><b>薪资参考：</b>平台架构师月薪3-6万；AI产品经理月薪2.5-5万</li>
+    </ul>
+    <h3 class="sub-title sc">地域优势</h3>
+    <p>上海（Stripe中国/外资支付企业）、北京、深圳（支付科技）</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① AI+支付的交叉领域是新方向，既需要技术也需要商业理解；② Stripe的收购说明AI中间件平台具有高商业价值；③ 建议学习API设计和平台架构。</p>
+    </div>
+  </div>
+</div>
+<div class="card science">
+  <div class="card-head">
+    <h2>每秒2.5万公里：已知银河系最快恒星S301被发现</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 IT家科学探索</span><span>🕐 2026-08-20 15:00</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>天文学家观测发现S301暗弱天体，以约光速8.5%的速度在银河系中心超大质量黑洞周围疾速运行，是人类已知银河系中运行速度最快的恒星。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>银河系中心区域的极端物理环境持续产出突破性发现。S301的极端速度为验证广义相对论在强引力场中的预测提供了新的观测窗口。</p>
+    <h3 class="sub-title sc">关联专业</h3>
+    <ul>
+      <li>天文学</li>
+      <li>物理学</li>
+      <li>应用物理学</li>
+      <li>空间科学与技术</li>
+    </ul>
+    <h3 class="sub-title sc">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>博士为主（科研岗）</li>
+      <li><b>典型岗位：</b>天体物理研究员、观测天文学家</li>
+      <li><b>薪资参考：</b>天体物理研究员年薪15-35万（科研院所）</li>
+    </ul>
+    <h3 class="sub-title sc">地域优势</h3>
+    <p>北京（国家天文台）、南京（紫金山天文台）、合肥（中国科大）</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① 银河系中心研究是天体物理的前沿方向；② 需要扎实的广义相对论和天体力学基础；③ 中国科大在天体物理方向实力很强。</p>
+    </div>
+  </div>
+</div>
+<div class="card science">
+  <div class="card-head">
+    <h2>实验室培育的大脑类器官存活时间延长至5年以上</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 IT家科学探索</span><span>🕐 2026-08-20 15:00</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>哈佛大学将实验室培育的脑类器官存活时间延长至5年以上，约为此前纪录（694天）的3倍。这一突破为脑科学研究和药物测试提供了更可靠的生物模型。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>脑类器官技术快速发展。存活时间的大幅延长意味着科学家可以在更长周期内研究神经发育、药物反应和疾病进程。制药公司已开始在类器官上进行药物筛选。</p>
+    <h3 class="sub-title sc">关联专业</h3>
+    <ul>
+      <li>生物医学工程</li>
+      <li>神经科学</li>
+      <li>生物技术</li>
+      <li>药学</li>
+    </ul>
+    <h3 class="sub-title sc">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>博士为主（科研岗），硕士可入行（实验室技术）</li>
+      <li><b>典型岗位：</b>类器官培养工程师、神经科学研究助理、药物筛选工程师</li>
+      <li><b>薪资参考：</b>类器官工程师月薪1.5-3万；药物筛选年薪20-40万</li>
+    </ul>
+    <h3 class="sub-title sc">地域优势</h3>
+    <p>上海（脑科学研究中心/类器官企业）、北京（中科院）、深圳</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① 脑类器官是脑科学和药物研发的重要工具，技术突破直接推动产业发展；② 需要干细胞培养和神经生物学的专业背景；③ 类器官培养工程师是新兴岗位，需求量正在快速增长。</p>
+    </div>
+  </div>
+</div>
+<div class="card science">
+  <div class="card-head">
+    <h2>国际首台IP-SAFE超导直线加速器成功出束</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 IT家科学探索</span><span>🕐 2026-08-20 10:00</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>IP-SAFE超导直线加速器装置成功出束，我国实现重要医用同位素量产关键核心技术突破。装置全面建成后将实现阿尔法放射性同位素量产，从源头夯实核药产业链供应链。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>核医学是中国医疗产业的短板和增长点。医用同位素的自主量产将打破进口依赖，推动核药产业发展。全球核药市场预计2030年超500亿美元。</p>
+    <h3 class="sub-title sc">关联专业</h3>
+    <ul>
+      <li>核工程与核技术</li>
+      <li>核物理</li>
+      <li>辐射防护与核安全</li>
+      <li>生物医学工程</li>
+    </ul>
+    <h3 class="sub-title sc">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>硕士起步（研发/运营），博士优先（前沿研究）</li>
+      <li><b>典型岗位：</b>加速器工程师、核药研发科学家、放射性同位素生产工程师</li>
+      <li><b>薪资参考：</b>加速器工程师月薪2-4万；核药研发年薪30-60万</li>
+    </ul>
+    <h3 class="sub-title sc">地域优势</h3>
+    <p>绵阳（中国工程物理研究院）、北京（中科院高能物理所）、上海（质子治疗中心）</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① 核医学是核工程的重要民用方向，就业前景好；② 医用同位素自主量产意味着产业链将快速扩张；③ 核工程+药学的交叉背景非常稀缺。</p>
+    </div>
+  </div>
+</div>
+<div class="card science">
+  <div class="card-head">
+    <h2>NASA宣布放弃拯救Swift天文台</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 IT家科学探索</span><span>🕐 2026-08-20 09:00</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>私人救援飞船LINK因姿态控制问题无法完成轨道提升任务，NASA宣布放弃Swift天文台。这座专门研究宇宙高能现象的天文台将于年底坠入大气层。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>太空资产的寿命管理和退役处置日益重要。随着在轨卫星和天文台数量增加，太空碎片的监测和处置成为新的挑战。</p>
+    <h3 class="sub-title sc">关联专业</h3>
+    <ul>
+      <li>天文学</li>
+      <li>航空航天工程</li>
+      <li>空间科学与技术</li>
+    </ul>
+    <h3 class="sub-title sc">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>博士为主（科研岗），硕士（卫星运维/轨道计算）</li>
+      <li><b>典型岗位：</b>空间态势感知研究员、卫星运维工程师</li>
+      <li><b>薪资参考：</b>空间态势感知年薪20-40万</li>
+    </ul>
+    <h3 class="sub-title sc">地域优势</h3>
+    <p>北京（中科院/国家航天局）、南京、西安</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① 太空资产管理是新兴方向，随着太空活动增加需求会增长；② 轨道力学和航天器设计是核心知识；③ 这是一个小众但重要的科研方向。</p>
+    </div>
+  </div>
+</div>
+<div class="card science">
+  <div class="card-head">
+    <h2>最新研究揭示南极冰盖质量损失为何突然放缓</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 IT家科学探索</span><span>🕐 2026-08-20 09:00</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>中科院海洋研究所联合国外科研机构研究发现，2021-2023年热带暖池持续增暖是暂时减缓南极冰盖质量损失的主要诱因。这一发现对理解气候变化机制具有重要意义。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>气候变化研究进入精细化阶段。海洋-大气-冰盖的耦合机制是理解全球变暖的关键。中国在极地研究和气候变化领域的国际影响力持续提升。</p>
+    <h3 class="sub-title sc">关联专业</h3>
+    <ul>
+      <li>海洋科学</li>
+      <li>大气科学</li>
+      <li>地球物理学</li>
+      <li>环境科学</li>
+    </ul>
+    <h3 class="sub-title sc">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>博士为主（科研岗），硕士可入行（数据分析/观测）</li>
+      <li><b>典型岗位：</b>气候变化研究员、海洋观测工程师、环境数据分析师</li>
+      <li><b>薪资参考：</b>气候变化研究员年薪15-35万；环境数据分析月薪1.5-3万</li>
+    </ul>
+    <h3 class="sub-title sc">地域优势</h3>
+    <p>青岛（中科院海洋所）、上海（同济大学/华东师大）、厦门（海洋三所）、北京</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① 气候变化研究是国家战略方向，科研经费充足；② 海洋科学+数据分析的复合能力越来越重要；③ 青岛是中国海洋研究的重镇，中科院海洋所实力很强。</p>
+    </div>
+  </div>
+</div>
+<div class="card science">
+  <div class="card-head">
+    <h2>自动化采血机器人Aletta获FDA批准上市</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 IT家科学探索</span><span>🕐 2026-08-20 09:00</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>美国FDA批准了Aletta采血机器人，通过近红外与超声技术定位静脉，自动完成绑止血带、穿刺、贴止血贴等全流程。临床数据显示其成功率与人工持平。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>医疗机器人正从手术室扩展到日常护理场景。采血是最常见的医疗操作之一，自动化采血可缓解采血师人手不足的问题。全球医疗机器人市场预计2030年超200亿美元。</p>
+    <h3 class="sub-title sc">关联专业</h3>
+    <ul>
+      <li>机器人工程</li>
+      <li>生物医学工程</li>
+      <li>自动化</li>
+      <li>护理学</li>
+    </ul>
+    <h3 class="sub-title sc">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>本科可入行（设备运维/技术支持），硕士优先（研发/算法）</li>
+      <li><b>典型岗位：</b>医疗机器人工程师、视觉导航算法工程师、临床验证工程师</li>
+      <li><b>薪资参考：</b>医疗机器人工程师月薪2-4万；视觉算法月薪2.5-5万</li>
+    </ul>
+    <h3 class="sub-title sc">地域优势</h3>
+    <p>上海（医疗机器人企业聚集/微创）、深圳（迈瑞/联影）、北京（天智航）</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① 医疗机器人是机器人工程最温暖的就业方向之一；② 视觉导航和精密控制是核心技术；③ FDA等监管审批流程的理解也是重要能力。</p>
+    </div>
+  </div>
+</div>
+<div class="card science">
+  <div class="card-head">
+    <h2>全球最大民航维修机库项目进入实质性施工</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 IT家科学探索</span><span>🕐 2026-08-20 09:00</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>中国铁建承建的阿联酋航空机场维修机库项目完成全部20根试验桩灌注施工，标志着全球最大民航维修机库项目进入实质性施工阶段。这是近年来中企走出去最大订单。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>中国基建企业在海外大型项目中的竞争力持续增强。民航维修是航空产业链的重要环节，全球MRO（维护、修理和大修）市场规模超800亿美元。</p>
+    <h3 class="sub-title sc">关联专业</h3>
+    <ul>
+      <li>土木工程</li>
+      <li>工程管理</li>
+      <li>飞行器维修工程</li>
+      <li>机械工程</li>
+    </ul>
+    <h3 class="sub-title sc">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>本科可入行（施工管理/维修技术），硕士优先（项目管理/设计）</li>
+      <li><b>典型岗位：</b>国际工程项目经理、民航维修工程师、结构工程师</li>
+      <li><b>薪资参考：</b>国际工程项目经理年薪30-60万；民航维修工程师月薪1.5-3万</li>
+    </ul>
+    <h3 class="sub-title sc">地域优势</h3>
+    <p>北京（中国铁建总部）、上海（航空维修企业）、广州/深圳（南航维修基地）、海外项目</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① 国际工程项目需要外语+工程的复合能力，薪资溢价明显；② 民航维修是航空产业链中人才缺口大的方向；③ 中国基建走出去为土木工程专业提供了国际化就业机会。</p>
+    </div>
+  </div>
+</div>
+<div class="card science">
+  <div class="card-head">
+    <h2>科研人员发现大脑全新神经调控环路</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 IT家科学探索</span><span>🕐 2026-08-20 08:00</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>中科院团队揭示大脑伏隔核内的D1与D2神经元能通过调控胆碱能系统，控制杏仁核释放乙酰胆碱，从而标记外界刺激的重要性。这一发现为理解情绪及学习障碍提供了新视角。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>脑科学研究进入神经环路精细化阶段。中国脑计划在神经环路解析方面取得系列成果，为脑疾病治疗和类脑智能提供了基础。</p>
+    <h3 class="sub-title sc">关联专业</h3>
+    <ul>
+      <li>神经科学</li>
+      <li>生物医学工程</li>
+      <li>心理学</li>
+      <li>基础医学</li>
+    </ul>
+    <h3 class="sub-title sc">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>博士为主（科研岗）</li>
+      <li><b>典型岗位：</b>神经科学研究员、脑机接口研究员</li>
+      <li><b>薪资参考：</b>神经科学研究员年薪20-40万</li>
+    </ul>
+    <h3 class="sub-title sc">地域优势</h3>
+    <p>北京（中科院脑智卓越中心）、上海（脑科学中心）、深圳（先进院）、合肥</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① 脑科学是国家战略方向，中国脑计划投入持续加大；② 神经环路研究是基础科学的核心方向；③ 脑科学+AI的交叉方向（类脑计算）就业前景好。</p>
+    </div>
+  </div>
+</div>
+<div class="card science">
+  <div class="card-head">
+    <h2>中国科大领衔团队首次利用暗腔实现超导无接触增强</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 IT家科学探索</span><span>🕐 2026-08-20 00:00</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>中国科大团队将超导体二硒化铌嵌入暗腔后，其超导临界温度最高提升5.4%，系全球首次实验观测到真空涨落增强超导效应，成果登上《自然》。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>超导研究迎来新思路。真空涨落增强超导是一种全新的物理机制，为理解超导本质提供了新视角。室温超导是物理学界的终极目标之一。</p>
+    <h3 class="sub-title sc">关联专业</h3>
+    <ul>
+      <li>物理学</li>
+      <li>材料科学与工程</li>
+      <li>凝聚态物理</li>
+      <li>应用物理学</li>
+    </ul>
+    <h3 class="sub-title sc">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>博士为主（科研岗）</li>
+      <li><b>典型岗位：</b>凝聚态物理研究员、超导材料研究员</li>
+      <li><b>薪资参考：</b>物理研究员年薪15-40万（科研院所/高校）</li>
+    </ul>
+    <h3 class="sub-title sc">地域优势</h3>
+    <p>合肥（中国科大/中科院合肥物质研究院）、北京（物理所）、上海</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① 超导研究是物理学最前沿的方向之一，中国科大有深厚积累；② 室温超导如果实现将颠覆能源和交通行业；③ 建议本科选物理学，研究生进入凝聚态物理方向。</p>
+    </div>
+  </div>
+</div>
+<div class="card science">
+  <div class="card-head">
+    <h2>智启蓉城 驭见新势——2026成都国际车展</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 车讯网</span><span>🕐 2026-08-20 00:00</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>2026第二十九届成都国际汽车展览会即将盛大启幕。在国内汽车市场迈向电动智能化深度转型的关键节点，作为下半年A级车展风向标，车讯网全程实地报道。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>成都车展已成为中国车市下半年最重要的风向标。2026年新能源乘用车渗透率预计超50%，智驾、座舱、底盘的融合创新成为竞争焦点。</p>
+    <h3 class="sub-title sc">关联专业</h3>
+    <ul>
+      <li>车辆工程</li>
+      <li>自动化</li>
+      <li>市场营销</li>
+      <li>新闻传播学</li>
+    </ul>
+    <h3 class="sub-title sc">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>本科可入行</li>
+      <li><b>典型岗位：</b>汽车媒体人、市场营销专员、产品策划</li>
+      <li><b>薪资参考：</b>汽车媒体月薪0.8-2万；产品策划月薪1.5-3万</li>
+    </ul>
+    <h3 class="sub-title sc">地域优势</h3>
+    <p>成都（西南车市中心）、上海（各大车展）、北京/广州</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① 车展报道是汽车媒体和市场营销专业的实践机会；② 成都作为西南消费中心，汽车市场活跃；③ 新能源+智能汽车的营销需要懂技术的传播人才。</p>
+    </div>
+  </div>
+</div>
+<div class="card science">
+  <div class="card-head">
+    <h2>住房公积金管理条例修改解读</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 中国日报财经</span><span>🕐 2026-08-20 11:25</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>《住房公积金管理条例》修改，扩大公积金覆盖面，强化全链条赋能。新政策旨在让更多灵活就业人员和新市民享受公积金制度红利。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>住房公积金制度改革是住房保障体系完善的重要一环。灵活就业人员参保、公积金数字化服务等新举措为相关领域的专业服务创造了机会。</p>
+    <h3 class="sub-title sc">关联专业</h3>
+    <ul>
+      <li>公共管理</li>
+      <li>法学</li>
+      <li>工程管理</li>
+      <li>会计学</li>
+    </ul>
+    <h3 class="sub-title sc">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>本科可入行</li>
+      <li><b>典型岗位：</b>公积金管理专员、住房保障政策研究员</li>
+      <li><b>薪资参考：</b>公积金管理月薪0.8-1.5万（体制内稳定）</li>
+    </ul>
+    <h3 class="sub-title sc">地域优势</h3>
+    <p>各城市住房公积金管理中心</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① 公积金管理属于体制内岗位，稳定但薪资一般；② 建议公共管理或法学背景；③ 公积金数字化服务是新方向，IT+公共管理的交叉背景有机会。</p>
+    </div>
+  </div>
+</div>
+<div class="card science">
+  <div class="card-head">
+    <h2>今年前7月国家铁路发送货物23.5亿吨</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 新华文旅</span><span>🕐 2026-08-20 00:00</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>2026年前7个月国家铁路发送货物23.5亿吨，铁路运输在物流体系中的地位持续巩固。铁路货运在大宗商品、集装箱运输等方面具有运量大、成本低的优势。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>铁路货运是现代物流体系的重要组成部分。多式联运、智能物流等新模式正在改变传统铁路货运的运营方式。</p>
+    <h3 class="sub-title sc">关联专业</h3>
+    <ul>
+      <li>交通运输</li>
+      <li>物流管理</li>
+      <li>铁道工程</li>
+      <li>自动化</li>
+    </ul>
+    <h3 class="sub-title sc">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>本科可入行</li>
+      <li><b>典型岗位：</b>铁路货运调度员、物流规划师</li>
+      <li><b>薪资参考：</b>铁路货运调度月薪0.8-1.5万；物流规划月薪1-2万</li>
+    </ul>
+    <h3 class="sub-title sc">地域优势</h3>
+    <p>北京（国铁集团总部）、武汉、郑州（铁路枢纽城市）</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① 铁路货运是交通运输专业的对口方向，国企为主，就业稳定；② 多式联运和智能物流是新趋势；③ 郑州、武汉等铁路枢纽城市就业机会多。</p>
+    </div>
+  </div>
+</div>
+
+
+  <div id="section-arts" style="display:flex;align-items:center;gap:10px;margin:30px 0 18px;padding:12px 20px;background:linear-gradient(90deg,#f0fff4,#fff);border-radius:10px;border-left:4px solid #48bb78;">
+    <span style="font-size:20px;">📚</span>
+    <span style="font-size:17px;font-weight:700;color:#276749;">文科资讯</span>
+    <span style="font-size:13px;color:#718096;margin-left:4px;">共 3 条</span>
+  </div>
+
+<div class="card arts">
+  <div class="card-head">
+    <h2>40万亿美元！狂飙的美债如何危害全球</h2>
+    <span style="background:#f0fff4;color:#48bb78;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">文科</span>
+  </div>
+  <div class="meta"><span>📰 中国日报财经</span><span>🕐 2026-08-20 11:20</span></div>
+  <div class="content">
+    <h3 class="sub-title gg">事件背景</h3>
+    <p>美国国债规模已突破40万亿美元，持续膨胀的美债对全球金融稳定构成系统性风险。高利率环境下的利息支出挤占财政空间，新兴市场面临资本外流压力。</p>
+    <h3 class="sub-title gg">行业简述</h3>
+    <p>美债问题成为全球金融市场的核心关注点。美元信用体系受到挑战，各国央行增持黄金、推动去美元化。国际金融治理体系面临重构。</p>
+    <h3 class="sub-title gg">关联专业</h3>
+    <ul>
+      <li>金融学</li>
+      <li>经济学</li>
+      <li>国际经济与贸易</li>
+      <li>统计学</li>
+    </ul>
+    <h3 class="sub-title gg">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>硕士起步（研究/分析），博士（央行/国际组织）</li>
+      <li><b>典型岗位：</b>固收研究员、宏观经济分析师、国际金融市场分析师</li>
+      <li><b>薪资参考：</b>固收研究员年薪25-60万；宏观分析师年薪20-50万</li>
+    </ul>
+    <h3 class="sub-title gg">地域优势</h3>
+    <p>上海（基金/资管最密集）、北京（央行/大型券商）、深圳</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① 美债研究是固收领域的核心课题，建议学习固定收益证券和宏观经济学；② 国际金融治理体系变革创造了新的研究机会；③ 建议考取CFA/FRM提升竞争力。</p>
+    </div>
+  </div>
+</div>
+<div class="card arts">
+  <div class="card-head">
+    <h2>新一期贷款市场报价利率未作调整</h2>
+    <span style="background:#f0fff4;color:#48bb78;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">文科</span>
+  </div>
+  <div class="meta"><span>📰 中国日报财经</span><span>🕐 2026-08-20 11:21</span></div>
+  <div class="content">
+    <h3 class="sub-title gg">事件背景</h3>
+    <p>最新一期LPR（贷款市场报价利率）保持不变，1年期和5年期以上LPR均维持此前水平。这反映了央行在当前经济环境下保持货币政策稳定性的取向。</p>
+    <h3 class="sub-title gg">行业简述</h3>
+    <p>LPR是贷款利率的基准，直接影响房贷、企业贷款等。LPR连续持平说明货币政策进入观察期，市场利率已在相对合理水平。对金融从业者的政策分析能力提出更高要求。</p>
+    <h3 class="sub-title gg">关联专业</h3>
+    <ul>
+      <li>金融学</li>
+      <li>经济学</li>
+      <li>会计学</li>
+      <li>财务管理</li>
+    </ul>
+    <h3 class="sub-title gg">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>本科可入行（银行/券商），硕士优先（研究/资管）</li>
+      <li><b>典型岗位：</b>银行信贷分析师、利率策略研究员、固定收益交易员</li>
+      <li><b>薪资参考：</b>信贷分析师月薪1-2万；利率策略研究员年薪25-50万</li>
+    </ul>
+    <h3 class="sub-title gg">地域优势</h3>
+    <p>上海（银行间市场/中国外汇交易中心）、北京（央行/大型银行总部）、深圳</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① LPR研究是银行间市场交易员的核心技能；② 建议学习利率衍生品和固定收益分析；③ 银行间市场交易员需通过本币交易员资格考试。</p>
+    </div>
+  </div>
+</div>
+<div class="card arts">
+  <div class="card-head">
+    <h2>中国240小时过境免签朋友圈扩展至57国</h2>
+    <span style="background:#f0fff4;color:#48bb78;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">文科</span>
+  </div>
+  <div class="meta"><span>📰 中国日报财经</span><span>🕐 2026-08-20 11:23</span></div>
+  <div class="content">
+    <h3 class="sub-title gg">事件背景</h3>
+    <p>中国240小时过境免签政策适用范围扩展至57个国家，进一步便利外籍人员来华旅游、商务和学术交流。这一政策有力推动了入境旅游和国际交流。</p>
+    <h3 class="sub-title gg">行业简述</h3>
+    <p>免签政策持续放宽是中国对外开放的重要信号。入境旅游市场快速恢复，上海、北京、成都等城市成为外国游客首选目的地。文旅、翻译、国际交流等领域人才需求增加。</p>
+    <h3 class="sub-title gg">关联专业</h3>
+    <ul>
+      <li>旅游管理</li>
+      <li>外语（英语/小语种）</li>
+      <li>国际关系</li>
+      <li>新闻传播学</li>
+    </ul>
+    <h3 class="sub-title gg">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>本科可入行</li>
+      <li><b>典型岗位：</b>入境旅游策划、国际交流专员、多语种翻译</li>
+      <li><b>薪资参考：</b>入境旅游策划月薪0.8-1.5万；多语种翻译月薪1-2万</li>
+    </ul>
+    <h3 class="sub-title gg">地域优势</h3>
+    <p>上海（入境游第一站）、北京（国际交流中心）、成都（西南门户）、广州</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① 免签政策放宽为外语类专业创造了更多就业机会；② 入境旅游策划需要外语+文旅的复合能力；③ 小语种人才在免签政策扩展中受益最大。</p>
+    </div>
+  </div>
+</div>
+</div>
+
+<script>
+function showIndex() {
+  if (window.parent && window.parent.showIndex) { window.parent.showIndex(); return; }
+  window.location.href = 'index.html';
+}
+function scrollToSection(id) {
+  var el = document.getElementById(id);
+  if (!el) return;
+  var top = el.offsetTop - 20;
+  window.scrollTo({ top: top, behavior: 'smooth' });
+}
+</script>
+
+</body>
+</html>

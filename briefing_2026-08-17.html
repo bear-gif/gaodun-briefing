@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>高顿升学·每日行业速览 | 2026-08-17</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif; background: #f5f7fa; color: #1a1a2e; line-height: 1.7; }
+
+  /* 顶部导航 */
+  .top-nav { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); color: #fff; padding: 28px 40px 20px; position: sticky; top: 0; z-index: 100; }
+  .top-nav h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; letter-spacing: 1px; }
+  .top-nav .subtitle { font-size: 14px; color: #a0aec0; margin-bottom: 14px; }
+  .nav-row { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+  .nav-row a { color: #63b3ed; text-decoration: none; font-size: 13px; padding: 4px 12px; border-radius: 14px; border: 1px solid rgba(99,179,237,0.3); transition: all 0.2s; }
+  .nav-row a:hover, .nav-row a.active { background: rgba(99,179,237,0.15); border-color: #63b3ed; }
+  .nav-row a.active { font-weight: 600; }
+  .anchor-links { display: flex; gap: 10px; margin-left: auto; }
+  .anchor-links a { font-size: 13px; color: #e2e8f0; background: rgba(255,255,255,0.08); padding: 5px 14px; border-radius: 14px; text-decoration: none; }
+  .anchor-links a:hover { background: rgba(255,255,255,0.16); }
+  .btn-print { background: #4299e1; color: #fff; border: none; padding: 7px 18px; border-radius: 16px; font-size: 13px; cursor: pointer; transition: background 0.2s; }
+  .btn-print:hover { background: #3182ce; }
+  .btn-auto { background: linear-gradient(135deg, #48bb78, #38a169); color: #fff; border: none; padding: 7px 18px; border-radius: 16px; font-size: 13px; cursor: default; transition: all 0.2s; display: flex; align-items: center; gap: 6px; }
+  .btn-auto .pulse { width: 8px; height: 8px; background: #fff; border-radius: 50%; animation: pulse-anim 2s infinite; }
+  @keyframes pulse-anim { 0%,100% { opacity: 1; } 50% { opacity: 0.4; } }
+  .auto-info { font-size: 11px; color: #a0aec0; margin-top: 8px; }
+
+  /* 主体 */
+  .container { max-width: 960px; margin: 0 auto; padding: 30px 20px 60px; }
+
+  /* 报告头部 */
+  .report-header { background: #fff; border-radius: 14px; padding: 28px 32px; margin-bottom: 24px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+  .report-header .date-line { font-size: 20px; font-weight: 700; color: #1a1a2e; margin-bottom: 6px; }
+  .report-header .stats { font-size: 14px; color: #718096; margin-bottom: 16px; }
+  .report-header .stats span { display: inline-block; margin-right: 14px; }
+  .core-judgments { background: #f7fafc; border-left: 4px solid #4299e1; padding: 16px 20px; border-radius: 0 8px 8px 0; }
+  .core-judgments h3 { font-size: 15px; color: #2d3748; margin-bottom: 8px; }
+  .core-judgments ul { list-style: none; }
+  .core-judgments li { font-size: 14px; color: #4a5568; padding: 4px 0; padding-left: 18px; position: relative; }
+  .core-judgments li::before { content: "▸"; position: absolute; left: 0; color: #4299e1; font-weight: bold; }
+
+  /* 资讯卡片 */
+  .card { background: #fff; border-radius: 14px; padding: 28px 32px; margin-bottom: 20px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); border-top: 4px solid transparent; }
+  .card.science { border-top-color: #4299e1; }
+  .card.arts { border-top-color: #48bb78; }
+  .card.general { border-top-color: #9f7aea; }
+  .card-head { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; flex-wrap: wrap; }
+  .card-head h2 { font-size: 18px; font-weight: 700; color: #1a1a2e; flex: 1; min-width: 200px; }
+  .tag { display: inline-block; font-size: 12px; font-weight: 600; padding: 3px 12px; border-radius: 12px; white-space: nowrap; }
+  .tag-science { background: #ebf8ff; color: #2b6cb0; }
+  .tag-arts { background: #f0fff4; color: #276749; }
+  .tag-general { background: #faf5ff; color: #6b46c1; }
+
+  .section-title { font-size: 14px; font-weight: 700; color: #2d3748; margin: 16px 0 6px; display: flex; align-items: center; gap: 6px; }
+  .section-title::before { content: ""; display: inline-block; width: 4px; height: 14px; border-radius: 2px; }
+  .section-title.bg { color: #2b6cb0; } .section-title.bg::before { background: #4299e1; }
+  .section-title.gg { color: #276749; } .section-title.gg::before { background: #48bb78; }
+  .section-title.pu { color: #6b46c1; } .section-title.pu::before { background: #9f7aea; }
+  .section-title.or { color: #c05621; } .section-title.or::before { background: #ed8936; }
+  .section-title.rd { color: #c53030; } .section-title.rd::before { background: #e53e3e; }
+  .section-title.te { color: #2c7a7b; } .section-title.te::before { background: #38b2ac; }
+
+  .card p, .card li { font-size: 14px; color: #4a5568; }
+  .card ul { list-style: disc; padding-left: 20px; }
+  .card li { margin: 3px 0; }
+
+  .tip-block { background: #fef3c7; border-radius: 8px; padding: 12px 16px; margin-top: 14px; }
+  .tip-block .section-title { color: #92400e; margin-top: 0; }
+  .tip-block .section-title::before { background: #f59e0b; }
+  .tip-block p { font-size: 14px; color: #78350f; }
+
+  /* 底部 */
+  .footer { text-align: center; padding: 30px 20px; color: #a0aec0; font-size: 12px; border-top: 1px solid #e2e8f0; margin-top: 40px; }
+  .footer p { margin: 4px 0; }
+
+  /* 打印样式 */
+  @media print {
+    * { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+    html { margin: 0; padding: 0; }
+    body { background: #fff; font-size: 12px; line-height: 1.5; }
+    .top-nav { position: static; }
+    .no-print { display: none !important; }
+    
+    /* 主体容器 */
+    .container { max-width: 100%; padding: 0; margin: 0; }
+    
+    /* 报告头部 */
+    .report-header { 
+      box-shadow: none; 
+      border: 1px solid #e2e8f0; 
+      padding: 16px 20px;
+      margin-bottom: 12px;
+      page-break-inside: avoid;
+    }
+    .report-header .date-line { font-size: 16px; margin-bottom: 4px; }
+    .report-header .stats { font-size: 12px; margin-bottom: 10px; }
+    .core-judgments { padding: 10px 14px; margin-top: 8px; }
+    .core-judgments h3 { font-size: 13px; margin-bottom: 6px; }
+    .core-judgments li { font-size: 12px; padding: 2px 0 2px 14px; }
+    
+    /* 分区标题 */
+    div[id^="section-"] {
+      page-break-after: avoid;
+      margin: 8px 0 10px !important;
+      padding: 8px 14px !important;
+    }
+    
+    /* 卡片 - 允许分页但避免关键信息被打断 */
+    .card { 
+      box-shadow: none; 
+      border: 1px solid #e2e8f0; 
+      padding: 14px 18px;
+      margin-bottom: 10px;
+      page-break-inside: auto;
+      break-inside: auto;
+    }
+    .card-head { margin-bottom: 8px; }
+    .card-head h2 { font-size: 14px; }
+    .tag { font-size: 11px; padding: 2px 8px; }
+    
+    /* 卡片内部区块 - 避免单个区块被分页打断 */
+    .card .section-title { 
+      page-break-after: avoid; 
+      margin: 8px 0 4px;
+      font-size: 12px;
+    }
+    .card p, .card li { 
+      font-size: 12px; 
+      page-break-inside: avoid;
+    }
+    .card ul { 
+      page-break-inside: avoid;
+      margin: 4px 0;
+    }
+    
+    /* 报考小贴士 */
+    .tip-block { 
+      page-break-inside: avoid;
+      padding: 8px 12px !important;
+      margin-top: 8px !important;
+    }
+    
+    /* 底部 */
+    .footer { 
+      padding: 12px 10px; 
+      font-size: 10px;
+      margin-top: 20px;
+    }
+    
+    /* 页面边距 */
+    @page {
+      margin: 1.2cm;
+      size: A4;
+    }
+  }
+</style>
+
+</head>
+<body>
+
+<!-- 顶部导航 -->
+<div class="top-nav no-print">
+  <h1>高顿升学·每日行业速览</h1>
+  <div class="subtitle">每日精选行业资讯，连接专业与就业决策</div>
+  <div class="nav-row">
+    <span style="font-size:13px;color:#a0aec0;">历史报告：</span>
+    <a href="briefing_2026-08-17.html" class="active">第1期 · 2026-08-17</a>
+    <a href="briefing_2026-08-18.html">第2期 · 2026-08-18</a>
+    <a href="briefing_2026-08-19.html">第3期 · 2026-08-19</a>
+    
+      <a href="javascript:void(0)" onclick="scrollToSection('section-science')">理工科资讯</a>
+      <a href="javascript:void(0)" onclick="scrollToSection('section-arts')">文科资讯</a>
+      <button class="btn-print" onclick="downloadPDF('2026-08-17', this)">📥 打印为PDF</button>
+      <div class="btn-auto"><span class="pulse"></span> 自动更新已开启</div>
+    </div>
+  </div>
+  <div class="auto-info">⏰ 每日 09:00 自动更新 · 上次更新：2026-08-18 09:46 · <a href="https://www.coze.cn/s/18CLiRS8PeA/" target="_blank" style="color:#63b3ed;text-decoration:underline;">📋 查看所有历史报告</a></div>
+</div>
+
+<div class="container">
+
+<!-- 报告头部 -->
+<div class="report-header">
+  <div class="date-line">📅 第1期 · 2026年8月17日（星期一）</div>
+  <div class="stats">
+    <span>📊 资讯总数：<strong>15</strong> 条</span>
+    <span>🔬 理工科：<strong>11</strong> 条</span>
+    <span>📚 文科：<strong>4</strong> 条</span>
+  </div>
+  <div class="core-judgments">
+    <h3>🎯 本期核心判断</h3>
+    <ul>
+      <li>AI基础设施进入"Token经济"时代，算力、大模型、AI编程岗位需求激增，计算机/软件工程专业持续走强</li>
+      <li>人形机器人产业爆发：宇树科技科创板上市，具身智能人才供需比5.2:1，算法岗年薪可达80万+</li>
+      <li>中国开源大模型全球下载量第一，打破闭源定价体系，大模型微调与部署工程师缺口扩大</li>
+      <li>商业航天高密度发射常态化，火箭设计工程师月薪1.5-6万，国防七子毕业生就业优势明显</li>
+      <li>AI+农业垂直大模型落地，智慧农业交叉人才（农学+计算机）成为新蓝海</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ========== 理工科资讯 ========== -->
+<div id="section-science" style="display:flex;align-items:center;gap:10px;margin:10px 0 18px;padding:12px 20px;background:linear-gradient(90deg,#ebf8ff,#fff);border-radius:10px;border-left:4px solid #4299e1;">
+  <span style="font-size:20px;">🔬</span>
+  <span style="font-size:17px;font-weight:700;color:#2b6cb0;">理工科资讯</span>
+  <span style="font-size:13px;color:#718096;margin-left:4px;">共 11 条</span>
+</div>
+
+<!-- 卡片1：杨元庆 AI -->
+<div class="card science">
+  <div class="card-head">
+    <h2>杨元庆：AI可能局部过热，但远未结束</h2>
+    <span class="tag tag-science">理工科</span>
+  </div>
+  <div class="section-title bg">事件背景</div>
+  <p>联想集团2026/27财年Q1营收1834亿元（同比+43%），调整后净利润首破10亿美元，AI相关业务增速超60%，收入占比达集团35%。基础设施方案业务（ISG）营收接近翻番至579亿元，AI服务器订单储备超3600亿元。杨元庆判断AI局部过热但远未结束，推理需求和Token使用量正推动AI进入规模化应用阶段。</p>
+  <div class="section-title gg">行业简述</div>
+  <p>全球AI基础设施市场处于爆发期，2026年Q1全球服务器市场收入同比增长30.4%达1226亿美元。超大规模云服务商持续加码AI资本开支，企业级AI部署深化，从"卖硬件"向"卖算力服务"转型。</p>
+  <div class="section-title pu">关联专业</div>
+  <ul>
+    <li>计算机科学与技术</li>
+    <li>电子信息工程</li>
+    <li>人工智能</li>
+    <li>自动化</li>
+  </ul>
+  <div class="section-title or">学历·岗位·薪资</div>
+  <ul>
+    <li><strong>学历门槛：</strong>本科可进（运维/测试岗），硕士起步（算法/架构岗）</li>
+    <li><strong>典型岗位：</strong>AI基础设施工程师、服务器系统架构师、算力运维工程师、AI解决方案经理</li>
+    <li><strong>薪资参考：</strong>本科应届10-18万/年，硕士20-35万/年，资深架构师50-80万/年</li>
+  </ul>
+  <div class="section-title te">地域优势</div>
+  <p>北京、上海、深圳为AI基础设施核心聚集地；合肥（联想生产基地）、武汉（光谷）为第二梯队。</p>
+  <div class="tip-block">
+    <div class="section-title or">报考小贴士</div>
+    <p>① AI基础设施方向重工程实践能力，建议本科期间参与服务器集群/Linux运维等实训项目；② 联想、浪潮、新华三等厂商每年校招规模大，计算机/电子类专业对口率最高；③ 该方向不同于大模型算法岗，更偏底层系统工程，适合喜欢"硬工程"的同学。</p>
+  </div>
+</div>
+
+<!-- 卡片2：Stripe收购OpenRouter -->
+<div class="card science">
+  <div class="card-head">
+    <h2>超70亿美元，传Stripe达成收购OpenRouter协议</h2>
+    <span class="tag tag-science">理工科</span>
+  </div>
+  <div class="section-title bg">事件背景</div>
+  <p>支付公司Stripe已敲定收购AI模型路由平台OpenRouter的协议，交易价格超过70亿美元。OpenRouter是全球最大的中立LLM路由平台，2026年春季中国开源模型在该平台Token消耗占比达61%。此次收购标志着AI"模型路由"赛道进入巨头整合阶段。</p>
+  <div class="section-title gg">行业简述</div>
+  <p>AI模型路由（Model Routing）成为企业级AI部署的标准架构，根据任务自动选择最优/最便宜模型，降低API成本。该赛道连接大模型厂商与企业用户，是AI商业化的关键中间层。</p>
+  <div class="section-title pu">关联专业</div>
+  <ul>
+    <li>计算机科学与技术</li>
+    <li>软件工程</li>
+    <li>数据科学与大数据技术</li>
+  </ul>
+  <div class="section-title or">学历·岗位·薪资</div>
+  <ul>
+    <li><strong>学历门槛：</strong>硕士起步（核心研发），本科可进（运营/商务）</li>
+    <li><strong>典型岗位：</strong>AI平台后端工程师、模型路由算法工程师、AI产品经理、API集成工程师</li>
+    <li><strong>薪资参考：</strong>后端工程师25-50K/月，算法工程师30-60K/月，AI产品经理20-40K/月</li>
+  </ul>
+  <div class="section-title te">地域优势</div>
+  <p>全国性需求；AI平台类公司集中在北京、上海、深圳，远程岗位比例较高。</p>
+  <div class="tip-block">
+    <div class="section-title or">报考小贴士</div>
+    <p>① "模型路由"是AI工程化新方向，需要同时理解大模型能力和系统工程，建议学习LLM API集成与微服务架构；② 该领域创业机会多，适合有一定工程经验后进入；③ 关注OpenRouter、LiteLLM等开源项目的实践。</p>
+  </div>
+</div>
+
+<!-- 卡片3：马斯克收购Cursor -->
+<div class="card science">
+  <div class="card-head">
+    <h2>600亿美元买条近路，马斯克收购Cursor</h2>
+    <span class="tag tag-science">理工科</span>
+  </div>
+  <div class="section-title bg">事件背景</div>
+  <p>8月14日，SpaceX完成对AI编程工具Cursor母公司Anysphere的全股票收购，交易价值600亿美元。Cursor是全球第二大AI编程IDE，年营收超20亿美元，拥有400万开发者用户。收购后Cursor将整合进SpaceXAI，Grok模型深度嵌入编程工作流，开启"vibe coding"时代。</p>
+  <div class="section-title gg">行业简述</div>
+  <p>AI编程工具市场三足鼎立：Copilot（微软）、Cursor（SpaceX）、Claude Code（Anthropic）。AI正在从"辅助编码"转向"自主完成软件工程任务"，初级开发岗位面临重塑，"AI编排师"角色崛起。</p>
+  <div class="section-title pu">关联专业</div>
+  <ul>
+    <li>软件工程</li>
+    <li>计算机科学与技术</li>
+    <li>人工智能</li>
+  </ul>
+  <div class="section-title or">学历·岗位·薪资</div>
+  <ul>
+    <li><strong>学历门槛：</strong>本科可进（前端/全栈开发），硕士优先（AI算法岗）</li>
+    <li><strong>典型岗位：</strong>AI编程工具开发工程师、大模型应用工程师、开发者体验工程师、全栈工程师</li>
+    <li><strong>薪资参考：</strong>AI编程工具研发30-60K/月；国内对标岗位（字节Trae、阿里Qoder）算法工程师35-70K/月</li>
+  </ul>
+  <div class="section-title te">地域优势</div>
+  <p>北京（字节Trae）、杭州（阿里Qoder）、深圳（腾讯CodeBuddy）、上海为主力招聘城市。</p>
+  <div class="tip-block">
+    <div class="section-title or">报考小贴士</div>
+    <p>① AI编程赛道要求"懂编程+懂模型"，计算机专业学生应主动学习LLM原理和Prompt Engineering；② 纯初级编码岗位正在被AI替代，建议向系统设计、架构方向提升；③ 国内字节、阿里、智谱等公司AI编程团队扩招明显，可关注实习机会。</p>
+  </div>
+</div>
+
+<!-- 卡片4：阿里通义千问 -->
+<div class="card science">
+  <div class="card-head">
+    <h2>全球第一：阿里通义千问AI模型全球下载量破20亿</h2>
+    <span class="tag tag-science">理工科</span>
+  </div>
+  <div class="section-title bg">事件背景</div>
+  <p>Hugging Face报告显示，阿里千问（Qwen）系列在HF平台累计下载量达20.45亿次，超越Meta成为全球第一。千问已开源超460个模型，衍生模型超30万个，59%采用Apache 2.0协议。阿里云AI相关产品季度收入89.71亿元，年化突破358亿元。开源模型正在成为AI产业"水电煤"。</p>
+  <div class="section-title gg">行业简述</div>
+  <p>2025-2026年开源大模型与闭源差距缩至3%以内，企业AI部署中开源私有化占比从18%飙升至57%。大模型微调工程师、部署运维工程师、AI应用开发工程师需求井喷。</p>
+  <div class="section-title pu">关联专业</div>
+  <ul>
+    <li>人工智能</li>
+    <li>计算机科学与技术</li>
+    <li>数据科学与大数据技术</li>
+    <li>软件工程</li>
+  </ul>
+  <div class="section-title or">学历·岗位·薪资</div>
+  <ul>
+    <li><strong>学历门槛：</strong>本科可进（部署运维/数据标注），硕士起步（模型微调/训练），博士优先（预训练研究）</li>
+    <li><strong>典型岗位：</strong>大模型微调工程师、AI推理优化工程师、MLOps工程师、AI应用开发工程师</li>
+    <li><strong>薪资参考：</strong>大模型微调工程师25-50K/月；MLOps工程师20-40K/月；据猎聘数据，模型算法工程师全国均价28K/月</li>
+  </ul>
+  <div class="section-title te">地域优势</div>
+  <p>杭州（阿里总部）、北京（智谱/百度）、深圳（腾讯/华为）、上海为四大AI模型人才聚集地。</p>
+  <div class="tip-block">
+    <div class="section-title or">报考小贴士</div>
+    <p>① 大模型方向"开源能力>论文数量"，建议在GitHub参与开源模型微调项目积累实战经验；② 掌握PyTorch + 至少一个推理框架（vLLM/TensorRT-LLM）即可入行；③ 模型部署和推理优化岗位对本科/硕士开放度高，不必卷预训练。</p>
+  </div>
+</div>
+
+<!-- 卡片5：中国大模型掀翻硅谷定价 -->
+<div class="card science">
+  <div class="card-head">
+    <h2>中国大模型，掀翻硅谷定价逻辑</h2>
+    <span class="tag tag-science">理工科</span>
+  </div>
+  <div class="section-title bg">事件背景</div>
+  <p>中国开源模型Token价格仅0.66美元/百万，远低于闭源的3.07美元。Hugging Face报告显示中国开源模型下载占比达41%，首次超过美国。DeepSeek V4、Qwen3.8、GLM-5.2等模型性能逼近闭源旗舰，开源生态从"追赶者"转变为"围剿者"，企业切换开源后AI支出下降75%-92%。</p>
+  <div class="section-title gg">行业简述</div>
+  <p>"开放权重+商业许可"模式正在重塑AI产业链。纯靠调闭源API赚差价的中间商承压，具备开源模型微调和私有化部署能力的工程师供不应求。</p>
+  <div class="section-title pu">关联专业</div>
+  <ul>
+    <li>人工智能</li>
+    <li>计算机科学与技术</li>
+    <li>软件工程</li>
+  </ul>
+  <div class="section-title or">学历·岗位·薪资</div>
+  <ul>
+    <li><strong>学历门槛：</strong>本科可进（应用开发/部署），硕士起步（模型优化/训练）</li>
+    <li><strong>典型岗位：</strong>开源模型部署工程师、AI应用架构师、模型量化/压缩工程师、AI技术顾问</li>
+    <li><strong>薪资参考：</strong>模型部署工程师20-40K/月；AI架构师40-70K/月；据公开信息，模型量化工程师平均35K/月</li>
+  </ul>
+  <div class="section-title te">地域优势</div>
+  <p>全国性需求。北京、上海、深圳、杭州为核心城市，远程工作机会较多。</p>
+  <div class="tip-block">
+    <div class="section-title or">报考小贴士</div>
+    <p>① 关注"模型压缩与边缘部署"方向，该方向将大模型跑在手机/IoT设备上，市场需求大且竞争相对温和；② 开源生态创业门槛低，计算机专业学生可通过微调开源模型做垂直场景Agent创业；③ 建议掌握Docker + Kubernetes + 模型服务化部署全链路。</p>
+  </div>
+</div>
+
+<!-- 卡片6：宇树科技上市 -->
+<div class="card science">
+  <div class="card-head">
+    <h2>宇树上市开启万亿赛道大考</h2>
+    <span class="tag tag-science">理工科</span>
+  </div>
+  <div class="section-title bg">事件背景</div>
+  <p>宇树科技科创板IPO发行价150.8元/股，上市市值约610亿元。2025年人形机器人出货量全球第一（超5500台），营收16.99亿元，净利润5.91亿元。DeepSeek战略入股1.41亿元，双方将共同开发面向人形硬件的多模态大模型。具身智能人才供需比5.2:1，核心算法岗年薪可达80万+。</p>
+  <div class="section-title gg">行业简述</div>
+  <p>2026-2028年为人形机器人量产验证期，全国相关企业15.3万家，租赁市场预估破百亿。核心瓶颈在具身智能——机器人在陌生环境中的稳定执行能力。算法、运动控制、嵌入式开发为最热招方向。</p>
+  <div class="section-title pu">关联专业</div>
+  <ul>
+    <li>机器人工程</li>
+    <li>自动化</li>
+    <li>机械工程</li>
+    <li>计算机科学与技术</li>
+  </ul>
+  <div class="section-title or">学历·岗位·薪资</div>
+  <ul>
+    <li><strong>学历门槛：</strong>本科可进（嵌入式/测试），硕士起步（算法/运动控制），博士优先（具身智能研究）</li>
+    <li><strong>典型岗位：</strong>运动控制算法工程师、嵌入式软件工程师、机器人数据运营工程师、SLAM算法工程师</li>
+    <li><strong>薪资参考：</strong>校招本科18-25K/月×13薪，硕士25-38K/月×13薪，博士52-65万/年；社招算法专家25-70K/月，资深年薪90万+</li>
+  </ul>
+  <div class="section-title te">地域优势</div>
+  <p>杭州（宇树总部）、北京（银河通用/星动纪元）、上海（智元机器人）、深圳（优必选/大族机器人）。</p>
+  <div class="tip-block">
+    <div class="section-title or">报考小贴士</div>
+    <p>① 机器人行业重实践，建议本科期间参加RoboMaster、机器人大赛等积累项目经验；② 核心算法岗（运动控制/强化学习/SLAM）基本要求985硕士+，本科可走嵌入式开发或机械结构方向；③ 宇树公积金12%顶格+免费三餐，非技术岗与核心技术岗待遇差距大，职能岗年薪仅12-20万。</p>
+  </div>
+</div>
+
+<!-- 卡片7：电磁驱动聚变 -->
+<div class="card science">
+  <div class="card-head">
+    <h2>我国电磁驱动聚变大科学装置单路脉冲源通过验收</h2>
+    <span class="tag tag-science">理工科</span>
+  </div>
+  <div class="section-title bg">事件背景</div>
+  <p>在西安交通大学试验现场，我国电磁驱动聚变大科学装置综合考核实验系统——单路脉冲源通过验收，迈出从图纸到实物的关键一步。该装置旨在实现电磁驱动聚变，是继惯性约束和磁约束之后的第三条聚变能源路线。同时，国内商业聚变公司（岩超聚能、能量奇点等）密集融资，产业化进程加速。</p>
+  <div class="section-title gg">行业简述</div>
+  <p>可控核聚变被称为"终极能源"，全球聚变领域初创公司已超40家，累计融资超60亿美元。中国在该领域有西安交大、中科院等离子体所等核心科研力量，等离子体物理、脉冲功率技术为关键瓶颈。</p>
+  <div class="section-title pu">关联专业</div>
+  <ul>
+    <li>核工程与核技术</li>
+    <li>等离子体物理</li>
+    <li>电气工程</li>
+    <li>能源与动力工程</li>
+  </ul>
+  <div class="section-title or">学历·岗位·薪资</div>
+  <ul>
+    <li><strong>学历门槛：</strong>硕士起步（实验/仿真），博士优先（物理研究）</li>
+    <li><strong>典型岗位：</strong>等离子体物理研究员、脉冲功率工程师、聚变装置仿真工程师、加热系统工程师</li>
+    <li><strong>薪资参考：</strong>等离子体物理研究员20-50K/月×15薪，脉冲功率工程师25-45K/月；据公开信息，聚变领域博士年薪50-80万</li>
+  </ul>
+  <div class="section-title te">地域优势</div>
+  <p>西安（西安交大）、合肥（中科院等离子体所/EAST）、上海（能量奇点/岩超聚能）、成都（瀚海聚能）。</p>
+  <div class="tip-block">
+    <div class="section-title or">报考小贴士</div>
+    <p>① 核聚变是超长周期赛道，适合对基础物理有热情、能接受长期科研的同学；② 西安交大、中科大、清华的核工程/等离子体物理方向是核心入口；③ 商业聚变公司近年融资活跃，硕士即可进入工程岗，不一定要走学术路线。</p>
+  </div>
+</div>
+
+<!-- 卡片8：SEO卫星发射 -->
+<div class="card science">
+  <div class="card-head">
+    <h2>我国成功发射SEO（地球观测）卫星</h2>
+    <span class="tag tag-science">理工科</span>
+  </div>
+  <div class="section-title bg">事件背景</div>
+  <p>我国在太原卫星发射中心使用长征二号丙火箭成功将SEO地球观测卫星送入预定轨道，为长征系列运载火箭第664次飞行。同日，长征十二号在海南商业航天发射场成功发射，从进场到点火仅用两天半，刷新二号工位最短占位纪录。商业航天进入高密度发射常态化阶段。</p>
+  <div class="section-title gg">行业简述</div>
+  <p>2026年中国商业航天进入密集发射期，火箭设计、发射保障、卫星制造全产业链人才需求旺盛。航天科技集团校招中航空宇航、控制、电子、计算机为TOP需求专业。</p>
+  <div class="section-title pu">关联专业</div>
+  <ul>
+    <li>航空航天工程</li>
+    <li>飞行器设计与工程</li>
+    <li>导航制导与控制</li>
+    <li>自动化</li>
+  </ul>
+  <div class="section-title or">学历·岗位·薪资</div>
+  <ul>
+    <li><strong>学历门槛：</strong>本科可进（总装/测试/发射保障），硕士起步（设计/研发），博士优先（核心研究）</li>
+    <li><strong>典型岗位：</strong>火箭结构设计师、控制系统工程师、发射支持工程师、卫星总体设计师</li>
+    <li><strong>薪资参考：</strong>航天科技集团应届本科10-18万/年，硕士15-30万/年，博士25-40万+/年；商业航天公司火箭设计师15-60K/月</li>
+  </ul>
+  <div class="section-title te">地域优势</div>
+  <p>北京（航天科技/科工总部）、上海（商业航天聚集地）、西安（航天四院/六院）、太原/文昌/海南（发射场）。</p>
+  <div class="tip-block">
+    <div class="section-title or">报考小贴士</div>
+    <p>① 国防七子（哈工大/北航/西工大/南航等）进入航天系统比例最高，航天科技集团新员工中国防七子占比超60%；② 航天央企六险两金+安家费（本科3-5万/硕士5-10万/博士10-20万），稳定性极强；③ 商业航天公司薪资更高但工作强度大，可根据个人偏好选择。</p>
+  </div>
+</div>
+
+<!-- 卡片9：稀土检测 -->
+<div class="card science">
+  <div class="card-head">
+    <h2>我国在稀土检测关键技术领域取得重要进展</h2>
+    <span class="tag tag-science">理工科</span>
+  </div>
+  <div class="section-title bg">事件背景</div>
+  <p>我国在稀土检测领域取得关键突破，成功研发电感耦合等离子体串联质谱法（ICP-MS/MS）等技术，克服了高纯稀土中杂质测定的基体干扰难题，实现精准快速检测。相关成果已在企业和检测机构广泛应用，助力我国从稀土大国向强国迈进。稀土作为"工业维生素"，在新能源、半导体、国防等领域不可替代。</p>
+  <div class="section-title gg">行业简述</div>
+  <p>中国稀土储量全球第一，但高端稀土材料（永磁体、催化材料、发光材料）仍面临提纯和检测瓶颈。随着新能源汽车、风电等产业对稀土永磁需求激增，稀土新材料研发和检测人才缺口扩大。</p>
+  <div class="section-title pu">关联专业</div>
+  <ul>
+    <li>材料科学与工程</li>
+    <li>化学工程与工艺</li>
+    <li>冶金工程</li>
+    <li>分析化学</li>
+  </ul>
+  <div class="section-title or">学历·岗位·薪资</div>
+  <ul>
+    <li><strong>学历门槛：</strong>本科可进（质检/生产管理），硕士起步（研发/检测技术），博士优先（高端材料研发）</li>
+    <li><strong>典型岗位：</strong>稀土材料研发工程师、检测工程师、稀土永磁材料工程师、质量管控工程师</li>
+    <li><strong>薪资参考：</strong>检测工程师15-25K/月；材料研发工程师15-40K/月；稀土新材料研发专家40-60K/月</li>
+  </ul>
+  <div class="section-title te">地域优势</div>
+  <p>内蒙古包头（北方稀土）、江西赣州（南方离子型稀土）、广东江门（科恒股份）、深圳（稀土靶材企业聚集）。</p>
+  <div class="tip-block">
+    <div class="section-title or">报考小贴士</div>
+    <p>① 稀土方向属于"冷门高薪"赛道，材料/化学专业但竞争不激烈，就业稳定；② 掌握ICP-MS、XRD等检测设备操作技能是核心竞争力；③ 包钢稀土、中国稀土集团、先导科技等为头部雇主。</p>
+  </div>
+</div>
+
+<!-- 卡片10：脑机接口 -->
+<div class="card science">
+  <div class="card-head">
+    <h2>海尔周云杰：预计2035年我国脑机接口市场规模将突破千亿</h2>
+    <span class="tag tag-science">理工科</span>
+  </div>
+  <div class="section-title bg">事件背景</div>
+  <p>海尔集团董事局主席周云杰发文称，脑机接口行业正处在从实验室走向产业化的关键爆发期，预计2035年我国脑机接口市场规模将突破千亿。近期脑机接口技术在临床试验中取得多项突破，包括死人大脑组织控制机械手等前沿研究。该领域涉及神经科学、芯片设计、信号处理、医疗器械等多个交叉学科。</p>
+  <div class="section-title gg">行业简述</div>
+  <p>脑机接口处于产业化前夜，医疗康复（瘫痪患者恢复运动功能）为最先落地场景。Neuralink等海外公司推动行业认知，国内博睿康、脑虎科技等初创企业快速成长，对跨学科人才需求强烈。</p>
+  <div class="section-title pu">关联专业</div>
+  <ul>
+    <li>生物医学工程</li>
+    <li>神经科学</li>
+    <li>电子信息工程</li>
+    <li>计算机科学与技术</li>
+  </ul>
+  <div class="section-title or">学历·岗位·薪资</div>
+  <ul>
+    <li><strong>学历门槛：</strong>硕士起步（算法/信号处理），博士优先（神经科学/芯片设计）</li>
+    <li><strong>典型岗位：</strong>脑电信号处理算法工程师、神经接口芯片设计师、脑机系统工程师、医疗器械注册专员</li>
+    <li><strong>薪资参考：</strong>据公开信息，脑机接口领域算法工程师25-50K/月；芯片设计工程师30-60K/月；该领域整体薪资高于传统医疗器械</li>
+  </ul>
+  <div class="section-title te">地域优势</div>
+  <p>上海（博睿康/脑虎科技）、北京（清华系脑科学团队）、杭州（海尔医疗布局）、深圳（医疗器械产业带）。</p>
+  <div class="tip-block">
+    <div class="section-title or">报考小贴士</div>
+    <p>① 脑机接口是典型交叉学科，建议本科选生物医学工程或电子信息，研究生阶段再聚焦脑科学方向；② 该领域博士学历优势极大，硕士主要做信号处理和系统集成；③ 行业处于早期，创业和科研机会多，但商业化岗位数量有限，适合有科研志向的同学。</p>
+  </div>
+</div>
+
+<!-- 卡片11：大豆大模型"丰菽"2.0 -->
+<div class="card science">
+  <div class="card-head">
+    <h2>我国科学家发布大豆垂直大模型"丰菽"2.0</h2>
+    <span class="tag tag-science">理工科</span>
+  </div>
+  <div class="section-title bg">事件背景</div>
+  <p>安徽农业大学联合中国农科院发布大豆大模型"丰菽"2.0，这是我国首个面向大豆全生命周期的生成式AI育种平台。2.0版本新增多模型协同分析机制，整合超1000万字文本、1万余篇文献专利、2万个实体知识图谱及多组学数据，支持病害诊断、亲本筛选、虚拟育种等六大功能，推动大豆育种从"经验驱动"向"数据辅助决策"转变。</p>
+  <div class="section-title gg">行业简述</div>
+  <p>AI+农业是"新质生产力"重要方向，除大豆外，梨产业"棃想"大模型、茶产业"陆羽"大模型等也在安徽相继落地。农业AI交叉人才（农学+计算机）成为新蓝海，智慧农业正从概念走向落地。</p>
+  <div class="section-title pu">关联专业</div>
+  <ul>
+    <li>智慧农业</li>
+    <li>农学</li>
+    <li>人工智能</li>
+    <li>生物信息学</li>
+  </ul>
+  <div class="section-title or">学历·岗位·薪资</div>
+  <ul>
+    <li><strong>学历门槛：</strong>本科可进（农技推广/数据标注），硕士起步（模型开发/生物信息），博士优先（育种研究）</li>
+    <li><strong>典型岗位：</strong>智慧农业算法工程师、农业数据工程师、生物信息分析师、AI育种研究员</li>
+    <li><strong>薪资参考：</strong>农业AI算法工程师15-30K/月；生物信息分析师12-25K/月；据公开信息，该领域整体薪资略低于纯互联网AI岗，但增速快</li>
+  </ul>
+  <div class="section-title te">地域优势</div>
+  <p>合肥（安徽农大/中科大）、北京（中国农科院）、南宁（广西农科院）、南京（南京农大）。</p>
+  <div class="tip-block">
+    <div class="section-title or">报考小贴士</div>
+    <p>① "农学+计算机"双技能组合极具竞争力，建议农学专业辅修Python/机器学习；② 智慧农业是国家重点扶持方向，考研/保研可关注中国农科院、中国农大等机构的AI育种团队；③ 该方向竞争压力远低于互联网AI，适合对农业有兴趣的理工科学生。</p>
+  </div>
+</div>
+
+<!-- ========== 文科资讯 ========== -->
+<div id="section-arts" style="display:flex;align-items:center;gap:10px;margin:10px 0 18px;padding:12px 20px;background:linear-gradient(90deg,#f0fff4,#fff);border-radius:10px;border-left:4px solid #48bb78;">
+  <span style="font-size:20px;">📚</span>
+  <span style="font-size:17px;font-weight:700;color:#276749;">文科资讯</span>
+  <span style="font-size:13px;color:#718096;margin-left:4px;">共 4 条</span>
+</div>
+
+<!-- 卡片12：AI金融门槛双降 -->
+<div class="card arts">
+  <div class="card-head">
+    <h2>开放权重+引入金融，AI建设门槛"双降"</h2>
+    <span class="tag tag-arts">文科</span>
+  </div>
+  <div class="section-title bg">事件背景</div>
+  <p>开源大模型权重开放叠加金融领域专用模型涌现，AI在金融行业的落地门槛显著降低。银行、券商、保险公司正加速部署开源模型用于智能投研、风险控制、合规审计和智能客服。开源模型支持私有化部署，满足金融行业强监管的数据安全要求，91%的持牌金融机构AI落地项目选择开源本地部署方案。</p>
+  <div class="section-title gg">行业简述</div>
+  <p>金融科技（FinTech）进入"AI原生"阶段，从智能客服升级到智能投研、自动化合规审查。金融行业对AI人才的需求从"纯技术"转向"技术+金融"复合型人才。</p>
+  <div class="section-title pu">关联专业</div>
+  <ul>
+    <li>金融学</li>
+    <li>金融工程</li>
+    <li>计算机科学与技术（金融科技方向）</li>
+    <li>统计学</li>
+  </ul>
+  <div class="section-title or">学历·岗位·薪资</div>
+  <ul>
+    <li><strong>学历门槛：</strong>本科可进（金融AI运营/数据标注），硕士起步（智能投研/风控模型），博士优先（量化策略）</li>
+    <li><strong>典型岗位：</strong>金融科技产品经理、智能投研分析师、金融AI合规专员、量化研究员</li>
+    <li><strong>薪资参考：</strong>金融科技产品经理20-40K/月；量化研究员30-80K/月（含奖金）；金融AI合规专员15-30K/月</li>
+  </ul>
+  <div class="section-title te">地域优势</div>
+  <p>上海（陆家嘴金融AI聚集）、北京（金融监管+科技）、深圳（深交所/平安科技）、杭州（蚂蚁集团）。</p>
+  <div class="tip-block">
+    <div class="section-title or">报考小贴士</div>
+    <p>① "金融+AI"复合背景最吃香，建议金融专业学生必修Python + 机器学习基础；② 金融行业对数据安全和合规要求极高，了解等保、数据出境法规是加分项；③ 头部券商（中信/中金）和银行科技子公司（建信金科/工银科技）校招规模大，金融工程/统计专业对口。</p>
+  </div>
+</div>
+
+<!-- 卡片13：新型政策性金融工具 -->
+<div class="card arts">
+  <div class="card-head">
+    <h2>新型政策性金融工具方案印发 贴息成亮点</h2>
+    <span class="tag tag-arts">文科</span>
+  </div>
+  <div class="section-title bg">事件背景</div>
+  <p>国务院印发新型政策性金融工具方案，核心亮点为贴息机制创新。该工具旨在通过政策性银行（国开行、农发行、进出口银行）向重点领域提供低成本资金，重点支持科技创新、绿色转型、中小微企业等方向。贴息机制降低了实体经济融资成本，是货币政策与财政政策协同的重要抓手。</p>
+  <div class="section-title gg">行业简述</div>
+  <p>政策性金融是连接宏观政策与实体经济的关键纽带。2026年政策性银行信贷投放力度加大，对金融、经济、公共管理专业人才的招聘需求稳定增长。</p>
+  <div class="section-title pu">关联专业</div>
+  <ul>
+    <li>金融学</li>
+    <li>经济学</li>
+    <li>财政学</li>
+    <li>公共管理</li>
+  </ul>
+  <div class="section-title or">学历·岗位·薪资</div>
+  <ul>
+    <li><strong>学历门槛：</strong>本科可进（银行柜员/客户经理），硕士起步（总行/政策性银行），博士优先（政策研究）</li>
+    <li><strong>典型岗位：</strong>政策性银行信贷经理、金融政策研究员、风控分析师、财政贴息项目审核专员</li>
+    <li><strong>薪资参考：</strong>政策性银行应届硕士起薪15-25万/年（含福利）；商业银行金融岗12-20万/年；据公开信息，政策性银行综合福利优于商业银行</li>
+  </ul>
+  <div class="section-title te">地域优势</div>
+  <p>全国性需求。政策性银行总部在北京，各省市设有分支机构。</p>
+  <div class="tip-block">
+    <div class="section-title or">报考小贴士</div>
+    <p>① 国开行/农发行/进出口银行每年秋季统一校招，金融/经济/财会为核心对口专业，竞争激烈但薪资福利稳定；② 政策性银行工作强度低于商业银行，适合追求稳定+专业对口的同学；③ 了解贴息、专项债等政策工具是面试加分项。</p>
+  </div>
+</div>
+
+<!-- 卡片14：电商AB货 -->
+<div class="card arts">
+  <div class="card-head">
+    <h2>电商"AB货"，乱象背后是行业内卷</h2>
+    <span class="tag tag-arts">文科</span>
+  </div>
+  <div class="section-title bg">事件背景</div>
+  <p>电商平台"AB货"现象引发关注：消费者在直播间看到高品质商品（A货），收到却是低配版本（B货）。这一乱象折射出电商行业深度内卷——商家在流量成本攀升、平台价格战双重压力下，以牺牲品质换取利润。市场监管总局已介入调查，消费者权益保护法规亟待完善。</p>
+  <div class="section-title gg">行业简述</div>
+  <p>中国电商市场进入存量竞争阶段，2026年上半年直播电商规模增速放缓。行业从"流量驱动"转向"品质驱动"，对电商合规、质量管理、供应链管理等岗位需求上升。</p>
+  <div class="section-title pu">关联专业</div>
+  <ul>
+    <li>电子商务</li>
+    <li>市场营销</li>
+    <li>法学（消费者权益保护方向）</li>
+    <li>供应链管理</li>
+  </ul>
+  <div class="section-title or">学历·岗位·薪资</div>
+  <ul>
+    <li><strong>学历门槛：</strong>本科可进（电商运营/客服管理），硕士优先（平台治理/供应链优化）</li>
+    <li><strong>典型岗位：</strong>电商运营专员、供应链质量管控、平台合规经理、消费者维权法务</li>
+    <li><strong>薪资参考：</strong>电商运营助理4-9K/月（底薪+提成）；电商运营主管10-20K/月；平台合规经理15-30K/月</li>
+  </ul>
+  <div class="section-title te">地域优势</div>
+  <p>杭州（阿里巴巴/直播电商）、广州/深圳（跨境电商）、上海（品牌电商/平台总部）、义乌（小商品电商）。</p>
+  <div class="tip-block">
+    <div class="section-title or">报考小贴士</div>
+    <p>① 电商运营门槛低但天花板高，建议重点学习数据分析（Excel/SQL）和内容营销能力；② "AB货"问题推动平台治理岗需求，法学+电商复合背景有差异化优势；③ 跨境电商（TikTok Shop/Temu/SHEIN）是增量市场，外语能力+电商运营能力组合就业面广。</p>
+  </div>
+</div>
+
+<!-- 卡片15：央行买断式逆回购 -->
+<div class="card arts">
+  <div class="card-head">
+    <h2>央行将开展1万亿元买断式逆回购操作</h2>
+    <span class="tag tag-arts">文科</span>
+  </div>
+  <div class="section-title bg">事件背景</div>
+  <p>中国人民银行宣布将开展1万亿元买断式逆回购操作，向市场注入大规模流动性。买断式逆回购是央行新型流动性管理工具，与传统的质押式逆回购不同，该工具实现债券所有权转移，对银行间市场利率和债券市场影响更为深远。此举体现了央行"适度宽松"的货币政策取向，旨在稳定市场预期、降低实体经济融资成本。</p>
+  <div class="section-title gg">行业简述</div>
+  <p>央行货币政策工具创新对金融市场影响深远。银行间市场交易员、固收研究员、货币政策分析岗需求稳定，对金融/经济专业人才的理论功底和政策敏感度要求高。</p>
+  <div class="section-title pu">关联专业</div>
+  <ul>
+    <li>金融学</li>
+    <li>经济学</li>
+    <li>统计学</li>
+    <li>会计学</li>
+  </ul>
+  <div class="section-title or">学历·岗位·薪资</div>
+  <ul>
+    <li><strong>学历门槛：</strong>本科可进（银行柜面/客户经理），硕士起步（固收研究/金融市场交易），博士优先（宏观研究）</li>
+    <li><strong>典型岗位：</strong>固收研究员、银行间市场交易员、货币政策分析师、资金管理专员</li>
+    <li><strong>薪资参考：</strong>银行间市场交易员20-50K/月（含奖金）；固收研究员25-60K/月（券商/基金）；银行资金管理岗15-30K/月</li>
+  </ul>
+  <div class="section-title te">地域优势</div>
+  <p>上海（银行间市场/中国外汇交易中心）、北京（央行总部/金融监管机构）、深圳（深交所/基金聚集）。</p>
+  <div class="tip-block">
+    <div class="section-title or">报考小贴士</div>
+    <p>① 央行货币政策工具创新频繁，金融学/宏观经济学课程是必修课，建议关注央行工作论文和货币政策执行报告；② 银行间市场交易员需通过本币交易员资格考试，是进入该岗位的硬性门槛；③ 券商固收研究所是高薪方向，但竞争激烈，硕士+CPA/CFA为基本配置。</p>
+  </div>
+</div>
+
+</div><!-- container end -->
+
+<!-- 底部 -->
+<div class="footer">
+  <p>生成时间：2026-08-17 18:14 | 高顿升学·每日行业速览</p>
+  <p>数据来源：（科技新闻、IT资讯、科学探索、汽车新闻、财经新闻、文旅新闻）+ 联网公开信息</p>
+  <p>薪资数据来自公开招聘平台（BOSS直聘、猎聘、智通硕博网等）及企业官方披露，仅供参考</p>
+</div>
+
+<script>
+function scrollToSection(id) {
+  var el = document.getElementById(id);
+  if (!el) return;
+  var nav = document.querySelector('.top-nav');
+  var offset = nav ? nav.offsetHeight + 16 : 120;
+  var top = el.getBoundingClientRect().top + window.pageYOffset - offset;
+  window.scrollTo({ top: top, behavior: 'smooth' });
+}
+
+
+function downloadPDF(date, btnEl) {
+  // 使用浏览器原生打印功能
+  window.print();
+}
+</script>
+
+</body>
+</html>
