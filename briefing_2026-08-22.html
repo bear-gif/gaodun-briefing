@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第6期 · 高顿升学 · 每日行业速览</title>
+<style>
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif; background: #f5f7fa; color: #1a1a2e; line-height: 1.7; }
+  .container { max-width: 960px; margin: 0 auto; padding: 30px 20px 60px; }
+  .report-header { background: #fff; border-radius: 14px; padding: 28px 32px; margin-bottom: 24px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+  .report-header .date-line { font-size: 20px; font-weight: 700; color: #1a1a2e; margin-bottom: 6px; }
+  .report-header .stats { font-size: 14px; color: #718096; margin-bottom: 16px; }
+  .report-header .stats span { display: inline-block; margin-right: 14px; }
+  .core-judgments { background: #f7fafc; border-left: 4px solid #4299e1; padding: 16px 20px; border-radius: 0 8px 8px 0; }
+  .core-judgments h3 { font-size: 15px; color: #2d3748; margin-bottom: 8px; }
+  .core-judgments ul { list-style: none; }
+  .core-judgments li { font-size: 14px; color: #4a5568; padding: 4px 0; padding-left: 18px; position: relative; }
+  .core-judgments li::before { content: "\25b8"; position: absolute; left: 0; color: #4299e1; font-weight: bold; }
+  .card { background: #fff; border-radius: 14px; padding: 28px 32px; margin-bottom: 20px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); border-top: 4px solid transparent; }
+  .card.science { border-top-color: #4299e1; }
+  .card.arts { border-top-color: #48bb78; }
+  .card-head { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; flex-wrap: wrap; }
+  .card-head h2 { font-size: 18px; font-weight: 700; color: #1a1a2e; flex: 1; min-width: 200px; }
+  .meta { display: flex; gap: 16px; font-size: 13px; color: #a0aec0; margin-bottom: 12px; flex-wrap: wrap; }
+  .content p, .content li { font-size: 15px; color: #4a5568; line-height: 1.8; }
+  .content ul { list-style: disc; padding-left: 20px; margin: 6px 0; }
+  .content li { margin: 4px 0; }
+  .sub-title { font-size: 15px; margin: 14px 0 6px; border-left: 3px solid #4299e1; padding-left: 10px; font-weight: 600; }
+  .sub-title.sc { color: #4299e1; border-color: #4299e1; }
+  .sub-title.gg { color: #48bb78; border-color: #48bb78; }
+  .tip-block { background: #fef3c7; border-radius: 8px; padding: 14px 18px; margin: 12px 0; }
+  .tip-block h3 { color: #92400e; font-size: 15px; margin: 0 0 8px; }
+  .tip-block p { color: #92400e; margin: 0; font-size: 14px; line-height: 1.9; }
+
+  @media print {
+    body { background: #fff !important; }
+    .container { max-width: 100%; padding: 10px; }
+    .card { page-break-inside: auto; box-shadow: none; border: 1px solid #e2e8f0; }
+    .content > * { page-break-inside: avoid; }
+    .tip-block { page-break-inside: avoid; }
+    .report-header a { display: none !important; }
+  }
+
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="report-header">
+    <a href="javascript:void(0)" onclick="showIndex()" style="display:inline-block;margin-bottom:14px;font-size:14px;color:#4299e1;text-decoration:none;font-weight:500;cursor:pointer;">← 返回列表</a>
+    <div class="date-line">📅 第6期 · 高顿升学 · 每日行业速览</div>
+    <div class="stats">
+      <span>📊 资讯共 12 条</span>
+      <span>🔬 理工科 8 条</span>
+      <span>📚 文科 4 条</span>
+    </div>
+    <div class="core-judgments">
+      <h3>📌 今日要点速览</h3>
+      <ul>
+        <li>长江存储科创板IPO获受理，拟募资330亿元，Q1营收470亿元、净利334亿元，全球NAND Flash排名跃升至第三</li>
+        <li>新一轮半导体涨价潮来袭，意法半导体年内第三次提价，德州仪器、英飞凌等跟进</li>
+        <li>中际旭创上半年净利暴增241.7%，AI算力红利持续释放，800G/1.6T光模块持续放量</li>
+        <li>Gen1.5模型首次实现"物理提示"，物理AI正接近GPT3时刻</li>
+        <li>暑期档电影票房突破110亿元，连续42天单日票房过亿，影视行业持续回暖</li>
+      </ul>
+    </div>
+  </div>
+
+  <div style="margin:20px 0 10px;padding:12px 20px;background:#fff;border-radius:10px;box-shadow:0 1px 3px rgba(0,0,0,0.04);display:flex;align-items:center;flex-wrap:wrap;">
+    <span style="font-size:14px;color:#718096;margin-right:12px;">快速跳转：</span>
+    <a href="javascript:void(0)" onclick="scrollToSection('section-science')" style="margin-right:20px;font-size:15px;color:#2b6cb0;text-decoration:none;font-weight:600;">🔬 理工科资讯</a>
+    <a href="javascript:void(0)" onclick="scrollToSection('section-arts')" style="margin-right:20px;font-size:15px;color:#276749;text-decoration:none;font-weight:600;">📚 文科资讯</a>
+  </div>
+
+  <div id="section-science" style="display:flex;align-items:center;gap:10px;margin:24px 0 18px;padding:12px 20px;background:linear-gradient(90deg,#ebf8ff,#fff);border-radius:10px;border-left:4px solid #4299e1;">
+    <span style="font-size:20px;">🔬</span>
+    <span style="font-size:17px;font-weight:700;color:#2b6cb0;">理工科资讯</span>
+    <span style="font-size:13px;color:#718096;margin-left:4px;">共 8 条</span>
+  </div>
+
+<div class="card science">
+  <div class="card-head">
+    <h2>长江存储科创板IPO获受理，拟募资330亿元，Q1净利超333亿</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 科技新闻</span><span>🕐 2026-08-22 08:00</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>上交所网站显示，长江存储控股股份有限公司科创板IPO审核状态变更为已受理，拟募资330亿元用于产线升级与研发。招股书显示，2026年1-3月公司实现营收470.42亿元、归母净利润333.79亿元，超2025年全年两倍。根据TrendForce数据，公司在全球NAND Flash厂商中按销售金额和出货量排名均位列全球第三、中国第一。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>全球存储芯片行业正进入新一轮上行周期。AI需求推动NAND Flash价格持续上涨，美光CEO表示AI彻底重写了存储芯片周期逻辑，客户需求超出供给约50%。SK海力士正评估新建存储芯片生产设施，三星公布韩国史上最大股东回报计划（约790亿美元）。中国存储芯片产业在长存带领下加速崛起。</p>
+    <h3 class="sub-title sc">关联专业</h3>
+    <ul>
+      <li>微电子科学与工程</li>
+      <li>集成电路设计与集成系统</li>
+      <li>电子科学与技术</li>
+      <li>材料科学与工程</li>
+    </ul>
+    <h3 class="sub-title sc">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>本科可入行（设备/工艺），硕士优先（设计/研发），博士优先（前沿工艺）</li>
+      <li><b>典型岗位：</b>NAND Flash工艺工程师、存储芯片设计工程师、半导体设备工程师、良率提升工程师</li>
+      <li><b>薪资参考：</b>半导体工艺工程师月薪2-4万；芯片设计工程师月薪3-6万；资深工艺专家月薪4-6.5万（据猎聘/职友集公开数据）</li>
+    </ul>
+    <h3 class="sub-title sc">地域优势</h3>
+    <p>武汉（长江存储总部）、上海（集成电路产业链最完整）、无锡（SK海力士/华虹）、深圳（设计企业聚集）</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① 存储芯片是半导体最大细分赛道之一，AI需求正推动行业进入结构性增长新周期；② 长存IPO是科创板近年最大芯片企业上市，带动上下游人才需求激增；③ 微电子/集成电路专业硕士是研发岗标配，建议关注3D NAND先进工艺方向；④ 国产替代大背景下，存储芯片人才缺口持续扩大。</p>
+    </div>
+  </div>
+</div>
+
+<div class="card science">
+  <div class="card-head">
+    <h2>新一轮半导体涨价潮来袭，意法半导体年内第三次提价</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 科技新闻</span><span>🕐 2026-08-22 07:30</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>意法半导体将于8月23日进行年内第三次提价，带动汽车MCU及功率器件交期拉长。德州仪器（TI）、英飞凌等全球大厂集体跟进，提价潮覆盖MCU与模拟芯片等品类。卓胜微等国内射频芯片企业也已向客户下发调价通知函。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>本轮涨价的核心原因是AI需求挤压成熟制程产能。超大规模数据中心对先进制程芯片的旺盛需求，导致成熟制程（28nm及以上）产能被挤占，叠加生产及供应链成本上升，行业整体进入量价齐升的上行周期。模拟芯片、射频芯片领域成为价格调整的集中爆发地。</p>
+    <h3 class="sub-title sc">关联专业</h3>
+    <ul>
+      <li>集成电路设计与集成系统</li>
+      <li>微电子科学与工程</li>
+      <li>电子信息工程</li>
+      <li>自动化</li>
+    </ul>
+    <h3 class="sub-title sc">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>本科可入行（FAE/销售），硕士优先（设计/研发），博士优先（工艺研发）</li>
+      <li><b>典型岗位：</b>模拟芯片设计工程师、射频芯片设计工程师、FAE现场应用工程师、半导体销售经理</li>
+      <li><b>薪资参考：</b>模拟芯片设计工程师月薪3-6万；射频工程师月薪2-5万；FAE月薪2-4万（据猎聘公开招聘数据）</li>
+    </ul>
+    <h3 class="sub-title sc">地域优势</h3>
+    <p>上海（芯片设计企业最密集）、深圳（射频/消费电子芯片）、无锡（制造基地）、西安（三星/美光工厂）</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① 半导体行业进入新一轮涨价周期，企业盈利改善将带动研发扩招和薪资上涨；② 模拟芯片设计是"越老越值钱"的方向，经验积累比学历更重要；③ AI挤压成熟制程产能是结构性趋势，掌握成熟制程工艺的人才将持续紧缺；④ 建议关注国产替代方向（如卓胜微/圣邦微等），国内模拟芯片企业正快速成长。</p>
+    </div>
+  </div>
+</div>
+
+<div class="card science">
+  <div class="card-head">
+    <h2>中际旭创上半年净利暴增241.7%，AI算力红利持续释放</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 科技新闻</span><span>🕐 2026-08-22 07:45</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>中际旭创发布2026年半年报：上半年营收417.78亿元，同比增长182.49%；净利润136.51亿元，同比增长241.70%。其中Q2单季营收222.82亿元，环比增长14.3%。业绩高增主要受海外AI基础设施需求驱动，海外收入占比超94%，800G、1.6T等高速光模块持续放量。知名投资者章建平新进成为第九大股东。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>AI算力投资热潮直接带动了光模块行业爆发式增长。全球超大规模数据中心对800G、1.6T高速光模块需求持续攀升，中际旭创作为全球光模块龙头充分受益。长飞光纤上半年净利增长888.88%（保偏光纤需求爆发）、东山精密净利增长290.09%（AI硬件景气），整个AI硬件产业链进入量价齐升阶段。</p>
+    <h3 class="sub-title sc">关联专业</h3>
+    <ul>
+      <li>光电信息科学与工程</li>
+      <li>通信工程</li>
+      <li>电子科学与技术</li>
+      <li>数据科学与大数据技术</li>
+    </ul>
+    <h3 class="sub-title sc">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>本科可入行（生产/测试），硕士优先（光学设计/算法），博士优先（前沿研发）</li>
+      <li><b>典型岗位：</b>光模块设计工程师、光学工程师、数据中心网络架构师、高速信号完整性工程师</li>
+      <li><b>薪资参考：</b>光模块设计工程师月薪2-4万；光学工程师月薪2.5-5万；数据中心网络架构师月薪3-6万（据BOSS直聘/猎聘公开数据）</li>
+    </ul>
+    <h3 class="sub-title sc">地域优势</h3>
+    <p>苏州（中际旭创总部）、武汉（光通信产业集群/长飞光纤）、深圳（光模块企业密集）、上海（数据中心需求端）</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① AI算力产业链是当前确定性最高的投资方向，光模块是核心受益环节；② 光电信息科学与工程是AI硬件的"隐形冠军"专业，就业面宽且薪资增长快；③ 1.6T光模块是下一代技术方向，掌握硅光技术的工程师尤为抢手；④ 建议物理/光学基础扎实的同学重点关注此方向，行业处于高速成长期。</p>
+    </div>
+  </div>
+</div>
+
+<div class="card science">
+  <div class="card-head">
+    <h2>DeepSeek发布视觉理解模型，多模态Agent能力逼近Opus-4.8</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 IT资讯</span><span>🕐 2026-08-22 08:15</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>DeepSeek于8月21日上线实验性视觉理解模型V4-Flash-Vision-Exp，新增图像理解能力并保持原有文本性能。视觉Agent基准测试表现接近Anthropic Opus-4.8。同时推出免费Files API和DeepSeek Harness 0.1.1，支持开发者处理图文混合任务。API沿用V4-Flash定价，图片最多折算384 token。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>多模态大模型竞争进入白热化阶段。与此同时，一个名为"stealth/ox-alpha"的神秘AI模型现身OpenRouter，编程测试超越GPT-5.6和Claude，技术特征高度指向智谱未发布新模型。中国AI企业在多模态、代码生成等多个方向持续追赶甚至超越国际前沿。开源模型的影响力正不断扩大。</p>
+    <h3 class="sub-title sc">关联专业</h3>
+    <ul>
+      <li>人工智能</li>
+      <li>计算机科学与技术</li>
+      <li>软件工程</li>
+      <li>数据科学与大数据技术</li>
+    </ul>
+    <h3 class="sub-title sc">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>本科可入行（应用开发），硕士优先（算法/训练），博士优先（前沿架构研究）</li>
+      <li><b>典型岗位：</b>多模态算法工程师、大模型训练工程师、AI Agent开发工程师、CV算法工程师</li>
+      <li><b>薪资参考：</b>多模态算法工程师月薪3-6万；大模型训练工程师月薪3-5万；资深算法专家年薪60-100万（据猎聘/BOSS直聘公开数据）</li>
+    </ul>
+    <h3 class="sub-title sc">地域优势</h3>
+    <p>北京（DeepSeek/智谱总部）、杭州（阿里/网易）、深圳（华为/腾讯）、上海（AI创业公司聚集）</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① 多模态是AI大模型下一个主战场，视觉+语言+动作的多模态融合能力是核心竞争力；② DeepSeek等国产大模型崛起，为计算机专业毕业生提供了更多优质就业选择；③ 建议打好数学基础（线代/概率论/最优化），同时掌握PyTorch等框架；④ Agent方向（工具调用+多步骤推理）是最新热点，值得重点关注。</p>
+    </div>
+  </div>
+</div>
+
+<div class="card science">
+  <div class="card-head">
+    <h2>Gen1.5模型实现"物理提示"，物理AI正接近GPT3时刻</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 科技新闻</span><span>🕐 2026-08-22 07:50</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>Generalist公司发布的GEN-1.5模型首次实现"物理提示"（Physical Prompting）能力——机器人看一次示范即可学习新任务，无需参数更新。这被研究者视为机器人领域的"圣杯"，其意义堪比GPT-3时刻，标志着物理智能正接近类似大语言模型的突破性进展。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>具身智能正从概念走向实质突破。GEN-1.5的能力跃升源于海量物理数据的scaling。摩尔线程CEO张建中在世界机器人大会上表示，具身智能模型正从百亿、百亿级向万亿参数进化。2026年上半年，国内具身智能领域共发生288起融资，融资额超460亿元。多家机器人企业排队IPO，赛道估值超200亿的企业已达20+家。</p>
+    <h3 class="sub-title sc">关联专业</h3>
+    <ul>
+      <li>机器人工程</li>
+      <li>人工智能</li>
+      <li>自动化</li>
+      <li>计算机科学与技术</li>
+    </ul>
+    <h3 class="sub-title sc">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>硕士起步（算法岗），博士优先（前沿研究）；本科可入行（集成/调试/运维）</li>
+      <li><b>典型岗位：</b>具身智能算法工程师、VLA模型研发、运动控制工程师、仿真工程师</li>
+      <li><b>薪资参考：</b>具身智能算法工程师平均年薪33.38万（据猎聘），资深专家年薪80-200万+（据科锐国际）；灵巧操作算法工程师月薪8-11万；VLA算法工程师月薪3.5-6.5万（据猎聘公开招聘数据）</li>
+    </ul>
+    <h3 class="sub-title sc">地域优势</h3>
+    <p>北京（智元/银河通用等）、上海（蚂蚁集团/傅利叶）、深圳（优必选/大族机器人）、杭州（宇树科技）</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① 具身智能是2026年增速最快的AI细分方向，人形机器人岗位增幅高达215.8%；② 核心人才极度稀缺，供需比1:7~1:9，转型具身智能薪资涨幅通常50%起步；③ 需要AI+机器人+控制的复合背景，纯CS或纯机械都不够；④ 应届硕士年薪25-35万，3-5年经验40-70万，天花板极高。</p>
+    </div>
+  </div>
+</div>
+
+<div class="card science">
+  <div class="card-head">
+    <h2>工信部：加快智能芯片等关键核心技术攻关，探索类脑智能</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 科技新闻</span><span>🕐 2026-08-22 07:40</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>中国人工智能产业发展联盟第十八次全会上，工信部科技司副司长甘小斌指出：下一步将加快智能芯片等关键核心技术攻关，探索类脑智能、世界模型、物理模型等前沿技术。中央网信委同期印发《促进网信企业高质量发展行动计划(2026-2030年)》，明确支持企业加强AI关键技术研究，研发高端AI芯片，突破量子科技、区块链、脑机接口等前沿领域。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>国家层面对AI芯片和前沿技术的政策支持力度持续加大。"模数共振"工程、人形机器人实景实训等举措深入推进。政策方向明确：以技术攻关为驱动、以场景应用为牵引、以生态优化为支撑、以安全治理为保障，推动AI产业全面发展。伦理审查先导行动也已启动。</p>
+    <h3 class="sub-title sc">关联专业</h3>
+    <ul>
+      <li>人工智能</li>
+      <li>集成电路设计与集成系统</li>
+      <li>计算机科学与技术</li>
+      <li>脑科学</li>
+    </ul>
+    <h3 class="sub-title sc">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>硕士起步（研发岗），博士优先（芯片设计/类脑计算）</li>
+      <li><b>典型岗位：</b>AI芯片设计工程师、类脑计算研究员、AI政策研究分析师、标准化工程师</li>
+      <li><b>薪资参考：</b>AI芯片设计工程师月薪3-6万；类脑计算研究员月薪2.5-5万（据猎聘公开招聘数据）</li>
+    </ul>
+    <h3 class="sub-title sc">地域优势</h3>
+    <p>北京（工信部/联盟总部/科研院所）、上海（芯片设计企业最密集）、深圳（华为海思）、杭州（之江实验室/阿里达摩院）</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① 国家级政策支持方向明确，智能芯片和类脑计算是"十四五"到"十五五"的战略重点；② AI芯片方向需要微电子+计算机的交叉背景，建议辅修或跨学科学习；③ 类脑智能是前沿中的前沿，目前高校开设相关专业少，可关注中科院自动化所/清华等先行者；④ 标准化和伦理治理是新兴方向，适合对技术+政策交叉感兴趣的同学。</p>
+    </div>
+  </div>
+</div>
+
+<div class="card science">
+  <div class="card-head">
+    <h2>摩尔线程张建中：产业正迎接具身智能ChatGPT时刻</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 科技新闻</span><span>🕐 2026-08-22 08:30</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>摩尔线程创始人、董事长兼CEO张建中在2026世界机器人大会上表示，具身智能模型在Scaling Law驱动下正从百亿、百亿级向千亿、万亿参数进化，推动智算集群从千卡走向万卡、十万卡。算力底座是决定具身智能"ChatGPT时刻"何时到来的关键力量。摩尔线程已从合成数据生成、基模训练到仿真评测与Sim2Real，为具身智能提供全流程GPU算力支撑。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>国产GPU企业正加速布局具身智能算力。与此同时，多家半导体企业完成新一轮融资：蓝点触控（机器人力传感器）完成数亿元D轮（广汽领投）、清雁科技（机器人世界模型）完成数亿元A轮、眸深智能完成近5亿元Pre-A+轮（上半年估值增长超10倍）。2026上半年国内具身智能融资超460亿元，行业正从"烧钱"走向"商业化临界点"。</p>
+    <h3 class="sub-title sc">关联专业</h3>
+    <ul>
+      <li>计算机科学与技术</li>
+      <li>机器人工程</li>
+      <li>集成电路设计与集成系统</li>
+      <li>人工智能</li>
+    </ul>
+    <h3 class="sub-title sc">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>本科可入行（GPU驱动/测试），硕士优先（GPU架构/仿真），博士（前沿算法）</li>
+      <li><b>典型岗位：</b>GPU架构工程师、AI算力平台研发、机器人仿真工程师、Sim2Real算法工程师</li>
+      <li><b>薪资参考：</b>GPU架构工程师月薪3-6万；仿真工程师月薪2-4万；Sim2Real算法月薪3-7万（据猎聘公开招聘数据）</li>
+    </ul>
+    <h3 class="sub-title sc">地域优势</h3>
+    <p>北京（摩尔线程总部）、上海（国产GPU企业密集）、深圳（机器人产业链完整）、杭州（宇树科技/阿里）</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① GPU算力是具身智能的"水电煤"，国产GPU替代是国家战略方向；② 具身智能的"ChatGPT时刻"取决于算力+数据+模型三要素，GPU人才需求将持续爆发；③ 建议学习CUDA编程+机器人学（ROS2），掌握GPU+AI+机器人的交叉能力；④ 机器人仿真（Isaac Sim/MuJoCo）是当前热门方向，仿真到真实迁移是核心技术难点。</p>
+    </div>
+  </div>
+</div>
+
+<div class="card science">
+  <div class="card-head">
+    <h2>长飞光纤上半年净利增长888.88%，保偏光纤需求爆发</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 科技新闻</span><span>🕐 2026-08-22 08:10</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>长飞光纤发布2026年半年报：上半年营收98.09亿元，同比增长53.64%；归母净利润29.25亿元，同比增长888.88%。扣非净利润增幅更高达1680.48%。业绩暴增主要受益于保偏光纤需求爆发——保偏光纤是量子通信、光纤传感等领域的核心材料。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>光纤通信行业正迎来多重新机遇：一是AI数据中心对高速光互联的需求拉动保偏光纤、多芯光纤等特种光纤需求；二是量子通信产业化推进带动保偏光纤用量激增；三是"东数西算"工程推动长距离光纤铺设。整个光通信产业链（光纤/光模块/光芯片）正进入景气上行周期。</p>
+    <h3 class="sub-title sc">关联专业</h3>
+    <ul>
+      <li>光电信息科学与工程</li>
+      <li>通信工程</li>
+      <li>电子科学与技术</li>
+      <li>量子信息科学</li>
+    </ul>
+    <h3 class="sub-title sc">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>本科可入行（生产/测试/销售），硕士优先（光学设计/研发）</li>
+      <li><b>典型岗位：</b>光纤工艺工程师、光学设计工程师、量子通信工程师、光网络规划工程师</li>
+      <li><b>薪资参考：</b>光纤工艺工程师月薪1.5-3万；光学设计工程师月薪2-4万；量子通信工程师月薪2-5万（据BOSS直聘/猎聘公开数据）</li>
+    </ul>
+    <h3 class="sub-title sc">地域优势</h3>
+    <p>武汉（长飞光纤总部/中国光谷）、上海（光通信产业链）、合肥（量子通信/国盾量子）、深圳（光模块企业聚集）</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① 光电信息科学与工程是AI时代"被低估"的王牌专业，光通信是算力基础设施的核心环节；② 量子信息科学是新兴交叉学科，高校开设不多但前景广阔，关注中科大/清华/南大等；③ 保偏光纤需求爆发背后是量子+AI双重驱动，行业正处于从量变到质变的拐点；④ 武汉光谷是全球最大的光纤光缆制造基地，实习就业资源丰富。</p>
+    </div>
+  </div>
+</div>
+
+  <div id="section-arts" style="display:flex;align-items:center;gap:10px;margin:30px 0 18px;padding:12px 20px;background:linear-gradient(90deg,#f0fff4,#fff);border-radius:10px;border-left:4px solid #48bb78;">
+    <span style="font-size:20px;">📚</span>
+    <span style="font-size:17px;font-weight:700;color:#276749;">文科资讯</span>
+    <span style="font-size:13px;color:#718096;margin-left:4px;">共 4 条</span>
+  </div>
+
+<div class="card arts">
+  <div class="card-head">
+    <h2>暑期档电影票房突破110亿元，连续42天单日票房过亿</h2>
+    <span style="background:#f0fff4;color:#48bb78;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">文科</span>
+  </div>
+  <div class="meta"><span>📰 文旅新闻</span><span>🕐 2026-08-22 08:00</span></div>
+  <div class="content">
+    <h3 class="sub-title gg">事件背景</h3>
+    <p>据网络平台数据，截至8月21日，2026年暑期档电影票房（含预售）突破110亿元，连续42天单日票房过亿元。这一数据表明中国电影市场持续回暖，观众观影热情高涨，行业进入强劲复苏通道。</p>
+    <h3 class="sub-title gg">行业简述</h3>
+    <p>中国电影市场在经历前几年调整后，2026年迎来全面复苏。暑期档是全年最重要的票房窗口期，110亿元的成绩已接近历史高位。国产电影质量持续提升，动画电影、科幻片等类型片突破频频。影院端也在加速升级，LED影厅、巨幕厅占比提升，观影体验持续改善。影视产业链上下游（制作/发行/院线/衍生品）全面受益。</p>
+    <h3 class="sub-title gg">关联专业</h3>
+    <ul>
+      <li>影视摄影与制作</li>
+      <li>戏剧影视文学</li>
+      <li>数字媒体艺术</li>
+      <li>新闻学</li>
+    </ul>
+    <h3 class="sub-title gg">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>本科可入行（宣发/运营），硕士优先（制片管理/研究）；创作岗看作品而非学历</li>
+      <li><b>典型岗位：</b>电影制片人、宣发经理、影视策划、票房数据分析师</li>
+      <li><b>薪资参考：</b>影视宣发经理月薪1.5-3万；制片人月薪2-5万（项目制，浮动较大）；票房数据分析师月薪1.5-2.5万（据BOSS直聘/猎聘公开数据）</li>
+    </ul>
+    <h3 class="sub-title gg">地域优势</h3>
+    <p>北京（影视公司总部最密集/中影/华谊/光线）、上海（上影/博纳）、横店（拍摄基地）、厦门（金鸡奖举办地/影视政策优惠）</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① 影视行业回暖带动全产业链人才需求，但创作岗竞争激烈，建议积累作品集和实习经验；② 影视宣发是"文科+数据分析"的交叉方向，既懂内容又懂数据的复合型人才稀缺；③ 数字媒体艺术专业就业面广，影视/游戏/短视频都可覆盖；④ 关注AI+影视方向（AI辅助剧本/特效），是行业新增长点。</p>
+    </div>
+  </div>
+</div>
+
+<div class="card arts">
+  <div class="card-head">
+    <h2>财政部：前7月全国预算收入同比增长5.8%，增幅持续提高</h2>
+    <span style="background:#f0fff4;color:#48bb78;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">文科</span>
+  </div>
+  <div class="meta"><span>📰 财经新闻</span><span>🕐 2026-08-22 08:20</span></div>
+  <div class="content">
+    <h3 class="sub-title gg">事件背景</h3>
+    <p>财政部8月21日发布数据：2026年1-7月，全国一般公共预算收入143696亿元，同比增长5.8%，增幅比上半年提高1.1个百分点。支出方面，全国一般公共预算支出16.29万亿元，同比增长1.3%。重点领域中，卫生健康支出增长9.8%（发放育儿补贴/医保补助增加），社会保障和就业支出增长7%，住房保障支出增长4%。</p>
+    <h3 class="sub-title gg">行业简述</h3>
+    <p>财政收入持续增长反映经济基本面稳中向好。财政部副部长廖岷同日表示，下半年将推出财政金融协同的新政策和新举措，"十五五"时期将加大财政逆周期调节力度。当前财政支出结构呈现"民生优先"特征：卫生健康、社保就业等支出增速明显高于整体增速，体现政策向民生领域倾斜的导向。</p>
+    <h3 class="sub-title gg">关联专业</h3>
+    <ul>
+      <li>财政学</li>
+      <li>经济学</li>
+      <li>会计学</li>
+      <li>公共管理</li>
+    </ul>
+    <h3 class="sub-title gg">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>本科可进（银行柜面/企业财务），硕士优先（政策研究/金融机构），博士优先（学术研究）</li>
+      <li><b>典型岗位：</b>财政分析师、税务筹划专员、政府财务管理人员、宏观经济研究员</li>
+      <li><b>薪资参考：</b>税务筹划专员月薪1.5-3万；宏观经济研究员月薪2-4万（券商/智库）；政府财务岗参照公务员薪资体系（据BOSS直聘/智联招聘公开数据）</li>
+    </ul>
+    <h3 class="sub-title gg">地域优势</h3>
+    <p>北京（财政部/税务总局/各大券商研究所）、上海（金融机构密集）、深圳（深交所/基金公司）、各省会城市（地方财政局/税务局）</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① 财政学/税收学是"考公利器"，税务系统是国考招录大户，岗位多且竞争比相对温和；② 财政收入持续增长+减税降费政策叠加，企业税务筹划需求上升，税务师证书含金量高；③ 宏观经济研究是金融领域高薪方向，但竞争激烈，通常要求名校硕士+CPA/CFA；④ 关注"财政金融协同"政策方向，这是下半年的重点发力领域。</p>
+    </div>
+  </div>
+</div>
+
+<div class="card arts">
+  <div class="card-head">
+    <h2>财政部：下半年将推出财政金融协同新政策新举措</h2>
+    <span style="background:#f0fff4;color:#48bb78;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">文科</span>
+  </div>
+  <div class="meta"><span>📰 财经新闻</span><span>🕐 2026-08-22 08:25</span></div>
+  <div class="content">
+    <h3 class="sub-title gg">事件背景</h3>
+    <p>财政部副部长廖岷在国新办新闻发布会上表示，结合经济发展需要，财政部正在继续研究制订财政金融协同的新政策和新举措，将于今年下半年推出。"十五五"时期，财政部将加大财政逆周期调节力度，根据经济发展形势及时谋划、适时推出增量政策。</p>
+    <h3 class="sub-title gg">行业简述</h3>
+    <p>财政金融协同是宏观调控的重要方向。当前LPR维持不变（1年期3.00%，5年期以上3.50%），央行通过买断式逆回购等创新工具维护流动性合理充裕。金融监管层面，央行和市场监管总局联合打击非法买卖人民币活动，金融监管总局优化已故人士金融账户查询服务。政策组合拳旨在稳定市场预期、降低实体经济融资成本。</p>
+    <h3 class="sub-title gg">关联专业</h3>
+    <ul>
+      <li>金融学</li>
+      <li>经济学</li>
+      <li>财政学</li>
+      <li>统计学</li>
+    </ul>
+    <h3 class="sub-title gg">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>本科可进（银行/保险基层），硕士起步（券商/基金/政策研究），博士优先（学术/高端研究）</li>
+      <li><b>典型岗位：</b>金融监管研究员、财政政策分析师、银行间市场交易员、合规管理专员</li>
+      <li><b>薪资参考：</b>银行间市场交易员20-50K/月（含奖金）；财政政策分析师月薪1.5-3万；合规管理月薪1.5-3万（据BOSS直聘/猎聘公开数据）</li>
+    </ul>
+    <h3 class="sub-title gg">地域优势</h3>
+    <p>北京（财政部/央行/金融监管总局）、上海（银行间市场/中国外汇交易中心）、深圳（深交所/基金聚集）</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① 财政金融协同方向对专业复合性要求高，建议主修金融/财政，辅修统计或数据分析；② 金融监管系统（央行/银保监/证监会）是高质量就业去向，国考招录稳定；③ 银行间市场交易员是金融领域高薪岗位，需通过本币交易员资格考试；④ "十五五"规划编制期间，政策研究和咨询岗位需求将增加。</p>
+    </div>
+  </div>
+</div>
+
+<div class="card arts">
+  <div class="card-head">
+    <h2>同程旅行完成收购嘀嗒出行，OTA平台整合加速</h2>
+    <span style="background:#f0fff4;color:#48bb78;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">文科</span>
+  </div>
+  <div class="meta"><span>📰 文旅新闻</span><span>🕐 2026-08-22 08:35</span></div>
+  <div class="content">
+    <h3 class="sub-title gg">事件背景</h3>
+    <p>同程旅行发布公告称，已完成对嘀嗒出行的要约收购。共收到有效接纳股份约9.11亿股，占嘀嗒出行已发行总股本约88.74%。收购完成后，嘀嗒出行将保持品牌及运营独立，同程旅行计划寻求保持嘀嗒出行港股上市地位不变。此举标志着OTA（在线旅游）平台向出行生态的整合进一步加速。</p>
+    <h3 class="sub-title gg">行业简述</h3>
+    <p>在线旅游行业进入整合深水区。同程旅行通过收购嘀嗒出行，将业务版图从旅游服务延伸到日常出行，打造"旅游+出行"闭环生态。当前旅游市场持续火热——暑期出游需求旺盛，"奔县游"等新业态蓬勃发展，文旅消费需求升级。OTA平台的竞争从单一旅游产品转向全场景出行服务。</p>
+    <h3 class="sub-title gg">关联专业</h3>
+    <ul>
+      <li>旅游管理</li>
+      <li>电子商务</li>
+      <li>市场营销</li>
+      <li>工商管理</li>
+    </ul>
+    <h3 class="sub-title gg">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>本科可入行（运营/产品/市场），硕士优先（战略/投研）</li>
+      <li><b>典型岗位：</b>OTA平台运营经理、旅游产品经理、出行生态战略投资经理、用户增长运营</li>
+      <li><b>薪资参考：</b>OTA平台运营月薪1.5-3万；旅游产品经理月薪1.5-2.5万；战略投资经理月薪2.5-5万（据BOSS直聘/猎聘公开数据）</li>
+    </ul>
+    <h3 class="sub-title gg">地域优势</h3>
+    <p>苏州（同程旅行总部）、北京（携程/美团/飞猪总部）、上海（在线旅游企业密集）、成都（西南旅游中心）</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① OTA行业整合加速意味着对"旅游+互联网"复合人才的需求增大；② 旅游管理专业不再局限于传统旅行社，OTA平台、文旅IP运营、定制旅行等新方向前景广阔；③ 建议学习数据分析（用户行为/转化优化）和产品思维，这是OTA核心岗位的硬技能；④ "奔县游"等下沉市场新业态值得关注，县域旅游运营人才缺口大。</p>
+    </div>
+  </div>
+</div>
+
+
+</div>
+
+<script>
+function showIndex() {
+  if (window.parent && window.parent.showIndex) { window.parent.showIndex(); return; }
+  window.location.href = 'index.html';
+}
+function scrollToSection(id) {
+  var el = document.getElementById(id);
+  if (!el) return;
+  var top = el.offsetTop - 20;
+  window.scrollTo({ top: top, behavior: 'smooth' });
+}
+</script>
+
+</body>
+</html>
