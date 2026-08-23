@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第7期 · 高顿升学 · 每日行业速览</title>
+<style>
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif; background: #f5f7fa; color: #1a1a2e; line-height: 1.7; }
+  .container { max-width: 960px; margin: 0 auto; padding: 30px 20px 60px; }
+  .report-header { background: #fff; border-radius: 14px; padding: 28px 32px; margin-bottom: 24px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+  .report-header .date-line { font-size: 20px; font-weight: 700; color: #1a1a2e; margin-bottom: 6px; }
+  .report-header .stats { font-size: 14px; color: #718096; margin-bottom: 16px; }
+  .report-header .stats span { display: inline-block; margin-right: 14px; }
+  .core-judgments { background: #f7fafc; border-left: 4px solid #4299e1; padding: 16px 20px; border-radius: 0 8px 8px 0; }
+  .core-judgments h3 { font-size: 15px; color: #2d3748; margin-bottom: 8px; }
+  .core-judgments ul { list-style: none; }
+  .core-judgments li { font-size: 14px; color: #4a5568; padding: 4px 0; padding-left: 18px; position: relative; }
+  .core-judgments li::before { content: "\25b8"; position: absolute; left: 0; color: #4299e1; font-weight: bold; }
+  .card { background: #fff; border-radius: 14px; padding: 28px 32px; margin-bottom: 20px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); border-top: 4px solid transparent; }
+  .card.science { border-top-color: #4299e1; }
+  .card.arts { border-top-color: #48bb78; }
+  .card-head { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; flex-wrap: wrap; }
+  .card-head h2 { font-size: 18px; font-weight: 700; color: #1a1a2e; flex: 1; min-width: 200px; }
+  .meta { display: flex; gap: 16px; font-size: 13px; color: #a0aec0; margin-bottom: 12px; flex-wrap: wrap; }
+  .content p, .content li { font-size: 15px; color: #4a5568; line-height: 1.8; }
+  .content ul { list-style: disc; padding-left: 20px; margin: 6px 0; }
+  .content li { margin: 4px 0; }
+  .sub-title { font-size: 15px; margin: 14px 0 6px; border-left: 3px solid #4299e1; padding-left: 10px; font-weight: 600; }
+  .sub-title.sc { color: #4299e1; border-color: #4299e1; }
+  .sub-title.gg { color: #48bb78; border-color: #48bb78; }
+  .tip-block { background: #fef3c7; border-radius: 8px; padding: 14px 18px; margin: 12px 0; }
+  .tip-block h3 { color: #92400e; font-size: 15px; margin: 0 0 8px; }
+  .tip-block p { color: #92400e; margin: 0; font-size: 14px; line-height: 1.9; }
+
+  @media print {
+    body { background: #fff !important; }
+    .container { max-width: 100%; padding: 10px; }
+    .card { page-break-inside: auto; box-shadow: none; border: 1px solid #e2e8f0; }
+    .content > * { page-break-inside: avoid; }
+    .tip-block { page-break-inside: avoid; }
+    .report-header a { display: none !important; }
+  }
+
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="report-header">
+    <a href="javascript:void(0)" onclick="showIndex()" style="display:inline-block;margin-bottom:14px;font-size:14px;color:#4299e1;text-decoration:none;font-weight:500;cursor:pointer;">← 返回列表</a>
+    <div class="date-line">📅 第7期 · 高顿升学 · 每日行业速览</div>
+    <div class="stats">
+      <span>📊 资讯共 2 条</span>
+      <span>🔬 理工科 2 条</span>
+      <span>📚 文科 0 条</span>
+    </div>
+    <div class="core-judgments">
+      <h3>📌 今日要点速览</h3>
+      <ul>
+        <li>马斯克宣布SpaceX目标2030年实现每天发射30次以上星舰，折合每年超1万次，星舰第14次飞行任务计划8月28日进行</li>
+        <li>亚洲最大海上原油处理平台惠州19-6完成封顶，高85米、重2.9万吨，将用于南海亿吨级油田开发</li>
+      </ul>
+    </div>
+  </div>
+
+  <div style="margin:20px 0 10px;padding:12px 20px;background:#fff;border-radius:10px;box-shadow:0 1px 3px rgba(0,0,0,0.04);display:flex;align-items:center;flex-wrap:wrap;">
+    <span style="font-size:14px;color:#718096;margin-right:12px;">快速跳转：</span>
+    <a href="javascript:void(0)" onclick="scrollToSection('section-science')" style="margin-right:20px;font-size:15px;color:#2b6cb0;text-decoration:none;font-weight:600;">🔬 理工科资讯</a>
+    <a href="javascript:void(0)" onclick="scrollToSection('section-arts')" style="margin-right:20px;font-size:15px;color:#276749;text-decoration:none;font-weight:600;">📚 文科资讯</a>
+  </div>
+
+  <div id="section-science" style="display:flex;align-items:center;gap:10px;margin:24px 0 18px;padding:12px 20px;background:linear-gradient(90deg,#ebf8ff,#fff);border-radius:10px;border-left:4px solid #4299e1;">
+    <span style="font-size:20px;">🔬</span>
+    <span style="font-size:17px;font-weight:700;color:#2b6cb0;">理工科资讯</span>
+    <span style="font-size:13px;color:#718096;margin-left:4px;">共 2 条</span>
+  </div>
+
+<div class="card science">
+  <div class="card-head">
+    <h2>马斯克：2030年SpaceX星舰目标每天发射30次以上</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 科学探索</span><span>🕐 2026-08-23 08:00</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>马斯克近日在X平台表示，SpaceX的目标是到2030年实现每天30次以上的星舰发射，折合每年超过1万次。此前一天，特朗普签署了美国《国家太空运输政策》备忘录，推动每年实现1000次航天发射和再入任务。星舰第14次飞行任务计划最早于8月28日进行，将首次尝试完成完整轨道任务。本周已完成全时长六发动机静态点火测试，这是第14次飞行前最后一个重要硬件测试节点。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>商业航天进入高频发射新时代。FAA已批准SpaceX每年最多从肯尼迪航天中心发射44次星舰，但与马斯克的"每年1万次"目标差距悬殊。SpaceX今年已完成第100次Falcon火箭发射，星链年收入预计达200亿美元。政策层面，新备忘录要求加快审批和环境审查流程，2028年前重登月球，2030年前部署月球基地基础设施。星链V3单星下行容量达1Tbps，是V2的10倍，计划2027上半年完成1000颗V3卫星部署。</p>
+    <h3 class="sub-title sc">关联专业</h3>
+    <ul>
+      <li>航空航天工程</li>
+      <li>飞行器设计与工程</li>
+      <li>机械工程</li>
+      <li>自动化</li>
+      <li>计算机科学与技术</li>
+    </ul>
+    <h3 class="sub-title sc">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>本科可入行（基础技术/测试岗），硕士优先（设计/研发），博士优先（前沿研究）</li>
+      <li><b>典型岗位：</b>航天器总体设计工程师、火箭发动机设计师、飞行控制算法工程师、航天器结构工程师</li>
+      <li><b>薪资参考：</b>初级工程师年薪18-30万；中级工程师35-55万；资深/塔尖层（硕博+5年经验）80-120万；飞行器总体设计工程师平均月薪约25.8万元（据职友集/猎聘公开招聘数据）；液体火箭发动机首席工程师薪酬中位数82万元/年（据锐仕方达《2025商业航天薪酬指南》）</li>
+    </ul>
+    <h3 class="sub-title sc">地域优势</h3>
+    <p>北京（航天科技集团/航天科工总部）、上海（商业航天企业最密集/8大重点产业人才专项）、西安（航天六院/四院等传统院所）、成都（航天科研院所）、深圳/杭州/武汉（新兴商业航天聚集地）</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① 航空航天装备领域人才缺口高达47.5万，产业以70%速度增长、人才供给增速不足20%，供需失衡将持续五年以上；② 2026年中国商业航天市场规模预计突破3.5万亿，火箭回收技术岗年薪涨幅24%居全行业之首；③ "航天+AI"复合型人才缺口最突出，建议力学/控制/热物理基础扎实的同学重点关注；④ 商业航天企业薪酬普遍比传统院所高约18%，核心岗位涨幅超30%。</p>
+    </div>
+  </div>
+</div>
+
+<div class="card science">
+  <div class="card-head">
+    <h2>亚洲最大海上原油处理平台惠州19-6完成封顶</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 科学探索</span><span>🕐 2026-08-23 00:00</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>据央视新闻报道，亚洲最大海上原油处理平台——惠州19-6平台主体结构在珠海完成封顶。平台是一座3层8腿原油处理平台，上部组块高约85米（相当于30层居民楼），投影面积接近13个标准篮球场，设计浮托重量约2.9万吨。本次完成吊装的三层电器间模块重达2174吨，在3600吨、1600吨、800吨三台大型履带吊协同作业下精准就位。项目创新采用多区域甲板合片整体吊装工艺，将30次吊装合并至10次，一体化建造率超过90%。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>惠州19-6油田是我国首次探获的海上深层—超深层碎屑岩大型亿吨级整装油田，位于珠江口盆地。平台建成后原油年处理能力将达750万吨，可为近200万辆家用燃油车提供一年用油。海油工程一季度市场承揽额171.67亿元（同比+381.81%），在手订单规模达738亿元。"十五五"规划明确2030年国内油气供应量4.4亿吨油当量，新增油气长输管道2万公里。深海油气开发与海上风电、CCUS等新能源领域正在协同发展。</p>
+    <h3 class="sub-title sc">关联专业</h3>
+    <ul>
+      <li>船舶与海洋工程</li>
+      <li>油气储运工程</li>
+      <li>机械工程</li>
+      <li>土木工程（海洋方向）</li>
+      <li>电气工程及其自动化</li>
+    </ul>
+    <h3 class="sub-title sc">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>本科可入行（施工/设计岗），硕士优先（核心研发/深水工程方向），核心岗位偏好硕博+工程经验</li>
+      <li><b>典型岗位：</b>海洋平台设计工程师、海工结构工程师、海洋油气工艺工程师、海上设备安装调试工程师</li>
+      <li><b>薪资参考：</b>海洋石油工程设计工程师月薪1.5-2.5万；海工结构工程师月薪2-4万；项目经理月薪2.5-4万；海洋工程设计负责人月薪8-10万（据猎聘/职友集公开招聘数据）</li>
+    </ul>
+    <h3 class="sub-title sc">地域优势</h3>
+    <p>珠海（海油工程深水装备制造基地）、深圳（中国海油南海东部总部）、上海（海洋工程设计企业最密集）、天津（海油工程总部/海洋装备产业集群）</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① 海洋油气开发是国家能源安全战略重点，南海亿吨级油田开发带动海工人才需求持续增长；② 船舶与海洋工程专业就业面向大型央企（中国海油/中船集团），工作稳定且项目储备充沛；③ 海工行业正与海上风电、CCUS等新能源领域深度交叉，"海工+新能源"复合背景将成为差异化竞争优势；④ 珠海、深圳是南海深海开发核心基地，实习就业资源丰富。</p>
+    </div>
+  </div>
+</div>
+
+  <div id="section-arts" style="display:flex;align-items:center;gap:10px;margin:30px 0 18px;padding:12px 20px;background:linear-gradient(90deg,#f0fff4,#fff);border-radius:10px;border-left:4px solid #48bb78;">
+    <span style="font-size:20px;">📚</span>
+    <span style="font-size:17px;font-weight:700;color:#276749;">文科资讯</span>
+    <span style="font-size:13px;color:#718096;margin-left:4px;">共 0 条</span>
+  </div>
+
+</div>
+
+<script>
+function showIndex() {
+  if (window.parent && window.parent.showIndex) { window.parent.showIndex(); return; }
+  window.location.href = 'index.html';
+}
+function scrollToSection(id) {
+  var el = document.getElementById(id);
+  if (!el) return;
+  var top = el.offsetTop - 20;
+  window.scrollTo({ top: top, behavior: 'smooth' });
+}
+</script>
+
+</body>
+</html>
