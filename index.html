@@ -403,7 +403,7 @@
     <div class="report-item" onclick="showReport('2026-08-21')">
       <span class="date">第5期 · 高顿升学 · 每日行业速览</span>
       <span class="weekday">8月21日</span>
-      <span style="font-size:13px;color:#718096;margin-left:12px;">资讯 2 条 · 理工 2 · 文科 0</span>
+      <span style="font-size:13px;color:#718096;margin-left:12px;">资讯 7 条 · 理工 5 · 文科 2</span>
       <span class="badge badge-archive">归档</span>
       <button class="pdf-btn" onclick="event.stopPropagation(); downloadPDF('2026-08-21', this)">📥 打印为PDF</button>
     </div>
@@ -1509,100 +1509,289 @@
 
 </div>
 
-        <div class="container report-view" id="report-2026-08-21">
+<div class="container report-view" id="report-2026-08-21">
   <div class="report-header">
     <a href="javascript:void(0)" onclick="showIndex()" style="display:inline-block;margin-bottom:14px;font-size:14px;color:#4299e1;text-decoration:none;font-weight:500;cursor:pointer;">← 返回列表</a>
     <div class="date-line">📅 第5期 · 高顿升学 · 每日行业速览</div>
     <div class="stats">
-      <span>📊 资讯共 2 条</span>
-      <span>🔬 理工科 2 条</span>
-      <span>📚 文科 0 条</span>
+      <span>📊 资讯共 7 条</span>
+      <span>🔬 理工科 5 条</span>
+      <span>📚 文科 2 条</span>
     </div>
     <div class="core-judgments">
       <h3>📌 今日要点速览</h3>
       <ul>
-        <li>Meta每年花数亿美元采购微软Azure AI服务，成为全球最大AI客户之一，AI算力竞赛白热化</li>
-        <li>中科院团队发现毛细血管可"变身"为动脉修复心脏，颠覆传统认知，成果发表于《科学》杂志</li>
+        <li>Nvidia斥资60亿美元授权Poolside AI编码模型技术，另投10亿美元，估值120亿美元，加速布局AI编码赛道</li>
+        <li>Waymo发布自研5nm ASIC芯片，算力超1000 TOPS，已搭载最新Robotaxi量产，自动驾驶进入自研芯片时代</li>
+        <li>世界机器人大会首设"开发者日"和"采购日"，核心零部件国产率突破85%，瞄准百万台量级量产目标</li>
+        <li>Meta跻身微软最大AI客户之列，年采购规模达数亿美元，每周消耗数万亿Token</li>
+        <li>Anthropic年化营收飙升至650亿美元，IPO估值或达2万亿美元，有望超越SpaceX成史上最大IPO</li>
+        <li>Apple Music宣布AI标签从自愿改为强制，平台上传曲目中超三分之一为100% AI生成</li>
       </ul>
     </div>
   </div>
 
   <div style="margin:20px 0 10px;padding:12px 20px;background:#ffffff;border-radius:10px;box-shadow:0 1px 3px rgba(0,0,0,0.04);display:flex;align-items:center;flex-wrap:wrap;">
     <span style="font-size:14px;color:#718096;margin-right:12px;">快速跳转：</span>
-    <a href="javascript:void(0)" onclick="scrollToSection('section-science-0821')" style="margin-right:20px;font-size:15px;color:#2b6cb0;text-decoration:none;font-weight:600;">🔬 理工科资讯</a>
+    <a href="javascript:void(0)" onclick="scrollToSection('section-science')" style="margin-right:20px;font-size:15px;color:#2b6cb0;text-decoration:none;font-weight:600;">🔬 理工科资讯</a>
+    <a href="javascript:void(0)" onclick="scrollToSection('section-arts')" style="margin-right:20px;font-size:15px;color:#276749;text-decoration:none;font-weight:600;">📚 文科资讯</a>
   </div>
 
-  <div id="section-science-0821" style="display:flex;align-items:center;gap:10px;margin:24px 0 18px;padding:12px 20px;background:linear-gradient(90deg,#ebf8ff,#f1f5f9);border-radius:10px;border-left:4px solid #4299e1;">
+  <div id="section-science" style="display:flex;align-items:center;gap:10px;margin:24px 0 18px;padding:12px 20px;background:linear-gradient(90deg,#ebf8ff,#f1f5f9);border-radius:10px;border-left:4px solid #4299e1;">
     <span style="font-size:20px;">🔬</span>
     <span style="font-size:17px;font-weight:700;color:#2b6cb0;">理工科资讯</span>
-    <span style="font-size:13px;color:#718096;margin-left:4px;">共 2 条</span>
+    <span style="font-size:13px;color:#718096;margin-left:4px;">共 5 条</span>
   </div>
 
+<!-- 1. Nvidia + Poolside -->
+<div class="card science">
+  <div class="card-head">
+    <h2>Nvidia斥资60亿美元授权Poolside AI编码技术，布局模型层纵深</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 芯片/投资</span><span>🕐 2026-08-21</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>据The Information、Bloomberg等报道，Nvidia同意支付60亿美元，以获得AI编码初创公司Poolside的"Model Factory"模型开发技术的非独占许可。同时，Nvidia另行投资10亿美元，以120亿美元的投前估值入股Poolside。此外，约109名Poolside员工已收到加入Nvidia的工作邀约。Poolside由前GitHub CTO Jason Warner和连续创业者Eiso Kant于2023年创立，核心产品为Laguna系列开源编码模型，此前累计融资约6.26亿美元。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>这是Nvidia在不到一年内第二次以"技术许可+人才吸纳"模式与AI初创公司达成交易（此前为2025年12月与推理芯片公司Groq的协议）。交易核心逻辑是"让你的互补品商品化"：Nvidia掌控稀缺层（GPU算力），通过扶持开源模型，确保模型层保持廉价和可替换，从而持续驱动芯片需求。Poolside年化营收约5000万美元，此交易估值约为其营收的240倍，即使以2026年AI标准来看也极为昂贵。Nvidia意图将Poolside技术融入Nemotron开源模型线。</p>
+    <h3 class="sub-title sc">关联专业</h3>
+    <ul>
+      <li>人工智能</li>
+      <li>计算机科学与技术</li>
+      <li>软件工程</li>
+      <li>集成电路设计与集成系统</li>
+      <li>数据科学与大数据技术</li>
+    </ul>
+    <h3 class="sub-title sc">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>本科可入行（开发/测试），硕士优先（模型训练/推理优化），博士优先（前沿架构研发）</li>
+      <li><b>典型岗位：</b>AI编码模型工程师、大语言模型训练工程师、GPU性能优化工程师、AI芯片架构师</li>
+      <li><b>薪资参考：</b>AI模型工程师月薪3-6万；GPU性能优化工程师月薪3-5.5万；AI芯片架构师月薪5-10万（据BOSS直聘/猎聘公开数据）</li>
+    </ul>
+    <h3 class="sub-title sc">地域优势</h3>
+    <p>北京（AI大模型企业最密集）、上海（AI芯片/自动驾驶）、深圳（硬件+AI融合）、杭州（AI编码/开发者工具）</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① AI编码是当前大模型落地最快的赛道之一，Claude Code、Cursor、GitHub Copilot等工具已深入开发者日常；② Nvidia通过"许可+投资"模式进入模型层，说明芯片与模型的跨界融合是大趋势；③ 计算机科学+AI方向的复合型人才最受青睐，建议重点关注大模型训练与推理优化方向；④ 开源模型生态蓬勃发展，掌握开源模型微调和部署技能将大幅提升竞争力。</p>
+    </div>
+  </div>
+</div>
+
+<!-- 2. Waymo 自研芯片 -->
+<div class="card science">
+  <div class="card-head">
+    <h2>Waymo发布自研5nm ASIC芯片，算力超1000 TOPS，已量产上车</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 自动驾驶/芯片</span><span>🕐 2026-08-21</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>8月20日，Alphabet旗下自动驾驶公司Waymo宣布推出自主研发的ASIC（专用集成电路）芯片，已搭载于最新一代Robotaxi并量产。该芯片采用台积电5nm工艺制造，AI算力超过1000 TOPS，专为实时处理激光雷达、雷达和摄像头原始数据流而设计，可运行从稀疏卷积到密集Transformer的异构神经网络模型。Waymo此前一直依赖英伟达和AMD芯片，此次转向自研标志着自动驾驶计算进入专用芯片时代。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>Waymo自研芯片是自动驾驶行业"垂直整合"趋势的关键一步。该芯片配备双芯片冗余设计（类似航空级容错），通过液冷系统与车辆冷却系统集成，可在极端温度下稳定运行。目前Waymo已在旧金山、菲尼克斯、亚特兰大等城市提供商业Robotaxi服务，车队规模约4000辆，每周完成近50万次付费出行。配备第六代硬件的车辆成本已从第五代的10-12.5万美元降至2-2.5万美元，降本效果显著。</p>
+    <h3 class="sub-title sc">关联专业</h3>
+    <ul>
+      <li>集成电路设计与集成系统</li>
+      <li>自动化</li>
+      <li>车辆工程</li>
+      <li>电子信息工程</li>
+      <li>人工智能</li>
+    </ul>
+    <h3 class="sub-title sc">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>本科可入行（测试/运维），硕士优先（芯片设计/算法），博士优先（前沿架构）</li>
+      <li><b>典型岗位：</b>自动驾驶芯片设计工程师、感知算法工程师、嵌入式系统工程师、域控制器硬件工程师</li>
+      <li><b>薪资参考：</b>自动驾驶芯片设计工程师月薪4-8万；感知算法工程师月薪3-6万；嵌入式系统工程师月薪2.5-5万（据BOSS直聘/猎聘公开数据）</li>
+    </ul>
+    <h3 class="sub-title sc">地域优势</h3>
+    <p>北京（百度Apollo/小马智行）、上海（自动驾驶企业密集）、深圳（比亚迪/华为智驾）、广州（小马智行/文远知行）、武汉（东风/路特斯智驾中心）</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① Waymo自研芯片证明自动驾驶竞争已深入底层计算平台，车载ASIC设计人才极度稀缺；② 1000 TOPS算力级别的车载芯片设计需要芯片架构+AI算法+汽车安全的复合能力，是典型的交叉学科方向；③ 自动驾驶行业成本快速下降（10万美元→2万美元），规模化量产将带来大量工程人才需求；④ 建议关注"芯片+算法"协同设计方向，这是下一代自动驾驶的核心竞争力。</p>
+    </div>
+  </div>
+</div>
+
+<!-- 3. 世界机器人大会 -->
+<div class="card science">
+  <div class="card-head">
+    <h2>世界机器人大会首设"开发者日"，核心零部件国产率突破85%，瞄准百万台量产</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 机器人/产业链</span><span>🕐 2026-08-21</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>2026世界机器人大会（WRC）于8月19-23日在北京亦庄举办，主题为"人机共生，产需共融"。本届大会首次设立"开发者日"和"采购日"，373家海内外企业参展，超3000件展品亮相，311款全球或国内首发。大会披露：2025年国内机器人规上企业营收突破3000亿元，核心零部件国产化率突破85%，成本仅为进口产品的三分之一。2026上半年全球人形机器人出货量约1.91万台，中国厂商占比超97%。北京经开区发布"百万台套级具身智能机器人规模量产"目标。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>本届大会最大亮点是近20家核心零部件厂商首次独立设展——减速器、关节模组、力传感器、灵巧手、电子皮肤企业站上C位，标志着产业链从"整机厂主导的封闭垂直整合"转向"核心零部件通用标准化的开放分工生态"。绿的谐波谐波减速器年产能已达100万台、年底冲刺150万台；洛阳鸿元人形机器人关节轴承国内市占率约90%。京东工业联合多家企业发起成立"机器人零部件产业发展联盟"，从"各自为战"走向协同攻关。</p>
+    <h3 class="sub-title sc">关联专业</h3>
+    <ul>
+      <li>机器人工程</li>
+      <li>机械工程</li>
+      <li>自动化</li>
+      <li>机电一体化技术</li>
+      <li>测控技术与仪器</li>
+    </ul>
+    <h3 class="sub-title sc">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>本科可入行（装配/调试/售后），硕士优先（算法/控制/设计），博士优先（前沿研究）</li>
+      <li><b>典型岗位：</b>机器人关节模组设计工程师、减速器研发工程师、运动控制算法工程师、机器人系统集成工程师</li>
+      <li><b>薪资参考：</b>机器人机械工程师月薪2-4万；运动控制算法工程师月薪3-6万；减速器研发工程师月薪2.5-5万（据BOSS直聘/猎聘公开数据）</li>
+    </ul>
+    <h3 class="sub-title sc">地域优势</h3>
+    <p>北京（经开区"北京机域"具身智能制造引领区/12平方公里）、上海（机器人产业链最完整）、深圳（优必选/大疆/汇川技术）、杭州（宇树科技/海康机器人）</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① 机器人核心零部件国产化率突破85%，产业链从"各自为战"走向"协同攻关"，标准化人才需求激增；② 机器人工程是近年新增的热门交叉专业，融合机械、电子、控制、AI，就业面非常宽；③ 减速器、关节模组、灵巧手等细分领域是"隐形冠军"方向，技术壁垒高但竞争相对温和；④ 北京"百万台套级"量产目标意味着从研发到制造的全链条人才需求将持续扩大。</p>
+    </div>
+  </div>
+</div>
+
+<!-- 4. 毛细血管心脏修复 -->
+<div class="card science">
+  <div class="card-head">
+    <h2>我国团队发现毛细血管是心脏修复的关键"建造者"，成果登《Science》</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 生命科学/医学</span><span>🕐 2026-08-21</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>中国科学院分子细胞科学卓越创新中心（生物化学与细胞生物学研究所）周斌研究团队8月21日在《Science》发表最新研究：当心脏冠状动脉发生堵塞时，遍布心肌的毛细血管会迅速拓宽、获得动脉的结构和功能，搭建起"应急通道"（侧支动脉）为受损心肌供血。过去科学界认为侧支动脉来源于已有动脉的"迁移和重组"，该研究首次揭示真正的"建造者"是毛细血管。团队还发现VEGFA分子是"施工总指挥"，通过激活下游转录因子YY1引导毛细血管完成转变。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>该研究刷新了人们对心脏自我修复能力的认知，为缺血性心脏病治疗提供了全新思路。在动物实验中，短暂提高受损心脏的VEGFA水平后，毛细血管转变为动脉的效率显著提升，心肌缺血面积减少，心功能改善。未来有望通过精准调控VEGFA-YY1信号通路，激发心脏自行搭建"生命之桥"的潜能，为心梗患者提供比开胸搭桥手术更温和的新疗法。团队12年打磨的"双重组酶"高精度追踪技术独步世界，已有全球上千家实验室寻求合作。</p>
+    <h3 class="sub-title sc">关联专业</h3>
+    <ul>
+      <li>生物医学工程</li>
+      <li>基础医学</li>
+      <li>临床医学</li>
+      <li>细胞生物学</li>
+      <li>生物技术</li>
+    </ul>
+    <h3 class="sub-title sc">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>基础科研岗通常需博士学位+博士后经历；生物医学工程本科/硕士可入行（设备/试剂企业）</li>
+      <li><b>典型岗位：</b>生命科学研究人员（高校/研究所）、心血管药物研发科学家、生物技术研发工程师、临床转化研究员</li>
+      <li><b>薪资参考：</b>生物医药研发科学家月薪2.5-5万；高校科研人员（含安家费）年收入30-60万；生物医学工程师月薪1.5-3.5万（据BOSS直聘/高校招聘公开数据）</li>
+    </ul>
+    <h3 class="sub-title sc">地域优势</h3>
+    <p>上海（中科院分子细胞卓越中心/张江生物医药基地）、北京（中科院/协和医学院）、南京（鼓楼医院/省人医心脏中心）、广州（南方医科大学/中山医）</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① 中国科学家在心血管基础研究领域取得世界级突破，展现了原创工具（双重组酶技术）对于重大发现的关键价值；② 基础医学/细胞生物学博士是做此类研究的标配路径，建议关注"工具先行"的实验室；③ 该研究距临床转化仍有距离，但方向明确——药物促心血管再生是未来热点；④ 生物医学工程是"理工医"交叉的典型方向，适合物理/生物基础扎实且对医学感兴趣的同学。</p>
+    </div>
+  </div>
+</div>
+
+<!-- 5. Meta 微软 AI客户 -->
 <div class="card science">
   <div class="card-head">
     <h2>Meta跻身微软最大AI客户之列，年采购规模达数亿美元</h2>
     <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
   </div>
-  <div class="meta"><span>📰 科技新闻</span><span>🕐 2026-08-21 07:46</span></div>
+  <div class="meta"><span>📰 云计算/AI平台</span><span>🕐 2026-08-21</span></div>
   <div class="content">
     <h3 class="sub-title sc">事件背景</h3>
-    <p>据彭博社报道，Meta正以每年数亿美元的规模通过微软Azure采购AI服务，已跻身微软最大AI客户之列。Meta每周通过Azure消耗数万亿Token算力，主要用于软件开发和模型评估，其中包括通过微软Foundry平台调用OpenAI模型来评估自研模型的输出。</p>
+    <p>据Bloomberg 8月20日报道，Meta正通过微软Azure云服务采购AI模型服务，年支出高达数亿美元，每周消耗数万亿Token，已成为微软规模最大的AI客户之一。Meta开发人员通过微软Foundry平台使用OpenAI等技术，以评估Meta自研模型的输出效果。Meta首席技术官Andrew Bosworth证实，公司在开发自身AI模型的同时会租用领先外部模型。值得注意的是，字节跳动是微软Foundry的最大客户，Meta紧随其后。微软Azure财年营收超1000亿美元，同比增长41%。</p>
     <h3 class="sub-title sc">行业简述</h3>
-    <p>AI算力需求正在重塑云计算市场格局。微软Foundry平台截至2026年7月已拥有10万客户，营收同比翻倍。但值得关注的是，OpenAI贡献了微软约70%的AI收入，字节跳动是Foundry最大付费客户。科技巨头之间正形成"竞合"关系——既是对手，也是彼此最重要的客户。Anthropic同期冲击史上最大IPO，募资或超750亿美元；博通则寻求逾600亿美元融资为AI芯片基础设施输血。</p>
+    <p>这一交易揭示了AI产业一个有趣特征：最大的AI需求方仍然是科技巨头本身。Meta一边开源自己的Llama模型，一边花钱租用竞争对手的模型来对标评估——这本身就是对自家模型能力不够自信的信号。微软Foundry作为多供应商模型市场，截至7月已有10万名客户，年收入翻倍增长，OpenAI贡献了微软约70%的整体AI收入。Meta同时也在建设自己的模型API服务，未来可能与Foundry等平台形成竞争。2026年Meta资本支出预算高达1300-1450亿美元。</p>
     <h3 class="sub-title sc">关联专业</h3>
     <ul>
       <li>计算机科学与技术</li>
       <li>人工智能</li>
+      <li>云计算技术与应用</li>
       <li>软件工程</li>
-      <li>数据科学与大数据技术</li>
     </ul>
     <h3 class="sub-title sc">学历·岗位·薪资</h3>
     <ul>
-      <li><b>学历门槛：</b>本科可入行（应用开发），硕士优先（算法/架构），博士优先（前沿研究）</li>
-      <li><b>典型岗位：</b>大模型算法工程师、AI平台架构师、云计算工程师、AI应用开发工程师</li>
-      <li><b>薪资参考：</b>大模型算法工程师月薪3-5万，66.8%岗位达30K以上（据职友集5063份样本统计）；应届硕士约2.3万/月；资深算法岗年薪可达60-100万</li>
+      <li><b>学历门槛：</b>本科可入行（运维/技术支持），硕士优先（模型训练/云平台开发），博士优先（前沿研究）</li>
+      <li><b>典型岗位：</b>大模型训练工程师、AI平台架构师、云计算解决方案架构师、MLOps工程师</li>
+      <li><b>薪资参考：</b>大模型训练工程师月薪3-6万；AI平台架构师月薪4-8万；MLOps工程师月薪2.5-5万（据BOSS直聘/猎聘公开数据）</li>
     </ul>
     <h3 class="sub-title sc">地域优势</h3>
-    <p>北京（AI企业总部密集）、上海（大模型创业公司聚集）、深圳（硬件+应用）、杭州（阿里/网易等互联网大厂）</p>
+    <p>北京（大模型企业最密集）、上海（AI平台/云计算）、深圳（腾讯/华为云）、杭州（阿里云/通义千问）</p>
     <div class="tip-block">
       <h3>💡 报考小贴士</h3>
-      <p>① AI大模型方向持续高景气，2026年招聘职位3103个，同比增长24%；② 算法岗学历门槛最高，硕士起步、博士优先，年薪天花板可达百万；③ 建议打好数学基础（线性代数、概率论），同时掌握PyTorch等深度学习框架；④ 应用开发岗本科可投，是入行AI的务实选择。</p>
-    </div>
-  </div>
-</div>
-<div class="card science">
-  <div class="card-head">
-    <h2>我国团队发现毛细血管是心脏修复的关键，为治疗缺血性心脏病提供新思路</h2>
-    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
-  </div>
-  <div class="meta"><span>📰 科学探索</span><span>🕐 2026-08-21 08:00</span></div>
-  <div class="content">
-    <h3 class="sub-title sc">事件背景</h3>
-    <p>中国科学院分子细胞科学卓越创新中心周斌团队在《科学》（Science）杂志发表重磅研究，发现心脏冠状动脉堵塞后，毛细血管能主动"变身"为动脉，承担起为心肌供血的重任，颠覆了"侧支动脉来自已有动脉重组"的传统认知。</p>
-    <h3 class="sub-title sc">行业简述</h3>
-    <p>冠状动脉疾病是全球第一大死因。目前治疗手段以支架和搭桥手术为主，但并非所有患者适用。该研究揭示了VEGFA-YY1-SETD1A信号通路引导毛细血管向动脉转化的机制，动物实验中短暂提高VEGFA水平即可显著改善心脏功能。这一发现为无法支架或搭桥的患者开辟了全新的"药物促血管新生"治疗方向。</p>
-    <h3 class="sub-title sc">关联专业</h3>
-    <ul>
-      <li>生物医学科学</li>
-      <li>基础医学</li>
-      <li>药学</li>
-      <li>临床医学</li>
-    </ul>
-    <h3 class="sub-title sc">学历·岗位·薪资</h3>
-    <ul>
-      <li><b>学历门槛：</b>研究员岗位普遍要求博士；临床研究岗硕士起步</li>
-      <li><b>典型岗位：</b>生物医学研究员、药物研发科学家、临床研究医师、心血管医学专家</li>
-      <li><b>薪资参考：</b>药物研发科学家月薪2-4.5万；临床研究医师月薪2.6-4万；心血管领域医学专家月薪7-10万（据智联招聘/猎聘公开数据）</li>
-    </ul>
-    <h3 class="sub-title sc">地域优势</h3>
-    <p>上海（中科院分子细胞卓越中心）、北京（中科院各研究所）、深圳（心脏药物研发企业聚集）、广州（生物医药产业园）</p>
-    <div class="tip-block">
-      <h3>💡 报考小贴士</h3>
-      <p>① 生物医学+临床转化是高薪高壁垒方向，博士学历是研究员岗标配；② 基础研究发表顶刊（如Science/Nature/Cell）是核心竞争力；③ 心血管药物研发需求稳定且高薪，天士力等上市公司医学专家岗月薪可达7-10万；④ 建议关注VEGF信号通路相关转化医学，临床需求巨大。</p>
+      <p>① AI模型市场正在形成"多供应商平台"模式（类似应用商店），云平台+模型市场是未来基础设施层的核心；② Meta花数亿美元租模型来对标自研，说明"模型评估与基准测试"本身就是重要能力方向；③ 云计算专业在AI时代价值大幅提升，AI推理和训练需要大规模云基础设施支撑；④ 建议关注MLOps（机器学习运维）方向，这是连接模型研发和生产部署的桥梁岗位。</p>
     </div>
   </div>
 </div>
 
+  <div id="section-arts" style="display:flex;align-items:center;gap:10px;margin:24px 0 18px;padding:12px 20px;background:linear-gradient(90deg,#f0fff4,#f1f5f9);border-radius:10px;border-left:4px solid #48bb78;">
+    <span style="font-size:20px;">📚</span>
+    <span style="font-size:17px;font-weight:700;color:#276749;">文科资讯</span>
+    <span style="font-size:13px;color:#718096;margin-left:4px;">共 2 条</span>
+  </div>
+
+<!-- 6. Anthropic IPO -->
+<div class="card arts">
+  <div class="card-head">
+    <h2>Anthropic年化营收飙升至650亿美元，有望冲击史上最大IPO</h2>
+    <span style="background:#f0fff4;color:#48bb78;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">文科</span>
+  </div>
+  <div class="meta"><span>📰 AI/资本市场</span><span>🕐 2026-08-21</span></div>
+  <div class="content">
+    <h3 class="sub-title gg">事件背景</h3>
+    <p>据Bloomberg和《金融时报》报道，Claude母公司Anthropic向投资者透露，截至7月底年化营收运行率（ARR）已超过650亿美元，较5月的470亿美元增长38%，较2025年底约90亿美元扩大逾七倍。公司二季度初步营收超过115亿美元，同比增长近14倍，并首次实现调整后营业利润为正。Anthropic已于6月1日向SEC秘密提交S-1招股书，最快10月上市，投资者预计IPO估值可能达到2万亿美元，超越SpaceX今年6月创下的1.77万亿美元纪录，成为史上最大IPO。摩根士丹利、高盛和摩根大通担任承销商。</p>
+    <h3 class="sub-title gg">行业简述</h3>
+    <p>Anthropic的增长主要由Claude Code驱动——这款AI编程代理工具上线约半年ARR即达10亿美元，到2026年初超25亿美元，7月已达151亿美元。Fortune 10中已有八家成为客户。Ramp数据显示，截至6月34.4%的美国企业为Anthropic付费，已超过OpenAI的32.3%。但市场也有担忧：650亿美元ARR低于部分分析师700-800亿美元的预期，消息公布当日费城半导体指数重挫近5%。公司2025年净亏损约420亿美元，2万亿估值需要近800亿美元年利润才能支撑。</p>
+    <h3 class="sub-title gg">关联专业</h3>
+    <ul>
+      <li>金融学</li>
+      <li>工商管理</li>
+      <li>经济学</li>
+      <li>人工智能</li>
+      <li>法学（知识产权/科技法方向）</li>
+    </ul>
+    <h3 class="sub-title gg">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>本科可入行（运营/市场/客服），硕士优先（投资分析/产品管理），MBA优先（战略/BD）</li>
+      <li><b>典型岗位：</b>AI行业研究员、科技股投资分析师、AI产品经理、企业AI解决方案顾问</li>
+      <li><b>薪资参考：</b>AI行业研究员月薪2-4万；科技投资分析师月薪3-6万（含奖金可达50-100万/年）；AI产品经理月薪2.5-5万（据BOSS直聘/猎聘公开数据）</li>
+    </ul>
+    <h3 class="sub-title gg">地域优势</h3>
+    <p>上海（金融市场+AI产业双中心）、北京（政策/监管/研究机构密集）、深圳（科技投资/创投）、杭州（AI应用/电商AI化）</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① Anthropic冲刺2万亿美元IPO，意味着AI公司从"烧钱故事"进入"收入验证"阶段，懂AI又懂金融的复合人才极度稀缺；② 科技投行/AI行研是金融学+AI背景同学的高薪出口，建议尽早关注AI商业化分析；③ AI企业上市潮带来大量法务、合规、投资者关系等岗位需求，法学/商科同学可以切入；④ 关注AI估值方法论——传统PE/PS模型正在被ARR、token消耗量等新指标重塑。</p>
+    </div>
+  </div>
+</div>
+
+<!-- 7. Apple Music AI标签 -->
+<div class="card arts">
+  <div class="card-head">
+    <h2>Apple Music宣布AI标签从自愿改为强制，超三分之一上传曲目为纯AI生成</h2>
+    <span style="background:#f0fff4;color:#48bb78;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">文科</span>
+  </div>
+  <div class="meta"><span>📰 音乐/版权/AI治理</span><span>🕐 2026-08-21</span></div>
+  <div class="content">
+    <h3 class="sub-title gg">事件背景</h3>
+    <p>Apple于8月21日向音乐分发商发送邮件，宣布将AI透明标签（AI Transparency Tags）从自愿披露升级为强制要求。任何"由AI实质性创作"的曲目都必须标注AI标签，包括AI平台直接生成的内容。Apple Music副总裁Oliver Schusser此前透露的数据令人震惊：平台每月上传曲目中超过三分之一是100%由AI制作的，但这部分内容的实际收听占比不到0.5%。Apple在2025年重新分配了约20亿次刷量播放产生的版税。新标签将在2026年晚些时候正式上线，届时将对听众可见。</p>
+    <h3 class="sub-title gg">行业简述</h3>
+    <p>主流流媒体平台正陆续建立AI内容标识体系。Spotify计划9月中旬推出"AI Persona"徽章，标注AI艺人资料页；Tidal已对AI生成音乐去除版税并标注；Deezer运行AI检测系统一年多，每天拦截约6万首AI生成歌曲，并表示其中大量涉及欺诈。RIAA和IFPI牵头提出了"AI生成"与"AI辅助"双标签方案。Bandcamp和Qobuz则直接拒绝纯AI生成音乐。AI音乐生成平台Suno每天生成约700万首歌曲，相当于Spotify整个曲库每两周被复制一次。</p>
+    <h3 class="sub-title gg">关联专业</h3>
+    <ul>
+      <li>音乐学/音乐产业管理</li>
+      <li>知识产权法</li>
+      <li>数字媒体艺术</li>
+      <li>文化产业管理</li>
+      <li>新闻学（科技传播方向）</li>
+    </ul>
+    <h3 class="sub-title gg">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>本科可入行（音乐运营/内容审核/版权助理），硕士优先（版权法务/平台策略），博士优先（学术研究）</li>
+      <li><b>典型岗位：</b>音乐平台版权运营、AI内容审核专员、数字音乐产品经理、知识产权律师</li>
+      <li><b>薪资参考：</b>音乐平台运营月薪1-2.5万；版权专员月薪1.2-3万；知识产权律师年薪20-60万（据BOSS直聘/猎聘公开数据）</li>
+    </ul>
+    <h3 class="sub-title gg">地域优势</h3>
+    <p>北京（音乐产业/版权机构/平台总部最密集）、上海（流媒体平台/数字娱乐）、成都（音乐文创产业）、深圳（科技+音乐跨界）</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① AI生成内容治理是全新赛道，"AI+版权"复合型人才极度稀缺，法律+技术的交叉背景非常有竞争力；② 音乐产业管理不再只限于唱片公司，流媒体平台的内容审核、版权运营、AI治理等岗位正在快速增长；③ AI音乐平台Suno日产700万首歌，但收听占比不到0.5%——说明AI降低了创作门槛但并未替代真实需求，版权保护和内容治理才是核心问题；④ 建议关注数字版权法和AI治理方向，这是未来5-10年的高增长领域。</p>
+    </div>
+  </div>
+</div>
 
 </div>
 
