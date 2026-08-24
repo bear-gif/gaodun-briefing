@@ -7,7 +7,7 @@
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
   html { scroll-behavior: smooth; }
-  body { background: #f0f0f0 }
+  body { background: #f1f5f9 }
 
   /* 顶部导航 */
   .top-nav { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); color: #fff; padding: 28px 40px 20px; position: sticky; top: 0; z-index: 100; }
@@ -30,7 +30,7 @@
   .container { max-width: 960px; margin: 0 auto; padding: 30px 20px 60px; }
 
   /* 报告头部 */
-  .report-header { background: #f0f0f0; border-radius: 14px; padding: 32px 36px; margin-bottom: 28px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+  .report-header { background: #ffffff; border-radius: 14px; padding: 32px 36px; margin-bottom: 28px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
   .report-header .date-line { font-size: 22px; font-weight: 700; color: #1a1a2e; margin-bottom: 10px; }
   .report-header .stats { font-size: 14px; color: #718096; margin-bottom: 20px; }
   .report-header .stats span { display: inline-block; margin-right: 16px; }
@@ -41,7 +41,7 @@
   .core-judgments li::before { content: "▸"; position: absolute; left: 0; color: #4299e1; font-weight: bold; }
 
   /* 资讯卡片 */
-  .card { background: #f0f0f0; border-radius: 14px; padding: 32px 36px; margin-bottom: 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.07); border: 1px solid #ebebeb; border-top: 4px solid transparent; }
+  .card { background: #ffffff; border-radius: 14px; padding: 32px 36px; margin-bottom: 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.07); border: 1px solid #ebebeb; border-top: 4px solid transparent; }
   .card.science { border-top-color: #4299e1; }
   .card.arts { border-top-color: #48bb78; }
   .card.general { border-top-color: #9f7aea; }
@@ -50,7 +50,7 @@
   .tag { display: inline-block; font-size: 12px; font-weight: 600; padding: 3px 12px; border-radius: 12px; white-space: nowrap; }
   .tag-science { background: #ebf8ff; color: #2b6cb0; }
   .tag-arts { background: #f0fff4; color: #276749; }
-  .tag-general { background: #f0f0f0; color: #6b46c1; }
+  .tag-general { background: #ffffff; color: #6b46c1; }
 
   .section-title { font-size: 14px; font-weight: 700; color: #2d3748; margin: 20px 0 10px; display: flex; align-items: center; gap: 6px; }
   .section-title::before { content: ""; display: inline-block; width: 4px; height: 14px; border-radius: 2px; }
@@ -223,7 +223,7 @@
 </style>
 <style>
   /* 索引页额外样式 */
-  body { background: #f0f0f0 }
+  body { background: #f1f5f9 }
   
   .header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); color: #fff; padding: 56px 40px 48px; text-align: center; }
   .header h1 { font-size: 40px; font-weight: 700; letter-spacing: 2px; margin-bottom: 12px; }
@@ -275,7 +275,7 @@
   .report-view.visible { display: block; }
   
   /* 报告视图外层包装 */
-  .report-view.visible { background: #f0f0f0 }
+  .report-view.visible { background: #ffffff }
   
   /* 报告内容区 - 白色卡片 */
   .container.report-view {
@@ -614,13 +614,13 @@
     </div>
   </div>
 
-  <div style="margin:20px 0 10px;padding:12px 20px;background:#f0f0f0;border-radius:10px;box-shadow:0 1px 3px rgba(0,0,0,0.04);display:flex;align-items:center;flex-wrap:wrap;">
+  <div style="margin:20px 0 10px;padding:12px 20px;background:#ffffff;border-radius:10px;box-shadow:0 1px 3px rgba(0,0,0,0.04);display:flex;align-items:center;flex-wrap:wrap;">
     <span style="font-size:14px;color:#718096;margin-right:12px;">快速跳转：</span>
     <a href="javascript:void(0)" onclick="scrollToSection('section-science')" style="margin-right:20px;font-size:15px;color:#2b6cb0;text-decoration:none;font-weight:600;">🔬 理工科资讯</a>
     <a href="javascript:void(0)" onclick="scrollToSection('section-arts')" style="margin-right:20px;font-size:15px;color:#276749;text-decoration:none;font-weight:600;">📚 文科资讯</a>
   </div>
 
-  <div id="section-science" style="display:flex;align-items:center;gap:10px;margin:24px 0 18px;padding:12px 20px;background:linear-gradient(90deg,#ebf8ff,#f0f0f0);border-radius:10px;border-left:4px solid #4299e1;">
+  <div id="section-science" style="display:flex;align-items:center;gap:10px;margin:24px 0 18px;padding:12px 20px;background:linear-gradient(90deg,#ebf8ff,#f1f5f9);border-radius:10px;border-left:4px solid #4299e1;">
     <span style="font-size:20px;">🔬</span>
     <span style="font-size:17px;font-weight:700;color:#2b6cb0;">理工科资讯</span>
     <span style="font-size:13px;color:#718096;margin-left:4px;">共 4 条</span>
@@ -758,7 +758,7 @@
   </div>
 </div>
 
-  <div id="section-arts" style="display:flex;align-items:center;gap:10px;margin:30px 0 18px;padding:12px 20px;background:linear-gradient(90deg,#f0fff4,#f0f0f0);border-radius:10px;border-left:4px solid #48bb78;">
+  <div id="section-arts" style="display:flex;align-items:center;gap:10px;margin:30px 0 18px;padding:12px 20px;background:linear-gradient(90deg,#f0fff4,#f1f5f9);border-radius:10px;border-left:4px solid #48bb78;">
     <span style="font-size:20px;">📚</span>
     <span style="font-size:17px;font-weight:700;color:#276749;">文科资讯</span>
     <span style="font-size:13px;color:#718096;margin-left:4px;">共 2 条</span>
@@ -854,13 +854,13 @@
     </div>
   </div>
 
-  <div style="margin:20px 0 10px;padding:12px 20px;background:#f0f0f0;border-radius:10px;box-shadow:0 1px 3px rgba(0,0,0,0.04);display:flex;align-items:center;flex-wrap:wrap;">
+  <div style="margin:20px 0 10px;padding:12px 20px;background:#ffffff;border-radius:10px;box-shadow:0 1px 3px rgba(0,0,0,0.04);display:flex;align-items:center;flex-wrap:wrap;">
     <span style="font-size:14px;color:#718096;margin-right:12px;">快速跳转：</span>
     <a href="javascript:void(0)" onclick="scrollToSection('section-science')" style="margin-right:20px;font-size:15px;color:#2b6cb0;text-decoration:none;font-weight:600;">🔬 理工科资讯</a>
     <a href="javascript:void(0)" onclick="scrollToSection('section-arts')" style="margin-right:20px;font-size:15px;color:#276749;text-decoration:none;font-weight:600;">📚 文科资讯</a>
   </div>
 
-  <div id="section-science" style="display:flex;align-items:center;gap:10px;margin:24px 0 18px;padding:12px 20px;background:linear-gradient(90deg,#ebf8ff,#f0f0f0);border-radius:10px;border-left:4px solid #4299e1;">
+  <div id="section-science" style="display:flex;align-items:center;gap:10px;margin:24px 0 18px;padding:12px 20px;background:linear-gradient(90deg,#ebf8ff,#f1f5f9);border-radius:10px;border-left:4px solid #4299e1;">
     <span style="font-size:20px;">🔬</span>
     <span style="font-size:17px;font-weight:700;color:#2b6cb0;">理工科资讯</span>
     <span style="font-size:13px;color:#718096;margin-left:4px;">共 4 条</span>
@@ -998,7 +998,7 @@
   </div>
 </div>
 
-  <div id="section-arts" style="display:flex;align-items:center;gap:10px;margin:30px 0 18px;padding:12px 20px;background:linear-gradient(90deg,#f0fff4,#f0f0f0);border-radius:10px;border-left:4px solid #48bb78;">
+  <div id="section-arts" style="display:flex;align-items:center;gap:10px;margin:30px 0 18px;padding:12px 20px;background:linear-gradient(90deg,#f0fff4,#f1f5f9);border-radius:10px;border-left:4px solid #48bb78;">
     <span style="font-size:20px;">📚</span>
     <span style="font-size:17px;font-weight:700;color:#276749;">文科资讯</span>
     <span style="font-size:13px;color:#718096;margin-left:4px;">共 2 条</span>
@@ -1093,13 +1093,13 @@
     </div>
   </div>
 
-  <div style="margin:20px 0 10px;padding:12px 20px;background:#f0f0f0;border-radius:10px;box-shadow:0 1px 3px rgba(0,0,0,0.04);display:flex;align-items:center;flex-wrap:wrap;">
+  <div style="margin:20px 0 10px;padding:12px 20px;background:#ffffff;border-radius:10px;box-shadow:0 1px 3px rgba(0,0,0,0.04);display:flex;align-items:center;flex-wrap:wrap;">
     <span style="font-size:14px;color:#718096;margin-right:12px;">快速跳转：</span>
     <a href="javascript:void(0)" onclick="scrollToSection('section-science-0822')" style="margin-right:20px;font-size:15px;color:#2b6cb0;text-decoration:none;font-weight:600;">🔬 理工科资讯</a>
     <a href="javascript:void(0)" onclick="scrollToSection('section-arts-0822')" style="margin-right:20px;font-size:15px;color:#276749;text-decoration:none;font-weight:600;">📚 文科资讯</a>
   </div>
 
-  <div id="section-science-0822" style="display:flex;align-items:center;gap:10px;margin:24px 0 18px;padding:12px 20px;background:linear-gradient(90deg,#ebf8ff,#f0f0f0);border-radius:10px;border-left:4px solid #4299e1;">
+  <div id="section-science-0822" style="display:flex;align-items:center;gap:10px;margin:24px 0 18px;padding:12px 20px;background:linear-gradient(90deg,#ebf8ff,#f1f5f9);border-radius:10px;border-left:4px solid #4299e1;">
     <span style="font-size:20px;">🔬</span>
     <span style="font-size:17px;font-weight:700;color:#2b6cb0;">理工科资讯</span>
     <span style="font-size:13px;color:#718096;margin-left:4px;">共 8 条</span>
@@ -1369,7 +1369,7 @@
   </div>
 </div>
 
-  <div id="section-arts-0822" style="display:flex;align-items:center;gap:10px;margin:30px 0 18px;padding:12px 20px;background:linear-gradient(90deg,#f0fff4,#f0f0f0);border-radius:10px;border-left:4px solid #48bb78;">
+  <div id="section-arts-0822" style="display:flex;align-items:center;gap:10px;margin:30px 0 18px;padding:12px 20px;background:linear-gradient(90deg,#f0fff4,#f1f5f9);border-radius:10px;border-left:4px solid #48bb78;">
     <span style="font-size:20px;">📚</span>
     <span style="font-size:17px;font-weight:700;color:#276749;">文科资讯</span>
     <span style="font-size:13px;color:#718096;margin-left:4px;">共 4 条</span>
@@ -1527,12 +1527,12 @@
     </div>
   </div>
 
-  <div style="margin:20px 0 10px;padding:12px 20px;background:#f0f0f0;border-radius:10px;box-shadow:0 1px 3px rgba(0,0,0,0.04);display:flex;align-items:center;flex-wrap:wrap;">
+  <div style="margin:20px 0 10px;padding:12px 20px;background:#ffffff;border-radius:10px;box-shadow:0 1px 3px rgba(0,0,0,0.04);display:flex;align-items:center;flex-wrap:wrap;">
     <span style="font-size:14px;color:#718096;margin-right:12px;">快速跳转：</span>
     <a href="javascript:void(0)" onclick="scrollToSection('section-science-0821')" style="margin-right:20px;font-size:15px;color:#2b6cb0;text-decoration:none;font-weight:600;">🔬 理工科资讯</a>
   </div>
 
-  <div id="section-science-0821" style="display:flex;align-items:center;gap:10px;margin:24px 0 18px;padding:12px 20px;background:linear-gradient(90deg,#ebf8ff,#f0f0f0);border-radius:10px;border-left:4px solid #4299e1;">
+  <div id="section-science-0821" style="display:flex;align-items:center;gap:10px;margin:24px 0 18px;padding:12px 20px;background:linear-gradient(90deg,#ebf8ff,#f1f5f9);border-radius:10px;border-left:4px solid #4299e1;">
     <span style="font-size:20px;">🔬</span>
     <span style="font-size:17px;font-weight:700;color:#2b6cb0;">理工科资讯</span>
     <span style="font-size:13px;color:#718096;margin-left:4px;">共 2 条</span>
@@ -1627,13 +1627,13 @@
     </div>
   </div>
 
-  <div style="margin:20px 0 10px;padding:12px 20px;background:#f0f0f0;border-radius:10px;box-shadow:0 1px 3px rgba(0,0,0,0.04);display:flex;align-items:center;flex-wrap:wrap;">
+  <div style="margin:20px 0 10px;padding:12px 20px;background:#ffffff;border-radius:10px;box-shadow:0 1px 3px rgba(0,0,0,0.04);display:flex;align-items:center;flex-wrap:wrap;">
     <span style="font-size:14px;color:#718096;margin-right:12px;">快速跳转：</span>
     <a href="javascript:void(0)" onclick="scrollToSection('section-science-0820')" style="margin-right:20px;font-size:15px;color:#2b6cb0;text-decoration:none;font-weight:600;">🔬 理工科资讯</a>
     <a href="javascript:void(0)" onclick="scrollToSection('section-arts-0820')" style="margin-right:20px;font-size:15px;color:#276749;text-decoration:none;font-weight:600;">📚 文科资讯</a>
   </div>
 
-  <div id="section-science-0820" style="display:flex;align-items:center;gap:10px;margin:24px 0 18px;padding:12px 20px;background:linear-gradient(90deg,#ebf8ff,#f0f0f0);border-radius:10px;border-left:4px solid #4299e1;">
+  <div id="section-science-0820" style="display:flex;align-items:center;gap:10px;margin:24px 0 18px;padding:12px 20px;background:linear-gradient(90deg,#ebf8ff,#f1f5f9);border-radius:10px;border-left:4px solid #4299e1;">
     <span style="font-size:20px;">🔬</span>
     <span style="font-size:17px;font-weight:700;color:#2b6cb0;">理工科资讯</span>
     <span style="font-size:13px;color:#718096;margin-left:4px;">共 20 条</span>
@@ -2279,7 +2279,7 @@
 </div>
 
 
-  <div id="section-arts-0820" style="display:flex;align-items:center;gap:10px;margin:30px 0 18px;padding:12px 20px;background:linear-gradient(90deg,#f0fff4,#f0f0f0);border-radius:10px;border-left:4px solid #48bb78;">
+  <div id="section-arts-0820" style="display:flex;align-items:center;gap:10px;margin:30px 0 18px;padding:12px 20px;background:linear-gradient(90deg,#f0fff4,#f1f5f9);border-radius:10px;border-left:4px solid #48bb78;">
     <span style="font-size:20px;">📚</span>
     <span style="font-size:17px;font-weight:700;color:#276749;">文科资讯</span>
     <span style="font-size:13px;color:#718096;margin-left:4px;">共 3 条</span>
@@ -2406,13 +2406,13 @@
     </div>
   </div>
 
-  <div style="margin:20px 0 10px;padding:12px 20px;background:#f0f0f0;border-radius:10px;box-shadow:0 1px 3px rgba(0,0,0,0.04);display:flex;align-items:center;flex-wrap:wrap;">
+  <div style="margin:20px 0 10px;padding:12px 20px;background:#ffffff;border-radius:10px;box-shadow:0 1px 3px rgba(0,0,0,0.04);display:flex;align-items:center;flex-wrap:wrap;">
     <span style="font-size:14px;color:#718096;margin-right:12px;">快速跳转：</span>
     <a href="javascript:void(0)" onclick="scrollToSection('section-science-0819')" style="margin-right:20px;font-size:15px;color:#2b6cb0;text-decoration:none;font-weight:600;">🔬 理工科资讯</a>
     <a href="javascript:void(0)" onclick="scrollToSection('section-arts-0819')" style="margin-right:20px;font-size:15px;color:#276749;text-decoration:none;font-weight:600;">📚 文科资讯</a>
   </div>
 
-  <div id="section-science-0819" style="display:flex;align-items:center;gap:10px;margin:24px 0 18px;padding:12px 20px;background:linear-gradient(90deg,#ebf8ff,#f0f0f0);border-radius:10px;border-left:4px solid #4299e1;">
+  <div id="section-science-0819" style="display:flex;align-items:center;gap:10px;margin:24px 0 18px;padding:12px 20px;background:linear-gradient(90deg,#ebf8ff,#f1f5f9);border-radius:10px;border-left:4px solid #4299e1;">
     <span style="font-size:20px;">🔬</span>
     <span style="font-size:17px;font-weight:700;color:#2b6cb0;">理工科资讯</span>
     <span style="font-size:13px;color:#718096;margin-left:4px;">共 23 条</span>
@@ -3155,7 +3155,7 @@
 </div>
 
 
-  <div id="section-arts-0819" style="display:flex;align-items:center;gap:10px;margin:30px 0 18px;padding:12px 20px;background:linear-gradient(90deg,#f0fff4,#f0f0f0);border-radius:10px;border-left:4px solid #48bb78;">
+  <div id="section-arts-0819" style="display:flex;align-items:center;gap:10px;margin:30px 0 18px;padding:12px 20px;background:linear-gradient(90deg,#f0fff4,#f1f5f9);border-radius:10px;border-left:4px solid #48bb78;">
     <span style="font-size:20px;">📚</span>
     <span style="font-size:17px;font-weight:700;color:#276749;">文科资讯</span>
     <span style="font-size:13px;color:#718096;margin-left:4px;">共 4 条</span>
@@ -3313,13 +3313,13 @@
     </div>
   </div>
 
-  <div style="margin:20px 0 10px;padding:12px 20px;background:#f0f0f0;border-radius:10px;box-shadow:0 1px 3px rgba(0,0,0,0.04);display:flex;align-items:center;flex-wrap:wrap;">
+  <div style="margin:20px 0 10px;padding:12px 20px;background:#ffffff;border-radius:10px;box-shadow:0 1px 3px rgba(0,0,0,0.04);display:flex;align-items:center;flex-wrap:wrap;">
     <span style="font-size:14px;color:#718096;margin-right:12px;">快速跳转：</span>
     <a href="javascript:void(0)" onclick="scrollToSection('section-science-0818')" style="margin-right:20px;font-size:15px;color:#2b6cb0;text-decoration:none;font-weight:600;">🔬 理工科资讯</a>
     <a href="javascript:void(0)" onclick="scrollToSection('section-arts-0818')" style="margin-right:20px;font-size:15px;color:#276749;text-decoration:none;font-weight:600;">📚 文科资讯</a>
   </div>
 
-  <div id="section-science-0818" style="display:flex;align-items:center;gap:10px;margin:24px 0 18px;padding:12px 20px;background:linear-gradient(90deg,#ebf8ff,#f0f0f0);border-radius:10px;border-left:4px solid #4299e1;">
+  <div id="section-science-0818" style="display:flex;align-items:center;gap:10px;margin:24px 0 18px;padding:12px 20px;background:linear-gradient(90deg,#ebf8ff,#f1f5f9);border-radius:10px;border-left:4px solid #4299e1;">
     <span style="font-size:20px;">🔬</span>
     <span style="font-size:17px;font-weight:700;color:#2b6cb0;">理工科资讯</span>
     <span style="font-size:13px;color:#718096;margin-left:4px;">共 20 条</span>
@@ -3967,7 +3967,7 @@
 </div>
 
 
-  <div id="section-arts-0818" style="display:flex;align-items:center;gap:10px;margin:30px 0 18px;padding:12px 20px;background:linear-gradient(90deg,#f0fff4,#f0f0f0);border-radius:10px;border-left:4px solid #48bb78;">
+  <div id="section-arts-0818" style="display:flex;align-items:center;gap:10px;margin:30px 0 18px;padding:12px 20px;background:linear-gradient(90deg,#f0fff4,#f1f5f9);border-radius:10px;border-left:4px solid #48bb78;">
     <span style="font-size:20px;">📚</span>
     <span style="font-size:17px;font-weight:700;color:#276749;">文科资讯</span>
     <span style="font-size:13px;color:#718096;margin-left:4px;">共 2 条</span>
@@ -4066,7 +4066,7 @@
 </div>
 
 <!-- ========== 理工科资讯 ========== -->
-<div id="section-science-0817" style="display:flex;align-items:center;gap:10px;margin:10px 0 18px;padding:12px 20px;background:linear-gradient(90deg,#ebf8ff,#f0f0f0);border-radius:10px;border-left:4px solid #4299e1;">
+<div id="section-science-0817" style="display:flex;align-items:center;gap:10px;margin:10px 0 18px;padding:12px 20px;background:linear-gradient(90deg,#ebf8ff,#f1f5f9);border-radius:10px;border-left:4px solid #4299e1;">
   <span style="font-size:20px;">🔬</span>
   <span style="font-size:17px;font-weight:700;color:#2b6cb0;">理工科资讯</span>
   <span style="font-size:13px;color:#718096;margin-left:4px;">共 11 条</span>
@@ -4411,7 +4411,7 @@
 </div>
 
 <!-- ========== 文科资讯 ========== -->
-<div id="section-arts-0817" style="display:flex;align-items:center;gap:10px;margin:10px 0 18px;padding:12px 20px;background:linear-gradient(90deg,#f0fff4,#f0f0f0);border-radius:10px;border-left:4px solid #48bb78;">
+<div id="section-arts-0817" style="display:flex;align-items:center;gap:10px;margin:10px 0 18px;padding:12px 20px;background:linear-gradient(90deg,#f0fff4,#f1f5f9);border-radius:10px;border-left:4px solid #48bb78;">
   <span style="font-size:20px;">📚</span>
   <span style="font-size:17px;font-weight:700;color:#276749;">文科资讯</span>
   <span style="font-size:13px;color:#718096;margin-left:4px;">共 4 条</span>
