@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第8期 · 高顿升学 · 每日行业速览</title>
+<style>
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif; background: #f5f7fa; color: #1a1a2e; line-height: 1.7; }
+  .container { max-width: 960px; margin: 0 auto; padding: 30px 20px 60px; }
+  .report-header { background: #fff; border-radius: 14px; padding: 28px 32px; margin-bottom: 24px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+  .report-header .date-line { font-size: 20px; font-weight: 700; color: #1a1a2e; margin-bottom: 6px; }
+  .report-header .stats { font-size: 14px; color: #718096; margin-bottom: 16px; }
+  .report-header .stats span { display: inline-block; margin-right: 14px; }
+  .core-judgments { background: #f7fafc; border-left: 4px solid #4299e1; padding: 16px 20px; border-radius: 0 8px 8px 0; }
+  .core-judgments h3 { font-size: 15px; color: #2d3748; margin-bottom: 8px; }
+  .core-judgments ul { list-style: none; }
+  .core-judgments li { font-size: 14px; color: #4a5568; padding: 4px 0; padding-left: 18px; position: relative; }
+  .core-judgments li::before { content: "\25b8"; position: absolute; left: 0; color: #4299e1; font-weight: bold; }
+  .card { background: #fff; border-radius: 14px; padding: 28px 32px; margin-bottom: 20px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); border-top: 4px solid transparent; }
+  .card.science { border-top-color: #4299e1; }
+  .card.arts { border-top-color: #48bb78; }
+  .card-head { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; flex-wrap: wrap; }
+  .card-head h2 { font-size: 18px; font-weight: 700; color: #1a1a2e; flex: 1; min-width: 200px; }
+  .meta { display: flex; gap: 16px; font-size: 13px; color: #a0aec0; margin-bottom: 12px; flex-wrap: wrap; }
+  .content p, .content li { font-size: 15px; color: #4a5568; line-height: 1.8; }
+  .content ul { list-style: disc; padding-left: 20px; margin: 6px 0; }
+  .content li { margin: 4px 0; }
+  .sub-title { font-size: 15px; margin: 14px 0 6px; border-left: 3px solid #4299e1; padding-left: 10px; font-weight: 600; }
+  .sub-title.sc { color: #4299e1; border-color: #4299e1; }
+  .sub-title.gg { color: #48bb78; border-color: #48bb78; }
+  .tip-block { background: #fef3c7; border-radius: 8px; padding: 14px 18px; margin: 12px 0; }
+  .tip-block h3 { color: #92400e; font-size: 15px; margin: 0 0 8px; }
+  .tip-block p { color: #92400e; margin: 0; font-size: 14px; line-height: 1.9; }
+
+  @media print {
+    body { background: #fff !important; }
+    .container { max-width: 100%; padding: 10px; }
+    .card { page-break-inside: auto; box-shadow: none; border: 1px solid #e2e8f0; }
+    .content > * { page-break-inside: avoid; }
+    .tip-block { page-break-inside: avoid; }
+    .report-header a { display: none !important; }
+  }
+
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="report-header">
+    <a href="javascript:void(0)" onclick="showIndex()" style="display:inline-block;margin-bottom:14px;font-size:14px;color:#4299e1;text-decoration:none;font-weight:500;cursor:pointer;">← 返回列表</a>
+    <div class="date-line">📅 第8期 · 高顿升学 · 每日行业速览</div>
+    <div class="stats">
+      <span>📊 资讯共 2 条</span>
+      <span>🔬 理工科 2 条</span>
+      <span>📚 文科 0 条</span>
+    </div>
+    <div class="core-judgments">
+      <h3>📌 今日要点速览</h3>
+      <ul>
+        <li>NASA通过NIAC计划资助18个前沿太空技术概念，总投入320万美元，涵盖月球熔岩管探测机器人、万颗飞秒卫星探测土星环等突破性方案</li>
+        <li>联影医疗与天津大学联合发布全球首个磁共振脑机接口全栈式解决方案"uMR神观"，实现"读脑—写脑—验证"闭环，磁共振脑机接口创新联盟同步成立</li>
+      </ul>
+    </div>
+  </div>
+
+  <div style="margin:20px 0 10px;padding:12px 20px;background:#fff;border-radius:10px;box-shadow:0 1px 3px rgba(0,0,0,0.04);display:flex;align-items:center;flex-wrap:wrap;">
+    <span style="font-size:14px;color:#718096;margin-right:12px;">快速跳转：</span>
+    <a href="javascript:void(0)" onclick="scrollToSection('section-science')" style="margin-right:20px;font-size:15px;color:#2b6cb0;text-decoration:none;font-weight:600;">🔬 理工科资讯</a>
+    <a href="javascript:void(0)" onclick="scrollToSection('section-arts')" style="margin-right:20px;font-size:15px;color:#276749;text-decoration:none;font-weight:600;">📚 文科资讯</a>
+  </div>
+
+  <div id="section-science" style="display:flex;align-items:center;gap:10px;margin:24px 0 18px;padding:12px 20px;background:linear-gradient(90deg,#ebf8ff,#fff);border-radius:10px;border-left:4px solid #4299e1;">
+    <span style="font-size:20px;">🔬</span>
+    <span style="font-size:17px;font-weight:700;color:#2b6cb0;">理工科资讯</span>
+    <span style="font-size:13px;color:#718096;margin-left:4px;">共 2 条</span>
+  </div>
+
+<div class="card science">
+  <div class="card-head">
+    <h2>NASA资助18个前沿概念研究，含月球熔岩管探测、土星环探测等</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 科学探索</span><span>🕐 2026-08-24 08:00</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>美国宇航局（NASA）通过创新先进概念（NIAC）计划，为2026年度第一阶段遴选出18个项目，共同分享总计320万美元的开发资金。每个项目获得最高17.5万美元、为期9个月的初步调研资助。这些项目并非正式NASA任务，而是面向未来太空任务的技术孵化概念。获奖创意包括：探测月球熔岩管的悬停机器人（LUX）、由1万颗飞秒卫星组成的土星环探测舰队、用太空尘埃遮挡太阳辐射的DimSun方案、为月球宇航服集成放射性同位素热源（EARENDIL）等。NIAC代理项目执行官菲利普·威廉姆斯表示："每一项创新、每一次技术飞跃，都始于一颗想法的种子。"</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>NIAC计划是NASA的"创新孵化器"，专注于资助可能实现技术突破的早期概念开发。2026年度获奖项目覆盖月球基础设施（熔岩管探测、月夜保温、小型探测器热管理）、行星环探测（土星环万颗飞秒卫星编队、行星环原位采样PRAXIS）、金星耐恶劣环境探测器、系外行星大陆测绘、黑洞光子环观测、星际探测器动力（可折叠太阳帆、放射性同位素热电发电）等前沿方向。值得关注的是，月球熔岩管探测项目（LUX）采用"光纤供电"方案——超轻型光纤电缆从月面着陆器向地下悬停机器人输送激光电力，解决了月球地下无阳光的能源难题。这些概念必须兼具"变革潜力"和"可行实现路径"才能入选。</p>
+    <h3 class="sub-title sc">关联专业</h3>
+    <ul>
+      <li>航空航天工程</li>
+      <li>机器人工程</li>
+      <li>自动化</li>
+      <li>光学工程 / 光电信息科学与工程</li>
+      <li>计算机科学与技术</li>
+    </ul>
+    <h3 class="sub-title sc">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>本科可入行（基础技术/测试岗），硕士优先（设计/研发），博士优先（前沿概念研究/深空探测方向）</li>
+      <li><b>典型岗位：</b>航天器总体设计工程师、深空探测任务设计师、机器人算法工程师、光学系统工程师、航天器热控工程师</li>
+      <li><b>薪资参考：</b>初级工程师年薪18-30万；中级工程师35-55万；资深/塔尖层（硕博+5年经验）80-120万；液体火箭发动机首席工程师薪酬中位数82万元/年（据锐仕方达《2025商业航天薪酬指南》）；火箭回收技术岗年涨幅24%为全行业最高（据36氪/证券时报公开招聘数据）；航天器测控通信工程师月薪25-50k（据猎聘公开招聘数据）</li>
+    </ul>
+    <h3 class="sub-title sc">地域优势</h3>
+    <p>北京（航天科技集团/航天科工总部、商业航天企业最密集）、上海（商业航天8大重点产业人才专项、闵行区春申人才政策）、西安（航天六院/四院等传统院所）、深圳/杭州（新兴商业航天聚集地）、无锡（航天产业生态成熟，基本具备"不出市域完成整箭集成"能力）、烟台海阳（核心海上发射基地，集聚航天产业项目30余个，总投资超330亿元）</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① 航空航天装备领域人才缺口高达47.5万，产业以70%速度增长、人才供给增速不足20%，供需失衡将持续五年以上；② 2026年中国商业航天市场规模预计突破3.5万亿，天兵科技2026届校招硕博占比97.1%、核心岗位硕士校招平均起薪30万元以上并叠加股权激励；③ "航天+AI"复合型人才缺口最突出，卫星大数据、飞推控制算法、大模型在轨部署等跨学科人才几乎没有"现成品"；④ 商业航天产业布局正从北京向全国扩散，无锡、海阳、济南、广州等新城快速崛起，为毕业生提供更多地域选择。</p>
+    </div>
+  </div>
+</div>
+
+<div class="card science">
+  <div class="card-head">
+    <h2>联影医疗与天津大学发布全球首个磁共振脑机接口全栈式解决方案"uMR神观"</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 科学探索</span><span>🕐 2026-08-24 00:00</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>全国首届磁共振脑机接口大会8月23日在天津举行。天津大学与联影医疗联合发布全球首个磁共振脑机接口全栈式解决方案"uMR神观"。该方案以联影uMR系列磁共振设备（3.0T/5.0T/9.4T跨场强全覆盖）为硬件基座，面向脑机接口技术研发与临床转化进行深度开发，构建了一整套磁兼容脑机接口工具箱。方案具备毫秒级神经活动信号捕捉与亚毫米级脑结构精细测量能力，打通了"成像—仿真—调控—评估—算法迭代"完整闭环。同时，由天津大学、联影医疗联合发起的磁共振脑机接口创新联盟正式成立，成员包括清华大学、北京大学、浙江大学、中科院深圳先进院、宣武医院、天坛医院、华西医院等顶尖高校院所和头部三甲医院。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>脑机接口作为脑科学与类脑智能、人工智能等交叉融合的前沿方向，正从实验室走向临床与产业应用。uMR神观的核心突破在于：将磁共振从"影像诊断设备"升级为脑机交互闭环中的"核心感知与反馈中枢"，解决了脑机接口设备与磁共振相互干扰的行业难题，实现"读懂大脑、调控大脑、验证效果"的闭环。联影医疗磁共振事业部联合创新部总监袁健闵表示："它要解决的不是某一个技术参数的高低，而是磁共振成像平台兼容脑机接口从基础研究到临床转化能不能跑通全流程的问题。"中国工程院院士王振常指出，这标志着我国在该交叉领域正从单点技术突破走向系统能力构建。该方案覆盖治疗前精准规划、治疗中实时导航干预、治疗后迭代优化的全流程临床闭环。</p>
+    <h3 class="sub-title sc">关联专业</h3>
+    <ul>
+      <li>生物医学工程</li>
+      <li>医学影像学</li>
+      <li>电子信息工程</li>
+      <li>自动化 / 智能医学工程</li>
+      <li>计算机科学与技术（AI/信号处理方向）</li>
+    </ul>
+    <h3 class="sub-title sc">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>硕士起步（算法/系统工程师），博士优先（研究员/科学家方向）；核心研发岗位普遍要求硕士及以上</li>
+      <li><b>典型岗位：</b>脑机接口算法工程师、脑机接口系统工程师、磁共振硬件工程师、神经信号处理算法工程师、脑机接口硬件工程师</li>
+      <li><b>薪资参考：</b>脑机接口算法工程师月薪25-50k（据猎聘公开招聘数据）；脑机接口系统工程师月薪20-30k·14薪；脑机接口研发负责人月薪25-50k；脑机接口芯片开发负责人月薪75-100k·16薪（据猎聘公开招聘数据）；脑机接口CEO月薪50-80k·14薪；博士后年薪25-50万（据中科院上海微系统所公开招聘信息）；北方微电子院合肥先进技术研究院脑机接口研发岗年收入30万元起（据官方招聘公告）</li>
+    </ul>
+    <h3 class="sub-title sc">地域优势</h3>
+    <p>天津（脑机交互与人机共融海河实验室/天津大学）、上海（联影医疗总部、脑机接口医疗器械企业最密集）、北京（华脑安全等脑机接口企业、中科院体系）、深圳（脑机接口创业公司聚集、植入式神经调控企业）、杭州（神机妙控等新兴脑机接口企业）、西安（脑机接口研发中心技术总工等岗位需求集中）</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① 脑机接口是典型的"医工交叉"领域，需要同时掌握神经科学+信号处理+AI算法，复合背景是核心竞争力；② 中国脑机接口产业联盟成员单位持续扩容，翔宇医疗（已上市）等企业已开设多条脑机接口产品线岗位，产业正从实验室走向商业化；③ 生物医学工程是进入该领域最直接的专业入口，天津大学、浙江大学、东南大学等院校在该方向具有明显优势；④ 非侵入式脑机接口门槛相对较低、商业化进程更快，侵入式方向则需要更深厚的学术背景和临床资源。</p>
+    </div>
+  </div>
+</div>
+
+  <div id="section-arts" style="display:flex;align-items:center;gap:10px;margin:30px 0 18px;padding:12px 20px;background:linear-gradient(90deg,#f0fff4,#fff);border-radius:10px;border-left:4px solid #48bb78;">
+    <span style="font-size:20px;">📚</span>
+    <span style="font-size:17px;font-weight:700;color:#276749;">文科资讯</span>
+    <span style="font-size:13px;color:#718096;margin-left:4px;">共 0 条</span>
+  </div>
+
+</div>
+
+<script>
+function showIndex() {
+  if (window.parent && window.parent.showIndex) { window.parent.showIndex(); return; }
+  window.location.href = 'index.html';
+}
+function scrollToSection(id) {
+  var el = document.getElementById(id);
+  if (!el) return;
+  var top = el.offsetTop - 20;
+  window.scrollTo({ top: top, behavior: 'smooth' });
+}
+</script>
+
+</body>
+</html>
