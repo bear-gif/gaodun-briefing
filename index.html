@@ -320,6 +320,14 @@
       background: #fff !important;
       padding-top: 30mm !important;
     }
+    /* 打印时隐藏索引页、水印工具、导航和页脚 */
+    body.printing-report #site-brand-header { display: none !important; }
+    body.printing-report #index-view { display: none !important; }
+    body.printing-report #watermark-view { display: none !important; }
+    body.printing-report .footer { display: none !important; }
+    body.printing-report .report-view { display: none !important; }
+    body.printing-report .report-view.print-target { display: block !important; }
+    body.printing-report .report-view.print-target .report-header a { display: none !important; }
     .container { max-width: 100%; padding: 10px; }
     .card { page-break-inside: auto; box-shadow: none; border: 1px solid #e2e8f0; }
     .content > * { page-break-inside: avoid; }
@@ -4880,15 +4888,18 @@ function scrollToSection(id) {
 function downloadPDF(date, btnEl) {
   // 先切换到目标报告视图
   showReport(date);
-  
-  // 给body添加打印标记， else {
-    document.body.appendChild(tempHeader);
-  }
-  
+
+  // 给body添加打印标记
+  document.body.classList.add('printing-report');
+
+  // 找到目标报告元素并高亮
+  var target = document.getElementById('report-' + date);
+  if (target) target.classList.add('print-target');
+
   // 延迟一帧让DOM渲染完毕再弹打印
   setTimeout(function() {
     window.print();
-    // 打印完成后清理标记和临时表头
+    // 打印完成后清理标记
     document.body.classList.remove('printing-report');
     if (target) target.classList.remove('print-target');
     var th = document.getElementById('print-temp-header');
