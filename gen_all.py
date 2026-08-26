@@ -37,7 +37,7 @@ COMMON_CSS = r"""
   .tip-block p { color: #92400e; margin: 0; font-size: 14px; line-height: 1.9; }
   /* Print styles */
   @media print {
-    body.printing-report .container.report-view { padding: 0 8mm !important; margin: 0 !important; max-width: 100% !important; }
+    body.printing-report .container.report-view { padding: 0 8mm !important; margin: 0 auto !important; }
     .print-watermark { display: block !important; margin: 0 0 4mm 0 !important; }
     @page { margin: 10mm 18mm 10mm 18mm; size: auto; }
     body { margin: 0 !important; padding: 0 !important; background: #fff !important; }
