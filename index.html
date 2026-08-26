@@ -259,21 +259,23 @@
 
   @media print {
   body.printing-report .container.report-view { padding: 0 !important; margin: 0 !important; }
-  .print-watermark { display: block !important; margin: 0 0 6mm 0 !important; }
+  .print-watermark { display: block !important; margin: 0 0 4mm 0 !important; }
   @page { margin: 8mm 10mm 8mm 10mm; size: auto; }
-  .card { margin-bottom: 8px !important; padding: 12px 16px !important; }
-  .section-title { margin: 8px 0 4px !important; }
   body { margin: 0 !important; padding: 0 !important; background: #fff !important; }
+  /* 卡片紧凑且不断裂 */
+  .card { margin-bottom: 6px !important; padding: 10px 14px !important; break-inside: avoid !important; }
+  /* 分科标题紧凑，且与后续内容不分开 */
+  [id^="section-"] { break-after: avoid !important; break-inside: avoid !important; margin: 6px 0 3mm 0 !important; padding: 5px 10px !important; }
+  /* 隐藏快速跳转栏（onclick链接在report-header内） */
+  .report-header a { display: none !important; }
   body.printing-report #site-brand-header { display: none !important; }
   body.printing-report #index-view { display: none !important; }
   body.printing-report #watermark-view { display: none !important; }
   body.printing-report .footer { display: none !important; }
   body.printing-report .report-view { display: none !important; }
   body.printing-report .report-view.print-target { display: block !important; }
-  body.printing-report .report-view.print-target .report-header a { display: none !important; }
   body.printing-report .report-view.print-target .report-header .date-line { display: none !important; }
   body.printing-report .report-view.print-target .report-header .stats { display: none !important; }
-  
 }
 </style>
 <!-- html2pdf.js removed, using browser native print -->
