@@ -37,9 +37,9 @@ COMMON_CSS = r"""
   .tip-block p { color: #92400e; margin: 0; font-size: 14px; line-height: 1.9; }
   /* Print styles */
   @media print {
-    body.printing-report .container.report-view { padding: 0 12mm !important; margin: 0 !important; }
+    body.printing-report .container.report-view { padding: 0 8mm !important; margin: 0 !important; max-width: 100% !important; }
     .print-watermark { display: block !important; margin: 0 0 4mm 0 !important; }
-    @page { margin: 10mm 15mm 10mm 15mm; size: auto; }
+    @page { margin: 10mm 18mm 10mm 18mm; size: auto; }
     body { margin: 0 !important; padding: 0 !important; background: #fff !important; }
     .quick-nav { display: none !important; }
     .card { margin-bottom: 4px !important; padding: 10px 14px !important; }
