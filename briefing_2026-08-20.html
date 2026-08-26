@@ -40,11 +40,12 @@
 
 
   @media print {
+  body.printing-report .container.report-view { padding: 0 !important; margin: 0 !important; }
   .print-watermark { display: block !important; margin: 0 0 6mm 0 !important; }
-  @page { margin: 12mm 12mm 15mm 12mm; size: auto; }
-  .card { margin-bottom: 10px !important; padding: 16px 20px !important; }
-  .section-title { margin: 12px 0 6px !important; }
-  body { background: #fff !important; }
+  @page { margin: 8mm 10mm 8mm 10mm; size: auto; }
+  .card { margin-bottom: 8px !important; padding: 12px 16px !important; }
+  .section-title { margin: 8px 0 4px !important; }
+  body { margin: 0 !important; padding: 0 !important; background: #fff !important; }
   body.printing-report #site-brand-header { display: none !important; }
   body.printing-report #index-view { display: none !important; }
   body.printing-report #watermark-view { display: none !important; }
@@ -54,7 +55,7 @@
   body.printing-report .report-view.print-target .report-header a { display: none !important; }
   body.printing-report .report-view.print-target .report-header .date-line { display: none !important; }
   body.printing-report .report-view.print-target .report-header .stats { display: none !important; }
-  .card { break-inside: avoid; }
+  
 }
 </style>
 </head>
