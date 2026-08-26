@@ -57,7 +57,7 @@
   .print-qr-header .brand-cell .brand-name { font-size: 16pt; font-weight: 900; color: #E8721C; line-height: 1.2; }
   .print-qr-header .brand-cell .brand-en { font-size: 9pt; font-weight: 700; color: #E8721C; letter-spacing: 1px; }
   .print-qr-separator { display: block !important; position: fixed; top: 38mm; left: 12mm; right: 12mm; border-top: 0.5pt solid #ccc; z-index: 99999; }
-  body { background: #fff !important; padding-top: 42mm !important; }
+  body { background: #fff !important; padding-top: 55mm !important; }
   /* 打印时隐藏元素 */
   body.printing-report #site-brand-header { display: none !important; }
   body.printing-report #index-view { display: none !important; }
@@ -73,7 +73,24 @@
   .content > * { page-break-inside: avoid; }
   .tip-block { page-break-inside: avoid; }
   .report-header a { display: none !important; }
-}</style>
+}
+  /* Screen-mode rules for html2canvas PDF capture */
+  body.printing-report { background: #fff !important; padding-top: 55mm !important; }
+  body.printing-report .print-qr-header { display: table !important; width: 100%; position: fixed; top: 0; left: 0; z-index: 99999; }
+  body.printing-report .print-qr-header table { width: 100%; border-collapse: collapse; }
+  body.printing-report .print-qr-header td { vertical-align: middle; }
+  body.printing-report .print-qr-header .qr-cell { width: 24mm; }
+  body.printing-report .print-qr-header .qr-cell img { width: 20mm; height: 20mm; display: block; }
+  body.printing-report .print-qr-header .text-cell { width: auto; }
+  body.printing-report .print-qr-header .text-cell .line1 { font-size: 11pt; color: #333; font-weight: 600; white-space: nowrap; }
+  body.printing-report .print-qr-header .brand-cell { text-align: right !important; width: auto; }
+  body.printing-report .print-qr-header .brand-cell .brand-name { font-size: 16pt; font-weight: 900; color: #E8721C; line-height: 1.2; }
+  body.printing-report .print-qr-header .brand-cell .brand-en { font-size: 9pt; font-weight: 700; color: #E8721C; letter-spacing: 1px; }
+  body.printing-report .print-qr-center { display: block !important; position: fixed; top: 24mm; left: 12mm; right: 12mm; text-align: center; z-index: 99998; }
+  body.printing-report .print-qr-center-title { font-size: 12pt; font-weight: 700; color: #1a1a2e; }
+  body.printing-report .print-qr-center-sub { font-size: 8pt; color: #718096; margin-top: 1.5mm; }
+  body.printing-report .print-qr-separator { display: block !important; position: fixed; top: 38mm; left: 12mm; right: 12mm; border-top: 0.5pt solid #ccc; z-index: 99999; }
+</style>
 </head>
 <body>
 <div class="print-qr-header">
