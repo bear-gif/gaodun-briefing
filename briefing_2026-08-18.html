@@ -40,8 +40,10 @@
 
 
   @media print {
-  .print-watermark { position: running(wm-header) !important; display: block !important; visibility: visible !important; height: auto !important; overflow: visible !important; }
-  @page { margin: 20mm 12mm 15mm 12mm; size: auto; @top-center { content: element(wm-header); } }
+  .print-watermark { display: block !important; margin: 0 0 6mm 0 !important; }
+  @page { margin: 12mm 12mm 15mm 12mm; size: auto; }
+  .card { margin-bottom: 10px !important; padding: 16px 20px !important; }
+  .section-title { margin: 12px 0 6px !important; }
   body { background: #fff !important; }
   body.printing-report #site-brand-header { display: none !important; }
   body.printing-report #index-view { display: none !important; }
