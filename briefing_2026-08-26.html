@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第10期 · 高顿升学 · 每日行业速览</title>
+<style>
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { background: #f1f5f9 }
+  .container { max-width: 960px; margin: 0 auto; padding: 30px 20px 60px; }
+  .report-header { background: #ffffff; border-radius: 14px; padding: 28px 32px; margin-bottom: 24px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+  .report-header .date-line { font-size: 20px; font-weight: 700; color: #1a1a2e; margin-bottom: 6px; }
+  .report-header .stats { font-size: 14px; color: #718096; margin-bottom: 16px; }
+  .report-header .stats span { display: inline-block; margin-right: 14px; }
+  .core-judgments { background: #f0f7ff; border-left: 4px solid #4299e1; padding: 16px 20px; border-radius: 0 8px 8px 0; }
+  .core-judgments h3 { font-size: 15px; color: #2d3748; margin-bottom: 8px; }
+  .core-judgments ul { list-style: none; }
+  .core-judgments li { font-size: 14px; color: #4a5568; padding: 4px 0; padding-left: 18px; position: relative; }
+  .core-judgments li::before { content: "\25b8"; position: absolute; left: 0; color: #4299e1; font-weight: bold; }
+  .card { background: #ffffff; border-radius: 14px; padding: 28px 32px; margin-bottom: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.07); border: 1px solid #ebebeb; border-top: 4px solid transparent; }
+  .card.science { border-top-color: #4299e1; }
+  .card.arts { border-top-color: #48bb78; }
+  .card-head { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; flex-wrap: wrap; }
+  .card-head h2 { font-size: 18px; font-weight: 700; color: #1a1a2e; flex: 1; min-width: 200px; }
+  .meta { display: flex; gap: 16px; font-size: 13px; color: #a0aec0; margin-bottom: 12px; flex-wrap: wrap; }
+  .content p, .content li { font-size: 15px; color: #4a5568; line-height: 1.8; }
+  .content ul { list-style: disc; padding-left: 20px; margin: 6px 0; }
+  .content li { margin: 4px 0; }
+  .sub-title { font-size: 15px; margin: 14px 0 6px; border-left: 3px solid #4299e1; padding-left: 10px; font-weight: 600; }
+  .sub-title.sc { color: #4299e1; border-color: #4299e1; }
+  .sub-title.gg { color: #48bb78; border-color: #48bb78; }
+  .tip-block { background: #fef3c7; border-radius: 8px; padding: 14px 18px; margin: 12px 0; }
+  .tip-block h3 { color: #92400e; font-size: 15px; margin: 0 0 8px; }
+  .tip-block p { color: #92400e; margin: 0; font-size: 14px; line-height: 1.9; }
+
+  @media print {
+    @page { margin: 15mm 12mm; size: auto; }
+    .print-qr-center {
+      display: block !important;
+      position: fixed;
+      top: 24mm;
+      left: 12mm;
+      right: 12mm;
+      text-align: center;
+      z-index: 99998;
+    }
+    .print-qr-center-title {
+      font-size: 12pt;
+      font-weight: 700;
+      color: #1a1a2e;
+      font-family: -apple-system, "Microsoft YaHei", "PingFang SC", sans-serif;
+    }
+    .print-qr-center-sub {
+      font-size: 8pt;
+      color: #718096;
+      font-family: -apple-system, "Microsoft YaHei", "PingFang SC", sans-serif;
+      margin-top: 1.5mm;
+    }
+    .print-qr-header {
+      display: table !important;
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 99999;
+    }
+    .print-qr-header td {
+      vertical-align: middle;
+      padding: 2mm 3mm;
+    }
+    .print-qr-header .qr-cell {
+      width: 24mm;
+    }
+    .print-qr-header .qr-cell img {
+      width: 20mm;
+      height: 20mm;
+      display: block;
+    }
+    .print-qr-header .brand-cell {
+      padding-left: 2mm;
+    }
+    .print-qr-header .brand-cell .line1 {
+      font-size: 11pt;
+      color: #333;
+      font-family: -apple-system, "Microsoft YaHei", "PingFang SC", sans-serif;
+      font-weight: 600;
+      margin-bottom: 2mm;
+    }
+    .print-qr-header .brand-cell .brand-name {
+      font-size: 16pt;
+      font-weight: 900;
+      color: #E8721C;
+      font-family: -apple-system, "Microsoft YaHei", "PingFang SC", sans-serif;
+      line-height: 1.2;
+    }
+    .print-qr-header .brand-cell .brand-en {
+      font-size: 9pt;
+      font-weight: 700;
+      color: #E8721C;
+      font-family: -apple-system, "Microsoft YaHei", "PingFang SC", sans-serif;
+      letter-spacing: 1px;
+    }
+    .print-qr-separator {
+      display: block !important;
+      position: fixed;
+      top: 38mm;
+      left: 12mm;
+      right: 12mm;
+      height: 0;
+      border: none;
+      border-top: 0.5pt solid #ccc;
+      z-index: 99999;
+    }
+    body {
+      background: #fff !important;
+      padding-top: 42mm !important;
+    }
+    body.printing-report #site-brand-header { display: none !important; }
+    body.printing-report #index-view { display: none !important; }
+    body.printing-report #watermark-view { display: none !important; }
+    body.printing-report .footer { display: none !important; }
+    body.printing-report .report-view { display: none !important; }
+    body.printing-report .report-view.print-target { display: block !important; }
+    body.printing-report .report-view.print-target .report-header a { display: none !important; }
+    .report-header .date-line { display: none !important; }
+    .report-header .stats { display: none !important; }
+    .container { max-width: 100%; padding: 10px; }
+    .card { page-break-inside: auto; box-shadow: none; border: 1px solid #e2e8f0; }
+    .content > * { page-break-inside: avoid; }
+    .tip-block { page-break-inside: avoid; }
+    .report-header a { display: none !important; }
+  }
+
+  .print-qr-center { display: none; }
+  .print-qr-header { display: none; }
+  .print-qr-separator { display: none; }
+
+</style>
+</head>
+<body>
+<div class="print-qr-header">
+  <table style="width:100%;border-collapse:collapse;">
+    <tr>
+      <td class="qr-cell" style="width:24mm;vertical-align:middle;padding:2mm 3mm;">
+        <img src="data:image/png;base64,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" alt="QR Code" style="width:20mm;height:20mm;display:block;">
+      </td>
+      <td class="brand-cell" style="vertical-align:middle;padding:2mm 3mm 2mm 2mm;">
+        <div class="line1" style="font-size:11pt;color:#333;font-family:-apple-system,'Microsoft YaHei','PingFang SC',sans-serif;font-weight:600;margin-bottom:2mm;">扫码获取全套行业速览</div>
+        <div class="brand-name" style="font-size:16pt;font-weight:900;color:#E8721C;font-family:-apple-system,'Microsoft YaHei','PingFang SC',sans-serif;line-height:1.2;">高顿升学</div>
+        <div class="brand-en" style="font-size:9pt;font-weight:700;color:#E8721C;font-family:-apple-system,'Microsoft YaHei','PingFang SC',sans-serif;letter-spacing:1px;">GOLDEN</div>
+      </td>
+    </tr>
+  </table>
+</div>
+<div class="print-qr-center" style="display:none;text-align:center;padding:2mm 0 1mm 0;">
+  <div class="print-qr-center-title" style="font-size:12pt;font-weight:700;color:#1a1a2e;font-family:-apple-system,'Microsoft YaHei','PingFang SC',sans-serif;">高顿升学·每日行业速览</div>
+  <div class="print-qr-center-sub" style="font-size:8pt;color:#718096;font-family:-apple-system,'Microsoft YaHei','PingFang SC',sans-serif;margin-top:1.5mm;">精选行业资讯，锚定专业与就业，为孩子的梦想领航，为未来的美好奋斗！</div>
+</div>
+<hr class="print-qr-separator" style="display:none;">
+<div class="container">
+
+  <div class="report-header">
+    <a href="javascript:void(0)" onclick="showIndex()" style="display:inline-block;margin-bottom:14px;font-size:14px;color:#4299e1;text-decoration:none;font-weight:500;cursor:pointer;">← 返回列表</a>
+    <div class="date-line">📅 第10期 · 高顿升学 · 每日行业速览</div>
+    <div class="stats">
+      <span>📊 资讯共 7 条</span>
+      <span>🔬 理工科 4 条</span>
+      <span>📚 文科 3 条</span>
+    </div>
+    <div class="core-judgments">
+      <h3>📌 今日要点速览</h3>
+      <ul>
+        <li>OpenAI首款自研推理芯片Jalapeño性能首秀：DeepSeek R1每瓦吞吐量达英伟达GB300的1.7倍，部分场景超104倍</li>
+        <li>SpaceX斥资1000亿美元在路易斯安那州建造全球最大星舰发射基地，加速太空工业化进程</li>
+        <li>我国科研团队刷新大面积铜锌锡硫硒薄膜光伏组件效率世界纪录，钙钛矿/CZTSe叠层应用前景广阔</li>
+        <li>Anthropic拟以2万亿美元估值启动史上最大IPO，潜在市场规模超30万亿美元超越SpaceX</li>
+        <li>银行业监督管理法修订草案二审：强化消费者权益保护，专门规制从业人员挪用客户资金违法行为</li>
+        <li>中秋国庆"请3休13"拼假方案走红，假期机票搜索热度同比上涨61%，县域目的地成新黑马</li>
+        <li>央行联合市场监管总局规范人民币买卖，9月1日起网络交易平台纳入重点监管</li>
+      </ul>
+    </div>
+  </div>
+
+  <div style="margin:20px 0 10px;padding:12px 20px;background:#ffffff;border-radius:10px;box-shadow:0 1px 3px rgba(0,0,0,0.04);display:flex;align-items:center;flex-wrap:wrap;">
+    <span style="font-size:14px;color:#718096;margin-right:12px;">快速跳转：</span>
+    <a href="javascript:void(0)" onclick="scrollToSection('section-science')" style="margin-right:20px;font-size:15px;color:#2b6cb0;text-decoration:none;font-weight:600;">🔬 理工科资讯</a>
+    <a href="javascript:void(0)" onclick="scrollToSection('section-arts')" style="margin-right:20px;font-size:15px;color:#276749;text-decoration:none;font-weight:600;">📚 文科资讯</a>
+  </div>
+
+  <div id="section-science" style="display:flex;align-items:center;gap:10px;margin:24px 0 18px;padding:12px 20px;background:linear-gradient(90deg,#ebf8ff,#f1f5f9);border-radius:10px;border-left:4px solid #4299e1;">
+    <span style="font-size:20px;">🔬</span>
+    <span style="font-size:17px;font-weight:700;color:#2b6cb0;">理工科资讯</span>
+    <span style="font-size:13px;color:#718096;margin-left:4px;">共 4 条</span>
+  </div>
+
+<div class="card science">
+  <div class="card-head">
+    <h2>OpenAI自研推理芯片Jalapeño性能首秀：吞吐量超英伟达GB300</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 科技新闻</span><span>🕐 2026-08-26</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>2026年8月26日，OpenAI公布首款自研AI推理芯片"Jalapeño"（墨西哥辣椒）的测试成绩。运行DeepSeek R1模型时，该芯片每瓦Token吞吐量是英伟达GB300的1.7倍；在特定测试维度中，吞吐量更达到英伟达的104倍。与此同时，OpenAI与英伟达签署了2030年前部署12GW算力的大单，潜在价值约6000亿美元。OpenAI CEO阿尔特曼表示："我们做了一个很快的芯片。"下一代芯片已进入制造阶段。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>推理是AI应用中计算量最大、持续运行的环节。GPU是通用计算工具，而专用推理芯片针对解码阶段优化，在能效比上具有天然优势。OpenAI自研芯片的核心逻辑是降低对英伟达的依赖：ChatGPT每天消耗海量Token，推理成本是运营支出大头。Jalapeño专攻推理场景，没有多余电路，每一度电都花在Token生成上。1.7倍能效比意味着干同样的活儿电费少将近一半。不过，训练大模型仍需英伟达GPU的通用算力和CUDA生态。AI芯片赛道的竞争格局正从英伟达一家独大走向"GPU+ASIC异构"模式，Google TPU、Amazon Trainium、特斯拉Dojo等专用芯片纷纷入局。</p>
+    <h3 class="sub-title sc">关联专业</h3>
+    <ul>
+      <li>集成电路设计与集成系统</li>
+      <li>计算机科学与技术</li>
+      <li>电子信息工程</li>
+      <li>人工智能</li>
+    </ul>
+    <h3 class="sub-title sc">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>本科可入行（验证/测试），硕士优先（芯片设计/架构），博士优先（前沿研究）</li>
+      <li><b>典型岗位：</b>AI芯片设计工程师、数字IC验证工程师、AI Infra工程师、芯片架构师</li>
+      <li><b>薪资参考：</b>数字IC设计工程师月薪2.5-4.5万；AI Infra工程师月薪4-7万（据BOSS直聘、猎聘公开招聘数据）</li>
+    </ul>
+    <h3 class="sub-title sc">地域优势</h3>
+    <p>上海（芯片设计企业密集/中芯国际/华虹）、北京（OpenAI中国人才/紫光展锐）、深圳（海思/中兴微电子）、杭州（平头哥/阿里达摩院）</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① AI推理芯片是比训练芯片更大的市场——大模型训练是一次性的，但推理服务7×24小时运行，芯片需求更持久；② 专用芯片（ASIC）正在挑战GPU的通用霸主地位，集成电路设计专业毕业生迎来黄金窗口期；③ OpenAI自研芯片说明"AI+芯片"复合背景极受青睐，懂模型算法又懂硬件架构的人才稀缺；④ 建议学习Verilog/SystemVerilog和CUDA编程，有tape-out经验的应届生起薪可翻倍。</p>
+    </div>
+  </div>
+</div>
+
+<div class="card science">
+  <div class="card-head">
+    <h2>SpaceX斥资1000亿美元建造全球最大星舰发射基地</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 科学探索</span><span>🕐 2026-08-26</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>据多家外媒2026年8月26日报道，SpaceX计划投资约1000亿美元，在美国路易斯安那州建造全球规模最大的火箭发射基地，用于星舰（Starship）的生产和发射。该基地将成为SpaceX继得克萨斯州博卡奇卡（Starbase）和佛罗里达州卡纳维拉尔角之后的第三处星舰发射设施。此前SpaceX已于2026年6月以1.77万亿美元估值完成IPO，募资857亿美元，创下史上最大IPO纪录。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>太空工业化正从概念走向现实。SpaceX的星舰是人类有史以来最大的运载火箭，设计完全可重复使用，目标是将每公斤入轨成本降至100美元以下（目前约2000-5000美元）。1000亿美元发射基地投资反映了太空经济的爆发式增长：卫星互联网（Starlink已有超7000颗在轨卫星）、太空旅游、在轨制造、月球/火星探索等场景对发射能力的需求指数级增长。中国商业航天也在加速追赶：银河航天2025年实现首次面向东南亚整星出口，蓝箭航天、天兵科技等民营企业完成多型液体火箭首飞。航天工程是典型的"大系统"，需要机械、材料、控制、通信等多学科协同。</p>
+    <h3 class="sub-title sc">关联专业</h3>
+    <ul>
+      <li>航空航天工程</li>
+      <li>机械工程</li>
+      <li>自动化</li>
+      <li>通信工程</li>
+    </ul>
+    <h3 class="sub-title sc">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>本科可入行（制造/测试），硕士优先（设计/研发），博士优先（前沿技术研究）</li>
+      <li><b>典型岗位：</b>航天器结构工程师、推进系统工程师、飞行控制算法工程师、卫星通信工程师</li>
+      <li><b>薪资参考：</b>航天器结构工程师月薪1.5-3万；飞行控制算法工程师月薪2-4万（据BOSS直聘公开招聘数据）</li>
+    </ul>
+    <h3 class="sub-title sc">地域优势</h3>
+    <p>北京（中国航天科技集团/银河航天/蓝箭航天总部）、上海（中国商飞/中科院微小卫星创新研究院）、西安（航天六院/航天五院504所）、武汉（航天科工四院/光谷航天产业）</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① 商业航天是"新工科"的典型代表——火箭设计涉及推进、材料、控制、通信等多学科交叉，单一专业知识远远不够；② SpaceX星舰的核心创新是"完全可重复使用"，将发射成本降低两个数量级，这种颠覆性思维是航天工程教育的方向；③ 中国商业航天正进入爆发期，2025年市场规模已超2.5万亿元，人才缺口巨大；④ 建议关注ROCON（火箭设计竞赛）、立方星项目等实践机会，动手能力比成绩更重要。</p>
+    </div>
+  </div>
+</div>
+
+<div class="card science">
+  <div class="card-head">
+    <h2>我国科研团队刷新大面积铜锌锡硫硒薄膜光伏组件世界纪录</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 科学探索</span><span>🕐 2026-08-26</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>2026年8月26日，据科学探索频道报道，我国研究团队成功制备大面积铜锌锡硫硒（CZTSe）薄膜光伏组件，刷新该类型光伏组件效率的世界纪录。铜锌锡硫硒是一种由铜、锌、锡等地球储量丰富元素组成的半导体材料，被视为碲化镉（CdTe）和铜铟镓硒（CIGS）的环保替代方案。该技术突破对未来光伏产业发展具有重要战略意义。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>光伏产业正处于技术迭代的关键期。传统晶硅电池效率逼近理论极限（约29%），钙钛矿、CZTSe等新型薄膜技术成为突破口。CZTSe的核心优势在于：原材料丰富且无毒（地球储量远大于铟、碲等稀有元素），制造成本低（溶液法制备），理论效率上限高。大面积组件效率突破意味着该技术从实验室走向产业化迈出关键一步。当前全球光伏装机量持续增长，2025年全球新增装机超500GW。中国光伏产业链全球领先，硅片、电池片、组件产能占全球80%以上。CZTSe等新型薄膜技术有望在BIPV（光伏建筑一体化）、柔性光伏等场景打开新市场。</p>
+    <h3 class="sub-title sc">关联专业</h3>
+    <ul>
+      <li>新能源科学与工程</li>
+      <li>材料科学与工程</li>
+      <li>光电信息科学与工程</li>
+      <li>应用物理学</li>
+    </ul>
+    <h3 class="sub-title sc">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>本科可入行（工艺/设备），硕士优先（研发/测试），博士优先（材料设计/前沿研究）</li>
+      <li><b>典型岗位：</b>光伏工艺工程师、薄膜电池研发工程师、光伏系统设计工程师、新能源项目经理</li>
+      <li><b>薪资参考：</b>光伏工艺工程师月薪1-2万；光伏系统设计工程师月薪1.5-3万（据猎聘公开招聘数据）</li>
+    </ul>
+    <h3 class="sub-title sc">地域优势</h3>
+    <p>长三角（隆基绿能、通威股份、TCL中环等龙头企业密集）、北京（中国光伏行业协会/中科院电工所）、合肥（阳光电源/晶科能源）、包头（硅产业聚集/电价低廉）</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① 光伏是"材料+能源+半导体"的交叉领域，材料科学专业毕业生在这个赛道有独特优势；② CZTSe薄膜电池使用地球丰富元素，不依赖稀有金属，是"去资源卡脖子"的典范方向；③ 中国光伏产业链全球占比超80%，但薄膜电池占比仍较低，新型薄膜技术人才缺口大；④ 建议学习半导体物理、薄膜材料制备技术（磁控溅射、蒸镀等），有实验室经验的毕业生在光伏研发岗更具竞争力。</p>
+    </div>
+  </div>
+</div>
+
+<div class="card science">
+  <div class="card-head">
+    <h2>Anthropic拟以2万亿美元估值启动史上最大IPO，潜在市场超30万亿</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 科技新闻</span><span>🕐 2026-08-26</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>据《华尔街日报》2026年8月26日报道，Claude聊天机器人制造商Anthropic拟向投资者披露其潜在市场总规模（TAM）将超过30万亿美元，超越SpaceX此前创下的28.5万亿美元纪录。Anthropic预计2028年收入将达约1900亿至2000亿美元，IPO估值目标约2万亿美元，将超越SpaceX上市时的1.77万亿美元估值，成为史上最大规模IPO。该公司最快可能于9月或10月初正式上市。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>Anthropic由前OpenAI核心成员Dario Amodei和Daniela Amodei于2021年创立，专注AI安全研究。Claude系列模型已成为全球最受欢迎的AI助手之一。30万亿美元TAM的估算涵盖了AI在企业办公、软件开发、教育、医疗、法律、金融等全行业的渗透空间。当前AI行业正经历从"训练军备竞赛"到"商业化落地"的转折：Anthropic、OpenAI、Google DeepMind三大实验室竞相推出企业级AI产品。IPO将检验资本市场对AI长期增长潜力的信心。对计算机专业毕业生而言，AI安全、大模型训练、AI产品化等方向正成为最具前景的职业赛道。</p>
+    <h3 class="sub-title sc">关联专业</h3>
+    <ul>
+      <li>人工智能</li>
+      <li>计算机科学与技术</li>
+      <li>软件工程</li>
+      <li>数据科学与大数据技术</li>
+    </ul>
+    <h3 class="sub-title sc">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>本科可入行（应用开发/产品运营），硕士优先（算法/训练），博士优先（安全研究/前沿探索）</li>
+      <li><b>典型岗位：</b>大模型训练工程师、AI安全研究员、AI产品经理、Prompt工程师</li>
+      <li><b>薪资参考：</b>大模型算法工程师月薪3-6万；AI安全研究员月薪2.5-5万（据BOSS直聘公开招聘数据）</li>
+    </ul>
+    <h3 class="sub-title sc">地域优势</h3>
+    <p>北京（百度/字节/智源研究院）、上海（商汤/阶跃星辰/AI创业公司密集）、深圳（华为/腾讯AI Lab）、杭州（阿里达摩院/之江实验室）</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① AI安全正在成为独立学科方向——Anthropic的核心竞争力就是"安全超级智能"，这与传统AI研究有本质区别；② 大模型训练工程师是当前最热门岗位之一，需要掌握分布式训练（DeepSpeed/Megatron）、混合精度训练等工程技能；③ AI行业2万亿美元估值说明资本市场对AI长期增长充满信心，但行业也需要大量"非算法"人才：AI产品经理、AI应用开发工程师等；④ 建议关注开源大模型（Llama/Qwen/Claude API），动手做项目比刷论文更有竞争力。</p>
+    </div>
+  </div>
+</div>
+
+  <div id="section-arts" style="display:flex;align-items:center;gap:10px;margin:30px 0 18px;padding:12px 20px;background:linear-gradient(90deg,#f0fff4,#f1f5f9);border-radius:10px;border-left:4px solid #48bb78;">
+    <span style="font-size:20px;">📚</span>
+    <span style="font-size:17px;font-weight:700;color:#276749;">文科资讯</span>
+    <span style="font-size:13px;color:#718096;margin-left:4px;">共 3 条</span>
+  </div>
+
+<div class="card arts">
+  <div class="card-head">
+    <h2>银行业监督管理法修订草案二审：强化消费者权益保护</h2>
+    <span style="background:#f0fff4;color:#48bb78;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">文科</span>
+  </div>
+  <div class="meta"><span>📰 财经新闻</span><span>🕐 2026-08-26</span></div>
+  <div class="content">
+    <h3 class="sub-title gg">事件背景</h3>
+    <p>2026年8月25日，银行业监督管理法修订草案提请十四届全国人大常委会第二十四次会议二次审议。草案二审稿进一步压实银行业监督管理机构保护银行业消费者的职责，完善相关制度，并针对实践中存在的银行业金融机构从业人员挪用客户资金等违法行为专门予以规制。同日，证监会披露一批行政处罚案件，单日罚没总额超过8300万元，涉及违规减持、信息披露违规、财务造假等多种类型。</p>
+    <h3 class="sub-title gg">行业简述</h3>
+    <p>金融监管正在从"机构监管"向"行为监管+功能监管"转型。此次银行业监督管理法修订的核心亮点有三：一是将消费者权益保护上升到法律层面，要求银行建立完善的投诉处理和赔偿机制；二是专门针对从业人员挪用客户资金行为设立规制条款，填补了此前的法律空白；三是强化穿透式监管，对关联交易、影子银行等行为实施更严格的监控。同日央行开展5000亿元MLF操作，货币政策工具持续丰富。金融合规人才需求正在快速增长，银行合规岗、风控岗、反洗钱岗等成为热门方向。</p>
+    <h3 class="sub-title gg">关联专业</h3>
+    <ul>
+      <li>金融学</li>
+      <li>法学（经济法方向）</li>
+      <li>会计学</li>
+      <li>风险管理</li>
+    </ul>
+    <h3 class="sub-title gg">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>本科可入行（合规审查/反洗钱），硕士起步（风控建模/监管研究），博士优先（宏观审慎政策研究）</li>
+      <li><b>典型岗位：</b>银行合规经理、风险控制专员、反洗钱分析师、监管政策研究员</li>
+      <li><b>薪资参考：</b>银行法律合规岗月薪2-5万（据猎聘公开招聘数据）；反洗钱分析师月薪1.5-3万</li>
+    </ul>
+    <h3 class="sub-title gg">地域优势</h3>
+    <p>上海（金融市场中心/外资机构密集）、北京（金融监管总局/证监会总部/国有大行）、深圳（深交所/平安集团/招行）、杭州（蚂蚁集团/网商银行）</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① 金融监管趋严是长期趋势——银行合规岗需求5年增长超200%，是法学+金融复合型人才的优质赛道；② 反洗钱分析师是新兴高薪方向，需要掌握交易监控系统（如Actimize）和可疑交易识别能力；③ 银行从业人员资格（银行从业+基金从业+证券从业）是入行基本门槛，CPA/CFA/FRM为进阶加分项；④ 建议关注金融监管总局官网的政策解读，理解监管逻辑是合规岗的核心能力。</p>
+    </div>
+  </div>
+</div>
+
+<div class="card arts">
+  <div class="card-head">
+    <h2>中秋国庆"请3休13"走红，出游热度同比上涨61%</h2>
+    <span style="background:#f0fff4;color:#48bb78;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">文科</span>
+  </div>
+  <div class="meta"><span>📰 文旅新闻</span><span>🕐 2026-08-26</span></div>
+  <div class="content">
+    <h3 class="sub-title gg">事件背景</h3>
+    <p>2026年中秋、国庆假期只相隔3天，"请3天假休13天"的拼假方案走红网络。据央视财经2026年8月26日报道，8月以来中秋国庆假期出发机票搜索热度同比上涨61%，国内长线跨省游成为主流。福建平潭、广西阳朔等县域目的地成为抢订黑马。文旅部数据显示，2026年上半年全国国内出游34.63亿人次，同比增长5.4%；出游总花费3.21万亿元，同比增长2.0%。</p>
+    <h3 class="sub-title gg">行业简述</h3>
+    <p>中国文旅消费正经历从"观光游"到"深度体验游"的结构性转变。三大趋势值得关注：一是"奔县游"持续升温，县域旅游不再只是"便宜"的代名词，部分县城酒店均价甚至超过一线城市，高星酒店在县域订单中占比升至23%；二是定制小团和人文深度游取代传统大团游，旅行社正从"批量组团"转向"按需定制"；三是康养旅居成为银发经济新增长点。然而行业也面临挑战：上半年注销旅行社超2400家，超八成从业者暑期订单同比下滑30%-50%。文旅行业对"内容策划+运营管理+数据分析"复合人才需求旺盛。</p>
+    <h3 class="sub-title gg">关联专业</h3>
+    <ul>
+      <li>旅游管理</li>
+      <li>文化产业管理</li>
+      <li>酒店管理</li>
+      <li>新媒体运营</li>
+    </ul>
+    <h3 class="sub-title gg">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>本科可入行（运营/策划/导游），硕士优先（战略规划/品牌管理），博士优先（旅游经济研究）</li>
+      <li><b>典型岗位：</b>文旅运营经理、旅游产品策划师、定制旅行顾问、文旅新媒体运营</li>
+      <li><b>薪资参考：</b>文旅运营经理月薪1.5-2.5万；旅游产品策划师月薪1-1.8万（据猎聘公开招聘数据）</li>
+    </ul>
+    <h3 class="sub-title gg">地域优势</h3>
+    <p>成都/重庆（西南文旅中心/民宿集群）、杭州（宋城/携程华东中心）、北京（故宫/中旅集团）、云南（大理/丽江/西双版纳文旅产业带）</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① 文旅行业正在"去传统化"——传统导游岗需求下降，但定制旅行顾问、文旅IP策划师、新媒体流量运营等新岗位快速增长；② 县域旅游爆发说明"下沉市场"是文旅新蓝海，了解小镇用户需求、能运营县域文旅项目的复合型人才稀缺；③ 文旅新媒体运营需要"内容创作+数据分析+平台运营"能力，短视频拍摄剪辑和小红书种草是必备技能；④ 建议考取定制旅行管家证书或研学旅行指导师证书，是进入定制游赛道的敲门砖。</p>
+    </div>
+  </div>
+</div>
+
+<div class="card arts">
+  <div class="card-head">
+    <h2>央行联合市场监管总局规范人民币买卖，9月1日起施行</h2>
+    <span style="background:#f0fff4;color:#48bb78;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">文科</span>
+  </div>
+  <div class="meta"><span>📰 财经新闻</span><span>🕐 2026-08-26</span></div>
+  <div class="content">
+    <h3 class="sub-title gg">事件背景</h3>
+    <p>中国人民银行与市场监管总局联合发布公告，自2026年9月1日起系统性规范人民币买卖活动。公告明确禁止任何单位和个人非法买卖人民币，涉嫌欺诈、诈骗者将被依法追究法律责任。同时将网络交易平台纳入重点监管范围，对纪念章、纪念券等工艺品的宣传营销划定明确红线。此外，央行8月25日开展5000亿元MLF操作，货币政策工具持续丰富，精准调控力度加大。</p>
+    <h3 class="sub-title gg">行业简述</h3>
+    <p>人民币管理新规反映了数字货币时代的监管新挑战。随着数字人民币试点深入推进，传统人民币管理法规需要与时俱进。新规的三大重点：一是将网络交易平台纳入监管，遏制电商平台上的"人民币代币化""虚拟人民币"等灰色行为；二是规范纪念币/纪念章市场，防止虚假宣传和价格操纵；三是强化反假币技术升级，配合AI识别技术防范伪造。从货币政策角度看，央行通过MLF+逆回购"组合拳"精准调控流动性，7月企业债券净融资同比增加1787.5亿元。金融监管与货币政策协调配合，为经济复苏提供支撑。</p>
+    <h3 class="sub-title gg">关联专业</h3>
+    <ul>
+      <li>金融学</li>
+      <li>经济学</li>
+      <li>法学（经济法方向）</li>
+      <li>财政学</li>
+    </ul>
+    <h3 class="sub-title gg">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>本科可入行（银行柜面/合规审查），硕士起步（货币政策研究/金融市场分析），博士优先（宏观经济研究）</li>
+      <li><b>典型岗位：</b>货币政策分析师、金融监管合规专员、支付清算运营、金融市场研究员</li>
+      <li><b>薪资参考：</b>银行间市场交易员月薪2-5万（含奖金）；金融合规专员月薪1.5-3万</li>
+    </ul>
+    <h3 class="sub-title gg">地域优势</h3>
+    <p>北京（央行总部/金融监管总局/国有大行总行）、上海（银行间市场/中国外汇交易中心/人民币跨境支付系统）、深圳（深交所/支付科技企业密集）、广州（广期所/数字人民币试点）</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① 数字人民币正在重塑支付生态——掌握数字货币结算、区块链技术的金融人才需求激增；② 央行MLF+逆回购等货币政策工具是金融学核心知识点，理解流动性调控逻辑是进入银行间市场的敲门砖；③ 金融监管合规是"越老越吃香"的岗位，需要通过银行从业+法律职业资格等考试；④ 建议关注央行官网的货币政策执行报告和支付体系报告，培养对宏观金融政策的敏感度。</p>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<script>
+function showIndex() {
+  if (window.parent && window.parent.showIndex) { window.parent.showIndex(); return; }
+  window.location.href = 'index.html';
+}
+function scrollToSection(id) {
+  var el = document.getElementById(id);
+  if (!el) return;
+  var top = el.offsetTop - 20;
+  window.scrollTo({ top: top, behavior: 'smooth' });
+}
+</script>
+
+</body>
+</html>
