@@ -251,6 +251,11 @@
   .wm-field .range-num::-webkit-inner-spin-button, .wm-field .range-num::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; }
   .wm-field .range-num:focus { border-color: #4299e1; }
   .wm-field .range-unit { font-size: 12px; color: #a0aec0; min-width: 20px; }
+  /* QR/brand elements hidden on webpage, only visible in PDF print */
+  .print-qr-center { display: none !important; }
+  .print-qr-header { display: none !important; }
+  .print-qr-separator { display: none !important; }
+
 
   @media print {
   @page { margin: 15mm 12mm; size: auto; }
@@ -284,12 +289,7 @@
   .content > * { page-break-inside: avoid; }
   .tip-block { page-break-inside: avoid; }
   .report-header a { display: none !important; }
-}
-.print-qr-center { display: none !important; }
-.print-qr-header { display: none !important; }
-.print-qr-separator { display: none !important; }
-
-</style>
+}</style>
 <!-- html2pdf.js removed, using browser native print -->
 
 <script src="https://unpkg.com/pdf-lib@1.17.1/dist/pdf-lib.min.js"></script>

@@ -76,6 +76,11 @@
   .footer p { margin: 4px 0; }
 
   /* 打印样式 */
+  /* QR/brand elements hidden on webpage, only visible in PDF print */
+  .print-qr-center { display: none !important; }
+  .print-qr-header { display: none !important; }
+  .print-qr-separator { display: none !important; }
+
 
   @media print {
   @page { margin: 15mm 12mm; size: auto; }
@@ -109,12 +114,7 @@
   .content > * { page-break-inside: avoid; }
   .tip-block { page-break-inside: avoid; }
   .report-header a { display: none !important; }
-}
-.print-qr-center { display: none !important; }
-.print-qr-header { display: none !important; }
-.print-qr-separator { display: none !important; }
-
-</style>
+}</style>
 
 </head>
 <body>

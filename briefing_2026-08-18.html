@@ -35,6 +35,11 @@
   .tip-block { background: #fef3c7; border-radius: 8px; padding: 14px 18px; margin: 12px 0; }
   .tip-block h3 { color: #92400e; font-size: 15px; margin: 0 0 8px; }
   .tip-block p { color: #92400e; margin: 0; font-size: 14px; line-height: 1.9; }
+  /* QR/brand elements hidden on webpage, only visible in PDF print */
+  .print-qr-center { display: none !important; }
+  .print-qr-header { display: none !important; }
+  .print-qr-separator { display: none !important; }
+
 
   @media print {
   @page { margin: 15mm 12mm; size: auto; }
@@ -68,12 +73,7 @@
   .content > * { page-break-inside: avoid; }
   .tip-block { page-break-inside: avoid; }
   .report-header a { display: none !important; }
-}
-.print-qr-center { display: none !important; }
-.print-qr-header { display: none !important; }
-.print-qr-separator { display: none !important; }
-
-</style>
+}</style>
 </head>
 <body>
 <div class="print-qr-header">
