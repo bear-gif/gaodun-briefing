@@ -262,20 +262,22 @@
   .print-watermark { display: block !important; margin: 0 0 4mm 0 !important; }
   @page { margin: 8mm 10mm 8mm 10mm; size: auto; }
   body { margin: 0 !important; padding: 0 !important; background: #fff !important; }
+  /* 隐藏快速跳转栏 */
+  .quick-nav { display: none !important; }
   /* 卡片紧凑且不断裂 */
   .card { margin-bottom: 6px !important; padding: 10px 14px !important; break-inside: avoid !important; }
   /* 分科标题紧凑，且与后续内容不分开 */
   [id^="section-"] { break-after: avoid !important; break-inside: avoid !important; margin: 6px 0 3mm 0 !important; padding: 5px 10px !important; }
-  /* 隐藏快速跳转栏（onclick链接在report-header内） */
+  /* 隐藏报告头部链接和元信息 */
   .report-header a { display: none !important; }
+  .report-header .date-line { display: none !important; }
+  .report-header .stats { display: none !important; }
   body.printing-report #site-brand-header { display: none !important; }
   body.printing-report #index-view { display: none !important; }
   body.printing-report #watermark-view { display: none !important; }
   body.printing-report .footer { display: none !important; }
   body.printing-report .report-view { display: none !important; }
   body.printing-report .report-view.print-target { display: block !important; }
-  body.printing-report .report-view.print-target .report-header .date-line { display: none !important; }
-  body.printing-report .report-view.print-target .report-header .stats { display: none !important; }
 }
 </style>
 <!-- html2pdf.js removed, using browser native print -->
@@ -580,7 +582,7 @@
     </div>
   </div>
 
-  <div style="margin:20px 0 10px;padding:12px 20px;background:#ffffff;border-radius:10px;box-shadow:0 1px 3px rgba(0,0,0,0.04);display:flex;align-items:center;flex-wrap:wrap;">
+  <div class="quick-nav" style="margin:20px 0 10px;padding:12px 20px;background:#ffffff;border-radius:10px;box-shadow:0 1px 3px rgba(0,0,0,0.04);display:flex;align-items:center;flex-wrap:wrap;">
     <span style="font-size:14px;color:#718096;margin-right:12px;">快速跳转：</span>
     <a href="javascript:void(0)" onclick="scrollToSection('section-science')" style="margin-right:20px;font-size:15px;color:#2b6cb0;text-decoration:none;font-weight:600;">🔬 理工科资讯</a>
     <a href="javascript:void(0)" onclick="scrollToSection('section-arts')" style="margin-right:20px;font-size:15px;color:#276749;text-decoration:none;font-weight:600;">📚 文科资讯</a>
@@ -853,7 +855,7 @@
     </div>
   </div>
 
-  <div style="margin:20px 0 10px;padding:12px 20px;background:#ffffff;border-radius:10px;box-shadow:0 1px 3px rgba(0,0,0,0.04);display:flex;align-items:center;flex-wrap:wrap;">
+  <div class="quick-nav" style="margin:20px 0 10px;padding:12px 20px;background:#ffffff;border-radius:10px;box-shadow:0 1px 3px rgba(0,0,0,0.04);display:flex;align-items:center;flex-wrap:wrap;">
     <span style="font-size:14px;color:#718096;margin-right:12px;">快速跳转：</span>
     <a href="javascript:void(0)" onclick="scrollToSection('section-science')" style="margin-right:20px;font-size:15px;color:#2b6cb0;text-decoration:none;font-weight:600;">🔬 理工科资讯</a>
     <a href="javascript:void(0)" onclick="scrollToSection('section-arts')" style="margin-right:20px;font-size:15px;color:#276749;text-decoration:none;font-weight:600;">📚 文科资讯</a>
@@ -1125,7 +1127,7 @@
     </div>
   </div>
 
-  <div style="margin:20px 0 10px;padding:12px 20px;background:#ffffff;border-radius:10px;box-shadow:0 1px 3px rgba(0,0,0,0.04);display:flex;align-items:center;flex-wrap:wrap;">
+  <div class="quick-nav" style="margin:20px 0 10px;padding:12px 20px;background:#ffffff;border-radius:10px;box-shadow:0 1px 3px rgba(0,0,0,0.04);display:flex;align-items:center;flex-wrap:wrap;">
     <span style="font-size:14px;color:#718096;margin-right:12px;">快速跳转：</span>
     <a href="javascript:void(0)" onclick="scrollToSection('section-science')" style="margin-right:20px;font-size:15px;color:#2b6cb0;text-decoration:none;font-weight:600;">🔬 理工科资讯</a>
     <a href="javascript:void(0)" onclick="scrollToSection('section-arts')" style="margin-right:20px;font-size:15px;color:#276749;text-decoration:none;font-weight:600;">📚 文科资讯</a>
@@ -1365,7 +1367,7 @@
     </div>
   </div>
 
-  <div style="margin:20px 0 10px;padding:12px 20px;background:#ffffff;border-radius:10px;box-shadow:0 1px 3px rgba(0,0,0,0.04);display:flex;align-items:center;flex-wrap:wrap;">
+  <div class="quick-nav" style="margin:20px 0 10px;padding:12px 20px;background:#ffffff;border-radius:10px;box-shadow:0 1px 3px rgba(0,0,0,0.04);display:flex;align-items:center;flex-wrap:wrap;">
     <span style="font-size:14px;color:#718096;margin-right:12px;">快速跳转：</span>
     <a href="javascript:void(0)" onclick="scrollToSection('section-science')" style="margin-right:20px;font-size:15px;color:#2b6cb0;text-decoration:none;font-weight:600;">🔬 理工科资讯</a>
     <a href="javascript:void(0)" onclick="scrollToSection('section-arts')" style="margin-right:20px;font-size:15px;color:#276749;text-decoration:none;font-weight:600;">📚 文科资讯</a>
@@ -1604,7 +1606,7 @@
     </div>
   </div>
 
-  <div style="margin:20px 0 10px;padding:12px 20px;background:#ffffff;border-radius:10px;box-shadow:0 1px 3px rgba(0,0,0,0.04);display:flex;align-items:center;flex-wrap:wrap;">
+  <div class="quick-nav" style="margin:20px 0 10px;padding:12px 20px;background:#ffffff;border-radius:10px;box-shadow:0 1px 3px rgba(0,0,0,0.04);display:flex;align-items:center;flex-wrap:wrap;">
     <span style="font-size:14px;color:#718096;margin-right:12px;">快速跳转：</span>
     <a href="javascript:void(0)" onclick="scrollToSection('section-science-0822')" style="margin-right:20px;font-size:15px;color:#2b6cb0;text-decoration:none;font-weight:600;">🔬 理工科资讯</a>
     <a href="javascript:void(0)" onclick="scrollToSection('section-arts-0822')" style="margin-right:20px;font-size:15px;color:#276749;text-decoration:none;font-weight:600;">📚 文科资讯</a>
@@ -2038,7 +2040,7 @@
     </div>
   </div>
 
-  <div style="margin:20px 0 10px;padding:12px 20px;background:#ffffff;border-radius:10px;box-shadow:0 1px 3px rgba(0,0,0,0.04);display:flex;align-items:center;flex-wrap:wrap;">
+  <div class="quick-nav" style="margin:20px 0 10px;padding:12px 20px;background:#ffffff;border-radius:10px;box-shadow:0 1px 3px rgba(0,0,0,0.04);display:flex;align-items:center;flex-wrap:wrap;">
     <span style="font-size:14px;color:#718096;margin-right:12px;">快速跳转：</span>
     <a href="javascript:void(0)" onclick="scrollToSection('section-science-0821')" style="margin-right:20px;font-size:15px;color:#2b6cb0;text-decoration:none;font-weight:600;">🔬 理工科资讯</a>
   </div>
@@ -2138,7 +2140,7 @@
     </div>
   </div>
 
-  <div style="margin:20px 0 10px;padding:12px 20px;background:#ffffff;border-radius:10px;box-shadow:0 1px 3px rgba(0,0,0,0.04);display:flex;align-items:center;flex-wrap:wrap;">
+  <div class="quick-nav" style="margin:20px 0 10px;padding:12px 20px;background:#ffffff;border-radius:10px;box-shadow:0 1px 3px rgba(0,0,0,0.04);display:flex;align-items:center;flex-wrap:wrap;">
     <span style="font-size:14px;color:#718096;margin-right:12px;">快速跳转：</span>
     <a href="javascript:void(0)" onclick="scrollToSection('section-science-0820')" style="margin-right:20px;font-size:15px;color:#2b6cb0;text-decoration:none;font-weight:600;">🔬 理工科资讯</a>
     <a href="javascript:void(0)" onclick="scrollToSection('section-arts-0820')" style="margin-right:20px;font-size:15px;color:#276749;text-decoration:none;font-weight:600;">📚 文科资讯</a>
@@ -2917,7 +2919,7 @@
     </div>
   </div>
 
-  <div style="margin:20px 0 10px;padding:12px 20px;background:#ffffff;border-radius:10px;box-shadow:0 1px 3px rgba(0,0,0,0.04);display:flex;align-items:center;flex-wrap:wrap;">
+  <div class="quick-nav" style="margin:20px 0 10px;padding:12px 20px;background:#ffffff;border-radius:10px;box-shadow:0 1px 3px rgba(0,0,0,0.04);display:flex;align-items:center;flex-wrap:wrap;">
     <span style="font-size:14px;color:#718096;margin-right:12px;">快速跳转：</span>
     <a href="javascript:void(0)" onclick="scrollToSection('section-science-0819')" style="margin-right:20px;font-size:15px;color:#2b6cb0;text-decoration:none;font-weight:600;">🔬 理工科资讯</a>
     <a href="javascript:void(0)" onclick="scrollToSection('section-arts-0819')" style="margin-right:20px;font-size:15px;color:#276749;text-decoration:none;font-weight:600;">📚 文科资讯</a>
@@ -3824,7 +3826,7 @@
     </div>
   </div>
 
-  <div style="margin:20px 0 10px;padding:12px 20px;background:#ffffff;border-radius:10px;box-shadow:0 1px 3px rgba(0,0,0,0.04);display:flex;align-items:center;flex-wrap:wrap;">
+  <div class="quick-nav" style="margin:20px 0 10px;padding:12px 20px;background:#ffffff;border-radius:10px;box-shadow:0 1px 3px rgba(0,0,0,0.04);display:flex;align-items:center;flex-wrap:wrap;">
     <span style="font-size:14px;color:#718096;margin-right:12px;">快速跳转：</span>
     <a href="javascript:void(0)" onclick="scrollToSection('section-science-0818')" style="margin-right:20px;font-size:15px;color:#2b6cb0;text-decoration:none;font-weight:600;">🔬 理工科资讯</a>
     <a href="javascript:void(0)" onclick="scrollToSection('section-arts-0818')" style="margin-right:20px;font-size:15px;color:#276749;text-decoration:none;font-weight:600;">📚 文科资讯</a>
