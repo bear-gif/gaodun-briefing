@@ -3276,9 +3276,10 @@ function showIndex() {
   window.location.href = 'index.html';
 }
 function scrollToSection(id) {
-  var el = document.getElementById(id);
+  var container = document.querySelector('.report-view.visible');
+  var el = container ? container.querySelector('#' + id) : document.getElementById(id);
   if (!el) return;
-  var top = el.offsetTop - 20;
+  var top = el.getBoundingClientRect().top + window.pageYOffset - 16;
   window.scrollTo({ top: top, behavior: 'smooth' });
 }
 </script>
@@ -6266,7 +6267,8 @@ function showIndex() {
 }
 
 function scrollToSection(id) {
-  var el = document.getElementById(id);
+  var container = document.querySelector('.report-view.visible');
+  var el = container ? container.querySelector('#' + id) : document.getElementById(id);
   if (!el) return;
   var offset = 16;
   var top = el.getBoundingClientRect().top + window.pageYOffset - offset;
