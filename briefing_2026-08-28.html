@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第12期 · 高顿升学 · 每日行业速览</title>
+<style>
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { background: #f1f5f9 }
+  .container { max-width: 960px; margin: 0 auto; padding: 30px 20px 60px; }
+  .report-header { background: #ffffff; border-radius: 14px; padding: 28px 32px; margin-bottom: 24px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+  .report-header .date-line { font-size: 20px; font-weight: 700; color: #1a1a2e; margin-bottom: 6px; }
+  .report-header .stats { font-size: 14px; color: #718096; margin-bottom: 16px; }
+  .report-header .stats span { display: inline-block; margin-right: 14px; }
+  .core-judgments { background: #f0f7ff; border-left: 4px solid #4299e1; padding: 16px 20px; border-radius: 0 8px 8px 0; }
+  .core-judgments h3 { font-size: 15px; color: #2d3748; margin-bottom: 8px; }
+  .core-judgments ul { list-style: none; }
+  .core-judgments li { font-size: 14px; color: #4a5568; padding: 4px 0; padding-left: 18px; position: relative; }
+  .core-judgments li::before { content: "\25b8"; position: absolute; left: 0; color: #4299e1; font-weight: bold; }
+  .card { background: #ffffff; border-radius: 14px; padding: 28px 32px; margin-bottom: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.07); border: 1px solid #ebebeb; border-top: 4px solid transparent; }
+  .card.science { border-top-color: #4299e1; }
+  .card.arts { border-top-color: #48bb78; }
+  .card-head { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; flex-wrap: wrap; }
+  .card-head h2 { font-size: 18px; font-weight: 700; color: #1a1a2e; flex: 1; min-width: 200px; }
+  .meta { display: flex; gap: 16px; font-size: 13px; color: #a0aec0; margin-bottom: 12px; flex-wrap: wrap; }
+  .content p, .content li { font-size: 15px; color: #4a5568; line-height: 1.8; }
+  .content ul { list-style: disc; padding-left: 20px; margin: 6px 0; }
+  .content li { margin: 4px 0; }
+  .sub-title { font-size: 15px; margin: 14px 0 6px; border-left: 3px solid #4299e1; padding-left: 10px; font-weight: 600; }
+  .sub-title.sc { color: #4299e1; border-color: #4299e1; }
+  .sub-title.gg { color: #48bb78; border-color: #48bb78; }
+  .tip-block { background: #fef3c7; border-radius: 8px; padding: 14px 18px; margin: 12px 0; }
+  .tip-block h3 { color: #92400e; font-size: 15px; margin: 0 0 8px; }
+  .tip-block p { color: #92400e; margin: 0; font-size: 14px; line-height: 1.9; }
+  /* QR/brand elements hidden on webpage, only visible in PDF print */
+  .print-watermark { display: none !important; }
+
+
+  @media print {
+  body.printing-report .container.report-view { padding: 0 8mm !important; margin: 0 auto !important; }
+  .print-watermark { display: block !important; margin: 0 0 4mm 0 !important; }
+  @page { margin: 10mm 18mm 10mm 18mm; size: auto; }
+  body { margin: 0 !important; padding: 0 !important; background: #fff !important; }
+  /* 隐藏快速跳转栏 */
+  .quick-nav { display: none !important; }
+  /* 卡片紧凑且不断裂 */
+  .card { margin-bottom: 4px !important; padding: 10px 14px !important; }
+  /* 分科标题紧凑，且与后续内容不分开 */
+  [id^="section-"] { margin: 4px 0 2mm 0 !important; padding: 4px 8px !important; }
+  /* 隐藏报告头部链接和元信息 */
+  .report-header a { display: none !important; }
+  .report-header .date-line { display: none !important; }
+  .report-header .stats { display: none !important; }
+  body.printing-report #site-brand-header { display: none !important; }
+  body.printing-report #index-view { display: none !important; }
+  body.printing-report #watermark-view { display: none !important; }
+  body.printing-report .footer { display: none !important; }
+  body.printing-report .report-view { display: none !important; }
+  body.printing-report .report-view.print-target { display: block !important; }
+}
+</style>
+</head>
+<body>
+<div class="print-watermark">
+  <div style="display:flex;align-items:center;justify-content:space-between;width:100%;">
+    <div style="display:flex;align-items:center;gap:4mm;">
+      <img src="data:image/png;base64,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" style="width:16mm;height:16mm;display:block;">
+      <span style="font-size:10pt;color:#333;font-weight:600;white-space:nowrap;">扫码获取全套行业速览</span>
+    </div>
+    <div style="text-align:right;">
+      <div style="font-size:15pt;font-weight:900;color:#E8721C;line-height:1.2;">高顿升学</div>
+      <div style="font-size:8pt;font-weight:700;color:#E8721C;letter-spacing:1px;">GOLDEN</div>
+    </div>
+  </div>
+  <div style="text-align:center;margin:2mm 0 1mm 0;">
+    <div style="font-size:11pt;font-weight:700;color:#1a1a2e;">高顿升学·每日行业速览</div>
+    <div style="font-size:7.5pt;color:#718096;margin-top:1mm;">精选行业资讯，锚定专业与就业，为孩子的梦想领航，为未来的美好奋斗！</div>
+  </div>
+  <div style="border-top:0.5pt solid #ccc;margin-top:1.5mm;"></div>
+</div>
+<div class="container">
+
+  <div class="report-header">
+    <a href="javascript:void(0)" onclick="showIndex()" style="display:inline-block;margin-bottom:14px;font-size:14px;color:#4299e1;text-decoration:none;font-weight:500;cursor:pointer;">← 返回列表</a>
+    <div class="date-line">📅 第12期 · 高顿升学 · 每日行业速览</div>
+    <div class="stats">
+      <span>📊 资讯共 10 条</span>
+      <span>🔬 理工科 6 条</span>
+      <span>📚 文科 4 条</span>
+    </div>
+    <div class="core-judgments">
+      <h3>📌 今日要点速览</h3>
+      <ul>
+        <li>英伟达Q2营收962亿美元同比增106%，股价单日暴涨8.74%，市值增加4420亿美元，罕见给出下财年70%增长指引</li>
+        <li>前7月规上工业企业利润增长17.6%，集成电路行业利润同比增长18.5倍，电子行业利润增长1.1倍</li>
+        <li>我国日均词元调用量突破500万亿，全球算力需求爆发式增长，多地加速布局国产智算中心</li>
+        <li>SK海力士CEO预计存储芯片短缺将持续至2030年，美国新工厂将使印第安纳成为"HBM生产基地"</li>
+        <li>柔性、AR微显技术获突破，OLED成为下一代显示技术主流路线，新型显示蓄力规模化商用</li>
+        <li>四部门联合开展汽车产品质量专项整治，重点检查智能网联汽车安全保障能力</li>
+        <li>中金公司"三合一"重组获上交所审核通过，换股吸收合并东兴证券、信达证券</li>
+        <li>年内超20城落地房贷贴息政策，精准降低居民购房成本</li>
+        <li>北戴河成俄罗斯游客"心头好"，截至8月中旬接待俄罗斯游客同比增长59.35%</li>
+        <li>辽博苏博联动尽展姑苏韵味，《姑苏繁华图》时隔20年再度"返乡"，62件书画精品跨千里展出</li>
+      </ul>
+    </div>
+  </div>
+
+  <div style="margin:20px 0 10px;padding:12px 20px;background:#fff;border-radius:10px;box-shadow:0 1px 3px rgba(0,0,0,0.04);display:flex;align-items:center;flex-wrap:wrap;">
+    <span style="font-size:14px;color:#718096;margin-right:12px;">快速跳转：</span>
+    <a href="javascript:void(0)" onclick="scrollToSection('section-science')" style="margin-right:20px;font-size:15px;color:#2b6cb0;text-decoration:none;font-weight:600;">🔬 理工科资讯</a>
+    <a href="javascript:void(0)" onclick="scrollToSection('section-arts')" style="margin-right:20px;font-size:15px;color:#276749;text-decoration:none;font-weight:600;">📚 文科资讯</a>
+  </div>
+
+  <div id="section-science" style="display:flex;align-items:center;gap:10px;margin:24px 0 18px;padding:12px 20px;background:linear-gradient(90deg,#ebf8ff,#fff);border-radius:10px;border-left:4px solid #4299e1;">
+    <span style="font-size:20px;">🔬</span>
+    <span style="font-size:17px;font-weight:700;color:#2b6cb0;">理工科资讯</span>
+    <span style="font-size:13px;color:#718096;margin-left:4px;">共 6 条</span>
+  </div>
+
+<div class="card science">
+  <div class="card-head">
+    <h2>英伟达Q2营收962亿美元同比增106%，股价暴涨8.74%，市值增4420亿美元</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 财经/科技新闻</span><span>🕐 2026-08-28</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>2026年8月28日（北京时间），英伟达发布2027财年Q2财报后股价暴涨8.74%，单日市值增加约4420亿美元（约合人民币21000亿元）。财报显示：Q2营收962亿美元，同比增长106%，环比增长18%；净利润597亿美元；数据中心收入890亿美元同比增长117%。公司罕见给出下财年（2028财年）营收增长约70%的长期指引，远超市场预期45%。亚马逊AWS宣布增订200万颗英伟达GPU。至少16家券商在财报后上调目标价。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>英伟达财报彻底打消了市场对"AI泡沫"的担忧。Vera Rubin平台已全面量产，下一代AI处理器Rubin需求强劲。英伟达还与贝莱德、高盛等合作建立5000亿美元资本池，将GPU资产证券化。费城半导体指数涨2.33%，整个AI芯片板块单日市值暴增近1500亿美元。暴涨后英伟达远期市盈率仅17.9倍，仍低于AMD的37.2倍和Intel的46.2倍，显示基本面增长跑赢了股价涨幅。</p>
+    <h3 class="sub-title sc">关联专业</h3>
+    <ul>
+      <li>计算机科学与技术</li>
+      <li>集成电路设计与集成系统</li>
+      <li>电子信息工程</li>
+      <li>人工智能</li>
+    </ul>
+    <h3 class="sub-title sc">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>本科可入行（测试/运维），硕士为主（芯片设计/算法），博士优先（前沿研究）</li>
+      <li><b>典型岗位：</b>GPU架构工程师、AI Infra工程师、数据中心运维工程师、CUDA开发专家</li>
+      <li><b>薪资参考：</b>AI芯片架构工程师月薪15-25万；AI Infra工程师月薪4-7万；CUDA开发工程师月薪3.5-6万（据猎聘、BOSS直聘公开招聘数据）</li>
+    </ul>
+    <h3 class="sub-title sc">地域优势</h3>
+    <p>上海（英伟达中国总部/芯片企业密集）、北京（互联网大厂AI团队/寒武纪）、深圳（华为海思/腾讯AI Lab）、杭州（阿里云/平头哥半导体）</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① 英伟达罕见给出全年70%增长指引，说明AI算力需求远未见顶，这是半导体行业最确定的增长方向；② 亚马逊一次性增订200万颗GPU，全球CSP资本支出2026年已超8800亿美元，GPU/数据中心人才将持续稀缺；③ 计算机+集成电路复合背景最吃香，既要懂硬件架构又要理解AI模型需求；④ 建议关注CUDA编程、分布式训练框架、Vera Rubin架构等前沿方向，有大规模集群运维经验的工程师极度稀缺。</p>
+    </div>
+  </div>
+</div>
+
+<div class="card science">
+  <div class="card-head">
+    <h2>前7月规上工业企业利润增长17.6%，集成电路利润增长18.5倍，电子行业增1.1倍</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 财经/科技新闻</span><span>🕐 2026-08-28</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>2026年8月27日，国家统计局发布数据：1-7月份全国规模以上工业企业实现利润总额45820.6亿元，同比增长17.6%；营业收入80.92万亿元，同比增长6.5%。其中亮点突出：集成电路行业利润同比增长18.5倍，光纤制造利润增长468.4%，光缆制造增长62.6%，通信系统设备制造增长55.0%。电子行业整体利润同比增长1.1倍，成为工业利润增长的最强引擎。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>集成电路行业利润暴增18.5倍，体现了国产替代进入收获期。国家大基金三期3440亿元持续投入，中芯国际上半年净利润44.67亿元同比增长94.2%，香农芯创净利润增长2207%。AI算力基建扩张重塑了有色金属需求逻辑，铜、钨、钼等"算力金属"站上风口。铜陵有色上半年净利润29.93亿元同比增长107%，中金黄金净利润43.57亿元同比增长61.67%。工业品价格持续上涨，利润端的高增长获得坚实支撑。</p>
+    <h3 class="sub-title sc">关联专业</h3>
+    <ul>
+      <li>集成电路设计与集成系统</li>
+      <li>微电子科学与工程</li>
+      <li>电子科学与技术</li>
+      <li>通信工程</li>
+    </ul>
+    <h3 class="sub-title sc">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>本科可入行（制造/封测），硕士为主（IC设计/工艺研发），博士优先（前沿器件研发）</li>
+      <li><b>典型岗位：</b>IC设计工程师、工艺整合工程师、良率工程师、通信系统工程师</li>
+      <li><b>薪资参考：</b>IC设计工程师应届硕士年薪30-45万；工艺工程师应届15-30万；通信系统工程师月薪2-3.5万（据BOSS直聘、猎聘公开招聘数据）</li>
+    </ul>
+    <h3 class="sub-title sc">地域优势</h3>
+    <p>上海（中芯国际/华虹/张江芯片走廊）、无锡（华虹/SK海力士/长电科技）、南京（台积电南京/江北芯片产业园）、深圳（华为海思/中兴微/深圳集成电路产业园）</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① 集成电路行业利润增长18.5倍，证明国产替代从"烧钱期"进入"收获期"，行业进入盈利爆发阶段；② 国家大基金三期3440亿元投入+高校扩招，芯片人才缺口超30万，就业确定性极高；③ 微电子/集成电路设计方向是"高薪+稀缺"的黄金赛道，硕士起薪25万已成常态；④ 建议物理/数学基础强的同学重点关注，Verilog/FPGA等是硬通货技能。</p>
+    </div>
+  </div>
+</div>
+
+<div class="card science">
+  <div class="card-head">
+    <h2>我国日均词元调用量突破500万亿，AI算力需求爆发式增长</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 科技新闻</span><span>🕐 2026-08-28</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>2026年8月27日，据央视财经报道，截至2026年6月，我国日均词元（Token）调用量已突破500万亿。词元规模快速增长的背后，全球大模型的竞争进入白热化，算力需求出现爆发式增长。目前全球智算资源已经出现供应偏紧的情况，国内多地正加速布局国产词元工厂与智算综合体，推动国产算力产业链从"产品验证"迈向"批量交付"。智谱与阿里同日开源前沿大模型，国产算力全部线上流量由10万张国产芯片承载。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>AI产业正从"会聊天"走向"能干活"，智能体规模化落地推动推理算力需求爆发。智谱GLM-5.3-Flash（320B参数/激活18B）以MIT协议开源，阿里Qwen3.8-Flash（125B参数/仅激活6B）推理成本每百万Token输入仅1元。北美四大云厂2026年二季度资本开支合计超1700亿美元，全年指引上修至约7450亿美元。银河证券指出，中国AI产业将进入按"词元"计费阶段，TaaS（Token即服务）成为新型商业模式。</p>
+    <h3 class="sub-title sc">关联专业</h3>
+    <ul>
+      <li>人工智能</li>
+      <li>计算机科学与技术</li>
+      <li>软件工程</li>
+      <li>数据科学与大数据技术</li>
+    </ul>
+    <h3 class="sub-title sc">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>本科可入行（运维/开发），硕士为主（算法/架构），博士优先（前沿研究）</li>
+      <li><b>典型岗位：</b>大模型算法工程师、推理优化工程师、算力运维工程师、AI应用开发工程师</li>
+      <li><b>薪资参考：</b>AI算法工程师年薪30-50万；大模型推理优化工程师月薪4-8万；智算运维工程师月薪1.5-3万（据脉脉、BOSS直聘公开招聘数据）</li>
+    </ul>
+    <h3 class="sub-title sc">地域优势</h3>
+    <p>北京（百度/智谱/中科院/清华）、上海（商汤/阿里达摩院/之江实验室）、深圳（华为昇腾/腾讯/鹏城实验室）、杭州（阿里通义/网易/浙大）</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① 日均500万亿词元调用量说明AI已全面渗透各行各业，推理算力人才是未来5年最大的人才缺口之一；② 国产大模型正以极致性价比重塑全球定价体系，"懂国产芯片+懂大模型部署"的复合型人才极为稀缺；③ 人工智能专业岗位同比增长215.61%，算法工程师年薪30-50万已属常态；④ 建议关注模型推理优化、量化部署、国产算力适配等实操方向，有大规模推理集群经验的人才供不应求。</p>
+    </div>
+  </div>
+</div>
+
+<div class="card science">
+  <div class="card-head">
+    <h2>SK海力士CEO：存储芯片短缺将持续至2030年，美国工厂打造HBM基地</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 科技/财经新闻</span><span>🕐 2026-08-28</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>2026年8月28日，SK海力士CEO郭鲁正表示，公司位于美国印第安纳州的新工厂建成后，到2030年将使该州成为"美国关键的HBM（高带宽内存）生产基地"，预计当前的存储芯片供应短缺将持续至2030年。铠侠和闪迪同日宣布计划在日本投资310亿美元扩建内存制造厂。德明利上半年净利润60.17亿元，存储芯片进入超级景气周期。MLCC产业也正式迈入涨价循环，三星电机率先涨价。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>AI数据中心对HBM的需求呈现"吞噬级"增长。HBM是英伟达GPU不可或缺的核心组件，全球仅SK海力士、三星、美光三家能够量产。SK海力士涨超2%。存储芯片的供需缺口持续扩大，根本原因在于AI训练和推理对高带宽、大容量内存的需求呈指数级增长。国内长鑫科技、长江存储也在加速扩产，但全球供需平衡预计到2030年前难以实现。这意味着存储芯片行业将持续处于高景气周期。</p>
+    <h3 class="sub-title sc">关联专业</h3>
+    <ul>
+      <li>微电子科学与工程</li>
+      <li>集成电路设计与集成系统</li>
+      <li>电子科学与技术</li>
+      <li>材料科学与工程</li>
+    </ul>
+    <h3 class="sub-title sc">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>本科可入行（封测/制造），硕士为主（设计/工艺），博士优先（器件/材料研发）</li>
+      <li><b>典型岗位：</b>存储芯片设计工程师、DRAM/NAND工艺工程师、HBM封装工程师、良率提升工程师</li>
+      <li><b>薪资参考：</b>存储芯片设计工程师月薪2.5-5万；DRAM工艺工程师应届硕士年薪25-40万；HBM封装工程师月薪2-4万（据猎聘、BOSS直聘公开招聘数据）</li>
+    </ul>
+    <h3 class="sub-title sc">地域优势</h3>
+    <p>合肥（长鑫存储/DRAM国产替代核心基地）、武汉（长江存储/NAND Flash基地）、无锡（SK海力士中国工厂/华虹）、西安（三星半导体/美光）</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① 存储芯片短缺将持续至2030年，这意味着未来4年都是存储行业的黄金就业期，供需缺口带来极高的薪资溢价；② HBM是AI算力的"命门"，封装技术难度极高，掌握TSV硅穿孔、混合键合等先进封装技术的人才极度稀缺；③ 国产存储替代正加速，长鑫/长江存储持续扩产，本土工程师需求井喷；④ 微电子+材料交叉背景的毕业生在存储领域特别吃香，建议关注新型存储器件（MRAM、PCM）等前沿方向。</p>
+    </div>
+  </div>
+</div>
+
+<div class="card science">
+  <div class="card-head">
+    <h2>柔性、AR微显技术获突破，新型显示蓄力规模化商用</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 科技新闻</span><span>🕐 2026-08-28</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>2026年8月28日，据新华财经报道，全球显示产业步入关键转型期，OLED凭借自发光、高对比度、柔性形态、低功耗等优势，成为下一代显示技术主流发展路线之一。柔性显示与AR微显示技术取得重要突破，推动新型显示蓄力规模化商用。折叠屏手机、AR眼镜、车载显示等新兴应用场景正在快速扩展，Micro OLED、Micro LED等微显示技术在AR/VR头显中的应用加速落地。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>新型显示是"十四五"重点支持的战略性新兴产业。柔性AMOLED面板产能持续扩张，京东方、维信诺等国内厂商在全球市场份额稳步提升。AR眼镜领域，Meta、苹果、雷鸟等纷纷推出轻量化产品，微显示模组是核心瓶颈之一。2026年全球AR/VR显示市场规模预计超200亿美元，Micro OLED微显示器单价虽高但需求增速超50%。国内在柔性基板材料、蒸镀设备等环节正加速国产替代。</p>
+    <h3 class="sub-title sc">关联专业</h3>
+    <ul>
+      <li>光电信息科学与工程</li>
+      <li>电子科学与技术</li>
+      <li>材料科学与工程</li>
+      <li>微电子科学与工程</li>
+    </ul>
+    <h3 class="sub-title sc">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>本科可入行（工艺/设备），硕士为主（器件设计/驱动IC），博士优先（新型材料/光学设计）</li>
+      <li><b>典型岗位：</b>OLED器件工程师、微显示驱动IC设计工程师、光学设计工程师、柔性基板工艺工程师</li>
+      <li><b>薪资参考：</b>显示器件工程师月薪1.5-3万；驱动IC设计工程师月薪3-5万；光学设计工程师硕士年薪25-40万（据BOSS直聘、猎聘公开招聘数据）</li>
+    </ul>
+    <h3 class="sub-title sc">地域优势</h3>
+    <p>合肥（京东方总部/维信诺/新型显示产业集群）、深圳（华星光电/柔性显示产业链）、成都（京东方第6代柔性AMOLED产线）、厦门（天马微电子/光电产业园）</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① 柔性显示+AR微显是"下一代互联网入口"的核心硬件，折叠屏手机渗透率快速提升，AR眼镜被视为下一代计算平台；② 光电信息科学是"硬核"工科专业，需要物理+电子+材料交叉基础，就业壁垒高、薪资增长快；③ 国内面板产能全球第一但上游材料和设备仍依赖进口，国产替代空间巨大，懂材料+懂工艺的工程师极受青睐；④ 建议关注Micro LED、硅基OLED等前沿技术方向，AR/VR显示模组工程师将成为未来3年最紧缺岗位之一。</p>
+    </div>
+  </div>
+</div>
+
+<div class="card science">
+  <div class="card-head">
+    <h2>四部门联合开展汽车产品质量专项整治，智能网联安全成检查重点</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 汽车新闻</span><span>🕐 2026-08-28</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>2026年8月27日，工信部、公安部、生态环境部、市场监管总局联合印发通知，将在全国范围内开展为期1年的道路机动车辆产品生产一致性和质量提升专项行动。检查重点包括四方面：生产一致性、可靠性、耐久性、新技术测试验证。特别加大对智能网联汽车安全保障能力、企业设计开发及生产能力、产品生产一致性等情况的检查力度，非理性竞争问题反映多的企业将被重点检查。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>此次专项行动直指新能源汽车行业"卷价格不卷质量"的乱象。上半年重卡行业量利齐增，新能源车渗透率持续攀升。但部分企业为抢占市场，在智能化功能激进上线的同时忽视了安全验证。上海同步发布废旧汽配进口试点方案，推动研发测试用关键零部件的安全规范进口。理想汽车Q2营收环比增长11.7%但上半年亏损39.94亿元，行业"以价换量"利润率压缩至3.6%。质量整顿将推动行业从"价格战"转向"品质战"。</p>
+    <h3 class="sub-title sc">关联专业</h3>
+    <ul>
+      <li>车辆工程</li>
+      <li>自动化</li>
+      <li>电子信息工程</li>
+      <li>机械设计制造及其自动化</li>
+    </ul>
+    <h3 class="sub-title sc">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>本科可入行（制造/质检），硕士为主（智能驾驶/电控系统），博士优先（前沿技术）</li>
+      <li><b>典型岗位：</b>智能网联汽车安全测试工程师、自动驾驶系统验证工程师、整车质量工程师、ADAS功能安全工程师</li>
+      <li><b>薪资参考：</b>智能网联测试工程师月薪1.5-3万；自动驾驶验证工程师月薪2-4万；整车质量工程师月薪1.2-2.5万（据BOSS直聘、猎聘公开招聘数据）</li>
+    </ul>
+    <h3 class="sub-title sc">地域优势</h3>
+    <p>上海（特斯拉/上汽/蔚来总部）、广州（广汽/小鹏/文远知行）、深圳（比亚迪/华为车BU/元戎启行）、重庆（长安汽车/赛力斯/成渝汽车产业集群）</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① 四部门联合整治意味着智能网联汽车的安全标准将全面升级，功能安全工程师和合规测试人才需求将大幅增长；② 车辆工程+自动化/计算机交叉背景的毕业生最吃香，既懂传统车辆又掌握智能驾驶系统；③ 汽车行业从"价格战"转向"品质战"，长期利好具备质量控制和测试验证能力的工程师；④ 建议关注ISO 26262功能安全标准、SOTIF预期功能安全等行业规范，掌握这些认证的工程师就业竞争力更强。</p>
+    </div>
+  </div>
+</div>
+
+  <div id="section-arts" style="display:flex;align-items:center;gap:10px;margin:30px 0 18px;padding:12px 20px;background:linear-gradient(90deg,#f0fff4,#fff);border-radius:10px;border-left:4px solid #48bb78;">
+    <span style="font-size:20px;">📚</span>
+    <span style="font-size:17px;font-weight:700;color:#276749;">文科资讯</span>
+    <span style="font-size:13px;color:#718096;margin-left:4px;">共 4 条</span>
+  </div>
+
+<div class="card arts">
+  <div class="card-head">
+    <h2>中金公司"三合一"重组获上交所审核通过，换股吸收合并东兴证券、信达证券</h2>
+    <span style="background:#f0fff4;color:#48bb78;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">文科</span>
+  </div>
+  <div class="meta"><span>📰 财经新闻</span><span>🕐 2026-08-28</span></div>
+  <div class="content">
+    <h3 class="sub-title gg">事件背景</h3>
+    <p>2026年8月27日晚，中金公司公告称，公司换股吸收合并东兴证券、信达证券事项已获得上海证券交易所并购重组审核委员会2026年第17次审议会议审核通过。这是继国泰君安吸收合并海通证券之后，又一起大型券商"三合一"重组案例。中金公司拟通过向东兴证券和信达证券全体A股换股股东发行A股股票的方式完成吸收合并，标志着券商行业整合进入加速期。</p>
+    <h3 class="sub-title gg">行业简述</h3>
+    <p>券商并购重组潮是监管层推动"打造一流投资银行"战略的重要一步。中金作为头部投行，合并东兴和信达后将大幅扩展经纪业务网络和资产管理规模。社保基金二季度调仓路线图也显示硬科技成布局主线，共现身506只个股前十大流通股东名单。当前A股市场在英伟达财报利好带动下情绪回暖，科创50指数涨3.77%。券商整合将提升行业集中度，利好头部券商的投行业务和国际竞争力。</p>
+    <h3 class="sub-title gg">关联专业</h3>
+    <ul>
+      <li>金融学</li>
+      <li>投资学</li>
+      <li>经济学</li>
+      <li>会计学</li>
+    </ul>
+    <h3 class="sub-title gg">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>本科可入行（经纪/运营），硕士为主（投行/研究/资管），博士优先（量化/风控）</li>
+      <li><b>典型岗位：</b>投资银行分析师、行业研究员、资产管理投资经理、合规风控专员</li>
+      <li><b>薪资参考：</b>投行分析师（应届硕士）年薪30-50万+奖金；行业研究员年薪25-60万；合规风控月薪1.5-3万（据猎聘、智通硕博网公开招聘数据）</li>
+    </ul>
+    <h3 class="sub-title sc">地域优势</h3>
+    <p>上海（上交所/中金总部/券商密集）、北京（证监会/中信建投/中金研究总部）、深圳（深交所/招商证券/国信证券）、广州（广发证券/易方达基金）</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① 券商合并潮带来大量整合型人才需求，懂投行业务+熟悉监管规则的复合型人才极其抢手；② 中金合并后规模跃升，投行条线和研究条线的招聘需求将显著增加，应届硕士进入头部券商的机会窗口打开；③ 金融学+法律/会计双背景在投行和合规领域极具竞争力；④ 建议关注注册制改革、并购重组新规等政策方向，懂资本市场运作的专业人才在行业整合期溢价明显。</p>
+    </div>
+  </div>
+</div>
+
+<div class="card arts">
+  <div class="card-head">
+    <h2>年内超20城落地房贷贴息政策，精准降低居民购房成本</h2>
+    <span style="background:#f0fff4;color:#48bb78;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">文科</span>
+  </div>
+  <div class="meta"><span>📰 财经新闻</span><span>🕐 2026-08-28</span></div>
+  <div class="content">
+    <h3 class="sub-title gg">事件背景</h3>
+    <p>2026年8月28日，据新华财经报道，全国已有超20地出台或优化住房贷款贴息相关政策。住房贷款贴息正成为地方精细化支持住房消费的重要政策工具，政策覆盖范围持续拓宽，补贴对象也更加精准多元。多地通过财政贴息直接降低购房者贷款利息支出，部分城市针对首套房、多孩家庭、新市民等群体提供差异化贴息方案。</p>
+    <h3 class="sub-title gg">行业简述</h3>
+    <p>房贷贴息是继降低首付比例、取消限购限售后，地方政府在房地产领域的又一精细化调控工具。与直接降利率不同，贴息由地方财政承担利息差额，可在不触动银行利率定价体系的前提下实现定向降低购房成本。结合"认房不认贷"扩围、公积金提取优化等组合政策，楼市支持政策正从"大水漫灌"转向"精准滴灌"。2025年经济发展新动能指数显示，创新驱动发展作用持续增强，房地产市场也正步入新发展模式。</p>
+    <h3 class="sub-title gg">关联专业</h3>
+    <ul>
+      <li>金融学</li>
+      <li>房地产经济学</li>
+      <li>公共管理</li>
+      <li>财政学</li>
+    </ul>
+    <h3 class="sub-title gg">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>本科可入行（银行信贷/房产中介），硕士为主（政策研究/资管），博士优先（宏观经济研究）</li>
+      <li><b>典型岗位：</b>银行个贷客户经理、房地产政策分析师、公积金管理中心专员、房产评估师</li>
+      <li><b>薪资参考：</b>银行个贷客户经理月薪0.8-2万（含业绩提成）；房地产政策分析师月薪1.5-2.5万；公积金管理专员月薪0.8-1.5万（据BOSS直聘、智通硕博网公开招聘数据）</li>
+    </ul>
+    <h3 class="sub-title gg">地域优势</h3>
+    <p>一线城市（政策首发地/北京、上海、深圳房贷贴息方案最丰富）、强二线城市（南京、杭州、成都等地政策力度大）、新一线（武汉、重庆、西安等积极跟进）</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① 超20城落地房贷贴息，说明地方政府对房地产精细化调控人才的需求持续增长，懂政策+懂金融的复合型人才受欢迎；② 房地产经济学是新兴交叉方向，结合了金融学、公共政策和市场分析，就业面广；③ 银行个贷业务在政策宽松期迎来增量，个贷经理的业绩收入有望提升；④ 建议关注公积金制度改革、存量房贷利率调整等热点方向，有财政/金融政策分析能力的毕业生在政府部门和金融机构都有很好前景。</p>
+    </div>
+  </div>
+</div>
+
+<div class="card arts">
+  <div class="card-head">
+    <h2>北戴河成俄罗斯游客"心头好"，接待人次同比增长59.35%</h2>
+    <span style="background:#f0fff4;color:#48bb78;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">文科</span>
+  </div>
+  <div class="meta"><span>📰 文旅新闻</span><span>🕐 2026-08-28</span></div>
+  <div class="content">
+    <h3 class="sub-title gg">事件背景</h3>
+    <p>2026年8月28日，据河北新闻网报道，截至8月中旬，秦皇岛北戴河区共接待俄罗斯游客3.4万余人次，同比增长59.35%。近年来，秦皇岛市持续搭建中俄多层次文化交流平台，完善入境游全链条服务体系。北戴河机场国际客运航线时隔六年复航，开通至哈巴罗夫斯克、符拉迪沃斯托克等5个俄罗斯城市的旅游包机。歌华营地今年接待俄罗斯游客2.6万人次，同比增长超50%。</p>
+    <h3 class="sub-title gg">行业简述</h3>
+    <p>入境旅游正成为文旅产业新的增长极。北戴河以文化交流为根基，常态化开展贯穿春、夏、秋三季的中俄文化交流活动，打造了文艺展演、艺术展览、研学互动、体育联谊、商贸推介五大板块。20余场针对中俄青少年的特色活动吸引了数千名俄罗斯青少年。全市实施入境服务升级工程，景区设置中俄双语导览牌，培养精通俄语的景区讲解员和研学导师。京津冀区位优势结合过境免签政策红利，入境游全链条服务体系日趋完善。</p>
+    <h3 class="sub-title gg">关联专业</h3>
+    <ul>
+      <li>旅游管理</li>
+      <li>俄语/外国语言文学</li>
+      <li>文化产业管理</li>
+      <li>国际关系</li>
+    </ul>
+    <h3 class="sub-title gg">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>大专/本科可入行（导游/酒店），硕士为主（文旅策划/国际交流），博士优先（学术研究）</li>
+      <li><b>典型岗位：</b>入境游产品经理、涉外研学导师、俄语导游、文旅营销策划师、酒店涉外客户经理</li>
+      <li><b>薪资参考：</b>俄语导游月薪0.8-1.5万（旺季可达2万+）；涉外研学导师月薪0.8-1.5万；入境游产品经理月薪1.2-2.5万；五星级酒店涉外客户经理月薪0.8-1.5万（据BOSS直聘、汇博招聘公开招聘数据）</li>
+    </ul>
+    <h3 class="sub-title gg">地域优势</h3>
+    <p>秦皇岛/北戴河（中俄文旅交流核心地/歌华营地）、三亚（入境游热门目的地/境外游客集中）、北京（国际交流中心/俄语人才密集）、哈尔滨/黑河（对俄边境旅游枢纽）</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① 入境游复苏势头强劲，俄罗斯游客增长近60%，懂俄语+懂文旅的复合型人才供不应求；② 研学旅游是文旅产业新增长极，北戴河歌华营地年接待量已超2.6万人次，涉外研学导师岗位需求快速增长；③ 旅游管理+外语（尤其是俄语、小语种）背景在入境游赛道极具竞争力；④ 建议关注中俄文化交流活动运营、国际研学产品设计等方向，精通俄语且具备跨文化沟通能力的人才在文旅行业溢价明显。</p>
+    </div>
+  </div>
+</div>
+
+<div class="card arts">
+  <div class="card-head">
+    <h2>辽博苏博联动尽展姑苏韵味，《姑苏繁华图》时隔20年再度"返乡"</h2>
+    <span style="background:#f0fff4;color:#48bb78;font-size:12px;padding:10px;border-radius:10px;white-space:nowrap;">文科</span>
+  </div>
+  <div class="meta"><span>📰 文旅新闻</span><span>🕐 2026-08-28</span></div>
+  <div class="content">
+    <h3 class="sub-title gg">事件背景</h3>
+    <p>2026年8月28日，据人民日报海外版报道，时隔20年，辽宁省博物馆收藏的国宝级文物《姑苏繁华图》再度跨越千里，从山海关外回到长卷里的苏州。由辽宁省博物馆与苏州博物馆联合策划的"姑苏繁华"特展在苏博开展，汇聚辽苏两地馆藏62件（套）书画精品。展览从唐代"草圣"张旭的传世狂草孤本《古诗四帖》，到明代"吴门四家"的风雅传承，再到清代徐扬笔下的市井烟火，以时序脉络层层递进。</p>
+    <h3 class="sub-title gg">行业简述</h3>
+    <p>博物馆联合办展正成为文旅融合的新范式。《姑苏繁华图》是12米长卷，由清代宫廷苏州籍画师徐扬创作，画有人物4800余人、房屋2000余栋、船只400余艘。2006年苏博开馆时首展吸引超12万人参观。本次特展采用古今对照展陈形式，配套开发近百款主题文创产品，涵盖包袋、玩具、文具、家居等品类。两家博物馆联动将分散的文化资源串珠成链，推动"跟着文物去旅行"成为新时尚。文旅+文博的模式正在激发巨大的消费潜力。</p>
+    <h3 class="sub-title gg">关联专业</h3>
+    <ul>
+      <li>文物与博物馆学</li>
+      <li>文化产业管理</li>
+      <li>艺术设计</li>
+      <li>历史学</li>
+    </ul>
+    <h3 class="sub-title gg">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>本科可入行（文创设计/策展助理），硕士为主（策展研究/文物修复），博士优先（学术研究）</li>
+      <li><b>典型岗位：</b>博物馆策展人、文创产品设计师、文化遗产数字化工程师、研学活动策划师</li>
+      <li><b>薪资参考：</b>博物馆策展人月薪0.8-1.5万；文创产品设计师月薪0.8-2万；文化遗产数字化工程师月薪1.2-2.5万；研学活动策划师月薪0.6-1.2万（据BOSS直聘公开招聘数据）</li>
+    </ul>
+    <h3 class="sub-title gg">地域优势</h3>
+    <p>苏州（苏州博物馆/丝绸文化/江南水乡文旅）、北京（故宫/国博/中国文化遗产研究院）、南京（南京博物院/六朝博物馆）、西安（陕西历史博物馆/兵马俑/丝路文旅）</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① 博物馆联合办展+文创开发模式正在全国推广，策展人才和文创设计人才缺口持续扩大；② 文物与博物馆学是"小而美"专业，近年因《国家宝藏》等节目热度飙升，就业面从传统博物馆拓展到文创企业、数字文化平台；③ 文化遗产数字化是新增长点，VR/AR复原文物、数字化展陈技术人才需求旺盛；④ 建议关注"文博+科技"交叉方向，既懂历史文化又掌握数字化技术的复合型人才，在博物馆和文旅企业都极受青睐。</p>
+    </div>
+  </div>
+</div>
+
+<script>
+function showIndex() {
+  if (window.parent && window.parent.showIndex) { window.parent.showIndex(); return; }
+  window.location.href = 'index.html';
+}
+function scrollToSection(id) {
+  var el = document.getElementById(id);
+  if (!el) return;
+  var top = el.offsetTop - 20;
+  window.scrollTo({ top: top, behavior: 'smooth' });
+}
+</script>
+
+</body>
+</html>
