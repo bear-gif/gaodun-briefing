@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第13期 · 高顿升学 · 每日行业速览</title>
+<style>
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { background: #f1f5f9 }
+  .container { max-width: 960px; margin: 0 auto; padding: 30px 20px 60px; }
+  .report-header { background: #ffffff; border-radius: 14px; padding: 28px 32px; margin-bottom: 24px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+  .report-header .date-line { font-size: 20px; font-weight: 700; color: #1a1a2e; margin-bottom: 6px; }
+  .report-header .stats { font-size: 14px; color: #718096; margin-bottom: 16px; }
+  .report-header .stats span { display: inline-block; margin-right: 14px; }
+  .core-judgments { background: #f0f7ff; border-left: 4px solid #4299e1; padding: 16px 20px; border-radius: 0 8px 8px 0; }
+  .core-judgments h3 { font-size: 15px; color: #2d3748; margin-bottom: 8px; }
+  .core-judgments ul { list-style: none; }
+  .core-judgments li { font-size: 14px; color: #4a5568; padding: 4px 0; padding-left: 18px; position: relative; }
+  .core-judgments li::before { content: "\25b8"; position: absolute; left: 0; color: #4299e1; font-weight: bold; }
+  .card { background: #ffffff; border-radius: 14px; padding: 28px 32px; margin-bottom: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.07); border: 1px solid #ebebeb; border-top: 4px solid transparent; }
+  .card.science { border-top-color: #4299e1; }
+  .card.arts { border-top-color: #48bb78; }
+  .card-head { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; flex-wrap: wrap; }
+  .card-head h2 { font-size: 18px; font-weight: 700; color: #1a1a2e; flex: 1; min-width: 200px; }
+  .meta { display: flex; gap: 16px; font-size: 13px; color: #a0aec0; margin-bottom: 12px; flex-wrap: wrap; }
+  .content p, .content li { font-size: 15px; color: #4a5568; line-height: 1.8; }
+  .content ul { list-style: disc; padding-left: 20px; margin: 6px 0; }
+  .content li { margin: 4px 0; }
+  .sub-title { font-size: 15px; margin: 14px 0 6px; border-left: 3px solid #4299e1; padding-left: 10px; font-weight: 600; }
+  .sub-title.sc { color: #4299e1; border-color: #4299e1; }
+  .sub-title.gg { color: #48bb78; border-color: #48bb78; }
+  .tip-block { background: #fef3c7; border-radius: 8px; padding: 14px 18px; margin: 12px 0; }
+  .tip-block h3 { color: #92400e; font-size: 15px; margin: 0 0 8px; }
+  .tip-block p { color: #92400e; margin: 0; font-size: 14px; line-height: 1.9; }
+  .print-watermark { display: none !important; }
+
+
+  @media print {
+  body.printing-report .container.report-view { padding: 0 8mm !important; margin: 0 auto !important; }
+  .print-watermark { display: block !important; margin: 0 0 4mm 0 !important; }
+  @page { margin: 10mm 18mm 10mm 18mm; size: auto; }
+  body { margin: 0 !important; padding: 0 !important; background: #fff !important; }
+  .quick-nav { display: none !important; }
+  .card { margin-bottom: 4px !important; padding: 10px 14px !important; }
+  [id^="section-"] { margin: 4px 0 2mm 0 !important; padding: 4px 8px !important; }
+  .report-header a { display: none !important; }
+  .report-header .date-line { display: none !important; }
+  .report-header .stats { display: none !important; }
+  body.printing-report #site-brand-header { display: none !important; }
+  body.printing-report #index-view { display: none !important; }
+  body.printing-report #watermark-view { display: none !important; }
+  body.printing-report .footer { display: none !important; }
+  body.printing-report .report-view { display: none !important; }
+  body.printing-report .report-view.print-target { display: block !important; }
+}
+</style>
+</head>
+<body>
+<div class="print-watermark">
+  <div style="display:flex;align-items:center;justify-content:space-between;width:100%;">
+    <div style="display:flex;align-items:center;gap:4mm;">
+      <img src="data:image/png;base64,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" style="width:16mm;height:16mm;display:block;">
+      <span style="font-size:10pt;color:#333;font-weight:600;white-space:nowrap;">扫码获取全套行业速览</span>
+    </div>
+    <div style="text-align:right;">
+      <div style="font-size:15pt;font-weight:900;color:#E8721C;line-height:1.2;">高顿升学</div>
+      <div style="font-size:8pt;font-weight:700;color:#E8721C;letter-spacing:1px;">GOLDEN</div>
+    </div>
+  </div>
+  <div style="text-align:center;margin:2mm 0 1mm 0;">
+    <div style="font-size:11pt;font-weight:700;color:#1a1a2e;">高顿升学·每日行业速览</div>
+    <div style="font-size:7.5pt;color:#718096;margin-top:1mm;">精选行业资讯，锚定专业与就业，为孩子的梦想领航，为未来的美好奋斗！</div>
+  </div>
+  <div style="border-top:0.5pt solid #ccc;margin-top:1.5mm;"></div>
+</div>
+<div class="container">
+
+  <div class="report-header">
+    <a href="javascript:void(0)" onclick="showIndex()" style="display:inline-block;margin-bottom:14px;font-size:14px;color:#4299e1;text-decoration:none;font-weight:500;cursor:pointer;">← 返回列表</a>
+    <div class="date-line">📅 第13期 · 高顿升学 · 每日行业速览</div>
+    <div class="stats">
+      <span>📊 资讯共 8 条</span>
+      <span>🔬 理工科 5 条</span>
+      <span>📚 文科 3 条</span>
+    </div>
+    <div class="core-judgments">
+      <h3>📌 今日要点速览</h3>
+      <ul>
+        <li>英伟达129亿美元收购全球最大开源AI平台Hugging Face，掌控"AI界的GitHub"，开源生态格局巨变</li>
+        <li>国产推理GPU企业曦望完成20亿元融资，四个月估值翻倍至200亿，自2024年底分拆以来累计融资近60亿</li>
+        <li>北京理工大学团队研发全球首款实时高光谱成像微系统HyperVision，成果发表于《Science》</li>
+        <li>2026中国国际大数据产业博览会贵阳开幕，全国累计建成高质量数据集超12.6万个，贵州算力规模达176.57EFLOPS</li>
+        <li>Valve发布Steam Frame VR头显将于9月7日开启预订，AR/VR硬件赛道持续升温</li>
+        <li>证监会发布意见支持构建房地产发展新模式，推动开发融资从依赖主体信用向基于项目情况转变</li>
+        <li>美联储主席沃什暗示可能加息，9月加息25基点可能性升至57.4%，全球金融市场震荡</li>
+        <li>广东金秋文旅消费季9月启动，3000万元文旅消费补贴覆盖中秋国庆两大黄金档</li>
+      </ul>
+    </div>
+  </div>
+
+  <div style="margin:20px 0 10px;padding:12px 20px;background:#fff;border-radius:10px;box-shadow:0 1px 3px rgba(0,0,0,0.04);display:flex;align-items:center;flex-wrap:wrap;">
+    <span style="font-size:14px;color:#718096;margin-right:12px;">快速跳转：</span>
+    <a href="javascript:void(0)" onclick="scrollToSection('section-science')" style="margin-right:20px;font-size:15px;color:#2b6cb0;text-decoration:none;font-weight:600;">🔬 理工科资讯</a>
+    <a href="javascript:void(0)" onclick="scrollToSection('section-arts')" style="margin-right:20px;font-size:15px;color:#276749;text-decoration:none;font-weight:600;">📚 文科资讯</a>
+  </div>
+
+  <div id="section-science" style="display:flex;align-items:center;gap:10px;margin:24px 0 18px;padding:12px 20px;background:linear-gradient(90deg,#ebf8ff,#fff);border-radius:10px;border-left:4px solid #4299e1;">
+    <span style="font-size:20px;">🔬</span>
+    <span style="font-size:17px;font-weight:700;color:#2b6cb0;">理工科资讯</span>
+    <span style="font-size:13px;color:#718096;margin-left:4px;">共 5 条</span>
+  </div>
+
+<div class="card science">
+  <div class="card-head">
+    <h2>英伟达129亿美元收购Hugging Face，掌控全球最大开源AI生态</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 科技/AI新闻</span><span>🕐 2026-08-29</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>2026年8月28日（美东时间），据The Information报道，英伟达已同意以129亿美元（约合人民币867亿元）收购全球最大开源AI平台Hugging Face。这是英伟达有史以来最大规模的收购之一。Hugging Face被称为"AI界的GitHub"，平台托管超300万个公开模型、超100万个数据集，服务1300万开发者，月活访客超1800万，年化收入约1.5亿美元。此前英伟达曾提出5亿美元投资方案（对应估值70亿美元）但遭拒绝，最终以129亿美元达成整体收购。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>这笔收购的核心战略是"从卖芯片到控生态"。OpenAI、Anthropic等闭源AI巨头正加速自研芯片，试图降低对英伟达GPU的依赖。英伟达的判断是：开源模型的繁荣是对冲闭源威胁的最佳防线——几乎所有开源模型都运行在英伟达平台上。收购Hugging Face后，英伟达将从GPU供应商深入到模型分发、数据集、推理部署和开发工具层，类似IBM 2019年花340亿美元收购Red Hat的逻辑——用软件生态把硬件销量拉起来。中国开源大模型（智谱、Kimi、DeepSeek等）在该平台上均高度活跃。</p>
+    <h3 class="sub-title sc">关联专业</h3>
+    <ul>
+      <li>人工智能</li>
+      <li>计算机科学与技术</li>
+      <li>软件工程</li>
+      <li>数据科学与大数据技术</li>
+    </ul>
+    <h3 class="sub-title sc">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>本科可入行（开发/运维），硕士为主（算法/架构），博士优先（前沿研究）</li>
+      <li><b>典型岗位：</b>AI平台工程师、开源生态运营专家、MLOps工程师、大模型部署工程师</li>
+      <li><b>薪资参考：</b>AI算法工程师月薪20-50K，年薪24-60万；大模型工程师年薪50-100万+；MLOps工程师月薪2-4万（据BOSS直聘、猎聘公开招聘数据）</li>
+    </ul>
+    <h3 class="sub-title sc">地域优势</h3>
+    <p>北京（智谱/月之暗面/中科院）、上海（商汤/阿里达摩院/之江实验室）、深圳（华为昇腾/腾讯AI Lab）、杭州（阿里通义/网易/浙大）</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① 英伟达129亿美元买下整个开源AI生态的"默认分发层"，说明AI平台的战略价值已远超短期财务回报，开源生态运营、AI Infra人才将成为最稀缺资源；② Hugging Face平台上中国大模型高度活跃，懂国产模型+懂开源社区运营的复合型人才极度稀缺；③ AI算法工程师65%岗位月薪20-50K，大模型工程师年薪50万起步；④ 建议关注MLOps、模型部署优化、开源社区治理等方向，既有技术深度又有生态视野的毕业生最具竞争力。</p>
+    </div>
+  </div>
+</div>
+
+<div class="card science">
+  <div class="card-head">
+    <h2>国产推理GPU企业曦望完成20亿元融资，四个月估值翻倍至200亿</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 科技/芯片新闻</span><span>🕐 2026-08-29</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>2026年8月28日，据财新、36氪等多家媒体确认，由商汤科技分拆独立的国产AI推理GPU企业曦望Sunrise完成新一轮20亿元融资，投后估值约200亿元。本轮投资方包括人保股权、建信股权、Janchor Partners、中科创星、同创伟业等财务机构，以及正大集团、九安医疗、盈峰环境、三七互娱、同程旅行等产业资本。今年4月，曦望刚完成杭州资本领投的超10亿元融资，不到半年估值接近翻倍。自2024年底分拆以来，曦望累计融资接近60亿元。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>AI算力需求结构正在发生根本性转变——从训练为主转向推理为主。Agent批量进入生产环节，一次任务可能产生几十次模型调用，24小时不间断的推理和Token生产成为算力消耗增长重点。曦望S3推理GPU彻底放弃训推一体路线，将晶体管和功耗预算全部用于推理效率优化，采用LPDDR内存路线，对标英伟达L40S/L20。同日，国产半导体设备公司研微半导体也完成15亿B轮融资，芯片赛道大额融资集中爆发，国产替代叙事正从"设计"向"设备"和"互连"等更上游环节延伸。</p>
+    <h3 class="sub-title sc">关联专业</h3>
+    <ul>
+      <li>集成电路设计与集成系统</li>
+      <li>微电子科学与工程</li>
+      <li>电子信息工程</li>
+      <li>计算机科学与技术</li>
+    </ul>
+    <h3 class="sub-title sc">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>本科可入行（验证/测试），硕士为主（芯片设计/架构），博士优先（前沿器件）</li>
+      <li><b>典型岗位：</b>GPU芯片设计工程师、AI芯片架构师、芯片验证工程师、CUDA生态适配工程师</li>
+      <li><b>薪资参考：</b>GPU芯片设计工程师校招总包约35-45万/年；AI芯片架构师月薪5-10万；芯片验证工程师月薪2-3.5万（据猎聘、BOSS直聘公开招聘数据）</li>
+    </ul>
+    <h3 class="sub-title sc">地域优势</h3>
+    <p>杭州（曦望总部/杭州资本/阿里达摩院）、上海（张江芯片走廊/华虹/中芯国际）、北京（寒武纪/中科院/清华）、深圳（华为海思/中兴微）</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① 曦望四个月估值翻倍至200亿，说明推理芯片是当下最热的半导体赛道——AI从训练转向推理，推理芯片的市场空间比训练芯片更大；② 国产GPU企业集中爆发大额融资，摩尔线程计划2027年盈利，校招为985微电子硕士开出月薪5.8万，芯片设计人才供不应求；③ 集成电路+计算机复合背景最吃香，既懂芯片硬件架构又懂AI软件栈（CUDA/ROCm等）；④ 建议关注推理优化、低功耗芯片设计、国产EDA工具等方向，有流片经验的工程师溢价极高。</p>
+    </div>
+  </div>
+</div>
+
+<div class="card science">
+  <div class="card-head">
+    <h2>全球首款实时高光谱成像微系统HyperVision问世，成果发表于《Science》</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 科技/科学探索</span><span>🕐 2026-08-29</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>2026年8月28日，北京理工大学张军院士团队在国际上首次提出光谱专用计算原创概念，首创片上光谱计算全新架构，成功解决高光谱成像在线实时解析难题。相关研究成果发表于国际顶级期刊《Science》。团队自主研发了全球首款一体化在线实时高光谱成像微系统——HyperVision，整机重量仅约950克，功耗仅25.3瓦，相比传统GPU方案功耗降低一个数量级，无需外接供电，可在可见—近红外宽波段稳定输出视频级实时高光谱成像画面。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>HyperVision跳出了通用CPU/GPU的路径依赖和经典冯·诺依曼架构束缚，将完整光谱计算图直接映射到芯片硬件物理空间，实现"感知即解析、采集即决策"。团队已在智能驾驶、烟雾监测、无人机空对地成像等真实场景完成实测验证。高光谱成像技术广泛应用于空天遥感、智能驾驶、环境监测、精准医疗等领域。该成果开辟了下一代集成化、嵌入式高光谱视觉系统全新技术路线，标志着中国在芯片级光电计算领域实现从"跟跑"到"领跑"的跨越。</p>
+    <h3 class="sub-title sc">关联专业</h3>
+    <ul>
+      <li>光电信息科学与工程</li>
+      <li>集成电路设计与集成系统</li>
+      <li>电子科学与技术</li>
+      <li>计算机科学与技术</li>
+    </ul>
+    <h3 class="sub-title sc">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>本科可入行（设备/测试），硕士为主（光学设计/芯片研发），博士优先（前沿架构研究）</li>
+      <li><b>典型岗位：</b>光学工程师（光谱传感方向）、高光谱算法工程师、计算光学研究员、嵌入式视觉系统工程师</li>
+      <li><b>薪资参考：</b>光学工程师（光谱传感方向）月薪25-40K；高光谱算法工程师月薪2-4万；计算光学研究员应届博士年薪35-55万（据猎聘、BOSS直聘公开招聘数据）</li>
+    </ul>
+    <h3 class="sub-title sc">地域优势</h3>
+    <p>北京（北京理工大学/中科院光机所/清华大学精密仪器系）、长春（中科院长春光机所/光电产业群）、上海（上海光机所/复旦光学/上海微电子装备）、深圳（光电产业链完整/大疆/华为光电子）</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① 该成果发表于《Science》，说明光电计算+芯片架构交叉方向是中国正在领跑的前沿领域，选择这个方向有机会站在世界最前沿；② HyperVision仅950克、25.3瓦功耗就实现了传统GPU集群的实时高光谱成像能力，说明"专用芯片+算法"是未来智能感知的核心趋势；③ 光电信息科学与工程是"硬核"工科，52.3%的光学工程师岗位月薪20-50K，就业壁垒极高；④ 建议物理+电子+计算机交叉学习，掌握光学仿真软件（Zemax/LightTools）和AI算法的复合型人才最为稀缺。</p>
+    </div>
+  </div>
+</div>
+
+<div class="card science">
+  <div class="card-head">
+    <h2>2026中国国际大数据产业博览会贵阳开幕，聚焦词元经济与算力基建</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 科技/数据新闻</span><span>🕐 2026-08-29</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>2026年8月28日，第12届中国国际大数据产业博览会在贵州省贵阳市开幕。本届数博会以"词元——数据要素价值释放新路径"为主题，372家中外企业参展，1.6万余名嘉宾注册参会。国家数据局局长刘烈宏在开幕式上透露：截至2026年8月，全国累计建成高质量数据集超12.6万个，数据总体量超1815PB，较2026年3月增长超89%。贵州总算力规模达176.57EFLOPS，智算占比达98.35%，贵阳已发布《建设中国数谷·词元之城的三年行动方案》。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>"词元经济"正成为数字经济的核心赛道。贵阳贵安数字产业规模去年达1400亿元，今年将力争突破1700亿元。贵州已集聚华为、腾讯、三大运营商等大型数据中心27个，互联网出省带宽从5年前的1.7万Gbps提升至6.15万Gbps，构建起全国3毫秒、10毫秒、20毫秒三层时延圈。本届数博会设立国内首个面向科创小微主体的人工智能大模型市集和"数据集市"，集中展示词元经济、算力调度、大模型创新、数据要素流通等新技术。数据宝旗下"词元宝"日调用量已稳定在400-500亿次。</p>
+    <h3 class="sub-title sc">关联专业</h3>
+    <ul>
+      <li>数据科学与大数据技术</li>
+      <li>计算机科学与技术</li>
+      <li>人工智能</li>
+      <li>云计算与数据工程</li>
+    </ul>
+    <h3 class="sub-title sc">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>本科可入行（数据分析/运维），硕士为主（算法/架构），博士优先（前沿研究）</li>
+      <li><b>典型岗位：</b>大数据工程师、数据要素运营专家、算力调度工程师、数据标注/AI训练师</li>
+      <li><b>薪资参考：</b>大数据工程师一线城市应届月薪13-25K，年薪15-30万；3-5年经验后年薪可达30-50万；算力调度工程师月薪1.5-3万（据BOSS直聘、猎聘公开招聘数据）</li>
+    </ul>
+    <h3 class="sub-title sc">地域优势</h3>
+    <p>贵阳/贵安（国家算力枢纽节点/华为云总部/腾讯/三大运营商数据中心密集）、北京（国家数据局/百度/字节跳动）、上海（数据交易所/头部AI企业）、深圳（华为/腾讯/鹏城实验室）</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① "词元经济"正在复制当年"互联网+"的爆发路径，数据要素市场化催生全新岗位群——数据标注师、词元交易员、算力调度师等新兴职业快速涌现；② 大数据管理与应用专业就业率约98.7%，核心岗位缺口230万+，高端人才供需比低至0.4；③ 贵州作为"东数西算"核心枢纽，算力规模全国领先，为当地大数据人才提供了丰富的就业机会；④ 建议关注数据治理、数据合规、数据交易等新兴方向，懂技术+懂数据法规的复合型人才在数据要素市场极度稀缺。</p>
+    </div>
+  </div>
+</div>
+
+<div class="card science">
+  <div class="card-head">
+    <h2>Valve发布Steam Frame VR头显将于9月7日开启预订</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 科技新闻</span><span>🕐 2026-08-29</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>2026年8月29日，据科技媒体报道，Valve（V社）旗下Steam Frame VR头显将于9月7日正式开启预订。这是继Meta Quest系列、苹果Vision Pro之后，VR/AR硬件赛道的又一重磅产品。Steam作为全球最大的PC游戏平台，拥有超1.3亿月活用户，Steam Frame的入局将进一步推动VR内容生态的成熟。同日，第六届新电商大会在吉林举行，VR/AR电商应用成为热议话题。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>VR/AR硬件市场正进入新一轮产品周期。Meta、苹果、Valve三大平台同时发力，推动从游戏娱乐向办公、教育、医疗等更广泛场景拓展。Steam Frame依托Steam平台的庞大内容库，有望快速突破"内容荒"瓶颈。国内AR眼镜领域同样火热——雷鸟、XREAL、Rokid等品牌持续推出轻量化产品，全球AR/VR显示市场规模2026年预计超200亿美元。柔性显示、Micro OLED微显示等核心技术不断突破，为VR/AR设备的小型化和轻量化提供硬件基础。</p>
+    <h3 class="sub-title sc">关联专业</h3>
+    <ul>
+      <li>虚拟现实技术</li>
+      <li>数字媒体技术</li>
+      <li>光电信息科学与工程</li>
+      <li>计算机科学与技术</li>
+    </ul>
+    <h3 class="sub-title sc">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>本科可入行（开发/测试），硕士为主（算法/光学设计），博士优先（前沿研究）</li>
+      <li><b>典型岗位：</b>VR/AR应用开发工程师、空间计算工程师、3D交互设计师、XR硬件测试工程师</li>
+      <li><b>薪资参考：</b>VR/AR开发工程师月薪1.5-3.5万；空间计算算法工程师月薪2.5-5万；3D交互设计师月薪1.2-2.5万（据BOSS直聘、猎聘公开招聘数据）</li>
+    </ul>
+    <h3 class="sub-title sc">地域优势</h3>
+    <p>深圳（大疆/XREAL/Rokid/硬件产业链完整）、北京（Pico/字节VR/中科院自动化所）、上海（微软HoloLens中国团队/Niantic）、青岛（歌尔股份/VR硬件代工龙头）</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① Valve入局VR硬件标志着三大平台（Meta/Apple/Steam）同时竞争，VR内容生态将迎来爆发期，VR应用开发工程师需求将大幅增长；② 空间计算是VR/AR的核心技术方向，需要计算机+光学+人机交互交叉背景，复合型人才极度稀缺；③ 国内XR硬件产业链集中在深圳和青岛，歌尔股份是全球VR代工龙头，硬件工程师就业机会丰富；④ 建议关注Unity/Unreal引擎开发、SLAM算法、空间音频等方向，有完整VR项目经验的毕业生竞争力远超同龄人。</p>
+    </div>
+  </div>
+</div>
+
+  <div id="section-arts" style="display:flex;align-items:center;gap:10px;margin:30px 0 18px;padding:12px 20px;background:linear-gradient(90deg,#f0fff4,#fff);border-radius:10px;border-left:4px solid #48bb78;">
+    <span style="font-size:20px;">📚</span>
+    <span style="font-size:17px;font-weight:700;color:#276749;">文科资讯</span>
+    <span style="font-size:13px;color:#718096;margin-left:4px;">共 3 条</span>
+  </div>
+
+<div class="card arts">
+  <div class="card-head">
+    <h2>证监会发布意见支持构建房地产发展新模式，推动融资方式根本转变</h2>
+    <span style="background:#f0fff4;color:#48bb78;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">文科</span>
+  </div>
+  <div class="meta"><span>📰 财经/政策新闻</span><span>🕐 2026-08-29</span></div>
+  <div class="content">
+    <h3 class="sub-title gg">事件背景</h3>
+    <p>2026年8月28日，中国证监会发布《关于资本市场支持构建房地产发展新模式的意见》。意见明确改革房地产开发融资方式，推动从依赖主体信用向基于项目情况转变，一视同仁满足不同所有制房企合理融资需求。意见支持上市房企再融资，鼓励发行CMBS、ABS、REITs等工具；同时强化准入监管和穿透式监管，严防欺诈发行和信息造假，畅通多元化退市渠道，配合地方政府推动违约债券处置出清。</p>
+    <h3 class="sub-title gg">行业简述</h3>
+    <p>这是继降低首付比例、取消限购限售后，资本市场对房地产领域的又一重磅政策。核心变化在于融资逻辑的根本转变——从"看开发商资质"到"看项目本身"，这将显著改善民营房企的融资环境。REITs（不动产投资信托基金）的推进尤为关键，为存量资产提供了新的退出渠道。同期，广州南沙完成首宗"现房销售"地块出让，标志着现房销售试点正式落地。券商二季度调仓数据显示，金融行业持仓规模达301.55亿元，中信建投、江苏银行等成为券商重仓标的。</p>
+    <h3 class="sub-title gg">关联专业</h3>
+    <ul>
+      <li>金融学</li>
+      <li>投资学</li>
+      <li>房地产经济学</li>
+      <li>会计学</li>
+    </ul>
+    <h3 class="sub-title gg">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>本科可入行（银行信贷/房产评估），硕士为主（REITs研究/资管），博士优先（宏观经济研究）</li>
+      <li><b>典型岗位：</b>REITs产品研究员、不动产金融分析师、银行房地产信贷经理、房产评估师</li>
+      <li><b>薪资参考：</b>REITs研究员年薪20-40万；不动产金融分析师月薪1.5-3万；银行房地产信贷经理月薪1-2.5万（据猎聘、智通硕博网公开招聘数据）</li>
+    </ul>
+    <h3 class="sub-title gg">地域优势</h3>
+    <p>上海（上交所/公募基金密集/不动产金融核心）、北京（证监会/住建部/央企地产总部）、深圳（深交所/REITs试点先行地）、广州（首宗现房销售地块/南沙自贸区）</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① 融资逻辑从"看主体"转向"看项目"，懂项目评估+懂金融工具的复合型人才将成为房企和金融机构争抢的对象；② REITs是房地产新模式的核金融工具，中国公募REITs市场仍处于快速扩容阶段，相关研究和管理人才极度稀缺；③ 金融学+不动产/工程造价交叉背景在不动产金融领域极具竞争力；④ 建议关注REITs产品设计与运营、不动产估值、存量资产管理等方向，这些岗位在行业转型期溢价明显。</p>
+    </div>
+  </div>
+</div>
+
+<div class="card arts">
+  <div class="card-head">
+    <h2>美联储主席沃什暗示可能加息，9月加息概率升至57.4%</h2>
+    <span style="background:#f0fff4;color:#48bb78;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">文科</span>
+  </div>
+  <div class="meta"><span>📰 财经新闻</span><span>🕐 2026-08-29</span></div>
+  <div class="content">
+    <h3 class="sub-title gg">事件背景</h3>
+    <p>2026年8月28日（北京时间），美联储主席凯文·沃什在杰克逊霍尔全球央行年会上发表讲话，对通胀回落进展缓慢表达不满，并暗示如果价格压力未能进一步缓解，可能需要上调基准利率。这是沃什自5月就任以来对货币政策立场最明确的表态。讲话后，芝商所"美联储观察"工具显示9月加息25个基点的可能性从30%大幅升至57.4%。沃什明确拒绝提供前瞻指引，呼吁建立"更加安静、沟通更有目的性的美联储"。</p>
+    <h3 class="sub-title gg">行业简述</h3>
+    <p>沃什的鹰派表态对全球金融市场产生显著冲击。美股方面，道指微跌0.02%报53559.99点，标普500报7xxx点，市场在科技巨头强劲财报与货币政策紧缩之间拉锯。A股则呈现指数回调、个股分化格局，上证指数报3952.18点微跌0.11%，两市成交2.10万亿元维持高位。分析人士认为，沃什上任以来最接近承认可能需要加息的表态，为全球资本流动和汇率市场增添了新的不确定性。新兴市场尤其需要警惕美元走强带来的资本外流压力。</p>
+    <h3 class="sub-title gg">关联专业</h3>
+    <ul>
+      <li>金融学</li>
+      <li>经济学</li>
+      <li>国际经济与贸易</li>
+      <li>统计学</li>
+    </ul>
+    <h3 class="sub-title gg">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>本科可入行（银行/证券），硕士为主（研究/风控），博士优先（宏观研究/量化）</li>
+      <li><b>典型岗位：</b>宏观经济研究员、外汇交易员、跨境风控分析师、利率策略师</li>
+      <li><b>薪资参考：</b>宏观经济研究员年薪20-50万；外汇交易员月薪2-5万（含业绩奖金）；跨境风控分析师月薪1.5-3万（据猎聘、智通硕博网公开招聘数据）</li>
+    </ul>
+    <h3 class="sub-title gg">地域优势</h3>
+    <p>上海（上交所/外资金融机构密集/外汇交易中心）、北京（一行一局一会/央行/外汇管理局）、深圳（深交所/QDII基金集中）、香港（离岸人民币中心/国际金融机构）</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① 美联储加息预期升温意味着全球金融市场波动加大，懂宏观政策解读+量化分析能力的复合型人才在各金融机构都极受重视；② 外汇交易和跨境风控在利率波动期业务量大增，相关岗位收入和奖金水涨船高；③ 经济学+统计学/数据科学交叉背景在宏观研究领域极具优势，既能做政策解读又能做量化建模；④ 建议关注美联储政策框架变化、新兴市场资本流动、汇率对冲工具等方向，有CFA/FRM等认证的专业人才在就业市场溢价明显。</p>
+    </div>
+  </div>
+</div>
+
+<div class="card arts">
+  <div class="card-head">
+    <h2>广东金秋文旅消费季9月启动，3000万元补贴覆盖中秋国庆黄金档</h2>
+    <span style="background:#f0fff4;color:#48bb78;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">文科</span>
+  </div>
+  <div class="meta"><span>📰 文旅新闻</span><span>🕐 2026-08-29</span></div>
+  <div class="content">
+    <h3 class="sub-title gg">事件背景</h3>
+    <p>2026年8月28日，2026广东金秋文旅消费季暨文旅产业招商推介会新闻发布会举行。消费季将于9月11日启动，持续至10月底，覆盖中秋、国庆两大黄金档。核心惠民举措是面向境内外来粤游客和本地居民发放总计3000万元文旅消费惠民补贴，单笔最高优惠500元，覆盖酒店民宿、景区门票、旅游线路及低空旅游、邮轮游艇、亲子游学、银发康养等新业态。消费季还将推出"城市文旅嘉年华·广东丹霞山"、"跟着美食去旅行"等系列特色活动。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>广东文旅消费季是全国文旅促消费的标杆案例。本次消费季聚焦"人工智能+"、银发经济、票根经济等新增长点，打造"科技+文旅""IP+文旅""夜间+文旅"融合新场景。深入推进"粤夜粤美"夜间文旅消费品牌，鼓励各地打造夜演、夜游、夜购、夜娱、夜宿特色消费场景。主会场设在中国进出口商品交易会展馆，发布覆盖21个地市的100余个文旅重点招商项目。同期，江西省也宣布投放5000万元文旅消费券，覆盖全省700多家A级景区，文旅消费刺激政策正在全国遍地开花。</p>
+    <h3 class="sub-title gg">关联专业</h3>
+    <ul>
+      <li>旅游管理</li>
+      <li>文化产业管理</li>
+      <li>市场营销</li>
+      <li>电子商务</li>
+    </ul>
+    <h3 class="sub-title gg">学历·岗位·薪资</h3>
+    <ul>
+      <li><b>学历门槛：</b>大专/本科可入行（景区/酒店/OTA运营），硕士为主（文旅策划/投资），博士优先（学术研究）</li>
+      <li><b>典型岗位：</b>文旅消费策划师、低空旅游产品经理、OTA运营经理、夜间经济运营总监</li>
+      <li><b>薪资参考：</b>文旅消费策划师月薪0.8-1.5万；低空旅游产品经理月薪1.5-3万；OTA运营经理月薪1-2万；夜间经济运营总监月薪1.5-3万（据BOSS直聘公开招聘数据）</li>
+    </ul>
+    <h3 class="sub-title gg">地域优势</h3>
+    <p>广州（省文旅厅/广交会/粤港澳大湾区文旅枢纽）、深圳（科技+文旅融合/华侨城/华强方特）、珠海（长隆/邮轮母港/粤港澳文旅合作）、佛山/潮州（美食文旅/非遗文化/夜间经济）</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>① 文旅消费券正在全国遍地开花（广东3000万+江西5000万），文旅营销策划和运营人才需求持续走高；② "低空旅游""银发康养""AI+文旅"等新业态催生全新岗位——低空旅游产品经理、银发旅游定制师等岗位正在崛起；③ 旅游管理+数字营销/电商交叉背景的毕业生在文旅消费运营领域极具竞争力；④ 建议关注文旅IP运营、夜间经济策划、智慧文旅平台运营等方向，懂流量运营+懂线下体验设计的复合型人才最受文旅企业青睐。</p>
+    </div>
+  </div>
+</div>
+
+<script>
+function showIndex() {
+  if (window.parent && window.parent.showIndex) { window.parent.showIndex(); return; }
+  window.location.href = 'index.html';
+}
+function scrollToSection(id) {
+  var el = document.getElementById(id);
+  if (!el) return;
+  var top = el.offsetTop - 20;
+  window.scrollTo({ top: top, behavior: 'smooth' });
+}
+</script>
+
+</body>
+</html>
