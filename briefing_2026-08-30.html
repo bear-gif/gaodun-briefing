@@ -414,7 +414,7 @@ function showIndex() {
 function scrollToSection(id) {
   var el = document.getElementById(id);
   if (!el) return;
-  var top = el.offsetTop - 20;
+  var top = el.getBoundingClientRect().top + window.pageYOffset - 16;
   window.scrollTo({ top: top, behavior: 'smooth' });
 }
 </script>
