@@ -8,18 +8,18 @@
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
   html { scroll-behavior: smooth; }
-  body { background: #f1f5f9 }
+  body { font-family: -apple-system, BlinkmacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif; background: #f5f7fa; color: #1a1a2e; line-height: 1.7; }
   .container { max-width: 960px; margin: 0 auto; padding: 30px 20px 60px; }
-  .report-header { background: #ffffff; border-radius: 14px; padding: 28px 32px; margin-bottom: 24px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+  .report-header { background: #fff; border-radius: 14px; padding: 28px 32px; margin-bottom: 24px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
   .report-header .date-line { font-size: 20px; font-weight: 700; color: #1a1a2e; margin-bottom: 6px; }
   .report-header .stats { font-size: 14px; color: #718096; margin-bottom: 16px; }
   .report-header .stats span { display: inline-block; margin-right: 14px; }
-  .core-judgments { background: #f0f7ff; border-left: 4px solid #4299e1; padding: 16px 20px; border-radius: 0 8px 8px 0; }
+  .core-judgments { background: #f7fafc; border-left: 4px solid #4299e1; padding: 16px 20px; border-radius: 0 8px 8px 0; }
   .core-judgments h3 { font-size: 15px; color: #2d3748; margin-bottom: 8px; }
   .core-judgments ul { list-style: none; }
   .core-judgments li { font-size: 14px; color: #4a5568; padding: 4px 0; padding-left: 18px; position: relative; }
   .core-judgments li::before { content: "\25b8"; position: absolute; left: 0; color: #4299e1; font-weight: bold; }
-  .card { background: #ffffff; border-radius: 14px; padding: 28px 32px; margin-bottom: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.07); border: 1px solid #ebebeb; border-top: 4px solid transparent; }
+  .card { background: #fff; border-radius: 14px; padding: 28px 32px; margin-bottom: 20px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); border-top: 4px solid transparent; }
   .card.science { border-top-color: #4299e1; }
   .card.arts { border-top-color: #48bb78; }
   .card-head { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; flex-wrap: wrap; }
@@ -28,57 +28,34 @@
   .content p, .content li { font-size: 15px; color: #4a5568; line-height: 1.8; }
   .content ul { list-style: disc; padding-left: 20px; margin: 6px 0; }
   .content li { margin: 4px 0; }
+  .footer { text-align: center; padding: 40px 20px; color: #a0aec0; font-size: 12px; }
   .sub-title { font-size: 15px; margin: 14px 0 6px; border-left: 3px solid #4299e1; padding-left: 10px; font-weight: 600; }
   .sub-title.sc { color: #4299e1; border-color: #4299e1; }
   .sub-title.gg { color: #48bb78; border-color: #48bb78; }
   .tip-block { background: #fef3c7; border-radius: 8px; padding: 14px 18px; margin: 12px 0; }
   .tip-block h3 { color: #92400e; font-size: 15px; margin: 0 0 8px; }
   .tip-block p { color: #92400e; margin: 0; font-size: 14px; line-height: 1.9; }
-  .print-watermark { display: none !important; }
-
-
+  /* Print styles */
   @media print {
-  body.printing-report .container.report-view { padding: 0 8mm !important; margin: 0 auto !important; }
-  .print-watermark { display: block !important; margin: 0 0 4mm 0 !important; }
-  @page { margin: 10mm 18mm 10mm 18mm; size: auto; }
-  body { margin: 0 !important; padding: 0 !important; background: #fff !important; }
-  .quick-nav { display: none !important; }
-  .card { margin-bottom: 4px !important; padding: 10px 14px !important; }
-  [id^="section-"] { margin: 4px 0 2mm 0 !important; padding: 4px 8px !important; }
-  .report-header a { display: none !important; }
-  .report-header .date-line { display: none !important; }
-  .report-header .stats { display: none !important; }
-  body.printing-report #site-brand-header { display: none !important; }
-  body.printing-report #index-view { display: none !important; }
-  body.printing-report #watermark-view { display: none !important; }
-  body.printing-report .footer { display: none !important; }
-  body.printing-report .report-view { display: none !important; }
-  body.printing-report .report-view.print-target { display: block !important; }
-}
+    body.printing-report .container.report-view { padding: 0 8mm !important; margin: 0 auto !important; }
+    .print-watermark { display: block !important; margin: 0 0 4mm 0 !important; }
+    @page { margin: 10mm 18mm 10mm 18mm; size: auto; }
+    body { margin: 0 !important; padding: 0 !important; background: #fff !important; }
+    .quick-nav { display: none !important; }
+    .card { margin-bottom: 4px !important; padding: 10px 14px !important; }
+    [id^="section-"] { margin: 4px 0 2mm 0 !important; padding: 4px 8px !important; }
+    .report-header a, .report-header .date-line, .report-header .stats { display: none !important; }
+    body.printing-report #site-brand-header, body.printing-report #index-view, body.printing-report #watermark-view, body.printing-report .footer, body.printing-report .report-view { display: none !important; }
+    body.printing-report .report-view.print-target { display: block !important; }
+  }
+
 </style>
 </head>
 <body>
-<div class="print-watermark">
-  <div style="display:flex;align-items:center;justify-content:space-between;width:100%;">
-    <div style="display:flex;align-items:center;gap:4mm;">
-      <img src="data:image/png;base64,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" style="width:16mm;height:16mm;display:block;">
-      <span style="font-size:10pt;color:#333;font-weight:600;white-space:nowrap;">扫码获取全套行业速览</span>
-    </div>
-    <div style="text-align:right;">
-      <div style="font-size:15pt;font-weight:900;color:#E8721C;line-height:1.2;">高顿升学</div>
-      <div style="font-size:8pt;font-weight:700;color:#E8721C;letter-spacing:1px;">GOLDEN</div>
-    </div>
-  </div>
-  <div style="text-align:center;margin:2mm 0 1mm 0;">
-    <div style="font-size:11pt;font-weight:700;color:#1a1a2e;">高顿升学·每日行业速览</div>
-    <div style="font-size:7.5pt;color:#718096;margin-top:1mm;">精选行业资讯，锚定专业与就业，为孩子的梦想领航，为未来的美好奋斗！</div>
-  </div>
-  <div style="border-top:0.5pt solid #ccc;margin-top:1.5mm;"></div>
-</div>
 <div class="container">
   <div class="report-header">
     <a href="javascript:void(0)" onclick="showIndex()" style="display:inline-block;margin-bottom:14px;font-size:14px;color:#4299e1;text-decoration:none;font-weight:500;cursor:pointer;">← 返回列表</a>
-    <div class="date-line">📅 第14期 · 高顿升学 · 每日行业速览</div>
+    <div class="date-line">📅 第14期 · 高顿升学 · 每日行业速览 · 2026年8月30日 · 星期日</div>
     <div class="stats">
       <span>📊 资讯共 9 条</span>
       <span>🔬 理工科 5 条</span>
@@ -87,15 +64,15 @@
     <div class="core-judgments">
       <h3>📌 今日要点速览</h3>
       <ul>
-        <li>中国集成电路出口前7月达2160亿美元，同比暴增99.5%，已超2025年全年总额，存储芯片成最大拉动力</li>
-        <li>腾讯混元开源Hy4 preview，7700亿总参数、单token激活490亿，上下文扩展至100万，面向Coding与Agent场景</li>
-        <li>台积电3nm产能供不应求，扩产提前2-3个月，月产能将升至18万片晶圆，2nm月出货也逼近10万片</li>
-        <li>数芯智信在WAIC 2026发布天垓300通用GPU旗舰芯片，面向信息、动作、探索三大智能趋势</li>
-        <li>智谱GLM-5.3上线Tinker平台，256k上下文窗口，编码评测表现最强，成当前最强开源权重模型</li>
-        <li>六大行上半年合计营收约2万亿元，同比增长9.38%，中期分红比例集体提升至31%，合计拟分红超2200亿元</li>
-        <li>央行、金融监管总局联合发布房地产信贷新政：个人住房贷款期限最长不超过40年，开发贷款实行主办银行制</li>
-        <li>福建上半年接待游客超1500万人次，门票收入超4.5亿元，"乡村游"消费超300亿元，文旅消费新范式成型</li>
-        <li>数字人民币业务运营机构再扩容，经济日报详解新一轮数字金融基础设施建设进展</li>
+        <li>五城市群氢能应用试点正式启动，氢能产业迈入规模化商业闭环新阶段</li>
+        <li>国际首套深海载人驻守型海底实验室进入建造阶段，2029年投用</li>
+        <li>NASA罗曼空间望远镜成功发射，将巡天超20亿个星系</li>
+        <li>全国工业固废利用率升至77.2%，碳市场7月成交量同比增长47.3%</li>
+        <li>OLED产业加速转型，LGD敲定144亿元第8代产线投资</li>
+        <li>辽宁率先取消生物地理历史中考计分，多地推进双减改革</li>
+        <li>北京发布数据知识产权登记管理办法，新专利优先审查办法9月实施</li>
+        <li>福建沙县七夕蒙学式入选省级非遗，活态传承创新实践引关注</li>
+        <li>数博会村超AI超传播系统亮相，AI+新媒体赋能乡土文化传播</li>
       </ul>
     </div>
   </div>
@@ -111,298 +88,309 @@
     <span style="font-size:17px;font-weight:700;color:#2b6cb0;">理工科资讯</span>
     <span style="font-size:13px;color:#718096;margin-left:4px;">共 5 条</span>
   </div>
+
 <div class="card science">
   <div class="card-head">
-    <h2>中国集成电路出口前7月超去年全年，同比暴增99.5%</h2>
+    <h2>五城市群启动氢能综合应用试点，资阳发布86亿元氢能产业规划</h2>
     <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
   </div>
-  <div class="meta"><span>📰 科技/半导体新闻</span><span>🕐 2026-08-30</span></div>
+  <div class="meta"><span>📰 人民日报 / 21世纪经济报道</span><span>🕐 2026-08-30</span></div>
   <div class="content">
     <h3 class="sub-title sc">事件背景</h3>
-    <p>2026年8月30日，据央视财经报道，海关总署数据显示：2026年1至7月，中国集成电路出口总额达2160亿美元，同比增长99.5%，已超过2025年全年2019亿美元的出口总额。全球算力基建需求井喷下，存储芯片一跃成为出口最大品类，相关企业"吸金"能力惊人——香农芯创上半年归母净利润增长超20倍。芯片封装设备订单普遍排至2028年，部分客户甚至提着现金到工厂"抢货"。</p>
+    <p>工业和信息化部、财政部、国家发展改革委近日联合印发通知，原则同意京津冀、粤港澳大湾区等5个城市群开展氢能综合应用试点，为期4年，中央财政以奖代补予以支持。与此同时，2026资阳市氢能产业生态大会于8月28日召开，发布了资阳市“十五五”氢能产业发展规划，推出总投资86亿元的46个投资机会项目，标志着氢能产业正式从“技术验证”迈入“全场景应用与规模化商业闭环”的新阶段。</p>
     <h3 class="sub-title sc">行业简述</h3>
-    <p>中国集成电路产业正迎来历史性高光时刻。从出口暴增到上下游爆单，产业链沿着"设计—制造—封测—设备"全链条同步繁荣。深圳一家内存生产企业已从3000平方米扩至8000平方米，计划再增4条产线。芯片封装设备企业微见智能的存储芯片封装设备订单增长500%以上、光传输芯片封装设备增长300%以上。PCB出口额上半年达161.2亿美元，同比增长34%。产业技术也在同步升级，1.6T光模块专用封装设备将良品率从95%-98%提升至99.6%。西南证券分析师指出，国内已形成相对完备的集成电路产业体系，不仅能满足国内需求，还能承接海外高端需求。</p>
+    <p>氢能作为来源丰富、绿色低碳的二次能源，正加速从示范探索迈向规模化商业应用。截至2026年上半年，广州累计推广氢燃料电池汽车约4300辆，居全国城市首位，建成加氢站25座。广州“十五五”规划提出到2030年投运5万台氢燃料电池汽车、30艘氢燃料电池船舶、2000架长续航氢动力无人机。2026年7月，全国首艘2000吨级氢动力集散两用船“云韬一号”在广东肇庆正式吉水，标志着大型内河氢动力货运船舶实现全产业链自主化突破。</p>
     <h3 class="sub-title sc">关联专业</h3>
     <ul>
-      <li>集成电路设计与集成系统</li>
-      <li>微电子科学与工程</li>
-      <li>电子信息工程</li>
-      <li>计算机科学与技术</li>
-    </ul>
-    <h3 class="sub-title sc">学历·岗位·薪资</h3>
-    <ul>
-      <li><b>学历门槛：</b>本科可入行（工艺/测试），硕士为主（芯片设计/封装研发），博士优先（前沿器件）</li>
-      <li><b>典型岗位：</b>芯片封装工程师、先进封装设计工程师、存储芯片工艺工程师、IC验证工程师</li>
-      <li><b>薪资参考：</b>芯片封装工程师月薪2-5万，年薪24-60万；先进封装设计工程师月薪3.5-6.5万（15薪）；封装研发总监月薪5-10万（据猎聘、BOSS直聘公开招聘数据）</li>
-    </ul>
-    <h3 class="sub-title sc">地域优势</h3>
-    <p>深圳（存储芯片出口核心区/金胜电子/微见智能）、上海（张江芯片走廊/长鑫存储/中芯国际）、合肥（长鑫存储总部/存储芯片产业高地）、无锡（封装测试重镇/SK海力士/长电科技）</p>
-    <div class="tip-block">
-      <h3>💡 报考小贴士</h3>
-      <p>① 集成电路出口7个月超去年全年、同比翻倍，说明全球算力需求仍在爆发期，存储芯片是最大风口——懂存储架构+懂封装工艺的复合人才极度稀缺；② 芯片封装设备订单排到2028年，客户提现金抢货，先进封装（2.5D/3D封装、Chiplet）方向的工程师供不应求；③ 封装工程师50.8%岗位月薪2-5万，先进封装设计负责人年薪可达60-100万+；④ 建议关注存储芯片设计、先进封装工艺、半导体设备研发等方向，有流片或量产经验的工程师溢价极高。</p>
-    </div>
-  </div>
-</div>
-<div class="card science">
-  <div class="card-head">
-    <h2>腾讯混元开源Hy4大模型，7700亿参数刷新国产开源纪录</h2>
-    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
-  </div>
-  <div class="meta"><span>📰 科技/AI新闻</span><span>🕐 2026-08-30</span></div>
-  <div class="content">
-    <h3 class="sub-title sc">事件背景</h3>
-    <p>2026年8月30日，腾讯混元正式开源Hy4 preview大语言模型。该模型总参数规模达7700亿，单token激活参数仅490亿（采用MoE混合专家架构），上下文窗口扩展至100万token，并同步上线TokenHub平台。模型主要面向Coding（代码生成）、Agent（智能体）与办公场景。</p>
-    <h3 class="sub-title sc">行业简述</h3>
-    <p>同一天，多家国产大模型厂商也在密集发布新产品：智谱GLM-5.3上线Tinker平台，支持256k上下文窗口，在编码评测中表现最强；Kimi K3集成至Cursor平台，在CursorBench评测中接近前沿水平；MiniMax发布H3 Max视频生成模型，生成速度超过观看速度50倍。国产大模型正在从"参数竞赛"转向"落地效率竞赛"。a16z同日宣布设立11亿美元Machine Age基金，聚焦AI基础设施投资，显示全球资本持续押注AI赛道。</p>
-    <h3 class="sub-title sc">关联专业</h3>
-    <ul>
-      <li>人工智能</li>
-      <li>计算机科学与技术</li>
-      <li>软件工程</li>
-      <li>数据科学与大数据技术</li>
-    </ul>
-    <h3 class="sub-title sc">学历·岗位·薪资</h3>
-    <ul>
-      <li><b>学历门槛：</b>本科可入行（应用开发/运维），硕士为主（算法/架构），博士优先（前沿研究）</li>
-      <li><b>典型岗位：</b>大模型算法工程师、AI Agent开发工程师、MLOps工程师、模型推理优化工程师</li>
-      <li><b>薪资参考：</b>AI算法工程师月薪20-50K，年薪24-60万；大模型推理优化工程师月薪3-6万；AI Agent开发工程师月薪2-4万（据BOSS直聘、猎聘公开招聘数据）</li>
-    </ul>
-    <h3 class="sub-title sc">地域优势</h3>
-    <p>深圳（腾讯总部/混元大模型/大湾区AI生态）、北京（智谱AI/月之暗面/百度/中科院）、上海（商汤/MiniMax/阿里达摩院）、杭州（阿里通义/浙大/网易）</p>
-    <div class="tip-block">
-      <h3>💡 报考小贴士</h3>
-      <p>① 腾讯7700亿参数大模型开源，智谱GLM-5.3成最强开源编码模型——国产大模型已进入"开源井喷"阶段，懂MoE架构、长上下文推理、模型部署优化的工程师极度稀缺；② 同一天Kimi K3上Cursor、MiniMax视频生成超实时播放，大模型应用落地加速，"会用大模型"和"会造大模型"两类人才都有大量需求；③ AI Agent开发成为最热方向，需要同时掌握LLM调用、工具集成、记忆管理等全栈能力；④ 建议关注模型推理优化、Agent框架开发等方向，既懂算法又懂工程落地的复合型人才最受大厂青睐。</p>
-    </div>
-  </div>
-</div>
-<div class="card science">
-  <div class="card-head">
-    <h2>台积电3nm产能供不应求，先进制程扩产提前2-3个月</h2>
-    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
-  </div>
-  <div class="meta"><span>📰 科技/半导体新闻</span><span>🕐 2026-08-30</span></div>
-  <div class="content">
-    <h3 class="sub-title sc">事件背景</h3>
-    <p>2026年8月30日，受英伟达、AMD、博通等核心客户强劲订单驱动，台积电3纳米制程产能持续紧缺。原定年底实现的月产18万片晶圆目标，预计将提前2-3个月在第四季度初达成。与此同时，台积电2纳米制程订单也快速升温，年底月晶圆出货量有望按计划逼近10万片。台积电股价当日上涨超2%。</p>
-    <h3 class="sub-title sc">行业简述</h3>
-    <p>全球AI算力基建的爆发式增长正在重塑半导体代工市场格局。英伟达GPU、AMD AI加速器等核心客户对先进制程的需求远超预期。这一趋势对中国半导体产业既是挑战也是机遇——华为"韬定律"技术路线（通过3D垂直多层架构在成熟制程上实现先进制程性能）提供了另一条突围路径。韩媒预警，中芯国际与三星电子的代工市场份额差距已缩小至仅2个百分点（5% vs 7%），一旦韬定律芯片大规模量产，格局可能加速重构。</p>
-    <h3 class="sub-title sc">关联专业</h3>
-    <ul>
-      <li>微电子科学与工程</li>
-      <li>集成电路设计与集成系统</li>
-      <li>电子科学与技术</li>
+      <li>能源与动力工程</li>
+      <li>化学工程与工艺</li>
       <li>材料科学与工程</li>
+      <li>新能源科学与工程</li>
     </ul>
     <h3 class="sub-title sc">学历·岗位·薪资</h3>
     <ul>
-      <li><b>学历门槛：</b>本科可入行（工艺/设备），硕士为主（制程研发/良率优化），博士优先（器件物理/新材料）</li>
-      <li><b>典型岗位：</b>晶圆制程工程师、半导体工艺整合工程师、良率提升工程师、光刻工艺工程师</li>
-      <li><b>薪资参考：</b>晶圆制程工程师月薪1.5-3万；半导体工艺整合工程师月薪2-4万，年薪24-48万；良率优化专家月薪4-6万（据猎聘、智联招聘公开招聘数据）</li>
+      <li>氢能研发工程师 | 硕士 | 年薪18-30万</li>
+      <li>燃料电池系统工程师 | 本科及以上 | 年薪15-25万</li>
+      <li>加氢站运维技术员 | 大专及以上 | 年薪10-16万</li>
     </ul>
     <h3 class="sub-title sc">地域优势</h3>
-    <p>上海（中芯国际/华虹/张江半导体走廊）、合肥（长鑫存储/晶合集成）、南京（台积电南京厂/浦口半导体基地）、深圳/武汉（长江存储/光电子产业链）</p>
+    <p>粤港澳大湾区凭借制造业集群与港口物流网络成为氢能商业化落地最优区域；京津冀在绿氢制备与政策引导方面领先；四川依托丰富天然气与页岩气资源，具备提纯氢气良好基础，成渝氢走廊建设加速。</p>
     <div class="tip-block">
       <h3>💡 报考小贴士</h3>
-      <p>① 台积电3nm扩产提前3个月、2nm订单火爆，说明全球AI芯片需求仍在加速——晶圆代工是最核心的"卡脖子"环节，懂先进制程工艺的工程师全球稀缺；② 韩媒预警中芯国际与三星份额差距仅2个百分点，国产替代正从设计端向制造端加速渗透；③ 制程工程师月薪1.5-4万，有良率优化经验的专家年薪可达50万+；④ 建议关注先进封装（Chiplet/2.5D）、成熟制程创新（韬定律）、国产EDA工具等方向。</p>
+      <p>氢能产业正处于规模化爆发前夜，建议优先选择能源与动力工程、化学工程等传统强势工科专业，同时关注新能源科学与工程等交叉学科。氢能产业链涵盖制储运加用全链条，就业面广，研究生阶段可聚焦质子交换膜、固态储氢等前沿方向。</p>
     </div>
   </div>
 </div>
 <div class="card science">
   <div class="card-head">
-    <h2>数芯智信WAIC发布天垓300通用GPU旗舰芯片</h2>
+    <h2>南海“冷泉生态系统研究装置”进入核心硬件建造阶段，国际首套深海海底实验室2029年投用</h2>
     <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
   </div>
-  <div class="meta"><span>📰 科技/AI芯片新闻</span><span>🕐 2026-08-30</span></div>
+  <div class="meta"><span>📰 羊城晚报</span><span>🕐 2026-08-29</span></div>
   <div class="content">
     <h3 class="sub-title sc">事件背景</h3>
-    <p>2026年8月30日，在上海举行的2026世界人工智能大会（WAIC）上，国产GPU企业数芯智信正式发布新一代旗舰产品天垓300（TianGai 300）。该芯片基于SIMT通用计算架构，面向"信息、动作、探索"三大智能化趋势，在芯片架构、关键算子、系统扩展和软件生态四个维度实现全面升级。</p>
+    <p>由中国科学院南海海洋研究所牵头承建的“冷泉生态系统研究装置”，近日正式进入核心硬件建造阶段，三大分总体核心设备设计工作已基本完成。该装置预计2029年年底正式投用，是国际首套面向冷泉生态系统的深海载人驻守型海底实验室与陆基保真模拟设施相融合的大科学装置。</p>
     <h3 class="sub-title sc">行业简述</h3>
-    <p>国产GPU赛道正进入集中爆发期。数芯智信天垓300的发布，与近期曦望Sunrise完成20亿元融资（估值200亿）、摩尔线程计划2027年盈利等事件一起，标志着国产AI芯片正从"可用"向"好用"加速迭代。天垓300采用SIMT架构，对标英伟达CUDA生态，软件兼容性是核心竞争力。当前国产GPU面临的最大挑战不是硬件性能，而是软件生态。a16z同日宣布11亿美元Machine Age基金聚焦AI基础设施，GPU作为算力底座的核心地位进一步巩固。</p>
+    <p>该海底实验室竖起来有十层楼高，水下排水量达600吨，由5个直径5.2米的钛合金球体串联组成。装置全长33.8米，可供6名人员在2000米深海最长驻守30天，与“奋斗者”号的短时极限探测定位截然不同。整套装置将支撑冷泉生态系统、深海碳循环等重大前沿研究，为我国深海资源勘探与海洋环境安全保障提供核心平台。</p>
     <h3 class="sub-title sc">关联专业</h3>
     <ul>
-      <li>集成电路设计与集成系统</li>
-      <li>计算机科学与技术</li>
-      <li>电子信息工程</li>
+      <li>船舶与海洋工程</li>
+      <li>海洋科学</li>
+      <li>机械工程</li>
       <li>自动化</li>
     </ul>
     <h3 class="sub-title sc">学历·岗位·薪资</h3>
     <ul>
-      <li><b>学历门槛：</b>本科可入行（驱动开发/测试），硕士为主（GPU架构/算子优化），博士优先（前沿研究）</li>
-      <li><b>典型岗位：</b>GPU芯片架构师、CUDA生态适配工程师、AI推理优化工程师、芯片验证工程师</li>
-      <li><b>薪资参考：</b>GPU芯片设计工程师校招总包约35-45万/年；AI推理优化工程师月薪3-5万；芯片验证工程师月薪2-3.5万（据猎聘、BOSS直聘公开招聘数据）</li>
+      <li>深海装备研发工程师 | 硕士及以上 | 年薪20-35万</li>
+      <li>海洋科考运维工程师 | 本科及以上 | 年薪15-25万</li>
+      <li>水下机器人系统设计师 | 硕士 | 年薪18-30万</li>
     </ul>
     <h3 class="sub-title sc">地域优势</h3>
-    <p>上海（数芯智信/张江GPU产业集群/壁仞科技）、北京（摩尔线程/寒武纪/中科院）、深圳（华为昇腾/中兴微）、杭州（曦望总部/阿里达摩院）</p>
+    <p>海南三亚依托南海区位优势成为深海科考核心基地；青岛科创大走廊集聚崂山国家实验室等20%涉海院士资源，在海洋观测与深远海装备领域领先；上海、深圳在深海材料与传感器方面具有产业配套优势。</p>
     <div class="tip-block">
       <h3>💡 报考小贴士</h3>
-      <p>① 国产GPU赛道集中爆发——数芯智信天垓300、曦望融资200亿、摩尔线程冲刺盈利，国产AI芯片已从概念验证进入规模化落地阶段；② 国产GPU最大的挑战是软件生态而非硬件性能，CUDA兼容能力和算子优化经验是核心竞争力；③ GPU芯片设计工程师校招总包35-45万，资深架构师月薪5-10万；④ 建议关注GPU算子开发、异构计算编程（CUDA/ROCm/SYCL）、AI编译器优化等方向。</p>
+      <p>深海工程是典型的大国重器方向，对机械工程、船舶与海洋工程等专业需求旺盛。建议本科阶段打好力学与流体力学基础，研究生可选择深海结构物设计、水下机器人控制等方向。该领域就业以中科院系统、船舶集团、海洋局下属单位为主，稳定性高。</p>
     </div>
   </div>
 </div>
 <div class="card science">
   <div class="card-head">
-    <h2>智谱GLM-5.3上线，256k上下文成最强开源编码模型</h2>
+    <h2>NASA罗曼空间望远镜成功发射，将巡天超20亿个星系探索暗物质与暗能量</h2>
     <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
   </div>
-  <div class="meta"><span>📰 科技/AI新闻</span><span>🕐 2026-08-30</span></div>
+  <div class="meta"><span>📰 新华社 / EarthSky</span><span>🕐 2026-08-30</span></div>
   <div class="content">
     <h3 class="sub-title sc">事件背景</h3>
-    <p>2026年8月30日，智谱AI的GLM-5.3模型在Tinker平台正式上线，支持256k上下文窗口。据Tinker官方披露，GLM-5.3基于与GLM-5.2相同的基础模型，但通过扩展后训练阶段大幅提升了编码能力。在Terminal-Bench 3.0和DeepSWE 1.1等权威编码评测基准中，GLM-5.3均取得当前开源权重模型中的最高分。</p>
+    <p>美国东部时间2026年8月30日上午7:26，NASA“南希·格雷斯·罗曼”空间望远镜从佛罗里达州肯尼迪航天中心成功发射升空。该望远镜将结合与哈勃相当的成像精度，同时拥有100倍于哈勃的视场，计划对超过20亿个星系进行前所未有的宇宙巡天，并开展迄今最大规模的银河系外行星普查。</p>
     <h3 class="sub-title sc">行业简述</h3>
-    <p>AI编码赛道正成为大模型厂商的新战场。GLM-5.3的发布与Kimi K3集成Cursor、OpenAI自研芯片由AI亲自优化电路设计等事件叠加，显示AI编程正在从"辅助工具"向"核心生产力"转变。OpenAI的Astra系统已能完成过去一名顶级研究员一周的工作量。256k超长上下文窗口让模型可以处理大型代码库级别的输入，这对软件工程自动化意义重大。国内智谱、月之暗面、百川等厂商在开源编码模型上的竞争日趋白热化。</p>
+    <p>罗曼望远镜的使命涵盖暗物质与暗能量研究、银河系外行星大规模搜索、宇宙演化历史回溯等多个前沿领域。其宽视场近红外巡天仪器（WFI）有望发现数万颗新的系外行星，数量将是目前已发现系外行星的数十倍。该望远镜的发射标志着人类太空探索进入“广域深空”新纪元，全球多个天文台和科研团队已开始规划基于其数据的合作研究计划。</p>
     <h3 class="sub-title sc">关联专业</h3>
     <ul>
-      <li>计算机科学与技术</li>
-      <li>软件工程</li>
-      <li>人工智能</li>
-      <li>数据科学与大数据技术</li>
+      <li>天文学</li>
+      <li>物理学</li>
+      <li>光电信息科学与工程</li>
+      <li>航天工程</li>
     </ul>
     <h3 class="sub-title sc">学历·岗位·薪资</h3>
     <ul>
-      <li><b>学历门槛：</b>本科可入行（应用开发/测试），硕士为主（模型训练/优化），博士优先（架构研究）</li>
-      <li><b>典型岗位：</b>AI编码工具开发工程师、代码大模型训练工程师、DevOps+AI工程师、智能编程助手产品经理</li>
-      <li><b>薪资参考：</b>AI编码工具开发工程师月薪2-4万；代码大模型训练工程师月薪3-5万；DevOps+AI工程师月薪2-3.5万（据BOSS直聘公开招聘数据）</li>
+      <li>天文研究员 | 博士 | 年薪20-40万</li>
+      <li>光学系统工程师 | 硕士及以上 | 年薪18-30万</li>
+      <li>航天器总体设计师 | 硕士及以上 | 年薪22-38万</li>
     </ul>
     <h3 class="sub-title sc">地域优势</h3>
-    <p>北京（智谱AI总部/清华系/月之暗面/百度）、上海（商汤/复旦/交大AI生态）、深圳（腾讯/华为/大湾区AI人才聚集）、杭州（阿里通义/浙大）</p>
+    <p>北京、南京、上海拥有中科院天文台和顶尖高校天文系，是国内天文研究核心基地；贵州依托FAST（中国天眼）形成射电天文产业集群；海南文昌和甘肃酒泉等卫星发射基地周边带动航天工程就业。</p>
     <div class="tip-block">
       <h3>💡 报考小贴士</h3>
-      <p>① 256k上下文+最强开源编码模型，意味着AI编程正从"补全代码片段"进化到"理解整个代码仓库"——软件工程即将被AI深刻重塑；② "AI+编程"赛道的人才需求正在从研究端向产品端快速扩展；③ AI编码工具开发月薪2-4万，代码大模型训练工程师年薪可达36-60万；④ 建议关注大模型后训练（RLHF/代码对齐）、代码生成与自动化测试、AI辅助DevOps等方向。</p>
+      <p>天文学虽是基础学科，但与光学工程、航天器设计、数据科学深度交叉，就业面远超想象。建议本科选择物理学或光电信息科学与工程等宽口径专业，研究生再专攻天体物理或空间科学。NASA、ESA等国际机构以及国内商业航天企业对光学与航天人才需求持续增长。</p>
     </div>
   </div>
 </div>
+<div class="card science">
+  <div class="card-head">
+    <h2>全国工业固废综合利用率攀升至77.2%，浙江发布固废污染防治条例修正文本</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 央视新闻 / 中国环境报</span><span>🕐 2026-08-28</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>最新统计显示，2026年以来全国工业固废综合利用率稳步提升至77.2%，较去年同期提升4.1个百分点。其中钢渣、煤矸石、尾矿、建筑废弃物资源化利用率分别达83.5%、81.2%、72.6%、92.3%。各地年内新增规模化处置项目136个，年消纳固废量超5.2亿吨。与此同时，《浙江省固体废物污染环境防治条例（修正文本）》于8月28日正式发布实施，通过细化固废全链条管控标准，推动区域固废治理提质增效。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>固废资源化利用正从“末端治理”转向“源头减量+过程控制+末端资源化”的全链条模式。碳市场方面，7月份全国碳排放权交易市场成交量达2870万吨，同比增长47.3%，碳价保持在45-55元/吨区间。循环经济与碳交易市场的协同发展，正在催生一个万亿级绿色环保产业市场。</p>
+    <h3 class="sub-title sc">关联专业</h3>
+    <ul>
+      <li>环境工程</li>
+      <li>环境科学</li>
+      <li>资源循环科学与工程</li>
+      <li>生态学</li>
+    </ul>
+    <h3 class="sub-title sc">学历·岗位·薪资</h3>
+    <ul>
+      <li>固废处理工程师 | 本科及以上 | 年薪12-20万</li>
+      <li>碳排放管理师 | 本科 | 年薪10-18万</li>
+      <li>环境影响评价工程师 | 硕士 | 年薪15-25万</li>
+    </ul>
+    <h3 class="sub-title sc">地域优势</h3>
+    <p>浙江在固废治理与循环经济立法方面走在全国前列；广东、江苏等制造业大省因工业固废产生量大，资源化利用产业规模领先；北京、上海在碳金融与碳交易服务领域形成集聚效应。</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>环境科学与工程类专业近年就业率稳步提升，尤其在双碳目标驱动下，碳排放管理、固废资源化等方向人才缺口巨大。建议本科阶段注重化学与生物学基础，同时学习数据分析技能。持有注册环评工程师、碳排放管理师等资格证书将显著提升就业竞争力。</p>
+    </div>
+  </div>
+</div>
+<div class="card science">
+  <div class="card-head">
+    <h2>2026中国OLED产业发展论坛召开，LGD敲定144亿元第8代OLED产线投资</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 WitDisplay / CINNO Research</span><span>🕐 2026-08-30</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>2026年8月27日，第十二届中国OLED产业发展论坛（CIOF）在上海举办，同期DIC EXPO国际显示技术及应用创新展开展。会上披露，LGD将向无需精细金属掩模版（FMM）的下一代OLED技术“FLiPP”投入约3万亿韩元（约144亿元人民币），建设第8.5代OLED产线。三星显示也已开始为捷恩斯GV90电动SUV供应24.6英寸与13.2英寸两款OLED车载显示屏。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>全球显示产业正加速从LCD向OLED转型，车载显示、折叠屏、AR/VR等新兴应用场景持续拓展。激光加工技术已在智能手机半导体封装、电动汽车电池焊接、医疗植入物微结构成形、光伏组件加工等领域成为关键支撑。随着AI算力中心扩展，800G/1.6T高速光模块和硅光子集成技术正推动光通信产业快速增长，光电融合成为下一代数据中心核心架构方向。</p>
+    <h3 class="sub-title sc">关联专业</h3>
+    <ul>
+      <li>光电信息科学与工程</li>
+      <li>电子科学与技术</li>
+      <li>材料科学与工程</li>
+      <li>微电子科学与工程</li>
+    </ul>
+    <h3 class="sub-title sc">学历·岗位·薪资</h3>
+    <ul>
+      <li>OLED工艺工程师 | 本科及以上 | 年薪15-25万</li>
+      <li>光学设计工程师 | 硕士 | 年薪18-30万</li>
+      <li>半导体封装工程师 | 本科及以上 | 年薪14-22万</li>
+    </ul>
+    <h3 class="sub-title sc">地域优势</h3>
+    <p>广东深圳、广州是全球显示面板制造核心基地，集聚华星光电、天马等龙头企业；安徽合肥拥有京东方全球最大10.5代线，形成完整产业链；湖北武汉以长江存储和光谷为核心，在光电子与激光领域具有突出优势。</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>光电信息显示是典型的技术密集型产业，建议本科选择光电信息科学与工程或电子科学与技术专业，打好光学与半导体物理基础。OLED蒸镀、激光切割等核心工艺岗位偏好硕士学历。该领域薪资增长快，3-5年经验工程师年薪可达30万以上。</p>
+    </div>
+  </div>
+</div>
+
 
   <div id="section-arts" style="display:flex;align-items:center;gap:10px;margin:30px 0 18px;padding:12px 20px;background:linear-gradient(90deg,#f0fff4,#fff);border-radius:10px;border-left:4px solid #48bb78;">
     <span style="font-size:20px;">📚</span>
     <span style="font-size:17px;font-weight:700;color:#276749;">文科资讯</span>
     <span style="font-size:13px;color:#718096;margin-left:4px;">共 4 条</span>
   </div>
+
 <div class="card arts">
   <div class="card-head">
-    <h2>六大行半年报出炉：合计营收2万亿，分红超2200亿元</h2>
+    <h2>辽宁率先取消生物地理历史中考计分，多地推进双减背景下的中考改革</h2>
     <span style="background:#f0fff4;color:#48bb78;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">文科</span>
   </div>
-  <div class="meta"><span>📰 财经/银行新闻</span><span>🕐 2026-08-30</span></div>
+  <div class="meta"><span>📰 央视新闻 / 广州日报</span><span>🕐 2026-08-30</span></div>
   <div class="content">
     <h3 class="sub-title gg">事件背景</h3>
-    <p>2026年8月28日晚，工商银行、农业银行、中国银行、建设银行、交通银行、邮储银行六家国有大型商业银行集中发布2026年上半年业绩报告。六大行上半年营收和归母净利润全部实现同比正增长，合计实现营业收入约2万亿元，同比增长9.38%；合计实现归母净利润7126亿元，同比增长4.41%。六大行分红比例集体提升至31%，中期拟分红合计超2200亿元。</p>
+    <p>辽宁省教育厅8月28日发布通知，自2026年秋季学期八年级学生起，将生物学、地理、历史等3个科目由考试科目调整为考查科目，考试结果以等级形式呈现，不计入中考总分。此前，吉林省、安徽黄山市、江西吉安市等地也已陆续将生物、地理调整为考查科目，不再计入中考总分，以等级形式呈现作为高中录取参考。</p>
     <h3 class="sub-title gg">行业简述</h3>
-    <p>六大行半年报呈现三大亮点：一是营收增速亮眼，工商银行总资产站上57万亿元，建设银行经营收入连续两个季度保持两位数增长；二是净息差企稳回升，多家银行上半年净息差回升1-3个基点；三是AI投入加速——交通银行近70%技术岗位员工已将AI应用于研发、测试、运维等环节，累计落地场景超420个，智能体累计交易金额超万亿元。农业银行AIC基金已实现18个试点城市全覆盖，重点投向集成电路、商业航天、人工智能等领域。中国银行上市以来累计现金分红超万亿元。</p>
+    <p>各地中考改革的背后是“双减”政策持续深化的信号。中国教育科学研究院研究员储朝晖表示，各地陆续对中考进行改革，主要是为了响应国家双减的需要。北京师范大学中国教育政策研究院副院长薛二勇指出，改革可以让学校把更多精力用于学生德智体美劳全面发展。与此同时，教育部8月30日发文明确禁止以“夏令营”“研学旅行”等名义组织变相考试。</p>
     <h3 class="sub-title gg">关联专业</h3>
     <ul>
-      <li>金融学</li>
-      <li>经济学</li>
-      <li>会计学</li>
-      <li>金融科技</li>
+      <li>教育学</li>
+      <li>学前教育</li>
+      <li>教育技术学</li>
+      <li>应用心理学</li>
     </ul>
     <h3 class="sub-title gg">学历·岗位·薪资</h3>
     <ul>
-      <li><b>学历门槛：</b>本科可入行（柜员/客户经理），硕士为主（总行管培/风控/投研），博士优先（宏观研究/量化）</li>
-      <li><b>典型岗位：</b>银行科技金融分析师、AI+金融产品经理、AIC股权投资经理、风控合规专员</li>
-      <li><b>薪资参考：</b>银行柜员月薪6000-8000元；总行管培生年薪15-25万；AI+金融产品经理月薪2-3.5万；股权投资经理年薪30-50万（据BOSS直聘、猎聘公开招聘数据）</li>
+      <li>中小学学科教师 | 本科及以上 | 年薪8-15万</li>
+      <li>教育政策研究员 | 硕士及以上 | 年薪15-25万</li>
+      <li>课程设计师 | 本科及以上 | 年薪10-18万</li>
     </ul>
     <h3 class="sub-title gg">地域优势</h3>
-    <p>北京（四大行总行/金融监管总局/证监会）、上海（交行总部/浦发/上交所/陆家嘴金融城）、深圳（平安/招行/前海金融创新）、成都/重庆（西部金融中心/成渝经济圈）</p>
+    <p>北京、上海在素质教育改革方面先行先试，积累了丰富的课程改革经验；辽宁、吉林等东北地区因学龄人口减少，率先推进考试科目精简；安徽、江西等地也在积极探索等级评价替代传统计分模式。</p>
     <div class="tip-block">
       <h3>💡 报考小贴士</h3>
-      <p>① 六大行营收全增长+净息差企稳，说明银行业最困难的阶段正在过去——31%派息率意味着银行业招聘需求将稳步回升；② 银行AIC股权投资重点投向集成电路、AI、航天等硬科技领域，"金融+科技"复合背景人才最受青睐；③ 银行AI应用已渗透70%技术岗位，懂AI+懂金融的交叉人才将是未来银行最核心的竞争力；④ 建议关注金融科技、智能风控、绿色金融等方向。</p>
+      <p>中考改革持续深化，教育学类专业需求稳定。建议优先选择教育部直属师范院校或省属重点师范大学，公费师范生政策可保障就业。教育技术学方向因数字化转型需求增长，就业前景看好。注意：虽然部分科目退出计分，但素质教育对教师综合能力要求反而更高。</p>
     </div>
   </div>
 </div>
 <div class="card arts">
   <div class="card-head">
-    <h2>央行发布房地产信贷新政：个人房贷期限最长延至40年</h2>
+    <h2>北京发布数据知识产权登记管理办法，新专利优先审查管理办法9月1日起实施</h2>
     <span style="background:#f0fff4;color:#48bb78;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">文科</span>
   </div>
-  <div class="meta"><span>📰 财经/房地产政策</span><span>🕐 2026-08-30</span></div>
+  <div class="meta"><span>📰 北京市知识产权局 / 国家知识产权局</span><span>🕐 2026-08-30</span></div>
   <div class="content">
     <h3 class="sub-title gg">事件背景</h3>
-    <p>2026年8月28日，中国人民银行、金融监管总局联合印发《关于改革完善房地产信贷管理 推动加快构建房地产发展新模式的意见》。意见明确：个人住房贷款期限最长不超过40年（此前为30年）；房地产开发贷款实行主办银行制；所购新建住房实行现房销售的，贷款应在销售备案后发放。同日，住建部等三部门要求各地有力有序推行商品住房现房销售，实现"所见即所得"。</p>
+    <p>近日，在中关村论坛“全球知识产权保护与创新论坛”上，北京市知识产权局等四部门联合发布了《北京市数据知识产权登记管理办法（试行）》，共25条，明确了数据知识产权的登记对象、登记主体和登记程序。北京市知识产权局将建设全市统一的数据知识产权登记平台，积极推进登记证书在行政执法、司法审判、法律监督中的运用。与此同时，新修订的《专利优先审查管理办法》将于2026年9月1日正式实施。</p>
     <h3 class="sub-title gg">行业简述</h3>
-    <p>这是中国房地产信贷制度的一次根本性变革。房贷期限从30年延长至40年，直接降低了月供压力——以贷款200万元、利率3.5%计算，40年期月供较30年期减少约800元/月。现房销售制度的全面推行从根本上改变了行业逻辑。南京同步宣布公积金异地贷款范围扩展至全国（9月1日起施行）。整体政策导向清晰：推动房地产行业从"高杠杆、高周转"的预售模式向"品质驱动、现房交付"的新模式转型。</p>
+    <p>数据知识产权是数字经济时代知识产权保护的重要前沿领域。北京率先建立数据知识产权登记制度，标志着数据要素从“资源”向“资产”转化迈出关键一步。该制度将促进数据创新开发、传播利用和价值实现，为数据交易所、数据服务商等新型市场主体提供产权保障。国家层面，新专利优先审查办法进一步简化流程，强化对战略性新兴产业的专利快保护。</p>
     <h3 class="sub-title gg">关联专业</h3>
     <ul>
-      <li>金融学</li>
-      <li>经济学</li>
+      <li>知识产权</li>
       <li>法学</li>
-      <li>工程管理</li>
+      <li>工商管理</li>
+      <li>信息管理</li>
     </ul>
     <h3 class="sub-title gg">学历·岗位·薪资</h3>
     <ul>
-      <li><b>学历门槛：</b>本科可入行（信贷审批/房产评估），硕士为主（风控/资管/政策研究），博士优先（宏观政策）</li>
-      <li><b>典型岗位：</b>房地产信贷风控经理、住房金融产品经理、不动产登记专员、房企融资总监</li>
-      <li><b>薪资参考：</b>银行房贷审批员月薪8000-1.2万；房地产风控经理月薪1.5-3万；房企融资总监年薪40-80万；不动产评估师月薪1-2万（据BOSS直聘、猎聘公开招聘数据）</li>
+      <li>知识产权律师 | 本科及以上（需通过法考）| 年薪15-35万</li>
+      <li>数据合规专员 | 本科 | 年薪12-20万</li>
+      <li>专利代理人 | 本科及以上（需通过专利代理师考试）| 年薪12-25万</li>
     </ul>
     <h3 class="sub-title gg">地域优势</h3>
-    <p>北京（央行/金融监管总局/住建部）、上海（浦发/房产交易中心最活跃城市）、深圳（前海金融创新/大湾区楼市）、成都/杭州（新一线楼市热点城市）</p>
+    <p>北京是全国知识产权服务产业的核心高地，集聚了最多的知识产权律所和专利代理机构；上海、深圳依托数据交易所建设，在数据产权交易服务方面形成先发优势；杭州、广州在互联网知识产权保护领域需求旺盛。</p>
     <div class="tip-block">
       <h3>💡 报考小贴士</h3>
-      <p>① 房贷期限延至40年+现房销售推行，是房地产信贷制度的根本性变革——银行需要大量懂"现房+预售"双轨制风控的新型人才；② 南京公积金异地贷款扩展至全国，跨城购房需求将释放金融服务需求；③ 房地产风控经理月薪1.5-3万，房企融资总监年薪40-80万——懂主办银行制、REITs的金融人才价值将大幅提升；④ 建议关注住房金融、房地产信托（REITs）、不动产登记法律实务等方向。</p>
+      <p>数据知识产权是法学与数字经济的交叉新方向，建议法学专业学生选修数据治理、信息安全等课程。通过法律职业资格考试和专利代理师资格考试是提升竞争力的关键。知识产权专业毕业生在科技企业、律所、政府监管部门均有广阔就业空间。</p>
     </div>
   </div>
 </div>
 <div class="card arts">
   <div class="card-head">
-    <h2>福建文旅消费新范式成型：上半年接待游客超1500万人次</h2>
+    <h2>福建沙县七夕蒙学式入选省级非遗，非遗活态传承创新实践引关注</h2>
     <span style="background:#f0fff4;color:#48bb78;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">文科</span>
   </div>
-  <div class="meta"><span>📰 文旅/消费新闻</span><span>🕐 2026-08-30</span></div>
+  <div class="meta"><span>📰 福建日报</span><span>🕐 2026-08-30</span></div>
   <div class="content">
     <h3 class="sub-title gg">事件背景</h3>
-    <p>2026年8月30日，《光明日报》整版报道福建文旅消费新范式。2026年上半年，福建依托五大世界遗产地打造"闽式生活"消费集聚区，接待游客超1500万人次，门票直接收入超4.5亿元，"乡村游"消费超300亿元。亲子研学游客同比增长39.1%，全省营业性演出总收入同比增长62%。</p>
+    <p>在福建三明沙县区，每年七夕传统节日有着另一层重要意义——孩子的“开学礼”。外公外婆会挑着装有糖塔和旗杆斗的竹筐，上门为孙辈“做七夕”。今年3月，沙县“七夕蒙学式”被列入福建省第八批省级非物质文化遗产代表性项目名录（民俗类）。8月15日，沙县区举办七夕蒙学亲子嘉年华，200名即将入读小学的小朋友参与传统蒙学仪式。</p>
     <h3 class="sub-title gg">行业简述</h3>
-    <p>福建文旅的突破口在于"文脉活化+业态创新"。三坊七巷引入国潮品牌商户形成四大功能区；平潭岛壳丘头遗址博物馆开发20余款文创产品；泉州橘若崇武古渡码头将废弃码头变身当代艺术馆。"闽超"足球联赛以9.9元惠民票价联动193家景区、300家酒店，全网曝光量突破48.7亿次。漳州龙江岁月景区累计接待游客超1800万人次。"文脉活化+IP打造+赛事引流+全域消费"的模式正成为全国文旅融合标杆。</p>
+    <p>非物质文化遗产保护正从“静态存档”走向“活态传承+产业融合”新模式。2026年新疆“神奇土地·非遗助疆”主题展览汇聚650余项非遗代表性项目，预计接待观众20万人次，涵盖音乐舞蹈、美食、文创集市、XR数字体验等多元板块。福建仙游竹雕、沙县七夕蒙学式等项目通过研学体验、文创开发等方式实现非遗与现代生活的深度融合，为传统文化类人才创造了新的就业机会。</p>
     <h3 class="sub-title gg">关联专业</h3>
     <ul>
-      <li>旅游管理</li>
+      <li>文化遗产</li>
+      <li>历史学</li>
       <li>文化产业管理</li>
-      <li>市场营销</li>
-      <li>新媒体运营</li>
+      <li>民俗学</li>
     </ul>
     <h3 class="sub-title gg">学历·岗位·薪资</h3>
     <ul>
-      <li><b>学历门槛：</b>大专/本科可入行（景区运营/酒店管理），硕士为主（文旅策划/投资），博士优先（学术研究）</li>
-      <li><b>典型岗位：</b>文旅IP运营经理、研学旅行产品经理、赛事文旅策划师、数字文旅产品经理</li>
-      <li><b>薪资参考：</b>景区运营经理月薪0.8-1.5万；文旅IP运营经理月薪1.2-2.5万；研学旅行产品经理月薪0.8-1.5万；智慧文旅VP/总监年薪50-90万（据BOSS直聘、前程无忧公开招聘数据）</li>
+      <li>非遗保护研究员 | 硕士及以上 | 年薪10-18万</li>
+      <li>文创产品策划师 | 本科及以上 | 年薪10-20万</li>
+      <li>博物馆策展人 | 硕士 | 年薪12-22万</li>
     </ul>
     <h3 class="sub-title gg">地域优势</h3>
-    <p>福州（三坊七巷/船政文化城/省文旅厅）、厦门（鼓浪屿/闽南文化/国际旅游港口）、泉州（世遗城市/海丝文化/非遗活化）、漳州（龙江岁月/古城文旅/滨海度假）</p>
+    <p>福建、浙江、广东在非遗活化利用方面走在全国前列，沙县小吃本身就是非遗产业化的成功案例；新疆、贵州、云南拥有丰富的少数民族非遗资源，文旅融合发展空间巨大；北京、南京依托高校和科研机构在非遗学术研究领域具有优势。</p>
     <div class="tip-block">
       <h3>💡 报考小贴士</h3>
-      <p>① "闽超"联动193家景区、全网曝光48.7亿次——"赛事+文旅"跨界融合正在成为最大增长极；② 亲子研学增长39.1%、演出收入增长62%，"体验经济"正在取代"门票经济"；③ 智慧文旅方向薪酬涨幅最快（10%-25%），数字文旅产品经理年薪可达35-80万；④ 建议关注文旅IP运营、非遗文创开发、赛事文旅策划等方向，"懂文化+懂流量+懂商业"的三栖人才最受追捧。</p>
+      <p>文化遗产是近年新兴的本科专业方向，兼具人文素养与实践技能。建议选择开设田野调查、数字化保护等课程的高校。该领域就业涵盖文旅部门、博物馆、文创企业等，研究生阶段可选择文化遗产数字化、非遗产业运营等方向。具备项目管理能力的复合型人才尤为抢手。</p>
     </div>
   </div>
 </div>
 <div class="card arts">
   <div class="card-head">
-    <h2>数字人民币业务运营机构再扩容，数字金融基础设施加速建设</h2>
+    <h2>2026数博会村超AI超传播系统亮相，NFC互动技术赋能乡土文化传播</h2>
     <span style="background:#f0fff4;color:#48bb78;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">文科</span>
   </div>
-  <div class="meta"><span>📰 财经/数字金融</span><span>🕐 2026-08-30</span></div>
+  <div class="meta"><span>📰 天眼新闻</span><span>🕐 2026-08-30</span></div>
   <div class="content">
     <h3 class="sub-title gg">事件背景</h3>
-    <p>2026年8月30日，《经济日报》刊发专题报道，详解数字人民币业务运营机构新一轮扩容进展。本轮扩容将更多类型的金融机构纳入运营体系，包括符合条件的城市商业银行、农村商业银行以及第三方支付机构，旨在加速数字人民币从试点走向全面推广。</p>
+    <p>在8月28日开幕的2026中国国际大数据产业博览会（数博会）上，“数智黔东南·村字号”展区引发关注。贵州碰碰科技开发的“村超AI超传播”系统融合了AI大模型、多模态识别和本地文旅数据库，参观者只需将手机轻触NFC卡片，即可自动弹出“村仔智能体”对话窗口，生成个性化短视频模板并一键发布至社交平台。</p>
     <h3 class="sub-title gg">行业简述</h3>
-    <p>数字人民币的推广正在进入"深水区"。从最初的"四城试点"已扩展至全国多个省份和地区，应用场景覆盖零售消费、公共交通、政务缴费、跨境贸易等多个领域。运营机构扩容意味着更多中小银行和支付机构将参与数字人民币的钱包开立、商户拓展和场景开发。数字人民币带来的不仅是支付方式的变革，更是整个金融基础设施的重构——智能合约、可编程货币、跨境结算等新能力将催生全新的金融产品和服务模式。在技术层面，数字人民币的推广也带动了区块链、安全芯片、密码学等领域的人才需求。</p>
+    <p>该系统代表了新媒体传播领域“AI+乡土文化”的融合创新方向。通过NFC轻交互技术实现零门槛触达，背后依托AI大模型进行赛事信息查询、美食推荐、民宿预订等全链路智能服务。赛事传播热力图、短视频分发效果、热搜关键词等数据实时呈现，完整展示了“村超”从地方赛事到全国现象级IP的传播路径。数字素材库为苗侗歌舞、蜡染工艺、非遗节庆等文化资源建立了高清影像归档，为自媒体创作者提供“数字底座”，真正实现了“人人都是村超传播官”。</p>
     <h3 class="sub-title gg">关联专业</h3>
     <ul>
-      <li>金融学</li>
-      <li>金融科技</li>
-      <li>信息安全</li>
-      <li>区块链工程</li>
+      <li>网络与新媒体</li>
+      <li>新闻传播学类</li>
+      <li>数字媒体艺术</li>
+      <li>广告学</li>
     </ul>
     <h3 class="sub-title gg">学历·岗位·薪资</h3>
     <ul>
-      <li><b>学历门槛：</b>本科可入行（运营/客服），硕士为主（产品研发/风控），博士优先（密码学/共识算法）</li>
-      <li><b>典型岗位：</b>数字人民币产品经理、区块链安全工程师、央行数字货币研究员、金融科技合规专员</li>
-      <li><b>薪资参考：</b>数字货币运营专员月薪8000-1.5万；区块链安全工程师月薪2-4万；央行数字货币研究员年薪30-50万；金融科技合规专员月薪1.5-2.5万（据BOSS直聘、猎聘公开招聘数据）</li>
+      <li>新媒体运营经理 | 本科 | 年薪10-18万</li>
+      <li>短视频内容策划师 | 本科 | 年薪8-15万</li>
+      <li>数字营销分析师 | 本科及以上 | 年薪12-22万</li>
     </ul>
     <h3 class="sub-title gg">地域优势</h3>
-    <p>北京（央行数字货币研究所/金融监管部门）、上海（数字人民币跨境应用试点/金融中心）、深圳（首发试点城市/金融科技企业聚集）、苏州/成都（早期试点城市/应用场景丰富）</p>
+    <p>贵州依托村超、村BA等现象级IP，在乡土文化传播与新媒体融合领域形成独特优势；北京、上海、杭州是新媒体产业核心聚集地，MCN机构与数字营销企业密集；成都、长沙在短视频与直播电商领域发展迅速。</p>
     <div class="tip-block">
       <h3>💡 报考小贴士</h3>
-      <p>① 数字人民币运营机构扩容标志着数字金融基础设施进入大规模推广阶段——这是未来10年金融行业的底层变革，提前布局的人才将享受长期红利；② 运营机构扩容后，中小银行和支付机构将大量招聘数字人民币相关人才；③ 区块链安全工程师月薪2-4万，央行数字货币研究员年薪30-50万——技术端和应用端需求同步增长；④ 建议关注数字金融合规、区块链应用开发、央行数字货币研究等方向，数字人民币的"可编程性"将催生大量新型金融服务岗位。</p>
+      <p>新媒体传播已进入AI+内容的深度融合时代，建议网络与新媒体专业学生同时掌握内容创作与数据分析能力。掌握AI工具（如大模型应用、视频生成）是当下求职的核心加分项。数字媒体艺术方向适合有审美功底的创意型学生，就业涵盖短视频、直播、品牌营销等热门领域。</p>
     </div>
+  </div>
+</div>
+
+
+  <div class="footer">
+    <p>高顿升学 · 每日行业速览 | 数据来源于公开资讯，仅供参考</p>
+    <p>薪资数据来自公开招聘平台及企业官方披露，仅供参考</p>
+    <p>生成时间：2026-08-31 09:35</p>
   </div>
 </div>
 
@@ -414,7 +402,7 @@ function showIndex() {
 function scrollToSection(id) {
   var el = document.getElementById(id);
   if (!el) return;
-  var top = el.getBoundingClientRect().top + window.pageYOffset - 16;
+  var top = el.offsetTop - 20;
   window.scrollTo({ top: top, behavior: 'smooth' });
 }
 </script>

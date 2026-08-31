@@ -8,18 +8,18 @@
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
   html { scroll-behavior: smooth; }
-  body { background: #f1f5f9 }
+  body { font-family: -apple-system, BlinkmacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif; background: #f5f7fa; color: #1a1a2e; line-height: 1.7; }
   .container { max-width: 960px; margin: 0 auto; padding: 30px 20px 60px; }
-  .report-header { background: #ffffff; border-radius: 14px; padding: 28px 32px; margin-bottom: 24px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+  .report-header { background: #fff; border-radius: 14px; padding: 28px 32px; margin-bottom: 24px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
   .report-header .date-line { font-size: 20px; font-weight: 700; color: #1a1a2e; margin-bottom: 6px; }
   .report-header .stats { font-size: 14px; color: #718096; margin-bottom: 16px; }
   .report-header .stats span { display: inline-block; margin-right: 14px; }
-  .core-judgments { background: #f0f7ff; border-left: 4px solid #4299e1; padding: 16px 20px; border-radius: 0 8px 8px 0; }
+  .core-judgments { background: #f7fafc; border-left: 4px solid #4299e1; padding: 16px 20px; border-radius: 0 8px 8px 0; }
   .core-judgments h3 { font-size: 15px; color: #2d3748; margin-bottom: 8px; }
   .core-judgments ul { list-style: none; }
   .core-judgments li { font-size: 14px; color: #4a5568; padding: 4px 0; padding-left: 18px; position: relative; }
   .core-judgments li::before { content: "\25b8"; position: absolute; left: 0; color: #4299e1; font-weight: bold; }
-  .card { background: #ffffff; border-radius: 14px; padding: 28px 32px; margin-bottom: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.07); border: 1px solid #ebebeb; border-top: 4px solid transparent; }
+  .card { background: #fff; border-radius: 14px; padding: 28px 32px; margin-bottom: 20px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); border-top: 4px solid transparent; }
   .card.science { border-top-color: #4299e1; }
   .card.arts { border-top-color: #48bb78; }
   .card-head { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; flex-wrap: wrap; }
@@ -28,57 +28,34 @@
   .content p, .content li { font-size: 15px; color: #4a5568; line-height: 1.8; }
   .content ul { list-style: disc; padding-left: 20px; margin: 6px 0; }
   .content li { margin: 4px 0; }
+  .footer { text-align: center; padding: 40px 20px; color: #a0aec0; font-size: 12px; }
   .sub-title { font-size: 15px; margin: 14px 0 6px; border-left: 3px solid #4299e1; padding-left: 10px; font-weight: 600; }
   .sub-title.sc { color: #4299e1; border-color: #4299e1; }
   .sub-title.gg { color: #48bb78; border-color: #48bb78; }
   .tip-block { background: #fef3c7; border-radius: 8px; padding: 14px 18px; margin: 12px 0; }
   .tip-block h3 { color: #92400e; font-size: 15px; margin: 0 0 8px; }
   .tip-block p { color: #92400e; margin: 0; font-size: 14px; line-height: 1.9; }
-  .print-watermark { display: none !important; }
-
-
+  /* Print styles */
   @media print {
-  body.printing-report .container.report-view { padding: 0 8mm !important; margin: 0 auto !important; }
-  .print-watermark { display: block !important; margin: 0 0 4mm 0 !important; }
-  @page { margin: 10mm 18mm 10mm 18mm; size: auto; }
-  body { margin: 0 !important; padding: 0 !important; background: #fff !important; }
-  .quick-nav { display: none !important; }
-  .card { margin-bottom: 4px !important; padding: 10px 14px !important; }
-  [id^="section-"] { margin: 4px 0 2mm 0 !important; padding: 4px 8px !important; }
-  .report-header a { display: none !important; }
-  .report-header .date-line { display: none !important; }
-  .report-header .stats { display: none !important; }
-  body.printing-report #site-brand-header { display: none !important; }
-  body.printing-report #index-view { display: none !important; }
-  body.printing-report #watermark-view { display: none !important; }
-  body.printing-report .footer { display: none !important; }
-  body.printing-report .report-view { display: none !important; }
-  body.printing-report .report-view.print-target { display: block !important; }
-}
+    body.printing-report .container.report-view { padding: 0 8mm !important; margin: 0 auto !important; }
+    .print-watermark { display: block !important; margin: 0 0 4mm 0 !important; }
+    @page { margin: 10mm 18mm 10mm 18mm; size: auto; }
+    body { margin: 0 !important; padding: 0 !important; background: #fff !important; }
+    .quick-nav { display: none !important; }
+    .card { margin-bottom: 4px !important; padding: 10px 14px !important; }
+    [id^="section-"] { margin: 4px 0 2mm 0 !important; padding: 4px 8px !important; }
+    .report-header a, .report-header .date-line, .report-header .stats { display: none !important; }
+    body.printing-report #site-brand-header, body.printing-report #index-view, body.printing-report #watermark-view, body.printing-report .footer, body.printing-report .report-view { display: none !important; }
+    body.printing-report .report-view.print-target { display: block !important; }
+  }
+
 </style>
 </head>
 <body>
-<div class="print-watermark">
-  <div style="display:flex;align-items:center;justify-content:space-between;width:100%;">
-    <div style="display:flex;align-items:center;gap:4mm;">
-      <img src="data:image/png;base64,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" style="width:16mm;height:16mm;display:block;">
-      <span style="font-size:10pt;color:#333;font-weight:600;white-space:nowrap;">扫码获取全套行业速览</span>
-    </div>
-    <div style="text-align:right;">
-      <div style="font-size:15pt;font-weight:900;color:#E8721C;line-height:1.2;">高顿升学</div>
-      <div style="font-size:8pt;font-weight:700;color:#E8721C;letter-spacing:1px;">GOLDEN</div>
-    </div>
-  </div>
-  <div style="text-align:center;margin:2mm 0 1mm 0;">
-    <div style="font-size:11pt;font-weight:700;color:#1a1a2e;">高顿升学·每日行业速览</div>
-    <div style="font-size:7.5pt;color:#718096;margin-top:1mm;">精选行业资讯，锚定专业与就业，为孩子的梦想领航，为未来的美好奋斗！</div>
-  </div>
-  <div style="border-top:0.5pt solid #ccc;margin-top:1.5mm;"></div>
-</div>
 <div class="container">
   <div class="report-header">
     <a href="javascript:void(0)" onclick="showIndex()" style="display:inline-block;margin-bottom:14px;font-size:14px;color:#4299e1;text-decoration:none;font-weight:500;cursor:pointer;">← 返回列表</a>
-    <div class="date-line">📅 第15期 · 高顿升学 · 每日行业速览</div>
+    <div class="date-line">📅 第15期 · 高顿升学 · 每日行业速览 · 2026年8月31日 · 星期一</div>
     <div class="stats">
       <span>📊 资讯共 8 条</span>
       <span>🔬 理工科 5 条</span>
@@ -87,14 +64,14 @@
     <div class="core-judgments">
       <h3>📌 今日要点速览</h3>
       <ul>
-        <li>2026数博会在贵阳举办，372家企业参展、87项成果发布，日均词元调用量突破140万亿，贵阳壹号词元工厂上线</li>
-        <li>人形机器人百米跑出8.64秒打破博尔特世界纪录，上半年中国人形机器人出货超4万台占全球97%</li>
-        <li>小鹏汽车发布第二代VLA大模型，通过Infini-VLA架构实现从3D空间到4D时空认知跃迁，L4级智驾首次下放量产车</li>
-        <li>小马智行签约韩国企业，200辆L4级自动驾驶出租车将进入韩国市场，全球化布局加速</li>
-        <li>车路协同技术2026年进入量产落地阶段，搭载车路云协同技术的车型将上市</li>
-        <li>道交法修订草案首次设置"自动驾驶汽车的特别规定"专章，L3及以上激活状态违法由车企担责</li>
-        <li>LV关闭贵州唯一门店，奢侈品牌加速收缩西南非核心市场，零售网络布局深度调整</li>
-        <li>中秋国庆旅游预订提前升温，热门城市酒店提前预订量同比增长近四成</li>
+        <li>南京南化G4级电子级硫酸稳定量产，半导体湿化学品国产替代再下一城</li>
+        <li>国产T1200级碳纤维百吨级量产，超高强度材料打破海外垄断</li>
+        <li>西藏扎拉水电站大坝封顶，世界首台500兆瓦冲击式机组推进</li>
+        <li>盐城5G+智慧工厂设备故障率降40%，智改数转加速落地</li>
+        <li>国内海拔最高1000千伏特高压工程全线贯通</li>
+        <li>研究预测全球生育率首次跌破更替水平，人口峰值或提前至2056年</li>
+        <li>中秋国庆机票创三年新低，文旅消费补贴密集发放</li>
+        <li>灵活就业人员突破2亿，结构性就业变革加速</li>
       </ul>
     </div>
   </div>
@@ -110,266 +87,285 @@
     <span style="font-size:17px;font-weight:700;color:#2b6cb0;">理工科资讯</span>
     <span style="font-size:13px;color:#718096;margin-left:4px;">共 5 条</span>
   </div>
+
 <div class="card science">
   <div class="card-head">
-    <h2>2026数博会87项成果发布，日均词元调用量突破140万亿</h2>
+    <h2>南京南化G4级电子级硫酸实现工业化稳定量产，突破芯片“清洁剂”进口依赖</h2>
     <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
   </div>
-  <div class="meta"><span>📰 科技/AI大数据新闻</span><span>🕐 2026-08-31</span></div>
+  <div class="meta"><span>📰 光明网/南京日报</span><span>🕐 2026-08-31</span></div>
   <div class="content">
     <h3 class="sub-title sc">事件背景</h3>
-    <p>2026年8月28日至30日，2026中国国际大数据产业博览会（数博会）在贵州贵阳举办。3天时间，372家中外企业参展，举办89场活动，发布87项重要成果。据《人民日报》8月31日报道，本届数博会上，上海交通大学人工智能学院副教授戴国浩提出"词元调用量正成为AI的新度量衡"。今年3月，我国日均词元调用量已突破140万亿。</p>
+    <p>中国石化集团南京化学工业有限公司近日宣布，G4级电子级硫酸装置连续稳定运行满15天，标志着该产品实现工业化稳定量产。电子级硫酸被誉为芯片的“清洁剂”，主要用于去除晶圆表面的金属杂质和有机残留物，G4级产品要求金属离子杂质含量低于百亿分之一（10ppt），相当于在1000个标准泳池的水中仅允许存在1克杂质。当前国内半导体用G4/G5级电子级硫酸长期依赖进口，预计2026年我国需求量将突破25万吨。</p>
     <h3 class="sub-title sc">行业简述</h3>
-    <p>本届数博会呈现三大趋势：一是应用场景更丰富，南方电网无人机巡检缺陷识别准确率超90%，AI康养机器人可自主规划路线完成随行陪护；二是数据供给更多元，贵阳大数据交易所已吸引超1000家数据商入驻，发布全国首套数据交易规则体系；三是词元工厂上线，软通动力联合中国电信发布"贵阳壹号"词元工厂，企业可像用水用电一样按需调用词元。合成数据赛道也成为新热点，瓴泓智能等企业瞄准医疗数据供给。AI产业发展逻辑正从重模型参数转向重落地实效。</p>
+    <p>电子级硫酸是半导体制造中用量最大的湿电子化学品之一。南化公司自2023年项目获批以来，研发团队成功破解了微量杂质管控、分离稳定性及洁净灌装防污染等行业难题。产品已通过SGS权威检测认证，且具备向G5级迭代的技术潜力。公司正加速构建拥有完全自主知识产权的湿电子化学品技术体系，将经验同步应用于电子级硝酸、电子级盐酸的工艺包开发。此次突破标志着我国在高端半导体湿化学品领域迈出了关键的自主保供步伐。</p>
     <h3 class="sub-title sc">关联专业</h3>
     <ul>
-      <li>计算机科学与技术</li>
-      <li>数据科学与大数据技术</li>
-      <li>人工智能</li>
-      <li>软件工程</li>
+      <li>应用化学 — 电子化学品合成与纯化工艺研究</li>
+      <li>材料科学与工程 — 半导体材料性能表征与质量控制</li>
+      <li>化学工程与工艺 — 化工过程放大与工业化生产优化</li>
+      <li>微电子科学与工程 — 芯片制造工艺中湿法清洗技术应用</li>
     </ul>
     <h3 class="sub-title sc">学历·岗位·薪资</h3>
     <ul>
-      <li><b>学历门槛：</b>本科可入行（数据标注/运维），硕士为主（算法/数据治理），博士优先（大模型训练/前沿研究）</li>
-      <li><b>典型岗位：</b>大模型训练工程师、数据治理工程师、AI产品经理、数据要素交易运营师</li>
-      <li><b>薪资参考：</b>大模型训练工程师月薪2-5万；数据治理工程师月薪1.5-3万；AI产品经理月薪2-3.5万（据BOSS直聘、猎聘公开招聘数据）</li>
+      <li>本科（应用化学/化学工程） → 湿电子化学品企业工艺工程师，起薪6K-9K/月</li>
+      <li>硕士（材料科学/化学工程） → 半导体材料研发工程师，年薪12万-20万</li>
+      <li>博士（化学/材料科学） → 高级研发总监/技术负责人，年薪30万-50万</li>
+      <li>本科（微电子） → 晶圆厂工艺整合工程师，起薪8K-12K/月</li>
     </ul>
     <h3 class="sub-title sc">地域优势</h3>
-    <p>贵阳（全国首个大数据交易所/东数西算枢纽/数博会永久会址）、北京（AI大模型企业聚集/清华大学/百度）、深圳（华为/腾讯/数据要素企业）、上海（商汤/复旦/数据交易平台）</p>
+    <p>南京作为全国重要的化工产业基地，集聚了扬子石化、南化集团等大型企业，江北新材料科技园形成了完善的精细化工产业链。长三角地区半导体产业密集，上海、无锡、合肥等地晶圆产能持续扩张，对本土湿电子化学品需求旺盛，为相关人才提供了就近就业的广阔空间。</p>
     <div class="tip-block">
       <h3>💡 报考小贴士</h3>
-      <p>① 日均词元调用量140万亿——AI大模型已从实验室走进千行百业，数据要素成为新型生产要素，懂数据治理+懂AI应用的复合人才极度稀缺；② 词元工厂的上线意味着"算力+数据+词元"构成AI基础设施三件套，数据标注师、数据治理师等新岗位将持续涌现；③ 贵阳作为全国首个大数据交易所所在地，"贵州算、全国用"的产业模式正在成型，大数据相关人才需求旺盛；④ 建议关注数据要素流通、高质量数据集构建、AI落地应用等方向。</p>
+      <p>电子级化学品属于“卡脖子”领域，国家正大力推进国产替代。建议报考应用化学或化学工程与工艺专业，在校期间重点关注半导体湿化学品方向，掌握超痕量杂质分析技术（ICP-MS等），实习可瞄准晶瑞电材、江化微等国产湿化学品企业。该领域人才稀缺，就业前景看好。</p>
     </div>
   </div>
 </div>
 <div class="card science">
   <div class="card-head">
-    <h2>人形机器人百米8.64秒破博尔特纪录，中国上半年出货超4万台占全球97%</h2>
-    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:10px;border-radius:10px;white-space:nowrap;">理工科</span>
-  </div>
-  <div class="meta"><span>📰 科技/机器人新闻</span><span>🕐 2026-08-31</span></div>
-  <div class="content">
-    <h3 class="sub-title sc">事件背景</h3>
-    <p>2026年8月22日至26日，第二届世界人形机器人运动会在北京国家速滑馆"冰丝带"举办，来自六大洲16个国家的666支队伍、2056台机器人展开1301场对决。由北京人形机器人创新中心研发的人形机器人在百米项目跑出8.64秒，比博尔特的人类世界纪录（9.58秒）快近1秒；立定跳高达到2.88米，打破人类跳高世界纪录（2.45米）。路透社、BBC、《华尔街日报》等全球主流媒体密集报道。</p>
-    <h3 class="sub-title sc">行业简述</h3>
-    <p>2026世界机器人大会同期举办，3000多件展品中实用型机器人占据显著位置。西班牙埃菲社以《中国机器人从"炫技"走向"实干"》为题报道。关键数据：上半年中国人形机器人出货超4万台，占全球97%；摩根士丹利预测2026年全年出货将达5万台，2030年突破44万台。英国BBC指出，超过200万台机器人在中国工厂工作，2025年中国工业机器人出口增长48.7%。小鹏机器人IRON完成超9亿美元融资，IDG资本领投、腾讯阿里跟投，创下具身智能领域单笔融资纪录。</p>
-    <h3 class="sub-title sc">关联专业</h3>
-    <ul>
-      <li>机器人工程</li>
-      <li>自动化</li>
-      <li>机械工程</li>
-      <li>人工智能</li>
-    </ul>
-    <h3 class="sub-title sc">学历·岗位·薪资</h3>
-    <ul>
-      <li><b>学历门槛：</b>本科可入行（装配调试/运维），硕士为主（算法/控制），博士优先（前沿研究/具身智能）</li>
-      <li><b>典型岗位：</b>人形机器人运动控制工程师、具身智能算法工程师、机器人系统集成工程师、机器人产品经理</li>
-      <li><b>薪资参考：</b>机器人运动控制工程师月薪2-4万；具身智能算法工程师月薪3-6万；机器人系统集成工程师月薪1.5-3万（据BOSS直聘、猎聘公开招聘数据）</li>
-    </ul>
-    <h3 class="sub-title sc">地域优势</h3>
-    <p>北京（人形机器人创新中心/世界机器人大会永久举办地/亦庄产业园）、深圳（优必选/华为/大湾区机器人供应链）、上海（智元机器人/傅利叶/张江机器人谷）、广州（小鹏机器人/广汽/琶洲人工智能试验区）</p>
-    <div class="tip-block">
-      <h3>💡 报考小贴士</h3>
-      <p>① 机器人百米8.64秒、跳高2.88米双双打破人类世界纪录——人形机器人正从"展品"变为"商品"，运动控制、灵巧手、多机协同是核心技术壁垒；② 中国占全球人形机器人出货量97%，产业规模正从小批量迈向规模化应用，2030年有望突破44万台；③ 具身智能算法工程师月薪3-6万，小鹏IRON融资超9亿美元——赛道资本热度极高；④ 建议关注运动控制算法、灵巧手研发、世界模型（让机器人理解物理世界）等方向。</p>
-    </div>
-  </div>
-</div>
-<div class="card science">
-  <div class="card-head">
-    <h2>小鹏汽车发布第二代VLA大模型，L4级智驾首次下放量产车</h2>
+    <h2>国产T1200级超高强度碳纤维实现百吨级工程量产，打破海外技术垄断</h2>
     <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
   </div>
-  <div class="meta"><span>📰 科技/自动驾驶新闻</span><span>🕐 2026-08-31</span></div>
+  <div class="meta"><span>📰 头条新闻</span><span>🕐 2026-08-31</span></div>
   <div class="content">
     <h3 class="sub-title sc">事件背景</h3>
-    <p>2026年8月30日至31日，小鹏汽车发布第二代VLA（Vision-Language-Action）大模型重大升级。该模型通过Infini-VLA长时序架构，实现从3D空间到4D时空的认知跃迁，首次将L4级自动驾驶能力下放至量产车型，标志着端到端智驾技术从"demo"走向"量产"的关键里程碑。</p>
+    <p>中复神鹰SYT80（对标国际T1200等级）超高强度碳纤维完成百吨级工程化稳定制备，拉伸强度达8000兆帕，同等重量下承载能力约为普通结构钢材的十倍。这标志着我国正式迈入全球顶级碳纤维第一梯队。长期以来，T800及以上高性能碳纤维被列入瓦森纳协定管控清单，实施严格出口管制。国内科研团队从零起步自主攻坚，成功搭建起完全自主可控的碳纤维全产业链。</p>
     <h3 class="sub-title sc">行业简述</h3>
-    <p>VLA大模型正在成为自动驾驶领域的核心技术路线。与传统感知-决策分离架构不同，VLA将视觉理解、语言推理和行动规划统一到一个端到端模型中。小鹏的第二代架构通过长时序建模，让车辆能够"记住"过去的驾驶经验并预测未来场景。与此同时，小米发布自研自动驾驶芯片Xring D100（3nm工艺、20核CPU+16核NPU），计划2027年商用。自动驾驶安全标准（GB 44721—2026）也已正式发布，2027年7月1日起所有L3/L4级量产车必须达标。行业正从"技术竞赛"进入"标准+量产"双轨并行阶段。</p>
+    <p>高性能碳纤维素有“黑色黄金”之称，是航空航天、高速装备、深海工程不可或缺的核心原材料。SYT80的量产使中国在全球超高强度碳纤维赛道上占据领先地位——日本东丽同级产品仍停留在样品阶段，美国同类产品尚无量产消息。随着产能持续爬坡，技术红利将逐步扩散至新能源汽车轻量化、海上风电叶片、高速轨道交通等民用领域，开启一场影响未来数十年工业走向的材料变革。</p>
     <h3 class="sub-title sc">关联专业</h3>
     <ul>
-      <li>计算机科学与技术</li>
-      <li>人工智能</li>
-      <li>自动化</li>
-      <li>车辆工程</li>
+      <li>材料科学与工程 — 碳纤维微观结构与力学性能研究</li>
+      <li>高分子材料与工程 — 聚丙烯腈原丝合成与碳化工艺</li>
+      <li>机械工程 — 碳纤维复合材料构件设计与制造</li>
+      <li>飞行器设计与工程 — 碳纤维在航空航天结构件中的应用</li>
     </ul>
     <h3 class="sub-title sc">学历·岗位·薪资</h3>
     <ul>
-      <li><b>学历门槛：</b>本科可入行（测试/数据标注），硕士为主（算法/架构），博士优先（前沿模型研究）</li>
-      <li><b>典型岗位：</b>VLA大模型算法工程师、端到端自动驾驶算法工程师、自动驾驶仿真工程师、感知算法工程师</li>
-      <li><b>薪资参考：</b>VLA大模型算法工程师月薪3.5-8万（14-16薪）；端到端算法工程师月薪4-8万；VLA模型架构师月薪10-13万（据猎聘、BOSS直聘公开招聘数据）</li>
+      <li>本科（材料科学/高分子材料） → 碳纤维企业工艺技术员，起薪5K-8K/月</li>
+      <li>硕士（材料学/复合材料） → 复合材料结构设计工程师，年薪10万-18万</li>
+      <li>博士（材料科学/力学） → 高级研发专家/技术总师，年薪25万-45万</li>
+      <li>本科（飞行器设计） → 航空结构设计师（复合材料方向），起薪8K-12K/月</li>
     </ul>
     <h3 class="sub-title sc">地域优势</h3>
-    <p>广州（小鹏汽车总部/琶洲人工智能试验区）、北京（小米汽车总部/百度Apollo/理想汽车）、上海（特斯拉中国/智己汽车/上汽集团）、深圳（华为智能汽车/比亚迪/元戎启行）</p>
+    <p>江苏连云港是中复神鹰总部所在地，长三角碳纤维产业创新集群完整，涵盖从原丝到复合材料的全链条企业。常州碳纤维及复合材料技术创新中心已集聚大批龙头企业。山东威海光威复材等企业同样在碳纤维领域深耕多年，形成了环渤海碳纤维产业带。</p>
     <div class="tip-block">
       <h3>💡 报考小贴士</h3>
-      <p>① VLA大模型让自动驾驶从"空间感知"进化到"时空认知"——端到端架构正在颠覆传统模块化智驾方案，懂VLA/世界模型的算法工程师极度稀缺；② L4级能力首次下放量产车，意味着高阶智驾将从旗舰车型向中端车型普及，相关人才需求将成倍增长；③ VLA大模型算法工程师月薪3.5-8万，架构师月薪10-13万，是当前汽车行业薪资天花板；④ 建议关注端到端自动驾驶、世界模型、强化学习在自动驾驶中的应用等方向。</p>
+      <p>碳纤维属于国家战略新材料，行业对材料学、高分子等专业需求持续增长。建议关注中复神鹰、光威复材、中简科技等企业的校招和实习机会。在校期间多学习复合材料力学、纤维制备工艺等课程，掌握SEM、XRD等表征手段，有助于在求职中脱颖而出。</p>
     </div>
   </div>
 </div>
 <div class="card science">
   <div class="card-head">
-    <h2>200辆中国L4级自动驾驶出租车出海韩国，小马智行全球化加速</h2>
+    <h2>西藏大唐扎拉水电站大坝封顶，世界首台500兆瓦级冲击式机组示范项目取得里程碑突破</h2>
     <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
   </div>
-  <div class="meta"><span>📰 科技/自动驾驶新闻</span><span>🕐 2026-08-31</span></div>
+  <div class="meta"><span>📰 中国电建</span><span>🕐 2026-08-28</span></div>
   <div class="content">
     <h3 class="sub-title sc">事件背景</h3>
-    <p>2026年8月31日，据CNMO科技等多家媒体报道，小马智行与韩国企业Futuring Link于8月28日在首尔签署战略合作协议，将向韩国市场引入200辆第七代L4级自动驾驶出租车。车型基于极狐阿尔法T5打造，采用整车生产线集成方式而非后装改装。首先引入10辆完成韩国自我认证，一年内追加至200辆。服务从首尔江南示范区起步，逐步扩展至全域。</p>
+    <p>8月25日，随着最后一仓混凝土顺利入仓，水电四局承建的世界首台（套）500兆瓦级高水头冲击式机组科研攻坚示范项目——西藏大唐扎拉水电站大坝顺利完成封顶。这座高原百万千瓦级水电站主体挡水建筑物建设取得标志性重大突破，为下闸蓄水、并网发电筑牢坚实根基。该项目位于西藏高海拔地区，施工条件极其复杂，是世界水电史上的又一工程壮举。</p>
     <h3 class="sub-title sc">行业简述</h3>
-    <p>中国自动驾驶出海正进入"整车+方案"一体化输出新阶段。小马智行第七代自动驾驶套件零部件成本较上一代降低70%，计划2027年年中将套件与基础车辆合计成本压降至23万元以下。在深圳、广州等地，单车日均运营次数已超25次。在Autonomy AI发布的全球自动驾驶出租车指数中，小马智行综合排名全球第三，仅次于Waymo和百度Apollo。与此同时，特斯拉FSD监督版试乘体验从意大利、法国、德国扩展至匈牙利、芬兰、西班牙。全球自动驾驶商业化竞争日趋白热化。</p>
+    <p>扎拉水电站采用世界首台500兆瓦级高水头冲击式水轮发电机组，属于科研攻坚示范项目，代表了全球水电装备技术的最高水平。冲击式机组适用于超高水头、大落差的水力条件，对材料、制造工艺和安装精度要求极高。该项目的成功推进，不仅验证了国产大型冲击式机组的技术可行性，更为后续高海拔地区水电开发积累了宝贵经验，对西藏清洁能源基地建设和“西电东送”战略具有深远意义。</p>
     <h3 class="sub-title sc">关联专业</h3>
     <ul>
-      <li>自动驾驶工程技术</li>
-      <li>车辆工程</li>
-      <li>电子信息工程</li>
-      <li>计算机科学与技术</li>
+      <li>水利水电工程 — 大坝设计、施工与水力计算</li>
+      <li>能源与动力工程 — 水轮发电机组设计与运行优化</li>
+      <li>土木工程 — 高原复杂环境下混凝土施工与结构安全</li>
+      <li>电气工程及其自动化 — 水电站电气系统与并网技术</li>
     </ul>
     <h3 class="sub-title sc">学历·岗位·薪资</h3>
     <ul>
-      <li><b>学历门槛：</b>本科可入行（测试/运维），硕士为主（感知/规划/控制算法），博士优先（前沿架构研究）</li>
-      <li><b>典型岗位：</b>L4自动驾驶系统工程师、自动驾驶域控制器工程师、Robotaxi运营经理、自动驾驶海外商务</li>
-      <li><b>薪资参考：</b>自动驾驶系统工程师月薪2-5万；感知算法工程师月薪3-6万；安全算法工程师月薪8-10万（14薪）；Robotaxi运营经理月薪2-3.5万（据猎聘、BOSS直聘公开招聘数据）</li>
+      <li>本科（水利水电工程） → 水电站施工技术员/运行管理岗，起薪6K-9K/月</li>
+      <li>硕士（水力学/能源动力） → 水电设计院工程师，年薪12万-20万</li>
+      <li>博士（流体机械/能源动力） → 冲击式机组研发负责人，年薪25万-40万</li>
+      <li>本科（电气工程） → 水电站电气调试与运维工程师，起薪7K-10K/月</li>
     </ul>
     <h3 class="sub-title sc">地域优势</h3>
-    <p>广州（小马智行总部/文远知行/琶洲示范区）、北京（百度Apollo/滴滴自动驾驶/亦庄示范区）、深圳（元戎启行/安途 AutoX/前海）、上海（Momenta/上汽享道/嘉定示范区）</p>
+    <p>西藏水能资源蕴藏量居全国首位，雅鲁藏布江、澜沧江上游等流域开发潜力巨大。中国电建、华能、大唐等央企在藏布局多个百万千瓦级水电站项目，为水利水电工程专业人才提供了大量高海拔工程实践机会。四川成都作为西南水电产业中心，汇聚了水电四局、成勘院等核心单位。</p>
     <div class="tip-block">
       <h3>💡 报考小贴士</h3>
-      <p>① 200辆L4级Robotaxi出海韩国，标志着中国自动驾驶从"技术领先"走向"商业出海"——懂技术+懂海外市场的复合型人才极度稀缺；② 单车日均运营超25次，自动驾驶套件成本降70%——Robotaxi已接近盈利临界点，商业化运营人才需求将爆发；③ 安全算法工程师月薪8-10万（14薪），是自动驾驶领域薪资天花板之一；④ 建议关注L4级自动驾驶系统开发、Robotaxi运营、自动驾驶出海商务等方向。</p>
+      <p>水利水电工程是国家基础设施重点领域，就业稳定性强。建议关注河海大学、清华大学、武汉大学、西安理工大学等传统水利强校。在校期间学好水力学、水工建筑物、水电站等核心课程，考取CAD/BIM相关证书。高原水电站项目待遇较高，适合身体素质好、愿意接受挑战的同学。</p>
     </div>
   </div>
 </div>
 <div class="card science">
   <div class="card-head">
-    <h2>车路协同技术2026年量产落地，搭载车路云协同技术车型将上市</h2>
+    <h2>江苏盐城5G+智慧工厂投产，设备故障率降低40%引领“智改数转”</h2>
     <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
   </div>
-  <div class="meta"><span>📰 科技/智能交通新闻</span><span>🕐 2026-08-31</span></div>
+  <div class="meta"><span>📰 人民日报</span><span>🕐 2026-08-31</span></div>
   <div class="content">
     <h3 class="sub-title sc">事件背景</h3>
-    <p>2026年8月31日，据新浪汽车报道，2026年搭载车路云协同技术的车型将迎来量产上市，部分功能场景开始落地应用。这是自动驾驶安全性的关键支撑技术。同期，工信部发布的《智能网联汽车 自动驾驶系统安全要求》（GB 44721—2026）强制性国家标准已获批，2027年7月1日起实施，为L3/L4级量产车设定系统性安全门槛。</p>
+    <p>江苏盐城阜宁协鑫集成科技有限公司的5G+智慧工厂日常运转中，智能生产流水线上与5G信号相连的智能机械臂自主运转，高效完成焊片、组装、检验等工序。该工厂由江苏移动盐城分公司提供5G技术支持，将设备、传感器和控制系统紧密连接，构建起实时数据采集与智能分析体系，可提前预判设备潜在故障，实现从“被动抢修”到“预测性维护”的转变，设备故障率降低40%。</p>
     <h3 class="sub-title sc">行业简述</h3>
-    <p>车路协同正从示范测试走向规模化量产。该技术通过"车-路-云"三方数据互通，让车辆能感知超视距信息，大幅提升自动驾驶安全性。但华为高级副总裁靳玉志指出一个关键矛盾：高速领航辅助系统渗透率已超30%，但仅有不到10%的用户真正使用过驾驶辅助——"不敢用、不会用"是最大障碍。智能底盘域控制器国家标准也已发布，要求通过"企业保障能力检验+安全档案检验+确认性试验"三位一体检测体系。800V高压平台+软件定义算法成为智能电驱系统两大趋势，上汽捷能升级至800V后电驱系统减重37.5%、每1kW动力成本下降19%。</p>
+    <p>盐城正持续深化“智改数转网联”战略，加快培育智能工厂，推动数字技术与实体经济深度融合。当地政府出台了《加快推进“人工智能+”行动实施方案(2026—2027年)》，加快建设绿色算力集聚区，总规模3000P的商汤智算中心（一期）已投用，1.6万P的海洋智算中心正在建设中。围绕海洋、低空、低碳、新能源等领域已发布两批共60个应用场景，今年预计扩容至100个以上，为智能制造人才提供了广阔舞台。</p>
     <h3 class="sub-title sc">关联专业</h3>
     <ul>
-      <li>车辆工程</li>
-      <li>通信工程</li>
-      <li>物联网工程</li>
-      <li>电子信息工程</li>
+      <li>自动化 — 智能产线控制系统设计与优化</li>
+      <li>机械电子工程 — 智能机械臂研发与系统集成</li>
+      <li>通信工程 — 5G工业网络架构与信号优化</li>
+      <li>物联网工程 — 工业传感器数据采集与边缘计算</li>
     </ul>
     <h3 class="sub-title sc">学历·岗位·薪资</h3>
     <ul>
-      <li><b>学历门槛：</b>本科可入行（测试/标定），硕士为主（算法/系统集成），博士优先（标准制定/前沿研究）</li>
-      <li><b>典型岗位：</b>车路协同系统工程师、智能底盘域控制器工程师、V2X通信工程师、自动驾驶标定算法工程师</li>
-      <li><b>薪资参考：</b>车路协同系统工程师月薪2-4万；V2X通信工程师月薪1.5-3万；自动驾驶标定算法工程师月薪2.5-5.5万（据猎聘公开招聘数据）</li>
+      <li>本科（自动化/机械电子） → 智能工厂调试工程师，起薪6K-9K/月</li>
+      <li>硕士（控制科学与工程/通信工程） → 工业互联网解决方案架构师，年薪15万-25万</li>
+      <li>本科（物联网工程） → 工业IoT平台开发工程师，起薪7K-11K/月</li>
+      <li>博士（自动化/人工智能） → 智能制造研究院技术总监，年薪35万-55万</li>
     </ul>
     <h3 class="sub-title sc">地域优势</h3>
-    <p>北京（亦庄高级别自动驾驶示范区/车路云一体化试点）、武汉（经开区全域开放测试/东风自动驾驶）、上海（嘉定智能网联汽车示范区/临港）、无锡（国家级车联网先导区/华为车联网）</p>
+    <p>盐城地处江苏沿海，新能源产业基础雄厚，光伏、风电装机容量居全国前列。长三角制造业“智改数转”深入推进，苏州、无锡、常州等地智能工厂建设加速，对自动化、通信工程等专业人才需求旺盛。盐城正打造绿色算力集聚区，算力基础设施投资规模达数百亿元，吸引了一批AI与智能制造企业入驻。</p>
     <div class="tip-block">
       <h3>💡 报考小贴士</h3>
-      <p>① 车路协同技术量产落地+强制性国标2027年实施——这是自动驾驶安全的"基础设施"，V2X通信、路侧感知、云端调度人才需求将爆发；② 渗透率30%但使用率不足10%，"让用户体验好"成为核心竞争力，人机交互设计、用户体验优化将成为新增长点；③ 800V高压+软件定义是智能电驱两大趋势，底盘域控人才缺口大；④ 建议关注V2X通信协议、路侧感知融合、智能底盘控制等方向。</p>
+      <p>智能制造是“中国制造2025”的核心方向，复合型人才需求旺盛。建议学习自动化或机械电子工程，同时辅修编程（Python/C++）和工业通信协议（OPC UA、MQTT）。可关注华为、西门子、汇川技术等企业的校招。拥有5G+工业互联网项目经验的同学在求职中更具竞争力。</p>
     </div>
   </div>
 </div>
+<div class="card science">
+  <div class="card-head">
+    <h2>国内海拔最高1000千伏特高压交流工程全线贯通，阿坝至成都东工程迈出关键一步</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 中国电建</span><span>🕐 2026-08-31</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>8月26日，国内海拔最高1000千伏变电站工程——阿坝至成都东1000千伏特高压交流工程全线贯通，标志着工程向全面建成投运迈出关键一步。该工程线路起于新建的阿坝1000千伏变电站，止于成都东1000千伏变电站，途经阿坝、绵阳、德阳、资阳4市（州），全长734.8公里，新建铁塔1400余基。工程横跨川西高原与成都平原，地形复杂、海拔落差大，施工技术难度创国内纪录。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>特高压交流工程是国家“西电东送”战略的核心基础设施，1000千伏特高压输电技术是全球最先进的输电技术之一，可实现大容量、远距离、低损耗电力输送。该工程将川西丰富的水电、光伏等清洁能源高效输送至成都负荷中心，对优化四川电网结构、保障成都城市群电力供应、促进清洁能源消纳具有重要意义。工程的建设也带动了高海拔输变电设备制造、特种绝缘材料、智能电网监控等上下游产业发展。</p>
+    <h3 class="sub-title sc">关联专业</h3>
+    <ul>
+      <li>电气工程及其自动化 — 特高压输电系统设计与运维</li>
+      <li>能源与动力工程 — 清洁能源发电与电力调度</li>
+      <li>高电压与绝缘技术 — 特高压绝缘配合与设备研发</li>
+      <li>土木工程（输电线路方向） — 高海拔地区铁塔基础设计与施工</li>
+    </ul>
+    <h3 class="sub-title sc">学历·岗位·薪资</h3>
+    <ul>
+      <li>本科（电气工程） → 电网公司运维工程师/变电运行岗，起薪7K-10K/月</li>
+      <li>硕士（电力系统/高电压） → 电力设计院设计工程师，年薪12万-22万</li>
+      <li>博士（电气工程） → 特高压技术研发负责人，年薪25万-40万</li>
+      <li>本科（能源动力） → 新能源电站并网工程师，起薪6K-9K/月</li>
+    </ul>
+    <h3 class="sub-title sc">地域优势</h3>
+    <p>四川是全国水电第一大省，水电装机容量突破1亿千瓦，特高压外送通道密集。成都作为西南电力枢纽，汇聚国网四川电力、中国电建西南院等核心单位。德阳、绵阳等城市的电力装备制造业发达，东方电气、国机重装等龙头企业为电气工程专业人才提供大量岗位。</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>电气工程及其自动化是就业稳定性极高的工科专业，国家电网、南方电网每年大量招聘。建议在校期间学好电路原理、电力系统分析、高电压技术等核心课程，考取电工证。特高压方向对高电压与绝缘技术专业要求高，读研深造竞争力更强。华北电力大学、清华大学、浙江大学、华中科技大学的电气工程专业实力突出。</p>
+    </div>
+  </div>
+</div>
+
 
   <div id="section-arts" style="display:flex;align-items:center;gap:10px;margin:30px 0 18px;padding:12px 20px;background:linear-gradient(90deg,#f0fff4,#fff);border-radius:10px;border-left:4px solid #48bb78;">
     <span style="font-size:20px;">📚</span>
     <span style="font-size:17px;font-weight:700;color:#276749;">文科资讯</span>
     <span style="font-size:13px;color:#718096;margin-left:4px;">共 3 条</span>
   </div>
+
 <div class="card arts">
   <div class="card-head">
-    <h2>道交法修订草案首设"自动驾驶"专章，L3以上激活状态违法由车企担责</h2>
+    <h2>研究：2026年全球生育率或首次跌破更替水平，人口峰值将提前至2056年</h2>
     <span style="background:#f0fff4;color:#48bb78;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">文科</span>
   </div>
-  <div class="meta"><span>📰 法律/保险新闻</span><span>🕐 2026-08-31</span></div>
+  <div class="meta"><span>📰 红星新闻</span><span>🕐 2026-08-28</span></div>
   <div class="content">
     <h3 class="sub-title gg">事件背景</h3>
-    <p>2026年8月25日至28日，十四届全国人大常委会第二十四次会议在北京举行，审议了《中华人民共和国道路交通安全法（修订草案）》。修订草案首次设置"自动驾驶汽车的特别规定"专章，明确了自动驾驶汽车和辅助驾驶功能的概念。核心规定：自动驾驶汽车在自动驾驶功能激活状态下发生道路交通安全违法行为的，由生产企业、进口企业接受处理，且企业需承担举证责任。未激活状态的按传统车辆管理。</p>
+    <p>美国宾夕法尼亚大学学者赫苏斯·费尔南迪斯-维拉韦德和西北大学帕特里克·诺里克在《经济学年鉴》发表论文，预测2026年全球生育率可能将首次跌破人口更替水平（约2.1），世界人口将在2056年达到约90亿的峰值后逐步萎缩。联合国此前预计人口峰值将出现在2080年代中期、约103亿。该研究覆盖200多个国家和地区的数据，发现有219个国家和地区的生育率趋势仍然向下，且没有一个表现出明确的长期企稳迹象。</p>
     <h3 class="sub-title gg">行业简述</h3>
-    <p>这是中国自动驾驶领域的里程碑式立法。修订草案意味着L3及以上自动驾驶从"辅助驾驶"正式升级为"系统驾驶"，责任主体从驾驶员转向车企。对保险行业的冲击尤为显著：传统车险以驾驶员过错为核心归责，而智驾场景涉及主机厂、软硬件供应商、车主等多方主体。北京已率先启动智能网联新能源汽车商业保险开发，实现L2至L4级全级别适配。据太保战略研究中心主任周燕芳透露，目前智驾保险精算数据积累不足，L3级以上尚未大规模上路。中国太保等机构正在探索将驾驶员纳入强制责任保险保障范围。</p>
+    <p>低生育率已从“发达国家现象”演变为全球性趋势，扩散到亚洲、拉丁美洲乃至部分非洲国家。传统认为的“缓冲垫”——低收入、低教育群体的较高生育率——正在迅速消失。研究指出，即便在最富裕的国家，最高的生育率也将低于更替水平。这一趋势将对全球劳动力供给、社会保障体系、房地产市场和经济增长模式产生深远影响，各国政府亟需调整人口政策、养老制度和移民政策以应对结构性挑战。</p>
     <h3 class="sub-title gg">关联专业</h3>
     <ul>
-      <li>法学</li>
-      <li>保险学</li>
-      <li>智能车辆工程</li>
-      <li>知识产权</li>
+      <li>社会学 — 人口结构变迁与社会影响研究</li>
+      <li>人口学 — 生育率模型与人口预测方法</li>
+      <li>经济学 — 人口萎缩对宏观经济的影响分析</li>
+      <li>公共管理 — 人口政策设计与社会保障制度改革</li>
     </ul>
     <h3 class="sub-title gg">学历·岗位·薪资</h3>
     <ul>
-      <li><b>学历门槛：</b>本科可入行（保险理赔/法律助理），硕士为主（产品设计/法律研究），博士优先（政策研究/标准制定）</li>
-      <li><b>典型岗位：</b>智驾保险产品精算师、自动驾驶合规法务、交通事故责任鉴定师、智能网联汽车政策研究员</li>
-      <li><b>薪资参考：</b>保险精算师月薪1.5-4万；自动驾驶合规法务月薪2-3.5万；智能网联政策研究员年薪20-40万（据BOSS直聘、猎聘公开招聘数据）</li>
+      <li>本科（社会学/人口学） → 政府统计部门/民政部门公务员，起薪5K-7K/月</li>
+      <li>硕士（社会学/公共管理） → 政策研究机构研究员/智库分析师，年薪10万-18万</li>
+      <li>博士（人口学/经济学） → 高校教师/高级研究员，年薪18万-30万</li>
+      <li>本科（公共管理） → 社保基金管理中心业务岗，起薪5K-8K/月</li>
     </ul>
     <h3 class="sub-title gg">地域优势</h3>
-    <p>北京（全国人大常委会/金融监管总局/工信部/率先启动智驾保险）、上海（交大法学院/保险精算重镇/浦东智能网联示范区）、深圳（前海法律创新/比亚迪/元戎启行）、武汉（经开区自动驾驶立法先行先试）</p>
+    <p>北京、上海是人口政策研究机构的核心聚集地，中国社科院、国家卫健委人口监测中心、北大人口研究所等顶级机构均设于此。长三角和珠三角地区因外来人口持续流入，人口结构研究需求旺盛。成都、武汉等新一线城市也在加强人口监测和人才引进政策研究力量。</p>
     <div class="tip-block">
       <h3>💡 报考小贴士</h3>
-      <p>① 道交法首设"自动驾驶"专章——这是中国自动驾驶商业化最重要的法律基础设施，懂自动驾驶法规+懂保险产品的交叉人才将极度稀缺；② 车企承担激活状态下的违法责任，意味着车企将大量招聘合规法务和交通事故责任分析人才；③ 智驾保险精算师月薪1.5-4万，但当前精算数据严重不足，先入行积累数据经验的人才将享受长期红利；④ 建议关注自动驾驶法律责任、智能网联汽车保险产品设计、交通事故责任鉴定等方向。</p>
+      <p>人口学虽是小众学科，但在老龄化加速背景下，就业前景持续向好。建议报考社会学或人口学专业，可关注北京大学、中国人民大学、复旦大学等人口学研究重镇。掌握统计分析工具（Stata/SPSS/Python）和人口预测模型（Leslie矩阵、队列要素法）是关键竞争力。该领域适合对数据敏感、关注社会问题的同学。</p>
     </div>
   </div>
 </div>
 <div class="card arts">
   <div class="card-head">
-    <h2>LV关闭贵州唯一门店，奢侈品牌加速收缩西南非核心市场</h2>
+    <h2>中秋国庆“请3休13”拼假方案引爆旅游市场，机票价格创三年新低</h2>
     <span style="background:#f0fff4;color:#48bb78;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">文科</span>
   </div>
-  <div class="meta"><span>📰 商业/零售新闻</span><span>🕐 2026-08-31</span></div>
+  <div class="meta"><span>📰 去哪儿/极目新闻</span><span>🕐 2026-08-30</span></div>
   <div class="content">
     <h3 class="sub-title gg">事件背景</h3>
-    <p>2026年8月31日，据《每日经济新闻》报道，路易威登（Louis Vuitton）贵阳荔星中心店将于8月31日起停止营业，这也是LV在贵州的唯一一家门店，意味着品牌将暂时退出贵州实体零售市场。该店于2022年开业，运营仅4年。LV门店闭店公告称此次调整是为了"持续优化零售网络布局，以提供更具创新性与沉浸式的品牌体验"。此前，LV已陆续关闭昆明金格百货时光店、成都天府国际机场店等西南地区门店。</p>
+    <p>2026年中秋（9月25日-27日）和国庆假期（10月1日-7日）仅相隔三天，“请3休13”的拼假方案引发全民关注。去哪儿旅行数据显示，中秋国庆期间热门城市酒店提前预订量同比增长近四成，9月28日-30日请假出游人数同比增长52%。机票方面，9月27日至10月1日期间机票均价创近三年同期最低，部分热门航线甚至低于高铁票价。燃油附加费完成“三连降”，进一步降低出行成本。</p>
     <h3 class="sub-title gg">行业简述</h3>
-    <p>奢侈品牌在中国的门店策略正在发生深刻转变。LV退出贵州并非孤例——在行业增速放缓背景下，非核心点位面临更大的调整压力。与此同时，Texas Chicken（Church's旗下品牌）中国首店8月28日在上海开业，排队超两小时，计划数年在中国布局超600家门店。零售市场呈现明显的"K型分化"：高端品牌收缩非核心市场、大众餐饮连锁加速扩张。2026年上半年国内家电零售总规模约4250亿元，同比下滑9.9%；空调市场零售额同比下滑16.2%。消费者更注重"质价比"，零售业正从规模驱动转向品质驱动。</p>
+    <p>多地景区推出门票优惠政策：稻城亚丁首次面向全部游客限时免门票，荆州园博园国庆期间全面免票。广东发放3000万元文旅消费补贴，覆盖酒店民宿、景区门票、低空旅游、邮轮游艇等新业态。“跟着演唱会去旅行”成为今年显著消费趋势，凤凰传奇演唱会带动济南酒店预订量猛增12.8倍，华晨宇演唱会拉动南京酒店抢订量超越北京跃居全国第一。三线及以下城市出境机票量增速近三成，出境游正加速向低线城市渗透。</p>
     <h3 class="sub-title gg">关联专业</h3>
     <ul>
-      <li>市场营销</li>
-      <li>工商管理</li>
-      <li>品牌管理</li>
-      <li>零售管理</li>
+      <li>旅游管理 — 文旅消费趋势分析与旅游产品开发</li>
+      <li>酒店管理 — 节假日收益管理与动态定价策略</li>
+      <li>市场营销 — 文旅品牌营销与社交媒体传播</li>
+      <li>文化产业管理 — 演唱会经济与文旅融合模式研究</li>
     </ul>
     <h3 class="sub-title gg">学历·岗位·薪资</h3>
     <ul>
-      <li><b>学历门槛：</b>大专/本科可入行（门店运营/销售），硕士为主（品牌策划/区域管理），博士优先（战略研究）</li>
-      <li><b>典型岗位：</b>奢侈品零售运营经理、品牌区域拓展总监、零售数据分析经理、全渠道营销策划</li>
-      <li><b>薪资参考：</b>奢侈品门店店长月薪1.5-3万；品牌区域拓展总监年薪30-50万；零售数据分析经理月薪2-3.5万（据BOSS直聘、前程无忧公开招聘数据）</li>
+      <li>本科（旅游管理） → OTA平台运营专员/景区策划岗，起薪5K-8K/月</li>
+      <li>本科（酒店管理） → 连锁酒店集团管理培训生，起薪5K-7K/月</li>
+      <li>硕士（旅游管理/市场营销） → 文旅集团产品总监/营销策划主管，年薪12万-22万</li>
+      <li>本科（文化产业管理） → 演出经纪公司项目执行/文旅活动策划，起薪5K-8K/月</li>
     </ul>
     <h3 class="sub-title gg">地域优势</h3>
-    <p>上海（奢侈品中国区总部/南京西路商圈/首发经济）、北京（SKP/国贸/三里屯）、成都（太古里/IFS/西南奢侈品消费中心）、深圳（万象城/前海商业创新）</p>
+    <p>上海、北京是全国文旅消费中心城市，头部OTA平台（携程、去哪儿）和大型文旅集团总部云集。成都、重庆凭借网红城市效应和演唱会经济，文旅产业增速领先。海南依托自贸港政策，免税旅游消费持续增长。云南、贵州等西南省份凭借独特自然和文化资源，文旅人才需求旺盛。</p>
     <div class="tip-block">
       <h3>💡 报考小贴士</h3>
-      <p>① LV关闭贵阳门店+收缩西南——奢侈品牌正在从"铺量开店"转向"精选核心商圈"，懂高端零售运营+懂消费者心理的人才仍然稀缺；② 国内零售市场K型分化加剧：高端收缩、大众扩张，Texas Chicken计划开600家店——连锁餐饮运营管理、供应链管理人才需求旺盛；③ 品牌区域拓展总监年薪30-50万，但要求既懂线下门店又懂线上全渠道；④ 建议关注奢侈品品牌管理、新零售数据分析、连锁餐饮运营管理等方向。</p>
+      <p>旅游管理专业已从传统导游方向拓展为涵盖OTA运营、文旅IP打造、收益管理等多元领域。建议在校期间学习数据分析（Excel/Python）和新媒体营销技能，关注携程、去哪儿、飞猪等OTA企业的实习机会。持有导游证、会展策划师证等可增加就业竞争力。“跟着演唱会去旅行”等新业态尤其适合对文创和演出行业有兴趣的同学。</p>
     </div>
   </div>
 </div>
 <div class="card arts">
   <div class="card-head">
-    <h2>中秋国庆旅游预订提前升温，热门城市酒店预订量同比增长近四成</h2>
+    <h2>我国灵活就业人员从6000万激增至超2亿，结构性就业变革加速到来</h2>
     <span style="background:#f0fff4;color:#48bb78;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">文科</span>
   </div>
-  <div class="meta"><span>📰 文旅/消费新闻</span><span>🕐 2026-08-31</span></div>
+  <div class="meta"><span>📰 头条新闻</span><span>🕐 2026-08-30</span></div>
   <div class="content">
     <h3 class="sub-title gg">事件背景</h3>
-    <p>2026年8月31日，据《每日经济新闻》消费早参报道，随着暑期进入尾声，中秋国庆旅游消费已提前启动。截至8月24日，同程旅行平台"中秋""国庆"关键词搜索热度月环比增长116%，提前30天以上预订旅行产品的热度同比增长超20%。去哪儿数据显示，双节期间热门城市酒店提前预订量同比增长近四成。航旅纵横数据显示，截至8月14日，9月25日至10月7日国内航线机票预订量已超191万张，出入境航线超135万张。</p>
+    <p>据《2025中国蓝领群体就业研究报告》数据，我国灵活就业人员约2.8亿（2025年），2026年有望达到3.2亿，占城镇就业人口超四成。外卖活跃骑手约1400万、网约车司机约2900万、网络主播约3880万、自媒体从业者约5850万，仅这四大行业合计就超过1.2亿人。2026届1270万高校毕业生中，有34.2%选择了灵活就业。职业伤害保障试点已于2026年7月扩围至全国，超过2700万新就业形态劳动者参与试点。</p>
     <h3 class="sub-title gg">行业简述</h3>
-    <p>2026年中秋与国庆假期仅相隔3个工作日，"请3休13"的拼假方式形成更长出行窗口，推动消费者提前规划长线出游。假期旅游预订进一步"前置化"，反映消费者正在从临时决定转向提前规划。出境游需求也在回升，出入境航线机票预订超135万张。酒店端，热门城市提前预订量同比增近四成，说明优质酒店资源正在被快速锁定。从上半年数据看，国内文旅消费已呈现强劲复苏态势：福建上半年接待游客超1500万人次、门票收入超4.5亿元。文旅融合、赛事引流、乡村旅游等新消费模式正在成为增长主力。</p>
+    <p>灵活就业的快速增长源于传统岗位收缩、平台经济爆发、企业用工模式转变与新生代择业观变化的多重叠加。制造业自动化和AI替代基础岗位，房地产等行业大幅裁员，而平台经济创造了大量低门槛就业机会。值得关注的是，灵活就业者分为“被动灵活”和“主动灵活”两类：40岁以上灵活就业者占比超过50%，是主力军；而30岁以下群体中本科及以上学历者已达六成。未来真正要解决的，是让灵活就业不再等于低保障、无兜底。</p>
     <h3 class="sub-title gg">关联专业</h3>
     <ul>
-      <li>旅游管理</li>
-      <li>酒店管理</li>
-      <li>电子商务</li>
-      <li>文化产业管理</li>
+      <li>劳动与社会保障 — 灵活就业社保制度设计与政策研究</li>
+      <li>人力资源管理 — 新型用工模式下的劳动关系管理</li>
+      <li>社会学 — 就业结构变迁与社会分层分析</li>
+      <li>经济学 — 平台经济劳动力市场供需与薪酬机制</li>
     </ul>
     <h3 class="sub-title gg">学历·岗位·薪资</h3>
     <ul>
-      <li><b>学历门槛：</b>大专/本科可入行（OTA运营/酒店管理），硕士为主（战略规划/投资分析），博士优先（学术研究）</li>
-      <li><b>典型岗位：</b>OTA平台产品经理、酒店收益管理师、出境游产品经理、文旅数据分析师</li>
-      <li><b>薪资参考：</b>OTA平台运营月薪0.8-1.5万；酒店收益管理师月薪1-2万；出境游产品经理月薪1-2万；文旅数据分析师月薪1.5-3万（据BOSS直聘、前程无忧公开招聘数据）</li>
+      <li>本科（劳动与社会保障） → 社保经办机构/人社局公务员，起薪5K-7K/月</li>
+      <li>本科（人力资源管理） → 平台企业灵活用工管理专员，起薪5K-8K/月</li>
+      <li>硕士（劳动经济学/社会学） → 就业政策研究机构分析师，年薪10万-18万</li>
+      <li>博士（经济学/公共管理） → 高校劳动经济学教师/政策顾问，年薪18万-30万</li>
     </ul>
     <h3 class="sub-title gg">地域优势</h3>
-    <p>上海（携程总部/旅游OTA聚集）、北京（去哪儿/同程旅行/飞猪总部）、成都（西部文旅消费中心/天府文旅）、杭州（阿里旅行/网易文旅/数字经济+文旅融合）</p>
+    <p>北京是全国劳动政策研究的核心枢纽，中国劳动和社会保障科学研究院、人社部研究机构等设于此。杭州、深圳是平台经济重镇，阿里、美团、字节跳动等平台企业总部为灵活用工管理人才提供大量岗位。上海作为全国人力资源服务业高地，拥有众多灵活用工服务商和猎头企业。</p>
     <div class="tip-block">
       <h3>💡 报考小贴士</h3>
-      <p>① 酒店预订量同比增四成+机票预订超300万张——旅游消费强劲复苏，OTA平台和连锁酒店集团招聘需求正在回暖；② "请3休13"拼假模式推动长线游升温，出境游产品经理、定制旅行顾问等高端旅游人才需求上升；③ 酒店收益管理师是近年新兴高薪岗位，懂数据分析+懂酒店运营的复合人才最受青睐；④ 建议关注OTA平台运营、文旅数据分析、酒店收益管理、定制旅行产品设计等方向。</p>
+      <p>劳动与社会保障专业在灵活就业浪潮中重要性日益凸显，但开设院校较少，可关注中国劳动关系学院、中国人民大学、首都经济贸易大学等。人力资源管理专业建议学习劳动关系法和社保实务，了解灵活用工平台运作模式。该领域适合关心社会公平、有政策分析兴趣的同学，未来可进入政府、企业HR或智库机构。</p>
     </div>
+  </div>
+</div>
+
+
+  <div class="footer">
+    <p>高顿升学 · 每日行业速览 | 数据来源于公开资讯，仅供参考</p>
+    <p>薪资数据来自公开招聘平台及企业官方披露，仅供参考</p>
+    <p>生成时间：2026-08-31 08:00</p>
   </div>
 </div>
 
@@ -381,7 +377,7 @@ function showIndex() {
 function scrollToSection(id) {
   var el = document.getElementById(id);
   if (!el) return;
-  var top = el.getBoundingClientRect().top + window.pageYOffset - 16;
+  var top = el.offsetTop - 20;
   window.scrollTo({ top: top, behavior: 'smooth' });
 }
 </script>
