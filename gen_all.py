@@ -123,7 +123,7 @@ def mk_page(issue, date_str, weekday, sci_count, arts_count, points, sci_cards, 
 <div class="container">
   <div class="report-header">
     <a href="javascript:void(0)" onclick="showIndex()" style="display:inline-block;margin-bottom:14px;font-size:14px;color:#4299e1;text-decoration:none;font-weight:500;cursor:pointer;">\u2190 \u8fd4\u56de\u5217\u8868</a>
-    <div class="date-line">\U0001f4c5 \u7b2c{issue}\u671f \u00b7 \u9ad8\u987f\u5347\u5b66 \u00b7 \u6bcf\u65e5\u884c\u4e1a\u901f\u89c8 \u00b7 {date_str} \u00b7 \u661f\u671f{weekday}</div>
+    <div class="date-line">\U0001f4c5 \u7b2c{issue}\u671f \u00b7 \u9ad8\u987f\u5347\u5b66 \u00b7 \u6bcf\u65e5\u884c\u4e1a\u901f\u89c8</div>
     <div class="stats">
       <span>\U0001f4ca \u8d44\u8baf\u5171 {sci_count+arts_count} \u6761</span>
       <span>\U0001f52c \u7406\u5de5\u79d1 {sci_count} \u6761</span>
@@ -168,6 +168,19 @@ def mk_page(issue, date_str, weekday, sci_count, arts_count, points, sci_cards, 
 {JS_BLOCK}
 </body>
 </html>"""
+
+# ===== 学科分类规则（重要！）=====
+# 归类为"理工科"的条件（满足任一即可）：
+#   1. 资讯标题包含理工科关键词（半导体、芯片、AI、算法、计算机、新能源、生物、航天、机器人等）
+#   2. 关联专业中至少有一个专业属于理工科（计算机科学与技术、电子信息工程、自动化、机械工程、
+#      材料科学、化学、物理、光电、集成电路、软件工程、人工智能、通信工程等）
+# 归类为"文科"的条件（满足任一即可）：
+#   1. 资讯标题包含文科关键词（金融、经济、法律、教育、新闻、传媒、市场营销等）
+#   2. 关联专业中所有专业都属于文科（金融学、经济学、法学、新闻学、工商管理等）
+# 强制规则：
+#   如果"关联专业"中包含计算机、电子、自动化、机械、材料、生物、化学、物理等理工科专业，
+#   无论标题如何，该资讯都必须归入"理工科"
+#   只有"关联专业"全部为文科专业时，才能归入"文科"
 
 def S(title, src, time, bg, ind, majors, edu, region, tips):
     return mk_card(title, src, time, "science", bg, ind, majors, edu, region, tips)
