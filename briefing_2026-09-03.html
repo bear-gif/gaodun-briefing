@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第18期 · 高顿升学 · 每日行业速览</title>
+<style>
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif; background: #f5f7fa; color: #1a1a2e; line-height: 1.7; }
+  .container { max-width: 960px; margin: 0 auto; padding: 30px 20px 60px; }
+  .report-header { background: #fff; border-radius: 14px; padding: 28px 32px; margin-bottom: 24px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+  .report-header .date-line { font-size: 20px; font-weight: 700; color: #1a1a2e; margin-bottom: 6px; }
+  .report-header .stats { font-size: 14px; color: #718096; margin-bottom: 16px; }
+  .report-header .stats span { display: inline-block; margin-right: 14px; }
+  .core-judgments { background: #f7fafc; border-left: 4px solid #4299e1; padding: 16px 20px; border-radius: 0 8px 8px 0; }
+  .core-judgments h3 { font-size: 15px; color: #2d3748; margin-bottom: 8px; }
+  .core-judgments ul { list-style: none; }
+  .core-judgments li { font-size: 14px; color: #4a5568; padding: 4px 0; padding-left: 18px; position: relative; }
+  .core-judgments li::before { content: "\25b8"; position: absolute; left: 0; color: #4299e1; font-weight: bold; }
+  .card { background: #fff; border-radius: 14px; padding: 28px 32px; margin-bottom: 20px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); border-top: 4px solid transparent; }
+  .card.science { border-top-color: #4299e1; }
+  .card.arts { border-top-color: #48bb78; }
+  .card-head { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; flex-wrap: wrap; }
+  .card-head h2 { font-size: 18px; font-weight: 700; color: #1a1a2e; flex: 1; min-width: 200px; }
+  .meta { display: flex; gap: 16px; font-size: 13px; color: #a0aec0; margin-bottom: 12px; flex-wrap: wrap; }
+  .content p, .content li { font-size: 15px; color: #4a5568; line-height: 1.8; }
+  .content ul { list-style: disc; padding-left: 20px; margin: 6px 0; }
+  .content li { margin: 4px 0; }
+  .sub-title { font-size: 15px; margin: 14px 0 6px; border-left: 3px solid #4299e1; padding-left: 10px; font-weight: 600; }
+  .sub-title.sc { color: #4299e1; border-color: #4299e1; }
+  .sub-title.gg { color: #48bb78; border-color: #48bb78; }
+  .tip-block { background: #fef3c7; border-radius: 8px; padding: 14px 18px; margin: 12px 0; }
+  .tip-block h3 { color: #92400e; font-size: 15px; margin: 0 0 8px; }
+  .tip-block p { color: #92400e; margin: 0; font-size: 14px; line-height: 1.9; }
+  @media print {
+    body.printing-report .container.report-view { padding: 0 8mm !important; margin: 0 auto !important; }
+    .print-watermark { display: block !important; margin: 0 0 4mm 0 !important; }
+    @page { margin: 10mm 18mm 10mm 18mm; size: auto; }
+    body { margin: 0 !important; padding: 0 !important; background: #fff !important; }
+    .quick-nav { display: none !important; }
+    .card { margin-bottom: 4px !important; padding: 10px 14px !important; page-break-inside: auto; }
+    .card .content > * { page-break-inside: avoid; }
+    [id^="section-"] { margin: 4px 0 2mm 0 !important; padding: 4px 8px !important; }
+    .report-header a, .report-header .date-line, .report-header .stats { display: none !important; }
+    body.printing-report #site-brand-header, body.printing-report #index-view, body.printing-report #watermark-view, body.printing-report .footer, body.printing-report .report-view { display: none !important; }
+    body.printing-report .report-view.print-target { display: block !important; }
+  }
+
+</style>
+</head>
+<body>
+<div class="container report-view print-target">
+  <div class="report-header">
+    <a href="javascript:void(0)" onclick="showIndex()" style="display:inline-block;margin-bottom:14px;font-size:14px;color:#4299e1;text-decoration:none;font-weight:500;cursor:pointer;">← 返回列表</a>
+    <div class="date-line">📅 第18期 · 高顿升学 · 每日行业速览</div>
+    <div class="stats">
+      <span>📊 资讯共 10 条</span>
+      <span>🔬 理工科 7 条</span>
+      <span>📚 文科 3 条</span>
+    </div>
+    <div class="core-judgments">
+      <h3>📌 今日要点速览</h3>
+      <ul>
+        <li>硅谷AI"诸神之战"：谷歌发布Gemini 3.8 Flash，Meta发布Muse Spark 1.3，AI推理成本多方向同时下降</li>
+        <li>韩国9月1日起实施芯片出口管制新规，国产半导体替代进程有望加速</li>
+        <li>黄仁勋G20布道"AI经济学"：1GW AI基建需500-600亿美元，算力已成国家级基础设施</li>
+        <li>全球首个太空算力云正式常态化运营，北邮牵头建设，已服务100+用户</li>
+        <li>奇瑞集团8月销量超28万辆创新高，新能源占比超43%，出口同比增52%</li>
+        <li>LUX-ZEPLIN实验疑似首次探测到暗物质直接证据，WIMP质量约为质子200倍</li>
+        <li>央行行长潘功胜G20发声：无意通过汇率贬值获取竞争优势，继续适度宽松货币政策</li>
+        <li>超万吨级国产豪华邮轮"梦幻一号"命名，将落地香港维港专属运营</li>
+        <li>90余所江苏高校暑期迎来超53万学子研学，"大学问道"打通教育与文旅</li>
+      </ul>
+    </div>
+  </div>
+
+  <div style="margin:20px 0 10px;padding:12px 20px;background:#fff;border-radius:10px;box-shadow:0 1px 3px rgba(0,0,0,0.04);display:flex;align-items:center;flex-wrap:wrap;">
+    <span style="font-size:14px;color:#718096;margin-right:12px;">快速跳转：</span>
+    <a href="javascript:void(0)" onclick="scrollToSection('section-science')" style="margin-right:20px;font-size:15px;color:#2b6cb0;text-decoration:none;font-weight:600;">🔬 理工科资讯</a>
+    <a href="javascript:void(0)" onclick="scrollToSection('section-arts')" style="margin-right:20px;font-size:15px;color:#276749;text-decoration:none;font-weight:600;">📚 文科资讯</a>
+  </div>
+
+  <div id="section-science" style="display:flex;align-items:center;gap:10px;margin:24px 0 18px;padding:12px 20px;background:linear-gradient(90deg,#ebf8ff,#fff);border-radius:10px;border-left:4px solid #4299e1;">
+    <span style="font-size:20px;">🔬</span>
+    <span style="font-size:17px;font-weight:700;color:#2b6cb0;">理工科资讯</span>
+    <span style="font-size:13px;color:#718096;margin-left:4px;">共 7 条</span>
+  </div>
+
+<div class="card science">
+  <div class="card-head">
+    <h2>硅谷AI"诸神之战"：Meta发布Muse Spark 1.3，谷歌推出Gemini 3.8 Flash</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 华尔街见闻/凤凰网科技</span><span>🕐 2026-09-03</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>9月2日夜间，硅谷AI领域密集发布重磅产品。Meta发布其迄今最强大的AI模型Muse Spark 1.3，首席AI官Alexandr Wang称其编程能力"优于"OpenAI的GPT-5.6 Sol，与Anthropic的Claude Fable 5.1"旗鼓相当"，标志着Meta在AI军备竞赛中迈出重要一步。几乎同一时间，谷歌发布Gemini 3.8 Flash——六周内第三次更新Flash系列，在DeepSWE v1.1软件工程测试中得分73.7%。博通Q3营收295.91亿美元同比增长86%，AI业务营收指引上调至580亿美元，CEO预计2027年AI营收翻倍至1150亿美元。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>2026年AI大模型竞争进入白热化阶段，推理成本从多个方向同时下降。谷歌把frontier级能力塞进更便宜的模型，Meta让Agent用更少的token完成同样任务，初创公司Mostik质疑AI之间为何需要用人类语言交流。商业化层面，Meta的Muse Spark已向开发者开放付费API，部分开发者"每周使用量高达数万亿个token"。谷歌通过Gemini生态持续扩展至企业级应用。博通已开始为谷歌量产交付下一代TPU 8I芯片，性能与英伟达Vera Rubin持平或更优。全球AI基础设施投资规模已达万亿美元级别，推理效率成为新竞争焦点。</p>
+    <h3 class="sub-title sc">关联专业</h3>
+    <ul>
+      <li>人工智能 — 大模型架构设计、训练与推理优化</li>
+      <li>计算机科学与技术 — AI算法研发、软件工程与系统架构</li>
+      <li>数据科学与大数据技术 — 海量数据训练与模型评估</li>
+      <li>软件工程 — AI Agent开发、工具链构建与系统优化</li>
+    </ul>
+    <h3 class="sub-title sc">学历·岗位·薪资</h3>
+    <ul>
+      <li>本科（计算机/AI）→ AI应用开发工程师，月薪15K-25K</li>
+      <li>硕士（人工智能/计算机）→ 大模型算法工程师，年薪30万-55万（据猎聘数据）</li>
+      <li>博士（计算机科学/AI）→ AI研究科学家，年薪60万-120万</li>
+      <li>本科（软件工程）→ AI Agent开发工程师，月薪18K-30K</li>
+    </ul>
+    <h3 class="sub-title sc">地域优势</h3>
+    <p>AI大模型企业集中在北京（百度、字节跳动、智谱AI）、上海（商汤、月之暗面）、深圳（华为、腾讯）和杭州（阿里）。美国硅谷仍是全球AI创新中心，OpenAI、Anthropic、Meta MSL等顶级实验室聚集于此。北京聚集了最多的AI大模型初创公司，上海在AI应用层具有优势，深圳依托华为昇腾生态在AI算力方面领先。</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>AI大模型是当前最热门的技术赛道，但竞争极为激烈。建议优先选择人工智能或计算机科学与技术专业，重点学习深度学习、自然语言处理和强化学习。该行业对学历要求较高，核心算法岗位普遍要求硕士及以上。本科生可从AI应用开发、Agent开发等方向切入，积累经验后再深造。AI领域技术迭代极快，需保持终身学习的习惯。</p>
+    </div>
+  </div>
+</div>
+
+<div class="card science">
+  <div class="card-head">
+    <h2>韩国9月1日起实施芯片出口管制新规，国产半导体替代逻辑强化</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 综合资讯</span><span>🕐 2026-09-03</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>韩国9月1日起正式实施新一轮出口管制新规，将高性能AI芯片（总处理性能≥6000）及先进半导体设备（曝光、刻蚀、沉积）列入战略物项，出口须获得许可。同时上调高能电池管制门槛，修订共纳入约80项国际管制调整。此举限制了三星、SK海力士在中国工厂的出口，叠加美国正考虑对进口半导体加征新一轮关税，全球芯片供应链格局面临进一步重塑。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>韩国芯片管制短期对国内AI芯片和存储芯片供应构成压力，但中长期将加速国产替代进程。当前国产化率：高端AI训练卡不足10%、推理卡约40%、DRAM约15%、3D NAND约25%。半导体设备领域刻蚀、薄膜沉积、量检测等前道核心设备国产化率仍低，是重点突破方向。长鑫存储DDR4大规模量产、DDR5加速放量，长江存储232层TLC已量产。功率半导体领域碳化硅、IGBT等已具备国际竞争力。电子特气氩气价格4个月暴涨超240%，反映了芯片制造需求的旺盛拉动。</p>
+    <h3 class="sub-title sc">关联专业</h3>
+    <ul>
+      <li>集成电路设计与集成系统 — 芯片架构设计与验证</li>
+      <li>微电子科学与工程 — 先进制程工艺与器件物理</li>
+      <li>电子科学与技术 — 半导体器件与工艺研发</li>
+      <li>材料科学与工程 — 半导体材料（光刻胶、靶材、电子气体）研发</li>
+    </ul>
+    <h3 class="sub-title sc">学历·岗位·薪资</h3>
+    <ul>
+      <li>本科（微电子/集成电路）→ 芯片验证工程师，月薪12K-20K</li>
+      <li>硕士（集成电路/电子科学）→ AI芯片设计工程师，年薪25万-50万（据猎聘数据）</li>
+      <li>博士（微电子/材料科学）→ 工艺研发专家，年薪40万-80万</li>
+      <li>本科（材料/化工）→ 电子材料工程师，月薪10K-18K</li>
+    </ul>
+    <h3 class="sub-title sc">地域优势</h3>
+    <p>国内半导体产业主要集中在上海（张江，聚集中芯国际、华虹等晶圆厂）、无锡（SK海力士中国工厂、华虹新厂）、合肥（长鑫存储）、武汉（长江存储）和深圳（华为海思）。北京在中关村聚集了北方华创等设备龙头。长三角地区形成了从设计、制造到封测的完整产业链，是半导体人才最集中的区域。</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>半导体是国家"卡脖子"技术攻关的核心赛道，政策支持力度持续加大。建议报考集成电路设计与集成系统或微电子科学与工程专业。该行业人才缺口巨大，硕士及以上学历是主流门槛。当前AI芯片、存储芯片、半导体设备和材料四大方向都有很好的就业前景。半导体行业前期学习曲线较陡，需要扎实的物理和数学基础，但职业稳定性和薪资回报都非常可观。</p>
+    </div>
+  </div>
+</div>
+
+<div class="card science">
+  <div class="card-head">
+    <h2>黄仁勋G20布道"AI经济学"：1GW AI基建需500亿美元，算力成国家级基础设施</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 财联社</span><span>🕐 2026-09-03</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>美国当地时间9月2日，英伟达CEO黄仁勋亮相G20创新部长级会议，系统阐述"AI经济学"理念。他表示AI正从软件技术演变为类似电力、互联网的国家级经济基础设施。当前建设1GW规模AI基础设施约需500亿至600亿美元，到本十年末全球相关建设将达约100GW。智能正在以词元（Token）计价，如同过去能源以千瓦时计价一样。纽约联储行长威廉姆斯指出，近期长期美债收益率上升主要受AI及数据中心等科技投资驱动。英伟达股价当日涨超3%。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>AI基础设施已进入极度重资产化阶段。过去建设250亿美元的晶圆厂已是巨额投资，现在仅1GW的AI基础设施就需其两倍规模。全球AI数据中心建设加速推进，对算力芯片、高速网络互联、电力供应和散热系统的需求呈指数级增长。在国内，国家能源局明确"十五五"电力需求年均增速约5%，加快输电通道和配电网工程建设，AI算力用电正成为电力系统增长的核心驱动力。相关产业链涵盖服务器、光模块、液冷散热、电力设备等多个领域。</p>
+    <h3 class="sub-title sc">关联专业</h3>
+    <ul>
+      <li>计算机科学与技术 — 数据中心架构设计与算力调度</li>
+      <li>电气工程及其自动化 — AI数据中心供配电系统设计</li>
+      <li>能源与动力工程 — 数据中心散热与能源管理</li>
+      <li>通信工程 — 高速网络互联与数据中心网络架构</li>
+    </ul>
+    <h3 class="sub-title sc">学历·岗位·薪资</h3>
+    <ul>
+      <li>本科（计算机/通信）→ 数据中心运维工程师，月薪10K-18K</li>
+      <li>硕士（电气工程/能源）→ 数据中心电力架构师，年薪20万-40万</li>
+      <li>本科（计算机）→ 算力调度工程师，月薪15K-25K</li>
+      <li>博士（计算机/电气）→ AI基础设施首席架构师，年薪50万-100万</li>
+    </ul>
+    <h3 class="sub-title sc">地域优势</h3>
+    <p>全球AI数据中心主要分布在美国（弗吉尼亚、德州）、中国（京津冀、长三角、粤港澳、贵州）和新加坡。国内"东数西算"工程推动算力枢纽节点建设，北京、上海、广州、深圳、贵阳等地均有大型智算中心落地。乌兰察布、中卫等西部城市凭借电力成本优势成为数据中心聚集地。电力供应充裕、电价低廉的地区在AI基建竞争中占据天然优势。</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>AI基础设施是支撑整个AI产业发展的底座。建议关注电气工程及其自动化、能源与动力工程等"传统工科+AI"的交叉方向，这些专业在当前AI基建大潮中需求旺盛且竞争相对较小。数据中心运维和算力调度岗位对学历要求相对灵活，本科即可入行。AI基建投资周期长、规模大，行业发展确定性较高。</p>
+    </div>
+  </div>
+</div>
+
+<div class="card science">
+  <div class="card-head">
+    <h2>全球首个！北邮太空算力云正式常态化提供在轨算力服务</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 人民日报</span><span>🕐 2026-09-03</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>据9月3日《人民日报》报道，由北京邮电大学牵头建设的全球首个对外提供在轨试验服务的太空算力云，已正式常态化提供在轨算力服务。该平台由太空算力在轨服务平台、太空算力地面站和太空算力运营服务平台组成，打通了卫星平台、太空服务器、地面站与地面数据中心之间的全链路。目前已支撑在轨大数据计算、6G通信、分布式存储等重点场景的在轨试验，累计完成数百次太空算力调用，服务用户超过100家。基于国产原生软硬件生态，大模型推理能效比达到10词元/焦耳。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>太空算力是"天地一体化"信息基础设施的核心组成。将计算能力从地面延伸到太空，用户可通过平台实现覆盖任务申请、部署、运行、监测和结果回传的全生命周期算力服务。随着6G通信技术研发加速，天地一体化网络将成为下一代通信的核心架构。太空算力在卫星遥感实时处理、太空制造、深空探测等场景具有不可替代的价值。当前全球主要航天国家都在加速布局太空计算能力，太空算力已成为各国竞相争夺的战略高地。</p>
+    <h3 class="sub-title sc">关联专业</h3>
+    <ul>
+      <li>通信工程 — 天地一体化网络与6G通信协议设计</li>
+      <li>航天工程 — 卫星平台设计与在轨服务系统</li>
+      <li>计算机科学与技术 — 星载计算与边缘AI推理</li>
+      <li>网络空间安全 — 太空信息安全与数据加密</li>
+    </ul>
+    <h3 class="sub-title sc">学历·岗位·薪资</h3>
+    <ul>
+      <li>本科（通信/航天）→ 卫星通信工程师，月薪10K-18K</li>
+      <li>硕士（通信/计算机）→ 天地一体化网络工程师，年薪18万-35万</li>
+      <li>博士（航天/通信）→ 太空算力系统架构师，年薪30万-60万</li>
+      <li>本科（计算机）→ 星载计算平台开发工程师，月薪12K-22K</li>
+    </ul>
+    <h3 class="sub-title sc">地域优势</h3>
+    <p>航天和太空算力产业主要集中在北京（航天科技集团、航天科工集团总部）、西安（航天五院西安分院）、上海（航天八院）和武汉（国家航天产业基地）。北京邮电大学位于北京，地处中国航天产业核心区域。深圳在卫星通信终端制造、杭州在卫星互联网应用方面也有较好基础。随着商业航天崛起，合肥、成都等地也在积极布局。</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>太空算力是航天与通信的交叉前沿领域，兼具国家战略需求和商业潜力。建议报考通信工程或航天工程专业，重点学习卫星通信、信号处理和嵌入式系统。就业以科研院所和国企为主（航天科技、航天科工、中国星网等），稳定性高。商业航天赛道（银河航天、天仪研究院等）也在快速扩张。该领域对数学和物理基础要求较高，硕士学历是多数核心岗位的门槛。</p>
+    </div>
+  </div>
+</div>
+
+<div class="card science">
+  <div class="card-head">
+    <h2>奇瑞集团8月销量超28万辆创新高，新能源渗透率超43%</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 天行数据·汽车新闻</span><span>🕐 2026-09-03</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>2026年8月，奇瑞集团销售汽车280,128辆，同比增长15.4%。其中，出口196,984辆，同比增长52.1%；新能源车120,909辆，同比增长69.8%，连续5个月突破10万辆。新能源渗透率已超过43%，标志着其从传统燃油车企向新能源车企的成功转型。同日，长城汽车也公布8月数据：销售113,396辆，海外销量同比增长38.42%。中国车企在海外市场持续高歌猛进。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>8月国内汽车市场延续结构性分化。奇瑞、比亚迪等头部企业持续高增长，新能源渗透率加速攀升，插混和增程式车型增长尤为迅猛。出口成为中国车企最重要的增长引擎，头部车企海外销量占比已超40%。行业竞争焦点从国内市场转向全球化布局，以及智能驾驶技术的规模化落地。与此同时，美伊冲突推高国际油价（WTI突破90美元/桶），也为新能源汽车的替代效应提供了额外动力。</p>
+    <h3 class="sub-title sc">关联专业</h3>
+    <ul>
+      <li>车辆工程 — 新能源汽车整车设计与性能优化</li>
+      <li>自动化 — 智能驾驶控制系统与线控底盘</li>
+      <li>电气工程及其自动化 — 电驱动系统与电池管理</li>
+      <li>能源与动力工程 — 混动系统热管理与增程器开发</li>
+    </ul>
+    <h3 class="sub-title sc">学历·岗位·薪资</h3>
+    <ul>
+      <li>本科（车辆工程）→ 整车集成工程师，月薪10K-18K</li>
+      <li>硕士（车辆/自动化）→ 智能驾驶算法工程师，年薪20万-40万</li>
+      <li>本科（电气/自动化）→ 三电系统工程师，月薪12K-20K</li>
+      <li>博士（车辆/机械）→ 底盘线控技术专家，年薪35万-60万</li>
+    </ul>
+    <h3 class="sub-title sc">地域优势</h3>
+    <p>奇瑞总部位于安徽芜湖，安徽已集聚奇瑞、蔚来、大众安徽、江淮等整车企业，形成完整的新能源汽车产业链。上海（特斯拉、上汽）、深圳（比亚迪）、广州（广汽埃安、小鹏）、重庆（长安、赛力斯）也是重要汽车产业基地。长三角和珠三角在汽车电子、智能驾驶等细分领域具有显著优势。</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>汽车行业正经历百年未有的新能源+智能化变革，人才需求旺盛。建议报考车辆工程或自动化专业，同时辅修编程和AI相关知识。重点关注三电系统（电池、电机、电控）和智能驾驶两条主线。车企出海带来大量海外派驻机会，外语能力是加分项。本科即可就业，核心研发岗位普遍要求硕士学历。安徽汽车产业集群为就业提供了丰富选择。</p>
+    </div>
+  </div>
+</div>
+
+<div class="card science">
+  <div class="card-head">
+    <h2>吉利星越L PLUS正式亮相，搭载激光雷达定位旗舰智混SUV</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 天行数据·汽车新闻</span><span>🕐 2026-09-03</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>吉利汽车旗下全新旗舰车型星越L PLUS正式官宣亮相，定位"中大型旗舰智混SUV"，轴距达到2900mm，配备带有激光雷达的辅助驾驶系统。新车将智能驾驶与混合动力深度融合，代表了当前中国品牌旗舰SUV的最新技术方向。同日，莲花跑车ELETRE 900GOLD等新车型正式上市，售价91.8万元起，展示了中国品牌在高端性能车市场的持续突破。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>智能驾驶正成为车企差异化竞争的关键武器。激光雷达作为高阶智驾的核心传感器，已从高端车型向20万元级别快速渗透。国内车企普遍选择激光雷达+视觉融合路线，以提供更高安全冗余。吉利在旗舰车型搭载激光雷达，体现了对高阶智驾路线的选择。"智混"概念成为车企新的营销标签，将智能驾驶与混合动力深度融合。当前主流智驾方案正加速从高速NOA向城市NOA扩展，端到端大模型方案成为技术前沿。</p>
+    <h3 class="sub-title sc">关联专业</h3>
+    <ul>
+      <li>车辆工程 — 整车平台开发与底盘调校</li>
+      <li>自动化 — 智能驾驶感知融合与决策规划</li>
+      <li>电子信息工程 — 激光雷达信号处理与传感器融合</li>
+      <li>工业设计 — 汽车外观造型与内饰设计</li>
+    </ul>
+    <h3 class="sub-title sc">学历·岗位·薪资</h3>
+    <ul>
+      <li>本科（车辆/机械）→ 整车集成工程师，月薪10K-18K</li>
+      <li>硕士（自动化/电子信息）→ 智能驾驶感知工程师，年薪20万-40万</li>
+      <li>本科（工业设计）→ 汽车造型设计师，月薪8K-15K</li>
+      <li>博士（控制/计算机）→ 自动驾驶决策算法专家，年薪40万-80万</li>
+    </ul>
+    <h3 class="sub-title sc">地域优势</h3>
+    <p>吉利总部位于浙江杭州，在杭州、宁波设有研发中心。浙江聚集了吉利、零跑、合众等车企。激光雷达企业集中在上海（禾赛科技）、深圳（速腾聚创）和北京。智能驾驶研发团队主要分布在北京、上海、深圳和杭州，这些城市也是自动驾驶路测和商业化运营最活跃的地区。</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>智能驾驶是汽车行业核心发展方向，人才需求量大且薪资水平高。建议报考自动化或电子信息工程专业，重点学习计算机视觉、传感器融合和控制算法。激光雷达相关岗位对光学和信号处理知识有较高要求。汽车造型设计是工科与艺术的结合。该行业技术更新快，建议在校期间多参与相关竞赛和项目实践。</p>
+    </div>
+  </div>
+</div>
+
+<div class="card science">
+  <div class="card-head">
+    <h2>LUX-ZEPLIN实验疑似首次探测到暗物质直接证据，WIMP质量约为质子200倍</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 天行数据·科学探索</span><span>🕐 2026-09-03</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>科学家近日报告称，可能探测到了暗物质的首个直接证据。LUX-ZEPLIN实验的研究人员在数据中发现了一个无法用已知背景信号解释的单粒子相互作用事件，疑似由弱相互作用大质量粒子（WIMP）与普通物质粒子发生相互作用产生。该信号暗示WIMP质量约为质子的200倍。研究团队负责人、英国布里斯托大学Sam Eriksen表示，即便只是一个异常事件也具有重要意义。但目前统计显著性仍不足，仍有0.5%概率可由已知背景解释。研究结果已在2026年TeV粒子天体物理学大会上公布，并提交至《Physical Review Letters》。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>暗物质约占宇宙总质量的85%，但科学家至今仍不知道它究竟是什么。由于暗物质不与电磁辐射相互作用，无法由电子、质子和中子构成，推动科学家寻找超越"粒子物理学标准模型"的新型粒子。LUX-ZEPLIN探测器位于美国南达科他州地下约1.6公里深处，内部装有10吨超纯液态氙，是全球最灵敏的暗物质探测器之一。如果此次探测最终被证实，将是粒子物理学的里程碑式突破。暗物质研究带动了超纯材料、极低温探测器、量子传感器等尖端技术的发展，也为量子精密测量领域提供了新的应用方向。</p>
+    <h3 class="sub-title sc">关联专业</h3>
+    <ul>
+      <li>物理学 — 粒子物理理论与实验研究</li>
+      <li>核物理与核技术 — 探测器物理与辐射探测</li>
+      <li>光电信息科学与工程 — 高灵敏度光电探测系统设计</li>
+      <li>数据科学与大数据技术 — 海量实验数据分析与信号识别</li>
+    </ul>
+    <h3 class="sub-title sc">学历·岗位·薪资</h3>
+    <ul>
+      <li>本科（物理学）→ 实验室技术员/科研助理，月薪6K-10K</li>
+      <li>硕士（物理学/核技术）→ 探测器研发工程师，月薪15K-25K</li>
+      <li>博士（粒子物理/核物理）→ 科研机构研究员，年薪20万-40万（据智联招聘数据）</li>
+      <li>博士（物理/光电）→ 量子精密测量科学家，年薪30万-60万</li>
+    </ul>
+    <h3 class="sub-title sc">地域优势</h3>
+    <p>国内粒子物理和核物理研究集中在北京（中科院高能物理研究所、清华大学）、合肥（中科大、中科院等离子体所）、上海（上海应用物理研究所）和成都（四川大学、中国工程物理研究院）。中国锦屏地下实验室（位于四川凉山）是世界上最深的地下实验室，也是暗物质直接探测的重要基地。海外方面，美国费米实验室、CERN（欧洲核子研究中心）是该领域的核心研究机构。</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>暗物质研究属于基础科学前沿，适合对物理学有强烈兴趣和探索精神的学生。建议报考物理学专业，夯实量子力学、粒子物理和统计物理基础。该领域几乎必须读博，且以科研院所为主要就业方向。基础物理研究的竞争较为激烈，但培养出的数据分析、建模和编程能力在金融科技、AI等领域也有广泛用途。国内锦屏实验室、江门中微子实验等大科学装置为本科生提供了难得的科研实践机会。</p>
+    </div>
+  </div>
+</div>
+
+  <div id="section-arts" style="display:flex;align-items:center;gap:10px;margin:30px 0 18px;padding:12px 20px;background:linear-gradient(90deg,#f0fff4,#fff);border-radius:10px;border-left:4px solid #48bb78;">
+    <span style="font-size:20px;">📚</span>
+    <span style="font-size:17px;font-weight:700;color:#276749;">文科资讯</span>
+    <span style="font-size:13px;color:#718096;margin-left:4px;">共 3 条</span>
+  </div>
+
+<div class="card arts">
+  <div class="card-head">
+    <h2>央行行长潘功胜G20发声：无意通过汇率贬值获取竞争优势，继续适度宽松</h2>
+    <span style="background:#f0fff4;color:#48bb78;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">文科</span>
+  </div>
+  <div class="meta"><span>📰 新华财经/财联社</span><span>🕐 2026-09-03</span></div>
+  <div class="content">
+    <h3 class="sub-title gg">事件背景</h3>
+    <p>中国人民银行行长潘功胜在G20财长和央行行长会议上发表重要讲话。他指出贸易保护主义上升、国家安全问题泛化、政策环境不可预期是全球失衡加剧的主因。中方从不刻意追求贸易顺差，坚持扩大内需和高水平对外开放，无意通过汇率贬值获取贸易竞争优势。央行将持续推进货币政策框架转型，完善利率体系，继续实施适度宽松的货币政策。与此同时，美联储褐皮书显示经济温和增长，市场对9月加息预期升温；新西兰联储连续第二次加息至2.75%；日本央行暗示加息节奏可能加快。</p>
+    <h3 class="sub-title gg">行业简述</h3>
+    <p>全球货币政策分化格局深化。国内"适度宽松"基调意味着利率仍有下行空间，利好实体企业融资和资本市场。人民币偏强运行、双向波动，韧性凸显。A股当日弱势震荡，上证指数报3941.39点跌0.97%，两市成交额1.79万亿元。8月A股新开户239.73万户，前8个月累计新开2521.4万户同比增46%。数字人民币运营机构再扩容，渤海银行获批跻身全链条运营主体。富时中国A50指数调整纳入中微公司、生益科技，9月18日生效。银行半年报显示"AI竞赛"加速，Token消耗量激增。</p>
+    <h3 class="sub-title gg">关联专业</h3>
+    <ul>
+      <li>金融学 — 货币政策分析、外汇市场与汇率管理</li>
+      <li>经济学 — 宏观经济研究与国际经济政策分析</li>
+      <li>会计学 — 商业银行财务管理与中间业务分析</li>
+      <li>统计学 — 经济数据挖掘与量化研究</li>
+    </ul>
+    <h3 class="sub-title gg">学历·岗位·薪资</h3>
+    <ul>
+      <li>本科（金融/经济）→ 银行客户经理/信贷分析师，月薪8K-15K</li>
+      <li>硕士（金融学/经济学）→ 券商研究员/投资分析师，年薪20万-40万</li>
+      <li>本科（会计/统计）→ 银行风控分析师，月薪10K-18K</li>
+      <li>博士（经济学/金融）→ 央行/智库研究员，年薪25万-50万</li>
+    </ul>
+    <h3 class="sub-title gg">地域优势</h3>
+    <p>金融行业集中在北京（央行、金融监管总局、各大银行总部）、上海（证券交易所、基金公司、外资金融机构聚集地）、深圳（深交所、创投机构）和杭州（蚂蚁集团、互联网金融）。数字人民币试点城市（北京、上海、深圳、雄安、成都等）对金融科技人才需求增长。香港作为国际金融中心，在跨境金融和离岸人民币业务方面具有独特优势。</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>在全球货币政策分化、数字金融快速演进的背景下，金融行业对复合型人才需求增加。建议报考金融学或经济学专业，同时掌握数据分析和编程技能（Python、R等）。央行货币政策框架转型和数字人民币推广为金融科技方向提供了新机遇。银行、券商、保险等传统金融机构仍是主要就业方向，但数字金融、绿色金融、跨境金融等新兴领域增长更快。硕士学历在券商、基金等买方机构中是基本门槛。</p>
+    </div>
+  </div>
+</div>
+
+<div class="card arts">
+  <div class="card-head">
+    <h2>超万吨级国产豪华邮轮"梦幻一号"命名，将落地香港维港专属运营</h2>
+    <span style="background:#f0fff4;color:#48bb78;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">文科</span>
+  </div>
+  <div class="meta"><span>📰 天行数据·科学探索</span><span>🕐 2026-09-03</span></div>
+  <div class="content">
+    <h3 class="sub-title gg">事件背景</h3>
+    <p>超万吨级高端邮轮船队新闻发布会暨"梦幻一号"邮轮命名仪式9月2日在香港举行。紫荆文化集团董事长许正中表示，"梦幻一号"是船队首发旗舰，将成为香港全新的海上名片。招商局集团董事长缪建民表示，该船是维港专属运营的国产高端豪华文旅船舶。"梦幻一号"总长109米、型宽26米、型深9.8米，总吨位约18580吨，设有可容纳逾990人的专业国际会议厅、可容纳800人的大型宴会厅、多层360度全景海上观光平台和海景文创体验廊道等空间。该船由招商局集团旗下武汉长江船舶设计院设计，招商局船舶工业集团精工建造。</p>
+    <h3 class="sub-title gg">行业简述</h3>
+    <p>国产豪华邮轮的命名标志着中国邮轮产业从"建造突破"迈向"运营升级"。此前中国已成功建造大型邮轮，而"梦幻一号"的独特之处在于定位高端文旅市场，融合会议、宴会、文创体验等复合功能，瞄准维港专属运营。全球邮轮市场持续复苏，亚太地区是增长最快的区域之一。据行业数据，中国邮轮旅客吞吐量在2024年已恢复至疫情前水平，2026年预计进一步增长。香港作为国际旅游枢纽，维港邮轮经济的潜力巨大，有助于巩固其旅游和航运中心地位。文旅融合是邮轮产业发展的核心趋势。</p>
+    <h3 class="sub-title gg">关联专业</h3>
+    <ul>
+      <li>旅游管理 — 邮轮旅游产品设计与运营管理</li>
+      <li>酒店管理 — 高端酒店与邮轮服务管理</li>
+      <li>市场营销 — 文旅品牌营销与消费者洞察</li>
+      <li>文化创意产业 — 文创体验内容策划与IP开发</li>
+    </ul>
+    <h3 class="sub-title gg">学历·岗位·薪资</h3>
+    <ul>
+      <li>本科（旅游管理）→ 邮轮运营经理，月薪10K-18K</li>
+      <li>本科（酒店管理）→ 高端邮轮服务总监，月薪12K-22K</li>
+      <li>硕士（旅游管理/MBA）→ 文旅项目总经理，年薪25万-50万</li>
+      <li>本科（市场营销）→ 文旅品牌营销经理，月薪10K-20K</li>
+    </ul>
+    <h3 class="sub-title gg">地域优势</h3>
+    <p>邮轮产业主要集中在上海（吴淞口国际邮轮港，中国最大邮轮母港）、天津（国际邮轮母港）、广州（南沙邮轮母港）和香港（启德邮轮码头）。深圳、厦门、青岛等城市也在积极发展邮轮经济。香港作为"梦幻一号"的运营基地，在邮轮旅游方面具有独特优势：背靠粤港澳大湾区庞大客源市场，拥有免签政策便利和成熟的国际旅游服务体系。文旅产业在长三角、珠三角和海南自贸港等区域发展最为活跃。</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>邮轮旅游是文旅产业中的高端细分领域，随着国产邮轮船队扩大，对专业管理人才的需求快速增长。建议报考旅游管理或酒店管理专业，重点学习服务管理、国际旅游市场运营和跨文化沟通。该行业对英语能力要求较高，建议辅修外语。邮轮工作具有独特的海上生活体验，薪资水平通常高于陆地同类岗位（含免税福利）。文旅融合趋势下，具备文创策划能力的人才更受欢迎。</p>
+    </div>
+  </div>
+</div>
+
+<div class="card arts">
+  <div class="card-head">
+    <h2>90余所江苏高校暑期迎来超53万学子研学，"大学问道"打通教育与文旅</h2>
+    <span style="background:#f0fff4;color:#48bb78;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">文科</span>
+  </div>
+  <div class="meta"><span>📰 新华日报</span><span>🕐 2026-09-03</span></div>
+  <div class="content">
+    <h3 class="sub-title gg">事件背景</h3>
+    <p>据9月3日《新华日报》报道，今年高考结束后，江苏省教育厅推出"大学问道"系列活动，引导高校向高考考生和家长开放。省文旅厅联合省教育厅启动"大学问道"暨"百万学子游江苏"系列活动。截至目前，累计超过90所省内高校敞开大门，53.3万学子走进江苏高校参与"问道"。活动以"学段衔接、生涯启蒙、科普研学"为核心，把象牙塔变成行走的课堂。山东高二学生王婧瑜在东南大学AI训练营中找到了未来方向，广东初二学生周楚杰则在南京研学中"读懂一座城"。</p>
+    <h3 class="sub-title gg">行业简述</h3>
+    <p>"大学问道"活动打破了教育与文旅的行业分隔，开创了"研学+文旅+高等教育"三位一体的新模式。高校不再只是学术机构，而成为青少年成长的"第二课堂"和城市文旅的新名片。这一模式的核心价值在于：将大学的科研资源、文化资源转化为可体验、可感知的研学产品，满足学生和家长对"沉浸式大学体验"的需求。从产业角度看，研学旅行是文旅产业增长最快的细分领域之一。据行业数据，2025年中国研学旅行市场规模已突破2000亿元，预计2026年继续保持高增长。高校开放研学正在成为城市文旅竞争的新赛道。</p>
+    <h3 class="sub-title gg">关联专业</h3>
+    <ul>
+      <li>教育学 — 研学课程设计与教育产品开发</li>
+      <li>旅游管理 — 研学旅行产品策划与运营管理</li>
+      <li>文化产业管理 — 文化资源整合与文创IP开发</li>
+      <li>新闻传播学 — 教育传播与品牌营销</li>
+    </ul>
+    <h3 class="sub-title gg">学历·岗位·薪资</h3>
+    <ul>
+      <li>本科（教育学）→ 研学课程设计师，月薪8K-14K</li>
+      <li>本科（旅游管理）→ 研学旅行项目经理，月薪10K-18K</li>
+      <li>硕士（教育学/文化产业）→ 教育产品研发总监，年薪18万-30万</li>
+      <li>本科（新闻传播）→ 教育品牌策划经理，月薪8K-15K</li>
+    </ul>
+    <h3 class="sub-title gg">地域优势</h3>
+    <p>研学旅行产业在教育资源丰富的城市最具发展潜力。南京（东南大学、南京大学等高校云集）、北京（清华、北大等顶尖高校集中）、上海（复旦、交大等）、西安（交大、西工大等）和武汉（武大、华科等）是研学旅行的核心目的地城市。江苏作为教育大省，90余所高校的资源禀赋使其在研学市场具有天然优势。各地文旅部门也在积极推动研学基地建设，湖南、浙江、四川等省份的研学产业政策支持力度较大。</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>研学旅行是教育与文旅交叉的新兴赛道，适合对教育和旅游都有兴趣的学生。建议报考教育学或旅游管理专业，同时学习文化创意和项目管理知识。研学行业对实践经验要求较高，建议在校期间多参与课程设计、活动策划等实习项目。该行业门槛相对灵活，本科即可就业，但做出差异化产品需要深厚的文化底蕴和创新思维。随着"双减"后素质教育需求增长，研学行业前景广阔。</p>
+    </div>
+  </div>
+</div>
+
+</div>
+<script>
+function showIndex() {
+  document.getElementById('index-view').style.display = 'block';
+  document.querySelectorAll('.report-view').forEach(el => el.style.display = 'none');
+  window.scrollTo(0, 0);
+}
+function showReport(date) {
+  document.getElementById('index-view').style.display = 'none';
+  document.querySelectorAll('.report-view').forEach(el => el.style.display = 'none');
+  var target = document.getElementById('report-' + date);
+  if (target) { target.style.display = 'block'; window.scrollTo(0, 0); }
+}
+function scrollToSection(id) {
+  var el = document.getElementById(id);
+  if (el) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+}
+</script>
+</body>
+</html>
