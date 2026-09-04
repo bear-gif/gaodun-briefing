@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第19期 · 高顿升学 · 每日行业速览</title>
+<style>
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif; background: #f5f7fa; color: #1a1a2e; line-height: 1.7; }
+  .container { max-width: 960px; margin: 0 auto; padding: 30px 20px 60px; }
+  .report-header { background: #fff; border-radius: 14px; padding: 28px 32px; margin-bottom: 24px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+  .report-header .date-line { font-size: 20px; font-weight: 700; color: #1a1a2e; margin-bottom: 6px; }
+  .report-header .stats { font-size: 14px; color: #718096; margin-bottom: 16px; }
+  .report-header .stats span { display: inline-block; margin-right: 14px; }
+  .core-judgments { background: #f7fafc; border-left: 4px solid #4299e1; padding: 16px 20px; border-radius: 0 8px 8px 0; }
+  .core-judgments h3 { font-size: 15px; color: #2d3748; margin-bottom: 8px; }
+  .core-judgments ul { list-style: none; }
+  .core-judgments li { font-size: 14px; color: #4a5568; padding: 4px 0; padding-left: 18px; position: relative; }
+  .core-judgments li::before { content: "\25b8"; position: absolute; left: 0; color: #4299e1; font-weight: bold; }
+  .card { background: #fff; border-radius: 14px; padding: 28px 32px; margin-bottom: 20px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); border-top: 4px solid transparent; }
+  .card.science { border-top-color: #4299e1; }
+  .card.arts { border-top-color: #48bb78; }
+  .card-head { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; flex-wrap: wrap; }
+  .card-head h2 { font-size: 18px; font-weight: 700; color: #1a1a2e; flex: 1; min-width: 200px; }
+  .meta { display: flex; gap: 16px; font-size: 13px; color: #a0aec0; margin-bottom: 12px; flex-wrap: wrap; }
+  .content p, .content li { font-size: 15px; color: #4a5568; line-height: 1.8; }
+  .content ul { list-style: disc; padding-left: 20px; margin: 6px 0; }
+  .content li { margin: 4px 0; }
+  .sub-title { font-size: 15px; margin: 14px 0 6px; border-left: 3px solid #4299e1; padding-left: 10px; font-weight: 600; }
+  .sub-title.sc { color: #4299e1; border-color: #4299e1; }
+  .sub-title.gg { color: #48bb78; border-color: #48bb78; }
+  .tip-block { background: #fef3c7; border-radius: 8px; padding: 14px 18px; margin: 12px 0; }
+  .tip-block h3 { color: #92400e; font-size: 15px; margin: 0 0 8px; }
+  .tip-block p { color: #92400e; margin: 0; font-size: 14px; line-height: 1.9; }
+  @media print {
+    body.printing-report .container.report-view { padding: 0 8mm !important; margin: 0 auto !important; }
+    .print-watermark { display: block !important; margin: 0 0 4mm 0 !important; }
+    @page { margin: 10mm 18mm 10mm 18mm; size: auto; }
+    body { margin: 0 !important; padding: 0 !important; background: #fff !important; }
+    .quick-nav { display: none !important; }
+    .card { margin-bottom: 4px !important; padding: 10px 14px !important; page-break-inside: auto; }
+    .card .content > * { page-break-inside: avoid; }
+    [id^="section-"] { margin: 4px 0 2mm 0 !important; padding: 4px 8px !important; }
+    .report-header a, .report-header .date-line, .report-header .stats { display: none !important; }
+    body.printing-report #site-brand-header, body.printing-report #index-view, body.printing-report #watermark-view, body.printing-report .footer, body.printing-report .report-view { display: none !important; }
+    body.printing-report .report-view.print-target { display: block !important; }
+  }
+
+</style>
+</head>
+<body>
+<div class="container report-view print-target">
+  <div class="report-header">
+    <a href="javascript:void(0)" onclick="showIndex()" style="display:inline-block;margin-bottom:14px;font-size:14px;color:#4299e1;text-decoration:none;font-weight:500;cursor:pointer;">← 返回列表</a>
+    <div class="date-line">📅 第19期 · 高顿升学 · 每日行业速览</div>
+    <div class="stats">
+      <span>📊 资讯共 12 条</span>
+      <span>🔬 理工科 7 条</span>
+      <span>📚 文科 5 条</span>
+    </div>
+    <div class="core-judgments">
+      <h3>📌 今日要点速览</h3>
+      <ul>
+        <li>OpenAI发布GPT-6 Astra，号称"地球最强大模型"，宣布进入AGI时代，数学推理接近满分</li>
+        <li>特斯拉发布量产版Cybercab无人驾驶出租车，无方向盘无踏板，已投入商业运营</li>
+        <li>英伟达35亿美元投资联发科，绑定AI芯片合作，RTX Spark个人电脑10月上市</li>
+        <li>半导体行业进入"量价齐升"景气周期，德州仪器年内第三轮涨价，我国集成电路出口同比增99.5%</li>
+        <li>比亚迪半导体4D毫米波雷达芯片正式量产，基于自研4nm智驾芯片深度联调</li>
+        <li>美联储理事沃勒释放鸽派信号，9月加息概率从63%降至50%，美股三大指数暴涨</li>
+        <li>十部门联合印发促进中小企业发展"十五五"规划，设立国家中小企业发展基金二期</li>
+      </ul>
+    </div>
+  </div>
+
+  <div style="margin:20px 0 10px;padding:12px 20px;background:#fff;border-radius:10px;box-shadow:0 1px 3px rgba(0,0,0,0.04);display:flex;align-items:center;flex-wrap:wrap;">
+    <span style="font-size:14px;color:#718096;margin-right:12px;">快速跳转：</span>
+    <a href="javascript:void(0)" onclick="scrollToSection('section-science')" style="margin-right:20px;font-size:15px;color:#2b6cb0;text-decoration:none;font-weight:600;">🔬 理工科资讯</a>
+    <a href="javascript:void(0)" onclick="scrollToSection('section-arts')" style="margin-right:20px;font-size:15px;color:#276749;text-decoration:none;font-weight:600;">📚 文科资讯</a>
+  </div>
+
+  <div id="section-science" style="display:flex;align-items:center;gap:10px;margin:24px 0 18px;padding:12px 20px;background:linear-gradient(90deg,#ebf8ff,#fff);border-radius:10px;border-left:4px solid #4299e1;">
+    <span style="font-size:20px;">🔬</span>
+    <span style="font-size:17px;font-weight:700;color:#2b6cb0;">理工科资讯</span>
+    <span style="font-size:13px;color:#718096;margin-left:4px;">共 7 条</span>
+  </div>
+
+<div class="card science">
+  <div class="card-head">
+    <h2>OpenAI发布GPT-6 Astra，宣告"欢迎来到AGI时代"</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 财联社/凤凰网科技</span><span>🕐 2026-09-04</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>北京时间2026年9月4日凌晨，OpenAI正式发布新一代旗舰模型GPT-6 Astra。OpenAI称其为"目前全球最智能、且对齐程度最高的模型"，在计算机操作、网页浏览、软件工程、网络安全、科学研究等方面均达到当前最先进水平。数学推理测试FrontierMath Tier 4得分97.6%，ARC-AGI-3抽象推理从7.8%跃升至99.9%。该模型使用超过10万块GPU在得州Stargate基地完成训练，API定价为每百万输入Token 10美元、输出50美元，约为GPT-5.6 Sol的2.5倍。OpenAI总裁Greg Brockman称"欢迎进入AGI时代"。同时，CEO奥特曼首次明确表示公司"一定会做人形机器人"。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>GPT-6 Astra最大的突破在于Computer Use能力——可直接代替用户操作计算机与软件，独立完成编程、金融建模、制作演示文稿等长周期多步骤任务。这意味着AI从"回答问题"进化为"能干活"的智能体。网络安全方面，Astra在ExploitBench测试中达到100%得分，是首个达到OpenAI内部"关键"级安全门槛的模型。OpenAI同时宣布将自研人形机器人，世界模拟研究项目已演变为OpenAI Robotics。AI Agent时代加速到来，对软件工程、AI安全、计算机操作自动化等领域产生深远影响。</p>
+    <h3 class="sub-title sc">关联专业</h3>
+    <ul>
+      <li>人工智能 — 大模型架构设计、训练与推理优化</li>
+      <li>计算机科学与技术 — AI算法研发、软件工程与系统架构</li>
+      <li>软件工程 — AI Agent开发、工具链构建与系统优化</li>
+      <li>数据科学与大数据技术 — 海量数据训练与模型评估</li>
+    </ul>
+    <h3 class="sub-title sc">学历·岗位·薪资</h3>
+    <ul>
+      <li>本科（计算机/AI）→ AI应用开发工程师，月薪15K-25K</li>
+      <li>硕士（人工智能/计算机）→ 大模型算法工程师，年薪30万-55万（据猎聘数据）</li>
+      <li>博士（计算机科学/AI）→ AI研究科学家，年薪60万-120万</li>
+      <li>本科（软件工程）→ AI Agent开发工程师，月薪18K-30K</li>
+    </ul>
+    <h3 class="sub-title sc">地域优势</h3>
+    <p>AI大模型企业集中在北京（百度、字节跳动、智谱AI）、上海（商汤、月之暗面）、深圳（华为、腾讯）和杭州（阿里）。美国硅谷仍是全球AI创新中心，OpenAI总部设在旧金山。OpenAI在圣弗朗西斯科、纽约等地大量招聘，Software Engineer年薪中位数约28.9万美元。国内大模型算法工程师平均月薪约5.2万元，一线城市顶级岗位超10万元/月。</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>GPT-6的发布标志着AI从"对话工具"正式进入"能干活的智能体"时代。AI相关岗位需求同比增长超300%，在头部企业技术岗招聘中占比已突破45%。建议优先选择人工智能或计算机科学与技术专业，重点学习深度学习、自然语言处理和强化学习。该行业对学历要求较高，核心算法岗位普遍要求硕士及以上。本科生可从AI应用开发、Agent开发等方向切入。</p>
+    </div>
+  </div>
+</div>
+
+<div class="card science">
+  <div class="card-head">
+    <h2>特斯拉发布量产版Cybercab，全球首款无方向盘无人出租车投入运营</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 第一财经/美联社</span><span>🕐 2026-09-04</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>北京时间2026年9月4日凌晨，特斯拉在美国得州奥斯汀超级工厂正式发布量产版Cybercab无人驾驶出租车。该车完全取消方向盘、油门刹车踏板和外后视镜，采用金色外观、蝴蝶门设计，车内仅保留双座布局和21英寸交互中控屏。搭载HW4.0双芯片纯视觉自动驾驶方案，电池为约48kWh的4680大圆柱三元电池，单电机前驱219马力，整备质量仅1412kg。目前已有45辆Cybercab加入得州robotaxi车队，用户可通过特斯拉App叫车。消息发布当日，特斯拉股价收涨5.42%。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>Cybercab是原生L4级无人驾驶出租车，不对个人零售，仅面向车队运营。目标成本控制在3万美元以内，采用模块化拼装生产工艺追求大规模降本。这标志着自动驾驶行业从"技术验证"进入"商业化运营"新阶段。特斯拉面临Waymo等竞争对手的挑战，后者在旧金山等城市已实现更广泛的无人驾驶服务覆盖。纯视觉方案与激光雷达方案的路线之争仍是行业焦点。国内方面，百度萝卜快跑等也在加速推进，但现行法规要求车辆保留人工操控装置。</p>
+    <h3 class="sub-title sc">关联专业</h3>
+    <ul>
+      <li>车辆工程 — 自动驾驶整车平台设计与线控底盘</li>
+      <li>自动化 — 自动驾驶感知融合与决策规划算法</li>
+      <li>计算机科学与技术 — 视觉感知算法与车载计算平台</li>
+      <li>电子信息工程 — 车载传感器与嵌入式系统开发</li>
+    </ul>
+    <h3 class="sub-title sc">学历·岗位·薪资</h3>
+    <ul>
+      <li>本科（车辆/自动化）→ 自动驾驶测试工程师，月薪12K-20K</li>
+      <li>硕士（自动化/计算机）→ 感知算法工程师，年薪25万-45万</li>
+      <li>博士（计算机/控制）→ 自动驾驶决策算法专家，年薪40万-80万</li>
+      <li>本科（电子信息）→ 车载嵌入式开发工程师，月薪10K-18K</li>
+    </ul>
+    <h3 class="sub-title sc">地域优势</h3>
+    <p>全球自动驾驶产业主要集中在美国硅谷（特斯拉、Waymo）、北京（百度Apollo、小马智行）、上海（上汽、Momenta）和深圳（华为、元戎启行）。奥斯汀因得州政策友好成为特斯拉Robotaxi首发城市。国内北京亦庄、上海嘉定、深圳坪山等地已开放无人驾驶测试和商业化运营区域。武汉也是百度萝卜快跑的重要运营城市。</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>Cybercab的量产发布标志着自动驾驶从概念走向现实，行业进入爆发期。建议报考自动化或计算机科学与技术专业，重点学习计算机视觉、深度学习和控制算法。特斯拉采用纯视觉方案，对视觉感知算法人才需求极大。国内企业多采用激光雷达+视觉融合方案，两种路线都有就业前景。该行业对学历要求较高，核心算法岗位普遍要求硕士及以上，但测试、运维类岗位本科即可入行。</p>
+    </div>
+  </div>
+</div>
+
+<div class="card science">
+  <div class="card-head">
+    <h2>英伟达35亿美元投资联发科，RTX Spark个人电脑10月上市颠覆PC格局</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 综合资讯</span><span>🕐 2026-09-04</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>英伟达宣布通过可转债方式向联发科投资35亿美元，双方将在AI基础设施、PC芯片、汽车三大领域深度绑定合作。与此同时，英伟达在IFA 2026上宣布RTX Spark Windows个人电脑将于2026年10月正式上市。RTX Spark是英伟达首款面向消费级Windows PC的全功能SoC，采用台积电3nm工艺，与联发科联合定制20核ARM CPU，搭载Blackwell架构GPU，最高支持128GB统一内存，本地AI算力可达1Petaflop，可离线运行1200亿参数大模型。华硕、戴尔、惠普、联想、微软Surface、微星六大OEM首批入局，起售价1.7万元。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>RTX Spark被视为冲击传统Wintel四十年格局的重量级产品，采用ARM架构打破X86垄断。统一内存架构彻底解决传统PC CPU内存与独显显存物理隔离带来的数据拷贝损耗，本地运行大模型效率远超同价位X86台式机。英伟达还发布NVIDIA PAIR工具，可在多台PC之间智能分配AI推理任务。微软Windows针对AI智能体专门优化底层安全架构，形成Windows+英伟达SoC+Copilot的全新软硬件组合。这标志着PC产业从普通计算工具向本地AI智能体终端的范式切换。</p>
+    <h3 class="sub-title sc">关联专业</h3>
+    <ul>
+      <li>集成电路设计与集成系统 — AI芯片架构设计与SoC集成</li>
+      <li>计算机科学与技术 — AI PC软件生态与系统优化</li>
+      <li>电子信息工程 — ARM架构处理器设计与验证</li>
+      <li>微电子科学与工程 — 先进制程工艺与芯片制造</li>
+    </ul>
+    <h3 class="sub-title sc">学历·岗位·薪资</h3>
+    <ul>
+      <li>本科（电子/计算机）→ 芯片验证工程师，月薪12K-20K</li>
+      <li>硕士（集成电路/电子）→ SoC设计工程师，年薪25万-45万</li>
+      <li>博士（微电子/计算机）→ 芯片架构师，年薪50万-100万</li>
+      <li>本科（计算机）→ AI PC应用开发工程师，月薪15K-25K</li>
+    </ul>
+    <h3 class="sub-title sc">地域优势</h3>
+    <p>AI芯片设计企业集中在美国硅谷（英伟达、高通）、台湾（联发科）、大陆（上海张江、北京中关村、深圳）。英伟达全球总部在加州圣克拉拉，研发中心遍布全球。国内半导体产业链主要集中在长三角（上海、无锡、南京）和珠三角（深圳、广州）。ARM架构PC生态的发展将带动ODM代工（广达、仁宝等在长三角和重庆）、高带宽存储、PCB散热等产业链环节。</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>英伟达35亿美元投资联发科、RTX Spark的发布，标志着AI芯片赛道进入"巨头绑定"的新阶段。芯片设计和AI系统方向人才需求旺盛。建议报考集成电路设计与集成系统或计算机科学与技术专业。ARM架构在PC领域的突破为学生提供了新的就业方向。芯片行业对学历要求较高，核心设计岗位普遍要求硕士及以上。产业链上下游（从芯片设计到整机制造）均有丰富就业机会。</p>
+    </div>
+  </div>
+</div>
+
+<div class="card science">
+  <div class="card-head">
+    <h2>半导体行业掀起涨价潮，我国集成电路出口同比增99.5%创新高</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 证券时报/新华网</span><span>🕐 2026-09-04</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>全球半导体行业进入"量价齐升"景气周期。德州仪器9月1日发布年内第三轮涨价预告函，覆盖多款模拟芯片产品。意法半导体8月23日执行年内第三轮涨价，亚德诺9月13日起执行第二轮涨价，卓胜微自9月1日起上调全系列RF射频产品价格。与此同时，海关总署数据显示，2026年前7个月我国集成电路出口总额达2160亿美元，同比增长99.5%，已超2025年全年2019亿美元的出口总额。存储器占芯片产品出口总额的70.1%，同比增速221.7%。长鑫科技半年报表现亮眼，营收1503亿元暴增873%，全球DRAM份额升至7.67%列第四。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>在AI高速发展推动下，半导体行业从模拟芯片到存储芯片全面进入景气上行周期。博通2026财年Q3单季收入296亿美元，同比增长86%，AI半导体收入同比暴涨221%。WSTS预计2027年全球模拟芯片市场将突破1000亿美元。国内方面，Omdia大幅上调2026年中国半导体行业增长预期至92.9%，预计全年市场规模达8120.8亿美元。长鑫存储DDR4大规模量产、长江存储232层TLC已量产，国产替代加速。手机厂商因上游存储芯片价格高涨而集体调价，多款机型涨幅500-1000元。</p>
+    <h3 class="sub-title sc">关联专业</h3>
+    <ul>
+      <li>集成电路设计与集成系统 — 模拟芯片与存储芯片设计</li>
+      <li>微电子科学与工程 — 先进制程工艺与半导体器件</li>
+      <li>电子科学与技术 — 半导体器件物理与工艺研发</li>
+      <li>材料科学与工程 — 半导体材料（光刻胶、靶材、电子气体）</li>
+    </ul>
+    <h3 class="sub-title sc">学历·岗位·薪资</h3>
+    <ul>
+      <li>本科（微电子/集成电路）→ 芯片验证工程师，月薪12K-20K</li>
+      <li>硕士（集成电路/电子）→ 模拟芯片设计工程师，年薪25万-50万（据猎聘数据）</li>
+      <li>博士（微电子/材料）→ 工艺研发专家，年薪40万-80万</li>
+      <li>本科（材料/化工）→ 电子材料工程师，月薪10K-18K</li>
+    </ul>
+    <h3 class="sub-title sc">地域优势</h3>
+    <p>国内半导体产业集中在上海（张江，中芯国际、华虹）、无锡（SK海力士中国）、合肥（长鑫存储）、武汉（长江存储）、深圳（华为海思）。北京聚集北方华创等设备龙头。长三角形成从设计、制造到封测的完整产业链。创业板芯片指数（970096）9月4日正式发布，选取50只芯片相关创业板股票，为投资者提供新的标的。</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>半导体行业正经历AI驱动的超级景气周期，"量价齐升"态势明确。模拟芯片、存储芯片、功率半导体等细分赛道都有很好的就业前景。建议报考集成电路设计与集成系统或微电子科学与工程专业。该行业人才缺口巨大，硕士及以上学历是主流门槛。值得关注的是，创业板芯片指数正式发布，标志着资本市场对半导体赛道的持续看好。半导体行业前期学习曲线较陡，但职业稳定性和薪资回报都非常可观。</p>
+    </div>
+  </div>
+</div>
+
+<div class="card science">
+  <div class="card-head">
+    <h2>比亚迪量产4D毫米波雷达芯片，补齐智驾感知关键一环</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 综合资讯</span><span>🕐 2026-09-04</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>2026年9月1日，比亚迪半导体宣布，以"璇玑A3"为算力中心的新一代卫星架构4D毫米波雷达芯片正式进入量产阶段。该芯片已完成与自研4nm车规级智驾芯片"璇玑A3"的深度联调适配。芯片基于28nm成熟车规工艺，单芯片集成8T8R（8发8收），核心性能包括：400米以上超远距离稳定探测、0.8°水平角度区分能力、0.05米泊车级距离分辨率。射频性能方面，单通道发射功率达13.5dBm，接收噪声系数低至11dB。芯片按ISO 26262 ASIL B功能安全标准设计，满足AEC-Q100车规可靠性要求。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>4D毫米波雷达在传统3D（距离、速度、水平角度）基础上增加了高度维度，配合高分辨率点云输出，能在城市NOA、自动泊车等场景提供更完整的感知冗余。比亚迪此次量产标志着国内车企在车规级4D毫米波雷达芯片领域实现突破。国际方面，德州仪器AWR2188、恩智浦TEF8388、英飞凌RASIC™等也已推出新一代产品。4D毫米波雷达正成为高阶智驾的重要传感器补充，与激光雷达形成"高低搭配"的感知方案。</p>
+    <h3 class="sub-title sc">关联专业</h3>
+    <ul>
+      <li>电子信息工程 — 毫米波雷达信号处理与射频电路设计</li>
+      <li>集成电路设计与集成系统 — 车规级芯片设计与验证</li>
+      <li>自动化 — 传感器融合与智能驾驶决策算法</li>
+      <li>车辆工程 — 智驾系统集成与整车适配</li>
+    </ul>
+    <h3 class="sub-title sc">学历·岗位·薪资</h3>
+    <ul>
+      <li>本科（电子信息/自动化）→ 雷达信号处理工程师，月薪12K-22K</li>
+      <li>硕士（电子信息/集成电路）→ 车规芯片设计工程师，年薪22万-40万</li>
+      <li>博士（电子/通信）→ 射频芯片架构师，年薪35万-60万</li>
+      <li>本科（车辆工程）→ 智驾系统集成工程师，月薪10K-18K</li>
+    </ul>
+    <h3 class="sub-title sc">地域优势</h3>
+    <p>比亚迪总部位于深圳，在深圳、西安、长沙等地设有研发中心。4D毫米波雷达产业链集中在深圳（比亚迪半导体）、上海（加特兰微电子）、南京、成都等地。智能驾驶研发团队主要分布在北京、上海、深圳和杭州。长三角和珠三角在汽车电子、传感器芯片等细分领域具有显著优势。</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>4D毫米波雷达是智能驾驶感知层的关键技术方向，比亚迪的量产突破代表国产替代加速。建议报考电子信息工程或集成电路设计与集成系统专业，重点学习射频电路、信号处理和嵌入式系统。车规级芯片对可靠性和功能安全要求极高，需要扎实的硬件基础。该领域人才紧缺，硕士学历是核心研发岗位的门槛，但测试和应用类岗位本科即可入行。</p>
+    </div>
+  </div>
+</div>
+
+<div class="card science">
+  <div class="card-head">
+    <h2>世界首例：猪肾帮助肾衰竭患者摆脱透析9个月，成功等到人体供肾</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 天行数据·科学探索</span><span>🕐 2026-09-04</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>据IT之家等媒体报道，世界首例异种肾移植取得重大突破：一名肾衰竭患者接受基因编辑猪肾移植后，成功摆脱透析长达9个月，最终顺利等到合适的人体供肾并完成二次移植。这一案例证明了基因编辑猪器官在人体内存活并发挥功能的可行性，为异种器官移植领域注入重大信心。此前，美国已有多例基因编辑猪肾和猪心移植人体的临床试验，但此次"桥接移植"的成功尚属全球首例。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>全球器官短缺问题严峻，仅中国每年就有约30万患者需要器官移植，但实际完成移植手术仅约2万例。异种器官移植被视为解决器官短缺的终极方案。基因编辑技术（CRISPR-Cas9等）可敲除猪器官中引起人体免疫排斥的关键基因，同时插入人类兼容性基因。除肾脏外，猪心脏、猪肝脏的异种移植也在积极推进。2025年全球异种移植市场规模约5亿美元，预计2030年将增长至50亿美元。生物医药企业如United Therapeutics、eGenesis等在该领域处于领先地位。</p>
+    <h3 class="sub-title sc">关联专业</h3>
+    <ul>
+      <li>生物医学工程 — 异种器官免疫兼容性研究与生物材料</li>
+      <li>临床医学 — 器官移植外科与术后免疫管理</li>
+      <li>生物技术 — 基因编辑技术（CRISPR）在异种移植中的应用</li>
+      <li>基础医学 — 免疫排斥机制与耐受诱导研究</li>
+    </ul>
+    <h3 class="sub-title sc">学历·岗位·薪资</h3>
+    <ul>
+      <li>本科（生物医学工程）→ 医疗器械研发工程师，月薪8K-15K</li>
+      <li>硕士（生物技术/基础医学）→ 基因编辑研究员，年薪15万-28万</li>
+      <li>博士（生物医学/免疫学）→ 异种移植研究科学家，年薪30万-60万</li>
+      <li>博士（临床医学）→ 器官移植外科医师，年薪30万-80万</li>
+    </ul>
+    <h3 class="sub-title sc">地域优势</h3>
+    <p>国内异种移植研究集中在成都（四川大学华西医院，全球首例猪-人脑组织移植）、北京（中国医学科学院）、上海（上海交通大学医学院）和广州（中山大学）。美国在该领域最为领先，马里兰大学（猪心移植）、阿拉巴马大学（猪肾移植）是主要研究中心。波士顿和旧金山湾区聚集了大量生物技术公司。</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>异种器官移植是生物医学最前沿的领域之一，被称为"医学圣杯"。建议报考生物医学工程或生物技术专业，重点学习基因编辑、免疫学和细胞生物学。该领域对学历要求极高，核心研究岗位通常需要博士学位。国内异种移植研究近年发展迅速，四川大学华西医院等已达到国际领先水平。该方向兼具科学研究和临床应用双重属性，适合对生命科学有浓厚兴趣的学生。</p>
+    </div>
+  </div>
+</div>
+
+<div class="card science">
+  <div class="card-head">
+    <h2>全球首个太空算力云实现常态化在轨服务，算力从地面打到太空</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 科技日报/综合资讯</span><span>🕐 2026-09-04</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>据9月4日科技日报早间报道，由北京邮电大学牵头建设的全球首个对外提供在轨试验服务的太空算力云，已正式常态化提供在轨算力服务。该平台依托16颗低轨卫星，打通了卫星平台、太空服务器、地面站与地面数据中心之间的全链路，大模型推理能效比达到10 Tokens/J。目前已支撑在轨大数据计算、6G通信、分布式存储等重点场景的在轨试验，累计完成数百次太空算力调用，服务用户超过100家。此外，光本位完成数十亿元融资，估值近200亿，光计算赛道持续升温。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>太空算力是"天地一体化"信息基础设施的核心组成。将AI计算能力从地面延伸到太空，用户可通过平台实现覆盖任务申请、部署、运行、监测和结果回传的全生命周期算力服务。随着6G通信技术研发加速，天地一体化网络将成为下一代通信的核心架构。太空算力在卫星遥感实时处理、太空制造、深空探测等场景具有不可替代的价值。同时，智神星一号火箭首飞成功（90%部件3D打印+可复用设计），商业航天持续加速。算力基础设施正从地面向太空延伸，形成新的产业增长极。</p>
+    <h3 class="sub-title sc">关联专业</h3>
+    <ul>
+      <li>通信工程 — 天地一体化网络与6G通信协议设计</li>
+      <li>航天工程 — 卫星平台设计与在轨服务系统</li>
+      <li>计算机科学与技术 — 星载计算与边缘AI推理</li>
+      <li>网络空间安全 — 太空信息安全与数据加密</li>
+    </ul>
+    <h3 class="sub-title sc">学历·岗位·薪资</h3>
+    <ul>
+      <li>本科（通信/航天）→ 卫星通信工程师，月薪10K-18K</li>
+      <li>硕士（通信/计算机）→ 天地一体化网络工程师，年薪18万-35万</li>
+      <li>博士（航天/通信）→ 太空算力系统架构师，年薪30万-60万</li>
+      <li>本科（计算机）→ 星载计算平台开发工程师，月薪12K-22K</li>
+    </ul>
+    <h3 class="sub-title sc">地域优势</h3>
+    <p>航天和太空算力产业主要集中在北京（航天科技集团、航天科工集团总部、北邮）、西安（航天五院西安分院）、上海（航天八院）和武汉（国家航天产业基地）。星河动力（智神星一号）总部位于北京。深圳在卫星通信终端制造、杭州在卫星互联网应用方面也有较好基础。随着商业航天崛起，合肥、成都、武汉等地也在积极布局。</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>太空算力是航天与通信的交叉前沿领域，兼具国家战略需求和商业潜力。建议报考通信工程或航天工程专业，重点学习卫星通信、信号处理和嵌入式系统。就业以科研院所和国企为主（航天科技、航天科工、中国星网等），稳定性高。商业航天赛道（银河航天、星河动力、天仪研究院等）也在快速扩张。该领域对数学和物理基础要求较高，硕士学历是多数核心岗位的门槛。</p>
+    </div>
+  </div>
+</div>
+
+  <div id="section-arts" style="display:flex;align-items:center;gap:10px;margin:30px 0 18px;padding:12px 20px;background:linear-gradient(90deg,#f0fff4,#fff);border-radius:10px;border-left:4px solid #48bb78;">
+    <span style="font-size:20px;">📚</span>
+    <span style="font-size:17px;font-weight:700;color:#276749;">文科资讯</span>
+    <span style="font-size:13px;color:#718096;margin-left:4px;">共 5 条</span>
+  </div>
+
+<div class="card arts">
+  <div class="card-head">
+    <h2>美联储理事沃勒释放鸽派信号，美股三大指数暴涨</h2>
+    <span style="background:#f0fff4;color:#48bb78;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">文科</span>
+  </div>
+  <div class="meta"><span>📰 澎湃新闻/新浪财经</span><span>🕐 2026-09-04</span></div>
+  <div class="content">
+    <h3 class="sub-title gg">事件背景</h3>
+    <p>当地时间9月3日，美联储理事克里斯托弗·沃勒释放明确鸽派信号：如果后续通胀数据持续向2%的政策目标回落，他倾向于在9月15-16日议息会议上支持维持利率不变。沃勒指出，三个月核心通胀率已从今年2月的4.76%降至7月的3.05%，"这是一个相当大的改善"。当前美联储联邦基金利率目标区间为3.50%-3.75%。受此影响，市场9月加息概率从63%迅速降至50.4%，美股三大指数暴涨——道指飙升624点涨1.18%，标普500涨1.06%，纳指涨1.40%。现货黄金大涨约2.75%至4508美元/盎司，比特币突破82000美元。</p>
+    <h3 class="sub-title gg">行业简述</h3>
+    <p>沃勒的表态与此前美联储主席沃什在杰克逊霍尔会议上的鹰派讲话形成鲜明对比，市场最终"站队"鸽派。当前全球金融市场面临多重不确定性：美伊冲突推高油价（WTI突破92美元/桶）、美国债务首破40万亿美元、科技巨头AI军备竞赛引发融资危机（亚马逊、谷歌自由现金流转负）。但通胀降温趋势为美联储维持利率提供空间。对金融从业者而言，利率政策分析、风险管理、量化交易等方向的人才需求持续增长。全球投资者美元对冲比率触及十年低点（41%），一旦市场情绪逆转，可能触发约2300亿美元抛售压力。</p>
+    <h3 class="sub-title gg">关联专业</h3>
+    <ul>
+      <li>金融学 — 货币政策分析与金融市场风险管理</li>
+      <li>经济学 — 宏观经济研究与通胀趋势预测</li>
+      <li>金融工程 — 量化交易策略开发与衍生品定价</li>
+      <li>统计学 — 经济数据分析与风险模型构建</li>
+    </ul>
+    <h3 class="sub-title gg">学历·岗位·薪资</h3>
+    <ul>
+      <li>本科（金融学/经济学）→ 银行客户经理/投资顾问，月薪8K-15K</li>
+      <li>硕士（金融/金融工程）→ 量化分析师/风控分析师，年薪20万-40万</li>
+      <li>博士（经济学/金融学）→ 宏观研究员/策略分析师，年薪30万-60万</li>
+      <li>硕士（统计学/数学）→ 数据分析师（金融方向），年薪18万-35万</li>
+    </ul>
+    <h3 class="sub-title gg">地域优势</h3>
+    <p>国内金融行业集中在上海（陆家嘴金融中心）、北京（金融街、监管机构）、深圳（深交所、前海）和杭州（金融科技）。美联储政策分析岗位主要集中在华盛顿、纽约。全球金融中心还包括伦敦、新加坡、香港。量化交易岗位在上海、北京、深圳需求最大，头部量化私募如幻方、九坤、明汯等均设在上述城市。</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>美联储政策对全球资本市场影响深远，货币政策分析是金融学核心方向。建议报考金融学或经济学专业，重点学习宏观经济学、货币银行学和计量经济学。量化方向需要较强的数学和编程能力（Python、R），建议辅修统计学或计算机科学。金融分析师（CFA）、金融风险管理师（FRM）等证书是重要加分项。该行业薪资水平较高，但竞争也很激烈，硕士学历是头部机构的门槛。</p>
+    </div>
+  </div>
+</div>
+
+<div class="card arts">
+  <div class="card-head">
+    <h2>十部门联合印发促进中小企业发展"十五五"规划</h2>
+    <span style="background:#f0fff4;color:#48bb78;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">文科</span>
+  </div>
+  <div class="meta"><span>📰 新华社/工信部</span><span>🕐 2026-09-04</span></div>
+  <div class="content">
+    <h3 class="sub-title gg">事件背景</h3>
+    <p>9月3日，工信部、国家发改委、科技部、财政部、人社部、商务部、央行、市场监管总局、金融监管总局、证监会等十部门联合印发《促进中小企业发展"十五五"规划》。规划提出到2030年：规模以上中小企业人均营业收入累计增长15%左右；规模以上工业中小企业研发费用年均增长8%以上；专精特新"小巨人"企业达到2.2万家；国家级中小企业特色产业集群达到600个。设立国家中小企业发展基金二期，带动社会资本"投早、投小、投长期、投硬科技"。围绕新能源、新材料、机器人等新兴产业和量子科技、脑机接口、具身智能等未来产业探索应用场景。</p>
+    <h3 class="sub-title gg">行业简述</h3>
+    <p>我国中小企业数量超过6300万户，占经营主体95%以上，是就业和创新的重要载体。"十四五"期间，规模以上中小企业营业收入、资产总额年均分别增长5.7%、6.6%，专精特新"小巨人"企业平均研发投入强度达7%。"十五五"规划的核心转变是从规模扩容转向质量跃升，从普惠性政策兜底转向问题导向精准施策。规划特别强调加强中小企业上市培育力度，促进股权融资常态化对接，大力发展创业投资。这对从事企业管理咨询、创业投资、产业政策研究等领域的人才提出了新的需求。</p>
+    <h3 class="sub-title gg">关联专业</h3>
+    <ul>
+      <li>工商管理 — 中小企业经营管理与战略规划</li>
+      <li>投资学 — 创业投资与股权融资管理</li>
+      <li>公共管理 — 产业政策制定与营商环境优化</li>
+      <li>经济学 — 产业经济分析与区域经济发展</li>
+    </ul>
+    <h3 class="sub-title gg">学历·岗位·薪资</h3>
+    <ul>
+      <li>本科（工商管理）→ 企业管理咨询师，月薪8K-15K</li>
+      <li>硕士（投资学/金融）→ 创投经理/PE分析师，年薪20万-40万</li>
+      <li>本科（公共管理）→ 政策研究员/产业分析师，月薪7K-14K</li>
+      <li>硕士（经济学/公共政策）→ 产业政策顾问，年薪15万-30万</li>
+    </ul>
+    <h3 class="sub-title gg">地域优势</h3>
+    <p>中小企业最活跃的地区集中在长三角（上海、苏州、杭州）、珠三角（深圳、广州、东莞）、北京中关村和成都高新区。创投机构主要分布在北京（中关村创投）、上海（张江）、深圳（南山）和杭州。国家级中小企业特色产业集群已覆盖全国多个城市，合肥（新能源汽车）、武汉（光电子）、南京（软件）等都是重要节点。</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>"十五五"规划为中小企业发展提供了明确的"施工图"，特别强调"投早、投小、投硬科技"。创业投资、企业管理咨询等领域将迎来新机遇。建议报考工商管理或投资学专业，同时关注硬科技领域的产业知识。创投行业需要"懂技术+懂商业"的复合型人才，理工科背景+MBA是很好的组合。政策研究和产业分析方向适合公共管理或经济学专业的学生。专精特新企业是未来重点培育方向，相关服务领域就业空间广阔。</p>
+    </div>
+  </div>
+</div>
+
+<div class="card arts">
+  <div class="card-head">
+    <h2>万斯呼吁美联储降息，30年期房贷利率逼近7%加剧住房危机</h2>
+    <span style="background:#f0fff4;color:#48bb78;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">文科</span>
+  </div>
+  <div class="meta"><span>📰 中国金融信息网</span><span>🕐 2026-09-04</span></div>
+  <div class="content">
+    <h3 class="sub-title gg">事件背景</h3>
+    <p>美国副总统万斯9月3日公开呼吁美联储降息，称根据近期通胀数据降息"适当且负责任"，旨在改善住房负担能力。此番表态正值美国30年期固定抵押贷款利率升至6.71%、逼近7%关口，10年期美债收益率一度触及4.82%。高利率环境下，美国住房可负担性降至历史低点，首次购房者面临巨大压力。与此同时，全球主要央行呈现分化态势：日本央行倾向于9月加息25个基点，英国央行主张及时加息遏制通胀，澳洲联储则启动代币化结算意见征询。</p>
+    <h3 class="sub-title gg">行业简述</h3>
+    <p>全球房地产市场的核心矛盾在于利率政策与住房需求的博弈。美国房贷利率居高不下主要受四重因素影响：战争推动能源价格上涨、美国债务首破40万亿美元引发财政可持续性担忧、美联储放弃前瞻指引抬升市场风险溢价、AI建设热潮催生大规模债券发行。国内方面，"六张网"建设（交通、水利、能源、信息、物流、新型基础设施）按下快速键，重大项目建设加速推进。房地产行业正处于转型期，从开发模式向运营模式转变，对房地产金融、资产管理和城市更新等领域的人才需求持续增长。</p>
+    <h3 class="sub-title gg">关联专业</h3>
+    <ul>
+      <li>金融学（房地产金融方向）— 房地产证券化与住房金融产品设计</li>
+      <li>经济学 — 宏观经济分析与利率政策研究</li>
+      <li>工程管理 — 城市更新项目管理与基建投资评估</li>
+      <li>会计学 — 房地产企业财务分析与审计</li>
+    </ul>
+    <h3 class="sub-title gg">学历·岗位·薪资</h3>
+    <ul>
+      <li>本科（金融学/会计学）→ 银行信贷经理/房地产分析师，月薪8K-15K</li>
+      <li>硕士（房地产金融/经济学）→ 房地产基金经理/REITs分析师，年薪20万-40万</li>
+      <li>本科（工程管理）→ 基建项目管理工程师，月薪10K-18K</li>
+      <li>硕士（金融/经济学）→ 宏观策略分析师，年薪25万-50万</li>
+    </ul>
+    <h3 class="sub-title gg">地域优势</h3>
+    <p>国内房地产金融机构集中在上海（陆家嘴）、北京（金融街）、深圳（前海）。"六张网"建设推动基建投资，央企和大型建筑企业总部集中在北京、上海。房地产科技（PropTech）企业集中在深圳、杭州。城市更新项目在广州、上海、成都等城市最为活跃。海外方面，美国房地产市场研究岗位集中在纽约、洛杉矶、迈阿密。</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>全球房地产市场正处于利率高企与转型发展的关键期。建议报考金融学（房地产金融方向）或经济学专业，重点学习金融市场、投资学和宏观经济分析。REITs（房地产投资信托基金）是国内新兴方向，相关人才稀缺。"六张网"建设为工程管理专业提供了大量就业机会。房地产行业的数字化转型（PropTech）也为计算机+金融复合背景的学生提供了新方向。</p>
+    </div>
+  </div>
+</div>
+
+<div class="card arts">
+  <div class="card-head">
+    <h2>创业板芯片指数正式发布，半导体板块迎新投资标的</h2>
+    <span style="background:#f0fff4;color:#48bb78;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">文科</span>
+  </div>
+  <div class="meta"><span>📰 财联社/深交所</span><span>🕐 2026-09-04</span></div>
+  <div class="content">
+    <h3 class="sub-title gg">事件背景</h3>
+    <p>9月4日，深圳证券信息有限公司正式发布创业板芯片指数（代码970096）。该指数在公司业务涉及半导体材料和设备、芯片设计、芯片制造、芯片封装和测试等芯片相关领域的创业板股票中，选取最近半年日均总市值排名前50名作为指数样本。与此同时，长江存储控股股份有限公司科创板IPO审核状态变更为"已问询"，模拟芯片大厂燧原科技中签号出炉（共20657个）。半导体板块在资本市场持续升温。</p>
+    <h3 class="sub-title gg">行业简述</h3>
+    <p>创业板芯片指数的发布为投资者提供了聚焦创业板半导体企业的标准化工具。当前半导体行业处于"量价齐升"景气周期，资本市场对半导体赛道热情高涨。长江存储IPO推进标志着国产存储芯片企业加速登陆资本市场。燧原科技作为AI芯片新贵的上市也备受瞩目。从投资角度看，半导体指数基金、ETF等产品为普通投资者参与行业发展提供了便利。对金融从业者而言，半导体行业研究、科技股投资分析等方向的专业人才需求旺盛。中际旭创连续3日实施股份回购，回购金额超8亿元，反映光模块行业对自身发展的信心。</p>
+    <h3 class="sub-title gg">关联专业</h3>
+    <ul>
+      <li>金融学（投资方向）— 科技股投资分析与行业研究</li>
+      <li>金融工程 — 指数基金设计与量化投资策略</li>
+      <li>经济学 — 产业经济与资本市场研究</li>
+      <li>会计学 — 科技企业财务分析与估值</li>
+    </ul>
+    <h3 class="sub-title gg">学历·岗位·薪资</h3>
+    <ul>
+      <li>本科（金融学/会计学）→ 券商行业研究员（助理），月薪10K-18K</li>
+      <li>硕士（金融/金融工程）→ 半导体行业分析师/基金经理助理，年薪20万-40万</li>
+      <li>博士（金融/经济学）→ 首席策略分析师，年薪40万-80万</li>
+      <li>本科（金融工程）→ 指数产品运营专员，月薪8K-15K</li>
+    </ul>
+    <h3 class="sub-title gg">地域优势</h3>
+    <p>券商和基金公司集中在上海（陆家嘴）、北京（金融街）、深圳（福田）和广州。深圳证券信息有限公司位于深圳，依托深交所开展指数编制业务。半导体行业研究分析师需要同时具备金融和科技背景，在上海、北京、深圳的头部券商（中金、中信、华泰等）需求最大。量化投资岗位在上海和深圳最为集中。</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>创业板芯片指数的发布体现了资本市场对半导体赛道的重视。科技行业研究是金融领域的高薪方向，但需要"懂金融+懂技术"的复合能力。建议报考金融学或金融工程专业，同时选修半导体或计算机相关课程。CFA（特许金融分析师）是行业研究的重要证书。半导体行业分析师需要了解芯片设计、制造、封测等全产业链知识。该方向对学历要求较高，头部券商普遍要求硕士及以上学历，且偏好"理工科本科+金融硕士"的复合背景。</p>
+    </div>
+  </div>
+</div>
+
+<div class="card arts">
+  <div class="card-head">
+    <h2>"六张网"建设按下快速键，新型基础设施投资加速推进</h2>
+    <span style="background:#f0fff4;color:#48bb78;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">文科</span>
+  </div>
+  <div class="meta"><span>📰 中国金融信息网</span><span>🕐 2026-09-04</span></div>
+  <div class="content">
+    <h3 class="sub-title gg">事件背景</h3>
+    <p>据中国金融信息网报道，随着一系列协调推进会议相继召开、协同机制加快建立、相关专项实施方案陆续落地，"六张网"建设呈现加速之势。"六张网"指交通网、水利网、能源网、信息网、物流网和新型基础设施网，是当前国家稳投资、促增长的重要抓手。同日发布的"支持举措密集落地"消息显示，一个个重大项目渐次推进。叠加十部门印发的促进中小企业发展"十五五"规划，政策组合拳正在为经济高质量发展注入新动力。</p>
+    <h3 class="sub-title gg">行业简述</h3>
+    <p>"六张网"建设涵盖了传统基建和新基建两大方向，是"十五五"时期重大基础设施建设的核心框架。交通网方面，通苏嘉甬高铁杭州湾大桥主塔封顶（世界最长高铁跨海大桥）；能源网方面，"以电强算、以算优电"的算电协同成为数字经济底座；信息网方面，5G-A和6G技术研发加速推进。这些重大项目的推进对工程管理、项目投融资、政策咨询等领域的人才需求形成强劲拉动。据估算，"十五五"时期基建投资规模将超过数十万亿元，带动上下游产业链数百万就业岗位。</p>
+    <h3 class="sub-title gg">关联专业</h3>
+    <ul>
+      <li>工程管理 — 重大基础设施项目管理与投融资</li>
+      <li>公共管理 — 基础设施规划与政策协调</li>
+      <li>经济学 — 基础设施投资的经济效应分析</li>
+      <li>土木工程 — 交通、水利等工程建设技术</li>
+    </ul>
+    <h3 class="sub-title gg">学历·岗位·薪资</h3>
+    <ul>
+      <li>本科（工程管理/土木工程）→ 基建项目工程师，月薪8K-15K</li>
+      <li>硕士（工程管理/公共管理）→ 基建投资分析师/项目经理，年薪15万-30万</li>
+      <li>本科（经济学）→ 基础设施政策研究员，月薪7K-14K</li>
+      <li>硕士（经济学/金融学）→ PPP项目融资顾问，年薪20万-40万</li>
+    </ul>
+    <h3 class="sub-title gg">地域优势</h3>
+    <p>"六张网"建设是全国性工程，但重点项目集中在东部沿海和经济发达地区。交通网方面，长三角（通苏嘉甬高铁）、粤港澳（深中通道后续工程）、京津冀（雄安新区建设）是重点区域。新型基础设施方面，"东数西算"工程推动贵州、内蒙古、甘肃等西部地区数据中心建设。央企总部集中在北京，大型工程咨询公司在上海、广州、深圳较为集中。</p>
+    <div class="tip-block">
+      <h3>💡 报考小贴士</h3>
+      <p>"六张网"建设代表国家基础设施投资的大方向，对工程管理、公共管理等专业学生是重大利好。建议报考工程管理专业，同时学习项目管理和投融资知识。新型基础设施（数据中心、5G基站、充电桩等）方向为传统土木工程专业提供了转型机会。PPP（政府和社会资本合作）模式在基建领域广泛应用，需要既懂工程又懂金融的复合型人才。该领域就业稳定性高，央企和国企是主要雇主。</p>
+    </div>
+  </div>
+</div>
+
+</div>
+<script>
+function showIndex() {
+  document.getElementById('index-view').style.display = 'block';
+  document.querySelectorAll('.report-view').forEach(el => el.style.display = 'none');
+  window.scrollTo(0, 0);
+}
+function showReport(date) {
+  document.getElementById('index-view').style.display = 'none';
+  document.querySelectorAll('.report-view').forEach(el => el.style.display = 'none');
+  var target = document.getElementById('report-' + date);
+  if (target) { target.style.display = 'block'; window.scrollTo(0, 0); }
+}
+function scrollToSection(id) {
+  var el = document.getElementById(id);
+  if (el) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+}
+</script>
