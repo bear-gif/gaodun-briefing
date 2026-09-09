@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第24期 · 高顿升学 · 每日行业速览</title>
+<style>
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif; background: #f5f7fa; color: #1a1a2e; line-height: 1.7; }
+  .container { max-width: 960px; margin: 0 auto; padding: 30px 20px 60px; }
+  .report-header { background: #fff; border-radius: 14px; padding: 28px 32px; margin-bottom: 24px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+  .report-header .date-line { font-size: 20px; font-weight: 700; color: #1a1a2e; margin-bottom: 6px; }
+  .report-header .stats { font-size: 14px; color: #718096; margin-bottom: 16px; }
+  .report-header .stats span { display: inline-block; margin-right: 14px; }
+  .core-judgments { background: #f7fafc; border-left: 4px solid #4299e1; padding: 16px 20px; border-radius: 0 8px 8px 0; }
+  .core-judgments h3 { font-size: 15px; color: #2d3748; margin-bottom: 8px; }
+  .core-judgments ul { list-style: none; }
+  .core-judgments li { font-size: 14px; color: #4a5568; padding: 4px 0; padding-left: 18px; position: relative; }
+  .core-judgments li::before { content: "\25b8"; position: absolute; left: 0; color: #4299e1; font-weight: bold; }
+  .card { background: #fff; border-radius: 14px; padding: 28px 32px; margin-bottom: 20px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); border-top: 4px solid transparent; }
+  .card.science { border-top-color: #4299e1; }
+  .card.arts { border-top-color: #48bb78; }
+  .card-head { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; flex-wrap: wrap; }
+  .card-head h2 { font-size: 18px; font-weight: 700; color: #1a1a2e; flex: 1; min-width: 200px; }
+  .meta { display: flex; gap: 16px; font-size: 13px; color: #a0aec0; margin-bottom: 12px; flex-wrap: wrap; }
+  .content p, .content li { font-size: 15px; color: #4a5568; line-height: 1.8; }
+  .content ul { list-style: disc; padding-left: 20px; margin: 6px 0; }
+  .content li { margin: 4px 0; }
+  .sub-title { font-size: 15px; margin: 14px 0 6px; border-left: 3px solid #4299e1; padding-left: 10px; font-weight: 600; }
+  .sub-title.sc { color: #4299e1; border-color: #4299e1; }
+  .sub-title.gg { color: #48bb78; border-color: #48bb78; }
+  .tip-block { background: #fef3c7; border-radius: 8px; padding: 14px 18px; margin: 12px 0; }
+  .tip-block h3 { color: #92400e; font-size: 15px; margin: 0 0 8px; }
+  .tip-block p { color: #92400e; margin: 0; font-size: 14px; line-height: 1.9; }
+  @media print {
+    body.printing-report .container.report-view { padding: 0 8mm !important; margin: 0 auto !important; }
+    .print-watermark { display: block !important; margin: 0 0 4mm 0 !important; }
+    @page { margin: 10mm 18mm 10mm 18mm; size: auto; }
+    body { margin: 0 !important; padding: 0 !important; background: #fff !important; }
+    .quick-nav { display: none !important; }
+    .card { margin-bottom: 4px !important; padding: 10px 14px !important; page-break-inside: auto; }
+    .card .content > * { page-break-inside: avoid; }
+    [id^="section-"] { margin: 4px 0 2mm 0 !important; padding: 4px 8px !important; }
+    .report-header a, .report-header .date-line, .report-header .stats { display: none !important; }
+    body.printing-report #site-brand-header, body.printing-report #index-view, body.printing-report #watermark-view, body.printing-report .footer, body.printing-report .report-view { display: none !important; }
+    body.printing-report .report-view.print-target { display: block !important; }
+  }
+
+</style>
+</head>
+<body>
+<div class="container report-view print-target">
+  <div class="report-header">
+    <a href="javascript:void(0)" onclick="showIndex()" style="display:inline-block;margin-bottom:14px;font-size:14px;color:#4299e1;text-decoration:none;font-weight:500;cursor:pointer;">← 返回列表</a>
+    <div class="date-line">📅 第24期 · 高顿升学 · 每日行业速览</div>
+    <div class="stats">
+      <span>📊 资讯共 15 条</span>
+      <span>🔬 理工科 10 条</span>
+      <span>📚 文科 5 条</span>
+    </div>
+    <div class="core-judgments">
+      <h3>📌 今日要点速览</h3>
+      <ul>
+        <li>DeepSeek宣布Flash系列API降价，V4.1 Flash已内测，AI大模型价格战持续升级</li>
+        <li>Meta推出首款个人AI智能体Muse，AI Agent从B端走向C端消费市场</li>
+        <li>小鹏全球首条人形机器人自动化产线启用，计划年底规模量产，2027年上市交付</li>
+        <li>瑞银预计2026年全球半导体收入达1.63万亿美元，存储短缺将持续至2027年</li>
+        <li>工信部"十五五"信息通信规划落地，明确推进6G手机和6G基站研发部署</li>
+        <li>2026年服贸会开幕，90个国家和地区参展，前8个月我国外贸增长17.6%</li>
+      </ul>
+    </div>
+  </div>
+
+  <div style="margin:20px 0 10px;padding:12px 20px;background:#fff;border-radius:10px;box-shadow:0 1px 3px rgba(0,0,0,0.04);display:flex;align-items:center;flex-wrap:wrap;">
+    <span style="font-size:14px;color:#718096;margin-right:12px;">快速跳转：</span>
+    <a href="javascript:void(0)" onclick="scrollToSection('section-science')" style="margin-right:20px;font-size:15px;color:#2b6cb0;text-decoration:none;font-weight:600;">🔬 理工科资讯</a>
+    <a href="javascript:void(0)" onclick="scrollToSection('section-arts')" style="margin-right:20px;font-size:15px;color:#276749;text-decoration:none;font-weight:600;">📚 文科资讯</a>
+  </div>
+
+  <div id="section-science" style="display:flex;align-items:center;gap:10px;margin:24px 0 18px;padding:12px 20px;background:linear-gradient(90deg,#ebf8ff,#fff);border-radius:10px;border-left:4px solid #4299e1;">
+    <span style="font-size:20px;">🔬</span>
+    <span style="font-size:17px;font-weight:700;color:#2b6cb0;">理工科资讯</span>
+    <span style="font-size:13px;color:#718096;margin-left:4px;">共 10 条</span>
+  </div>
+
+<div class="card science">
+  <div class="card-head">
+    <h2>DeepSeek宣布Flash系列API降价，V4.1 Flash已启动内测</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 网易科技</span><span>🕓 2026-09-09</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>据网易科技9月9日报道，DeepSeek宣布将下调Flash系列API价格，新价格将于北京时间9月10日12:00生效。调整后，空闲时段每百万输入token收费1元，缓存命中时为0.02元；每百万输出token收费2元。与此同时，DeepSeek V4.1 Flash已进入内测阶段。此外，DeepSeek近日启动新一轮约150人招聘，岗位全部集中于服务端开发工程师与Agent弹性计算研发工程师，重点面向2至10年经验的资深后端工程师。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>AI大模型赛道价格战持续升级。DeepSeek以极低定价策略冲击市场，Flash系列已成为开发者构建AI应用的首选低成本方案。据脉脉数据，2026年1月至4月AI领域岗位量增长8.7倍，北京新发岗位AI渗透率达30.17%。DeepSeek实行14薪制度，据猎聘数据，大模型全栈工程师月薪4万-7万元，深度学习研发工程师月薪6万-9万元。模型降价推动应用层爆发，降低创业门槛，利好中小开发者和AI应用企业。</p>
+    <h3 class="sub-title gg">关联专业</h3>
+    <p>人工智能、计算机科学与技术、软件工程、数据科学与大数据技术</p>
+    <h3 class="sub-title gg">学历·岗位·薪资</h3>
+    <p>据BOSS直聘数据，AI算法工程师月薪25K-50K，大模型训练工程师月薪30K-60K，AI应用开发工程师月薪20K-40K。据猎聘数据，DeepSeek服务端开发工程师月薪40K-70K（14薪），Agent框架研发工程师月薪35K-60K。实习生日薪500-1000元。</p>
+    <h3 class="sub-title gg">地域优势</h3>
+    <p>北京（DeepSeek总部+字节跳动+百度+智源研究院）、杭州（DeepSeek研发中心+阿里云+网易）、上海（商汤+月之暗面+MiniMax）、深圳（华为+腾讯+南方科技大学AI中心）。</p>
+  </div>
+  <div class="tip-block">
+    <h3>💡 报考小贴士</h3>
+    <p>DeepSeek降价说明AI大模型竞争已从"拼参数"转向"拼性价比"。对求职者来说，纯模型研究岗位竞争加剧，但Agent工程化、后端架构优化、API平台开发等方向需求激增。建议关注"服务端开发工程师"和"Agent弹性计算"两个方向，对系统架构、分布式计算、Rust/C++等底层技术要求高，是当前性价比最佳的切入点。</p>
+  </div>
+</div>
+
+<div class="card science">
+  <div class="card-head">
+    <h2>Meta推出首款个人AI智能体Muse，AI Agent从B端走向C端</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 网易科技</span><span>🕓 2026-09-09</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>据网易科技9月9日报道，Meta正式推出其首款个人AI智能体Muse，定位为面向个人用户的AI助手产品。Muse可以自主完成日程管理、信息检索、内容创作等任务，月费最高10美元。这是Meta在AI Agent领域的首次C端布局，标志着AI智能体从企业级应用向个人消费市场的重大跨越。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>AI Agent（AI智能体）正成为2026年最热门的技术方向之一。OpenAI、微软、谷歌、Meta等头部企业纷纷推出Agent产品。Gartner预测，到2028年33%的企业软件应用将包含AI Agent，而2024年这一比例不足1%。个人AI智能体市场刚刚开启，预计将催生全新的消费级AI赛道，涵盖日程管理、教育辅导、健康管理等多个场景。</p>
+    <h3 class="sub-title gg">关联专业</h3>
+    <p>人工智能、计算机科学与技术、软件工程、数据科学与大数据技术、认知科学与技术</p>
+    <h3 class="sub-title gg">学历·岗位·薪资</h3>
+    <p>据BOSS直聘数据，AI Agent开发工程师月薪25K-50K，Prompt工程师月薪15K-30K，AI产品经理月薪20K-40K。头部企业AI Lab研究员年薪50-120万元。据猎聘数据，"AI智能体"相关岗位搜索量同比增长340%。</p>
+    <h3 class="sub-title gg">地域优势</h3>
+    <p>北京（智源研究院+百度+字节跳动+面壁智能）、上海（商汤+月之暗面+MiniMax）、深圳（华为+腾讯）、旧金山湾区（Meta+OpenAI+Google+Anthropic）。</p>
+  </div>
+  <div class="tip-block">
+    <h3>💡 报考小贴士</h3>
+    <p>Meta将AI Agent推向个人消费市场，说明这一技术正从"实验室"走向"日常生活"。AI Agent方向对计算机科学基础要求扎实（数据结构、算法、系统设计），同时需要理解自然语言处理和强化学习。建议关注"人工智能"专业，本科阶段打好编程和数学基础，研究生阶段深入Agent架构和多模态学习。这是当前AI领域增长最快的方向之一。</p>
+  </div>
+</div>
+
+<div class="card science">
+  <div class="card-head">
+    <h2>AI眼镜市场遇冷，智能穿戴设备分化加剧</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 网易科技</span><span>🕓 2026-09-09</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>据网易科技9月9日报道，AI眼镜市场突然遭遇销售瓶颈。此前被视为下一代智能终端的AI眼镜，在经历了上半年的概念热潮后，终端消费端出现明显的降温迹象。消费者对AI眼镜的实际使用体验与预期存在落差，续航、交互方式、应用场景等问题尚未得到很好解决。市场分化加剧，具备差异化技术优势的产品仍能维持增长，而跟风类产品面临淘汰。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>智能穿戴行业正经历从"概念炒作"到"实用价值"的检验期。AI眼镜作为AI+硬件的代表性产品，面临交互体验、电池续航、生态构建三大核心挑战。据行业分析，AI眼镜要在消费市场站稳脚跟，需要在三个方向突破：一是轻量化设计（重量控制在50克以内），二是自然交互（语音+手势+眼动多模态），三是杀手级应用场景。XR/AR领域技术积累深厚的企业更具优势。</p>
+    <h3 class="sub-title gg">关联专业</h3>
+    <p>电子信息工程、光电信息科学与工程、计算机科学与技术、自动化、微电子科学与工程</p>
+    <h3 class="sub-title gg">学历·岗位·薪资</h3>
+    <p>据BOSS直聘数据，AR/VR硬件工程师月薪18K-35K，光学工程师月薪15K-30K，嵌入式开发工程师月薪18K-35K。智能穿戴产品经理月薪20K-40K。据猎聘数据，2026年XR硬件方向招聘需求同比增长45%。</p>
+    <h3 class="sub-title gg">地域优势</h3>
+    <p>深圳（大疆+比亚迪电子+智能硬件产业链）、青岛（歌尔股份+XR硬件基地）、北京（小米+字节跳动Pico）、苏州（追觅+科沃斯+智能穿戴产业链）。</p>
+  </div>
+  <div class="tip-block">
+    <h3>💡 报考小贴士</h3>
+    <p>AI眼镜遇冷是硬件行业常见现象——从概念到产品需要跨越工程化鸿沟。对光电信息、电子信息等专业来说，这恰恰是学习积累的好时机。智能穿戴的核心技术（光学设计、微型传感器、低功耗芯片）壁垒很高，建议打好底层技术功底。真正能穿越周期的产品一定是解决了真实用户需求的，而非简单堆砌AI概念。</p>
+  </div>
+</div>
+
+<div class="card science">
+  <div class="card-head">
+    <h2>AI热潮还能烧多久？未来三个月13个关键变量浮出</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 网易科技</span><span>🕓 2026-09-09</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>据网易科技9月9日报道，围绕AI产业可持续性的讨论持续升温。分析指出，未来三个月有13个关键变量将决定AI投资热潮能否延续，包括大模型商业化进展、算力供需平衡、监管政策落地、能源消耗约束等因素。当前AI基础设施投资规模空前，但能否转化为持续的商业回报仍是核心疑问。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>AI产业正从"投入期"向"回报验证期"过渡。中信建投研报指出，OpenAI发布GPT-6 Astra后，博通FY2026 Q3实现营收295.9亿美元，同比增长86%，其中AI半导体收入167亿美元，同比增长221%。据财联社数据，大模型能力持续升级叠加海外云厂商资本开支扩张，推理侧及基础设施算力需求有望保持高景气。AI算力核心环节（芯片、光模块、交换机、PCB）持续受益。</p>
+    <h3 class="sub-title gg">关联专业</h3>
+    <p>人工智能、计算机科学与技术、数据科学与大数据技术、电子信息工程、通信工程</p>
+    <h3 class="sub-title gg">学历·岗位·薪资</h3>
+    <p>据BOSS直聘数据，AI基础设施工程师月薪25K-50K，算力网络工程师月薪20K-40K，数据中心运维工程师月薪15K-30K。AI芯片架构师年薪60-120万元。据猎聘数据，算力基础设施方向2026年招聘需求同比增长65%。</p>
+    <h3 class="sub-title gg">地域优势</h3>
+    <p>北京（百度+字节+智源研究院）、上海（商汤+中芯国际+张江AI产业园）、深圳（华为+腾讯+比亚迪AI中心）、旧金山湾区（英伟达+OpenAI+Google）。</p>
+  </div>
+  <div class="tip-block">
+    <h3>💡 报考小贴士</h3>
+    <p>AI产业的13个关键变量说明，这不是一个"闭眼入"的赛道，需要理性判断。但算力基础设施方向确定性较高——无论哪个大模型胜出，底层算力需求只增不减。建议关注"数据中心与算力"方向，对网络工程、电子信息、计算机科学等专业需求旺盛。本科阶段注重系统能力培养，研究生阶段深入AI芯片或分布式系统。</p>
+  </div>
+</div>
+
+<div class="card science">
+  <div class="card-head">
+    <h2>法国Mistral AI完成30亿欧元融资，三星首次入股欧洲AI冠军</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 新华财经</span><span>🕓 2026-09-09</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>据新华财经9月9日报道，法国AI企业Mistral AI宣布完成30亿欧元新一轮融资，估值从120亿欧元升至213亿欧元。本轮融资最大亮点是韩国三星电子首次入股并贡献最大单笔投资，约一半资金来自欧洲投资者。融资将用于采购芯片提升AI模型训练能力、建设新数据中心，并计划开拓印度、美国等新市场。不过与OpenAI今年3月完成的1200亿美元融资相比，Mistral AI的体量仍有明显差距。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>全球AI竞争格局加速分化。美国企业（OpenAI、Anthropic、Google）凭借巨额融资和算力优势领跑，欧洲则以Mistral AI为代表试图保持自主AI能力。三星入股Mistral AI标志着科技巨头加速布局AI基础设施。据行业数据，全球AI企业2026年融资总额已超2000亿美元，算力中心建设和高端芯片采购成为融资的主要用途。</p>
+    <h3 class="sub-title gg">关联专业</h3>
+    <p>人工智能、计算机科学与技术、软件工程、数据科学与大数据技术</p>
+    <h3 class="sub-title gg">学历·岗位·薪资</h3>
+    <p>据BOSS直聘数据，AI算法研究员月薪30K-60K（博士优先），大模型训练工程师月薪25K-50K，AI基础设施工程师月薪20K-40K。欧洲AI企业高级研究员年薪10-20万欧元。据猎聘数据，2026年AI研发岗位中，硕博学历占比超70%。</p>
+    <h3 class="sub-title gg">地域优势</h3>
+    <p>北京（智源研究院+清华+百度）、上海（商汤+月之暗面）、深圳（华为+腾讯）、巴黎（Mistral AI）、旧金山湾区（OpenAI+Anthropic+Google DeepMind）。</p>
+  </div>
+  <div class="tip-block">
+    <h3>💡 报考小贴士</h3>
+    <p>Mistral AI的崛起说明AI赛道并非只有中美玩家，欧洲也在发力。但30亿欧元vs 1200亿美元的资金差距，反映全球AI竞争的残酷性。对想要进入AI领域的同学，关键建议：一是学历门槛高（硕博为主），二是算力工程能力稀缺，三是国际化视野越来越重要——懂中英法等多语种的AI人才在跨境合作中优势明显。</p>
+  </div>
+</div>
+
+<div class="card science">
+  <div class="card-head">
+    <h2>小鹏全球首条人形机器人自动化产线启用，年底进入规模量产</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 每日经济新闻</span><span>🕓 2026-09-09</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>据每日经济新闻9月9日报道，小鹏汽车正式启用全球首条高阶通用人形机器人自动化产线，完成从研发试制到产线制造的关键跨越。启动仪式上，全球首位高阶通用人形机器人完成自动化总装并自主走下产线。小鹏机器人将于今年底正式进入规模量产阶段，并于2027年上市交付。这是小鹏将汽车制造能力复用至机器人赛道的标志性举措。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>人形机器人产业正加速从实验室走向量产。据猎聘数据，2026年1-7月机器人领域新发职位同比增长147.02%，平均年薪40.61万元。具身智能（Embodied AI）是核心技术方向，使机器人能够在物理世界中感知、理解和行动。宇树科技、智元机器人、优必选等企业同步加速量产。全球人形机器人市场2026年预计突破50亿美元，人才缺口超百万。</p>
+    <h3 class="sub-title gg">关联专业</h3>
+    <p>机器人工程、自动化、机械工程、人工智能、计算机科学与技术、电子信息工程</p>
+    <h3 class="sub-title gg">学历·岗位·薪资</h3>
+    <p>据猎聘数据，人形机器人领域平均年薪40.61万元。BOSS直聘数据显示，机器人算法工程师月薪25K-50K，控制算法工程师月薪20K-45K，感知与视觉算法工程师月薪25K-50K，嵌入式开发工程师月薪18K-35K。核心专家年薪可达120万元以上。</p>
+    <h3 class="sub-title gg">地域优势</h3>
+    <p>广州（小鹏机器人总部）、北京（小米机器人+中科院自动化所）、深圳（优必选+大疆+粤港澳大湾区机器人产业链）、杭州（宇树科技+海康威视+之江实验室）、上海（傅利叶智能+ABB机器人+张江机器人谷）。</p>
+  </div>
+  <div class="tip-block">
+    <h3>💡 报考小贴士</h3>
+    <p>小鹏人形机器人产线启用，标志着这一赛道正式进入"量产时代"。人形机器人是典型的跨学科领域——机械工程做本体、自动化做控制、计算机做感知和决策。建议优先选择"机器人工程"专业，或"自动化+计算机"双修路径。核心算法岗（运动控制、SLAM、强化学习）薪资最高但门槛也最高，硕博起步。本科毕业可从嵌入式开发、机械设计等岗位切入。</p>
+  </div>
+</div>
+
+<div class="card science">
+  <div class="card-head">
+    <h2>瑞银：全球半导体产业上升周期稳固，2026年收入将达1.63万亿美元</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 财联社</span><span>🕓 2026-09-09</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>据财联社9月9日报道，瑞银集团发布报告指出，尽管7月份全球芯片销售额环比下降9.8%（主要受存储出货量减少拖累），但半导体行业上升周期依然稳固。瑞银预计2026年全球半导体收入将达1.63万亿美元，比2025年增长118%。DRAM和NAND供应短缺状况将持续到2027年。逻辑器件销售额增长2.2%达到创纪录的370亿美元。摩根大通也将2026年全球半导体销售额预测上调至1.73万亿美元。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>全球半导体行业正处于AI驱动的超级上升周期。算力需求扩张是核心驱动力——AI数据中心对HBM（高带宽存储器）、先进封装、高速互联芯片的需求持续爆发。据中信建投数据，博通Q3 AI半导体收入167亿美元，同比增长221%。存储芯片虽短期销量下滑，但DRAM和NAND均价分别上涨8.3%和9.8%，量价齐升趋势明确。晶圆代工利用率、组装设备需求和存储器盈利能力等领先指标持续支撑长周期。</p>
+    <h3 class="sub-title gg">关联专业</h3>
+    <p>集成电路设计与集成系统、微电子科学与工程、电子科学与技术、电子信息工程、自动化</p>
+    <h3 class="sub-title gg">学历·岗位·薪资</h3>
+    <p>据BOSS直聘数据，芯片设计工程师月薪20K-45K，IC验证工程师月薪18K-35K，存储芯片研发工程师月薪25K-50K。先进封装工程师月薪20K-40K。据中国半导体行业协会数据，集成电路相关专业应届硕士起薪中位数达28K/月。行业人才缺口超20万。</p>
+    <h3 class="sub-title gg">地域优势</h3>
+    <p>上海（中芯国际+华虹半导体+张江集成电路产业园）、北京（紫光展锐+中芯国际北方基地）、南京（台积电南京厂+浦口集成电路产业园）、深圳（比亚迪半导体+中兴微电子）、武汉（长江存储+武汉新芯）。</p>
+  </div>
+  <div class="tip-block">
+    <h3>💡 报考小贴士</h3>
+    <p>1.63万亿美元的收入规模说明半导体是全球最大的高科技产业之一。当前周期由AI算力需求驱动，与以往手机/PC驱动的周期不同，持续性和确定性更强。建议关注"集成电路设计与集成系统"和"微电子科学与工程"两个核心专业，这是国家紧缺人才方向。研究生学历几乎是标配，建议做好本硕连读规划。</p>
+  </div>
+</div>
+
+<div class="card science">
+  <div class="card-head">
+    <h2>科创板芯片设计行业集体业绩说明会：AI与研发成核心关键词</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 证券日报</span><span>🕓 2026-09-09</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>据证券日报9月9日报道，9月8日下午，科创板2026年半年度芯片设计行业集体业绩说明会举行，力芯微、宏微科技、东微半导等29家上市公司参与。超八成上市公司上半年实现营收同比正增长，约七成公司实现盈利。算力需求成为拉动半导体市场增长的重要引擎，GaN芯片已通过AI数据中心电源客户认证并进入放量阶段，多家企业围绕AI算力展开实质性业务布局。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>科创板芯片设计行业呈现"高研发投入+高增长"特征。Wind数据显示，超半数科创板芯片设计上市公司研发费用率在20%-50%之间。裕太微上半年营收同比增长46.21%，杰华特在售产品型号超4200款。AI算力相关芯片（电源管理芯片、服务器电源芯片、高速接口芯片）成为新增长极。企业在AIDC（AI数据中心）领域的布局正在从送样阶段进入放量阶段。</p>
+    <h3 class="sub-title gg">关联专业</h3>
+    <p>集成电路设计与集成系统、微电子科学与工程、电子科学与技术、电气工程及其自动化、计算机科学与技术</p>
+    <h3 class="sub-title gg">学历·岗位·薪资</h3>
+    <p>据BOSS直聘数据，模拟芯片设计工程师月薪20K-40K，电源管理IC设计工程师月薪18K-35K，FPGA工程师月薪15K-30K。据猎聘数据，AI芯片方向资深设计工程师年薪可达60-100万元。科创板芯片企业研发人员平均薪酬较行业高出20%-30%。</p>
+    <h3 class="sub-title gg">地域优势</h3>
+    <p>上海（张江集成电路产业园+澜起科技+聚辰半导体）、深圳（比亚迪半导体+汇顶科技）、无锡（力芯微+新洁能）、苏州（东微半导+纳芯微）、合肥（晶合集成+芯碁微装）。</p>
+  </div>
+  <div class="tip-block">
+    <h3>💡 报考小贴士</h3>
+    <p>29家科创板芯片公司集体亮业绩，说明国产芯片设计正在进入收获期。芯片设计是典型的"高门槛+高回报"赛道——研发费用率高意味着对人才要求高，但薪资也相应优厚。建议关注模拟芯片设计方向（就业面广、职业生命周期长），以及AI算力芯片方向（增速最快）。硕士是入行门槛，博士在架构级岗位更具竞争力。</p>
+  </div>
+</div>
+
+<div class="card science">
+  <div class="card-head">
+    <h2>900余家中企亮相柏林国际消费电子展，AI与具身智能成最大看点</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 人民日报</span><span>🕓 2026-09-09</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>据人民日报9月9日报道，2026年柏林国际消费电子展（IFA 2026）近日举行，以"未来已来"为主题，吸引全球1900余家展商参展，其中中企超900家，占比近一半。展会聚焦AI、机器人、智能家居、飞行汽车等前沿领域。海尔展出Vision 15系列洗衣机搭载"AI之眼"，TCL展出"AI安寝之眼"空调，追觅展出MOVA割草机器人。超100家企业汇聚具身智能展区，人形机器人数量创历史新高。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>中国消费电子企业在全球市场的竞争力持续提升。从AI眼镜、智能外骨骼到3D打印、割草机器人，中国企业已从"代工制造"转向"自主品牌+核心技术"出海。海尔连续17年位居全球大型家电品牌份额第一，追觅、大疆等在智能清洁、无人机领域全球领先。IFA展会显示，AI正加速嵌入日常生活——从洗衣机到空调，从割草机到咖啡机器人，具身智能技术正从工业场景渗透至消费场景。</p>
+    <h3 class="sub-title gg">关联专业</h3>
+    <p>电子信息工程、机械工程、工业设计、计算机科学与技术、自动化、物联网工程</p>
+    <h3 class="sub-title gg">学历·岗位·薪资</h3>
+    <p>据BOSS直聘数据，智能硬件工程师月薪15K-30K，嵌入式AI工程师月薪20K-40K，工业设计师月薪12K-25K（资深可达40K+）。据猎聘数据，2026年智能消费电子方向招聘需求同比增长38%，出海营销和海外运营岗位增速超50%。</p>
+    <h3 class="sub-title gg">地域优势</h3>
+    <p>深圳（大疆+比亚迪电子+华为+消费电子产业链）、青岛（海尔+海信+家电产业集群）、苏州（追觅科技+科沃斯总部）、宁波（方太+公牛+智能家电产业带）。</p>
+  </div>
+  <div class="tip-block">
+    <h3>💡 报考小贴士</h3>
+    <p>900多家中企亮相IFA，说明"技术出海"正成为中国科技企业的主旋律。对电子信息、机械工程等专业的同学来说，这是一个黄金时代——既需要底层技术研发人才，也需要懂海外市场的复合型人才。建议在学习核心技术的同时，提升英语沟通能力。智能硬件+AI的交叉方向（嵌入式AI、边缘计算、计算机视觉）是当前最有前景的职业路径。</p>
+  </div>
+</div>
+
+<div class="card science">
+  <div class="card-head">
+    <h2>工信部"十五五"信息通信规划落地，明确推进6G手机和基站研发部署</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 经济日报</span><span>🕓 2026-09-09</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>据经济日报9月9日报道，工信部"十五五"信息通信规划正式落地，明确推进6G手机、6G基站研发部署，加快算力网络、人工智能基础设施建设，推动数字产业升级。规划提出打造天地一体化信息网络，推进卫星互联网与地面通信网络融合发展。这是国家层面首次将6G研发部署写入五年规划，信号意义强烈。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>6G是下一代移动通信技术的战略制高点。据行业预测，6G将于2030年前后商用，峰值速率达到1Tbps，是5G的50-100倍。核心技术方向包括太赫兹通信、通感一体化、天地一体化网络、AI原生网络等。据猎聘数据，6G研究工程师月薪25K-80K，5G/6G标准化工程师月薪35K-60K（15薪）。武汉、北京是6G研发的核心城市，汇聚了中信科移动、华为、中兴等头部企业。</p>
+    <h3 class="sub-title gg">关联专业</h3>
+    <p>通信工程、电子信息工程、信息工程、计算机科学与技术、网络工程、电磁场与无线技术</p>
+    <h3 class="sub-title gg">学历·岗位·薪资</h3>
+    <p>据猎聘数据，6G应用研究工程师月薪25K-80K，5G/6G标准化工程师月薪35K-60K（15薪）。据职友集数据，6G研究工程师100%岗位月薪在20K-50K区间，平均月薪35K。博士应届年薪35-45万元（中科院上海微波所等），硕士应届年薪23-28万元。</p>
+    <h3 class="sub-title gg">地域优势</h3>
+    <p>武汉（中信科移动+烽火通信+中国光谷）、深圳（华为+中兴+深圳通信产业链）、北京（大唐移动+中国移动研究院+信通院）、上海（中科院上海微系统所+联影+芯片设计企业）。</p>
+  </div>
+  <div class="tip-block">
+    <h3>💡 报考小贴士</h3>
+    <p>6G被写入国家五年规划，意味着这是未来10年最确定的技术投资方向之一。通信工程专业正在迎来新一轮景气周期。建议关注太赫兹通信、卫星互联网、AI原生网络等前沿方向。6G研发对数学和物理基础要求极高，硕士是基本门槛，博士更具竞争力。武汉"中国光谷"是国内通信产业最密集的区域之一，实习就业都很方便。</p>
+  </div>
+</div>
+
+  <div id="section-arts" style="display:flex;align-items:center;gap:10px;margin:30px 0 18px;padding:12px 20px;background:linear-gradient(90deg,#f0fff4,#fff);border-radius:10px;border-left:4px solid #48bb78;">
+    <span style="font-size:20px;">📚</span>
+    <span style="font-size:17px;font-weight:700;color:#276749;">文科资讯</span>
+    <span style="font-size:13px;color:#718096;margin-left:4px;">共 5 条</span>
+  </div>
+
+<div class="card arts">
+  <div class="card-head">
+    <h2>全国教材工作会议召开：加快构建中国特色高质量教材体系</h2>
+    <span style="background:#f0fff4;color:#48bb78;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">文科</span>
+  </div>
+  <div class="meta"><span>📰 人民日报</span><span>🕓 2026-09-09</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>据人民日报9月9日报道，全国教材工作会议9月8日在京召开。会议强调要深刻把握教育的政治属性、人民属性、战略属性，加快构建中国特色高质量教材体系，为教育强国建设提供有力支撑。会议提出加快构建哲学社会科学自主知识体系和原创性教材体系，统筹基础教育、职业教育、高等教育教材建设。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>教材建设是教育体系的核心基础设施。当前我国正推动教材工作从"规模扩展"向"质量提升"转型，哲学社会科学自主知识体系建设成为重点方向。《教育发展"十五五"规划》提出基础教育"基点"计划，建设1000所以上优质普通高中。教材编审、教育政策研究、课程改革等领域人才需求稳步增长。</p>
+    <h3 class="sub-title gg">关联专业</h3>
+    <p>教育学、课程与教学论、汉语言文学、英语、思想政治教育</p>
+    <h3 class="sub-title gg">学历·岗位·薪资</h3>
+    <p>据BOSS直聘数据，教材编辑月薪8K-15K，课程研发专员月薪10K-18K，教研员月薪8K-20K（事业编制）。教育政策研究员月薪12K-25K（硕博优先）。据猎聘数据，2026年教育行业研发岗招聘需求同比增长18%。</p>
+    <h3 class="sub-title gg">地域优势</h3>
+    <p>北京（教育部+高等教育出版社+人民教育出版社）、上海（华东师大+上海教育出版社）、南京（江苏教育出版社+凤凰出版传媒）、杭州（浙江大学+浙江教育出版社）。</p>
+  </div>
+  <div class="tip-block">
+    <h3>💡 报考小贴士</h3>
+    <p>全国教材工作会议释放的信号是：教育内容质量正在被提升到国家战略高度。对教育学、汉语言文学等方向的同学来说，教材编审、课程研发是稳定的职业路径。建议关注"课程与教学论"方向研究生，兼具理论深度和实践能力。教育事业编制岗位稳定，但竞争激烈，提前规划很重要。</p>
+  </div>
+</div>
+
+<div class="card arts">
+  <div class="card-head">
+    <h2>2026年服贸会开幕：90个国家和地区参展，服务贸易增长8.3%</h2>
+    <span style="background:#f0fff4;color:#48bb78;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">文科</span>
+  </div>
+  <div class="meta"><span>📰 经济日报</span><span>🕓 2026-09-09</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>据经济日报9月9日报道，2026年中国国际服务贸易交易会今天在北京首钢园拉开帷幕。本届服贸会聚焦"扩大开放、深化合作、引领创新"三大功能定位，首次在主题展核心区域设立"中国服务"展区，90个国家和地区、国际组织设展，1830多家企业线下参展。商务部数据显示，今年1月至7月，我国服务进出口总额44467.1亿元，同比增长8.3%。服务出口17732.3亿元，增长17.1%。知识密集型服务出口增长12.2%，占服务出口总额的53.5%。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>中国服务贸易正从"规模扩张"向"质量提升"转型。知识密集型服务（法律、会计、咨询、技术服务等）占比持续提升，反映中国服务业向价值链高端攀升的趋势。本届服贸会首次在多个专题展设立出海服务专区，金融、法律、会计、知识产权、广告等专业机构将为中国企业拓展国际市场提供支撑。专业服务人才的需求正在快速增长。</p>
+    <h3 class="sub-title gg">关联专业</h3>
+    <p>国际经济与贸易、经济学、法学、会计学、广告学、人力资源管理</p>
+    <h3 class="sub-title gg">学历·岗位·薪资</h3>
+    <p>据BOSS直聘数据，国际服务贸易专员月薪10K-20K，涉外法律顾问月薪20K-40K，知识产权顾问月薪15K-30K。国际会计师事务所（四大）审计师年薪15-30万元。据猎聘数据，2026年"出海服务"方向招聘需求同比增长45%。</p>
+    <h3 class="sub-title gg">地域优势</h3>
+    <p>北京（服贸会举办地+大量律所和会计师事务所总部）、上海（自贸区+国际律所和咨询公司聚集）、深圳（跨境服务贸易先行区+科技企业出海基地）、海南（自贸港+服务贸易开放试点）。</p>
+  </div>
+  <div class="tip-block">
+    <h3>💡 报考小贴士</h3>
+    <p>服贸会规模持续扩大，反映中国服务贸易正处于黄金发展期。"出海服务"是未来最有前景的方向之一——法律、会计、知识产权、广告等专业服务人才缺口大。建议法学专业关注"涉外法律"方向，经济学专业关注"国际服务贸易"方向，会计学关注"国际会计准则"。掌握一门外语+一门专业技能是基本配置。</p>
+  </div>
+</div>
+
+<div class="card arts">
+  <div class="card-head">
+    <h2>海关总署：前8个月我国货物贸易进出口同比增长17.6%</h2>
+    <span style="background:#f0fff4;color:#48bb78;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">文科</span>
+  </div>
+  <div class="meta"><span>📰 央视新闻</span><span>🕓 2026-09-09</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>据央视新闻9月9日报道，海关总署9月8日发布数据，今年前8个月，我国货物贸易进出口同比增长17.6%，与112个国家和地区实现出口、进口双增长。其中，新能源乘用车出口51.8万辆（8月单月），同比增长154.7%。新能源乘用车出口占乘用车总出口比重为58.4%，较去年同期增长18个百分点。中国制造的全球竞争力持续增强。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>中国外贸保持强劲增长势头，结构持续优化。新能源产品（电动汽车、光伏、锂电池）成为出口增长主力，"新三样"出口占比持续提升。跨境电商、市场采购贸易等新业态蓬勃发展。据行业数据，2026年中国跨境电商进出口规模预计突破3万亿元，带动外贸物流、国际营销、跨境支付等领域人才需求大幅增长。</p>
+    <h3 class="sub-title gg">关联专业</h3>
+    <p>国际经济与贸易、电子商务、物流管理、英语（跨境电商方向）、市场营销</p>
+    <h3 class="sub-title gg">学历·岗位·薪资</h3>
+    <p>据BOSS直聘数据，外贸业务员月薪8K-18K（含提成），跨境电商运营月薪10K-25K，国际物流主管月薪15K-30K。据猎聘数据，2026年跨境电商方向招聘需求同比增长55%，新能源出口方向增速最快。</p>
+    <h3 class="sub-title gg">地域优势</h3>
+    <p>深圳（跨境电商之都+外贸企业密集）、义乌（小商品出口基地+跨境电商先行区）、上海（国际贸易中心+自贸区+进博会）、广州（广交会+汽车出口基地+外贸产业链完整）。</p>
+  </div>
+  <div class="tip-block">
+    <h3>💡 报考小贴士</h3>
+    <p>外贸增长17.6%说明中国制造的全球竞争力依然强劲。新能源出口爆发式增长（154.7%）为相关专业创造了大量就业机会。跨境电商是最值得关注的方向——入门门槛相对较低，但天花板很高。建议国际经济与贸易专业的同学关注"跨境电商+新能源"复合方向，既懂贸易规则又懂产品技术的复合型人才最抢手。</p>
+  </div>
+</div>
+
+<div class="card arts">
+  <div class="card-head">
+    <h2>暑期海南离岛免税销售额超38亿元，同比增长4.1%</h2>
+    <span style="background:#f0fff4;color:#48bb78;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">文科</span>
+  </div>
+  <div class="meta"><span>📰 新华社</span><span>🕓 2026-09-09</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>据新华社9月8日报道，海口海关近日公布数据，2026年暑期，海口海关监管离岛免税购物金额38.2亿元、购物件数380.9万件、购物人次69万，同比分别增长4.1%、0.3%、3.4%。三亚以演唱会为契机推出"一张演唱会门票玩转全城"等文旅联动活动，各大免税店联动提供购物优惠，"看一场演出、购一批免税好物"成为海南暑期消费新常态。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>海南自贸港建设持续推进，离岛免税已成为拉动消费回流的重要抓手。2026年以来，免税消费与文旅活动深度绑定，演唱会经济+免税购物的联动模式效果显著。据行业数据，海南离岛免税全年销售额有望突破800亿元。免税零售、品牌运营、旅游零售管理等领域人才需求持续增长。</p>
+    <h3 class="sub-title gg">关联专业</h3>
+    <p>旅游管理、市场营销、工商管理、电子商务、文化产业管理</p>
+    <h3 class="sub-title gg">学历·岗位·薪资</h3>
+    <p>据BOSS直聘数据，免税零售店长月薪12K-25K，品牌运营（免税渠道）月薪10K-20K，旅游零售买手月薪12K-25K。据猎聘数据，2026年海南旅游零售方向招聘需求同比增长30%。</p>
+    <h3 class="sub-title gg">地域优势</h3>
+    <p>海南（海口+三亚免税消费核心城市）、上海（免税集团总部+品牌运营中心）、北京（中免集团总部+品牌代理企业）、深圳（跨境电商+消费品牌孵化基地）。</p>
+  </div>
+  <div class="tip-block">
+    <h3>💡 报考小贴士</h3>
+    <p>海南免税消费持续增长，自贸港建设带来的政策红利还在释放。对旅游管理、市场营销等方向的同学来说，"旅游零售"是一个被低估的就业赛道——它融合了零售管理、品牌运营和旅游服务，薪资增长快、国际化程度高。建议在学好专业课的同时，关注零售管理和品牌运营相关知识。海南是免税消费的核心区域，实习就业优先考虑。</p>
+  </div>
+</div>
+
+<div class="card arts">
+  <div class="card-head">
+    <h2>经济日报：差异化布局盘活文旅下沉市场，县域旅游持续升温</h2>
+    <span style="background:#f0fff4;color:#48bb78;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">文科</span>
+  </div>
+  <div class="meta"><span>📰 经济日报</span><span>🕓 2026-09-09</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>据经济日报9月9日报道，多地县域文旅通过差异化布局实现持续增长。新疆巴里坤县3处4A级景区实行免门票政策，今年上半年接待游客173.2万人次，同比增长6.85%；江西铅山县葛仙村度假区带动周边民宿村发展，直接带动500余人就业；甘肃宕昌县依托"千年药乡"资源推动文旅康养融合发展。机场通航、高铁开通等基础设施改善，正加速推动县域文旅崛起。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>县域文旅正成为旅游市场新的增长极。区别于传统热门景区的"人挤人"模式，县域旅游以原生态自然风光、非遗文化、康养体验为核心卖点，吸引追求深度体验的游客群体。据文旅部数据，2026年上半年县域旅游接待人次同比增长超20%。民宿运营、文旅策划、目的地营销等岗位需求快速增长，返乡创业从事文旅的比例也在提升。</p>
+    <h3 class="sub-title gg">关联专业</h3>
+    <p>旅游管理、酒店管理、文化产业管理、市场营销、艺术设计</p>
+    <h3 class="sub-title gg">学历·岗位·薪资</h3>
+    <p>据BOSS直聘数据，县域文旅策划月薪8K-15K，民宿运营经理月薪8K-18K，目的地营销专员月薪8K-15K。据猎聘数据，2026年县域文旅方向招聘需求同比增长35%，民宿运营和文旅策划增速最快。旺季民宿单店营业额可超2万元/周。</p>
+    <h3 class="sub-title gg">地域优势</h3>
+    <p>新疆（巴里坤+喀纳斯+独库公路沿线）、江西（葛仙村+婺源+庐山）、甘肃（宕昌官鹅沟+敦煌+张掖）、云南（大理+丽江+腾冲+建水）、浙江（安吉+莫干山+乡村文旅标杆）。</p>
+  </div>
+  <div class="tip-block">
+    <h3>💡 报考小贴士</h3>
+    <p>县域文旅是旅游管理专业的新蓝海。相比城市景区，县域文旅更考验"从0到1"的策划运营能力——既要懂产品设计，又要会营销推广，还要了解当地文化。建议旅游管理专业同学关注"民宿运营"和"目的地营销"两个方向，实操能力比学历更重要。如果家乡有好山好水好故事，返乡做文旅也是一条不错的路。</p>
+  </div>
+</div>
+
+<script>
+function scrollToSection(id) {
+  var el = document.getElementById(id);
+  if (el) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+}
+function showIndex() {
+  if (typeof window.showReport === 'function') { /* noop */ }
+  window.location.href = 'index.html';
+}
+</script>
+</div>
+</body>
+</html>
