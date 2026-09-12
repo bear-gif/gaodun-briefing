@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第{period}期 · 高顿升学 · 每日行业速览</title>
+<style>
+
+  * {{ margin: 0; padding: 0; box-sizing: border-box; }}
+  html {{ scroll-behavior: smooth; }}
+  body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif; background: #f5f7fa; color: #1a1a2e; line-height: 1.7; }}
+  .container {{ max-width: 960px; margin: 0 auto; padding: 30px 20px 60px; }}
+  .report-header {{ background: #fff; border-radius: 14px; padding: 28px 32px; margin-bottom: 24px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }}
+  .report-header .date-line {{ font-size: 20px; font-weight: 700; color: #1a1a2e; margin-bottom: 6px; }}
+  .report-header .stats {{ font-size: 14px; color: #718096; margin-bottom: 16px; }}
+  .report-header .stats span {{ display: inline-block; margin-right: 14px; }}
+  .core-judgments {{ background: #f7fafc; border-left: 4px solid #4299e1; padding: 16px 20px; border-radius: 0 8px 8px 0; }}
+  .core-judgments h3 {{ font-size: 15px; color: #2d3748; margin-bottom: 8px; }}
+  .core-judgments ul {{ list-style: none; }}
+  .core-judgments li {{ font-size: 14px; color: #4a5568; padding: 4px 0; padding-left: 18px; position: relative; }}
+  .core-judgments li::before {{ content: "\25b8"; position: absolute; left: 0; color: #4299e1; font-weight: bold; }}
+  .card {{ background: #fff; border-radius: 14px; padding: 28px 32px; margin-bottom: 20px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); border-top: 4px solid transparent; }}
+  .card.science {{ border-top-color: #4299e1; }}
+  .card.arts {{ border-top-color: #48bb78; }}
+  .card-head {{ display: flex; align-items: center; gap: 12px; margin-bottom: 14px; flex-wrap: wrap; }}
+  .card-head h2 {{ font-size: 18px; font-weight: 700; color: #1a1a2e; flex: 1; min-width: 200px; }}
+  .meta {{ display: flex; gap: 16px; font-size: 13px; color: #a0aec0; margin-bottom: 12px; flex-wrap: wrap; }}
+  .content p, .content li {{ font-size: 15px; color: #4a5568; line-height: 1.8; }}
+  .content ul {{ list-style: disc; padding-left: 20px; margin: 6px 0; }}
+  .content li {{ margin: 4px 0; }}
+  .sub-title {{ font-size: 15px; margin: 14px 0 6px; border-left: 3px solid #4299e1; padding-left: 10px; font-weight: 600; }}
+  .sub-title.sc {{ color: #4299e1; border-color: #4299e1; }}
+  .sub-title.gg {{ color: #48bb78; border-color: #48bb78; }}
+  .tip-block {{ background: #fef3c7; border-radius: 8px; padding: 14px 18px; margin: 12px 0; }}
+  .tip-block h3 {{ color: #92400e; font-size: 15px; margin: 0 0 8px; }}
+  .tip-block p {{ color: #92400e; margin: 0; font-size: 14px; line-height: 1.9; }}
+  @media print {{
+    body.printing-report .container.report-view {{ padding: 0 8mm !important; margin: 0 auto !important; }}
+    .print-watermark {{ display: block !important; margin: 0 0 4mm 0 !important; }}
+    @page {{ margin: 10mm 18mm 10mm 18mm; size: auto; }}
+    body {{ margin: 0 !important; padding: 0 !important; background: #fff !important; }}
+    .quick-nav {{ display: none !important; }}
+    .card {{ margin-bottom: 4px !important; padding: 10px 14px !important; page-break-inside: auto; }}
+    .card .content > * {{ page-break-inside: avoid; }}
+    [id^="section-"] {{ margin: 4px 0 2mm 0 !important; padding: 4px 8px !important; }}
+    .report-header a, .report-header .date-line, .report-header .stats {{ display: none !important; }}
+    body.printing-report #site-brand-header, body.printing-report #index-view, body.printing-report #watermark-view, body.printing-report .footer, body.printing-report .report-view {{ display: none !important; }}
+    body.printing-report .report-view.print-target {{ display: block !important; }}
+  }}
+
+</style>
+</head>
+<body>
+<div class="container report-view print-target">
+  <div class="report-header">
+    <a href="javascript:void(0)" onclick="showIndex()" style="display:inline-block;margin-bottom:14px;font-size:14px;color:#4299e1;text-decoration:none;font-weight:500;cursor:pointer;">← 返回列表</a>
+    <div class="date-line">📅 第{period}期 · 高顿升学 · 每日行业速览</div>
+    <div class="stats">
+      <span>📊 资讯共 7 条</span>
+      <span>🔬 理工科 3 条</span>
+      <span>📚 文科 4 条</span>
+    </div>
+    <div class="core-judgments">
+      <h3>📌 今日要点速览</h3>
+      <ul>
+        <li>黄仁勋在高盛科技大会断言：AI是计算范式根本转变，2030年全球AI基础设施年支出将达3-4万亿美元</li>
+        <li>HBM供应趋紧推高成本，华为昇腾950DT两个月涨价50%，寒武纪下一代芯片报价上调20%-30%</li>
+        <li>美国8月CPI同比涨3.4%符合预期，核心CPI环比超预期，美联储9月加息概率飙升至90%</li>
+        <li>广东金秋文旅消费季启动：3000万元惠民补贴、140个重点招商项目、签约金额超200亿元</li>
+        <li>全球AI芯片格局加速重构：阿里达摩院5nm RISC-V芯片首次直接驱动270亿参数大模型</li>
+      </ul>
+    </div>
+  </div>
+
+  <div style="margin:20px 0 10px;padding:12px 20px;background:#fff;border-radius:10px;box-shadow:0 1px 3px rgba(0,0,0,0.04);display:flex;align-items:center;flex-wrap:wrap;">
+    <span style="font-size:14px;color:#718096;margin-right:12px;">快速跳转：</span>
+    <a href="javascript:void(0)" onclick="scrollToSection('section-science')" style="margin-right:20px;font-size:15px;color:#2b6cb0;text-decoration:none;font-weight:600;">🔬 理工科资讯</a>
+    <a href="javascript:void(0)" onclick="scrollToSection('section-arts')" style="margin-right:20px;font-size:15px;color:#276749;text-decoration:none;font-weight:600;">📚 文科资讯</a>
+  </div>
+
+  <div id="section-science" style="display:flex;align-items:center;gap:10px;margin:24px 0 18px;padding:12px 20px;background:linear-gradient(90deg,#ebf8ff,#fff);border-radius:10px;border-left:4px solid #4299e1;">
+    <span style="font-size:20px;">🔬</span>
+    <span style="font-size:17px;font-weight:700;color:#2b6cb0;">理工科资讯</span>
+    <span style="font-size:13px;color:#718096;margin-left:4px;">共 3 条</span>
+  </div>
+
+<div class="card science">
+  <div class="card-head">
+    <h2>黄仁勋高盛科技大会发声：AI是计算范式的根本转变</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 财联社/通信世界</span><span>🕓 2026-09-12</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>据财联社9月12日报道，英伟达首席执行官黄仁勋在旧金山高盛科技大会上发表重磅演讲。黄仁勋明确表示："AI并非又一轮普通的技术周期，而是计算方式从检索式向生成式的根本转变。"他重申到2030年全球AI基础设施年支出将达到3万亿至4万亿美元，并坦率承认英伟达正面临先进封装、DRAM内存、晶圆产能及土地电力等多重供应链挑战，相关瓶颈可能延续至2028年。SpaceX、泛林集团等参会企业同样看好AI前景。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>AI基础设施已进入与电力、交通类似的基础性投资阶段。全球AI算力军备竞赛持续升温——据高盛交易团队数据，电力、内存、数据中心建设等制约因素可能令AI算力供不应求的局面延续至2028年。黄仁勋提出"AI工厂"正成为生产智能的新型资产，预计基于推理的机器人操作技术将在约两年后迎来重大拐点。网络安全被视为AI下一个主要应用场景。甲骨文最新财报显示，云基础设施营收同比增121%，剩余履约义务达6640亿美元，AI算力需求之强劲超出市场预期。</p>
+    <h3 class="sub-title gg">关联专业</h3>
+    <p>计算机科学与技术、人工智能、软件工程、数据科学与大数据技术、通信工程</p>
+    <h3 class="sub-title gg">学历·岗位·薪资</h3>
+    <p>据猎聘数据，AI基础设施工程师月薪20K-80K，资深架构师月薪可达100K-150K。据AgenticCareers数据，美国AI基础设施工程师中位年薪197K-290K美元，高级岗位可达392K美元。据BOSS直聘数据，国内Agent开发工程师月薪15K-35K，Agent架构师月薪25K-50K。2026年AI方向招聘需求同比增长超140%，基础设施方向最为紧缺。</p>
+    <h3 class="sub-title gg">地域优势</h3>
+    <p>北京（字节跳动+百度+智源研究院+面壁智能）、上海（商汤+小红书+声网+拼多多）、深圳（华为+腾讯+大疆）、杭州（阿里云+网易）、旧金山湾区（NVIDIA+OpenAI+Google+Meta）。</p>
+  </div>
+  <div class="tip-block">
+    <h3>💡 报考小贴士</h3>
+    <p>AI基础设施是当前IT行业薪资最高、增速最快的方向之一。黄仁勋的判断——"AI不是技术周期而是范式转变"——意味着这是一个长期赛道而非短期热点。核心技能要求包括Python工程化、CUDA编程、分布式系统、大模型训练框架（PyTorch DeepSpeed等）。建议"计算机科学与技术"或"人工智能"专业本科阶段打好算法和系统基础，研究生深入分布式训练和推理优化方向。硕士学历在头部AI公司基础设施岗位几乎是标配。</p>
+  </div>
+</div>
+
+<div class="card science">
+  <div class="card-head">
+    <h2>HBM供应趋紧推升成本，华为寒武纪等AI芯片掀涨价潮</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 华尔街见闻</span><span>🕓 2026-09-12</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>据华尔街见闻9月12日报道，受HBM（高带宽存储器）供应趋紧、采购成本攀升影响，中国AI芯片厂商掀起一轮涨价潮。华为昇腾950DT意向报价已超25万元，两个月内涨幅高达50%；寒武纪尚未发布的下一代芯片"690"报价同样上调20%至30%。与此同时，燧原科技当日登陆科创板首日大涨，总市值一度突破2000亿元，腾讯八年持仓浮盈超300亿元。至此，"国产GPU四小龙"——摩尔线程、沐曦股份、壁仞科技与燧原科技——全部进入资本市场。算力军备竞赛正在推高整条产业链的价格天花板。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>HBM是AI芯片的核心组件之一，主要用于GPU和AI加速器的高带宽数据传输。全球HBM市场由SK海力士、三星、美光三家垄断，产能扩张周期长。据行业数据，2026年全球HBM市场规模预计突破300亿美元，同比增长超80%。国内AI芯片企业面临"上游涨价+下游需求旺盛"的双重挤压——涨价背后反映的是算力供给的结构性紧缺。与此同时，国产替代进程加速，燧原科技等企业的上市标志着国产GPU从技术研发进入规模化商用阶段。</p>
+    <h3 class="sub-title gg">关联专业</h3>
+    <p>集成电路设计与集成系统、微电子科学与工程、电子科学与技术、计算机科学与技术、材料科学与工程</p>
+    <h3 class="sub-title gg">学历·岗位·薪资</h3>
+    <p>据BOSS直聘数据，芯片设计工程师月薪25K-50K，IC验证工程师月薪20K-40K，HBM封装工程师月薪20K-40K。据中国半导体行业协会数据，集成电路行业人才缺口超20万，应届硕士起薪中位数达28K/月。GPU架构师年薪60-120万元，资深芯片设计专家年薪可达150万元以上。</p>
+    <h3 class="sub-title gg">地域优势</h3>
+    <p>上海（中芯国际+华虹半导体+张江集成电路产业园+燧原科技总部）、深圳（华为海思+比亚迪半导体）、北京（寒武纪+紫光展锐+中芯国际北方基地）、武汉（长江存储+武汉新芯）、南京（台积电南京厂+三星半导体）。</p>
+  </div>
+  <div class="tip-block">
+    <h3>💡 报考小贴士</h3>
+    <p>AI芯片涨价潮反映的是整个算力产业链的供需失衡——这是"芯片荒"在AI时代的升级版。集成电路设计与集成系统、微电子科学与工程是国家最紧缺的人才方向。HBM方向需要了解存储芯片架构、先进封装技术（CoWoS、HBM TSV等），研究生阶段可重点关注。国产GPU"四小龙"全部上市，意味着这个赛道正从"烧钱研发"走向"商业回报"，就业前景持续看好。硕士是基本门槛，博士在架构级岗位更有竞争力。</p>
+  </div>
+</div>
+
+<div class="card science">
+  <div class="card-head">
+    <h2>阿里达摩院5nm RISC-V芯片首次直接驱动270亿参数大模型</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 站长之家/AI News</span><span>🕓 2026-09-12</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>据AI News 9月12日报道，阿里巴巴达摩院旗舰CPU玄铁C950取得里程碑突破：在基于台积电5nm工艺制造的64核RISC-V芯片上，首次无需GPU或仿真环境直接运行Qwen 3.8-27B大语言模型（270亿参数）。这是RISC-V架构芯片首次直接驱动如此大规模的语言模型，展示了RISC-V在AI推理领域的技术潜力，被认为将打破专用GPU对大模型运行的垄断格局。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>RISC-V是一种开源指令集架构，近年来在AI芯片领域快速崛起。与ARM和x86不同，RISC-V采用开源生态，无需支付高额授权费用，受到中国芯片企业的高度重视。据行业数据，2026年全球RISC-V芯片出货量预计突破100亿颗，同比增长超60%。玄铁C950采用台积电5nm工艺，集成64核心，支持256线程并行，在AI推理性能上较上一代提升超3倍。这一突破意味着大模型推理有望从"GPU独占"走向"多元算力"时代，为边缘计算、物联网等场景提供新的技术路径。</p>
+    <h3 class="sub-title gg">关联专业</h3>
+    <p>计算机科学与技术、微电子科学与工程、集成电路设计与集成系统、电子科学与技术、自动化</p>
+    <h3 class="sub-title gg">学历·岗位·薪资</h3>
+    <p>据BOSS直聘数据，RISC-V芯片设计工程师月薪20K-45K，AI推理优化工程师月薪25K-50K，嵌入式AI工程师月薪15K-35K。据猎聘数据，2026年RISC-V方向招聘需求同比增长超120%。阿里达摩院、平头哥半导体资深芯片架构师年薪60-120万元。</p>
+    <h3 class="sub-title gg">地域优势</h3>
+    <p>杭州（阿里巴巴达摩院+平头哥半导体总部+之江实验室）、上海（中芯国际+华虹半导体+张江集成电路产业园）、北京（紫光展锐+中科院计算所）、深圳（比亚迪半导体+海思半导体）、南京（台积电南京厂）。</p>
+  </div>
+  <div class="tip-block">
+    <h3>💡 报考小贴士</h3>
+    <p>RISC-V芯片驱动大模型是"开源指令集+AI"的重大突破——这意味着未来的AI推理不一定非得依赖昂贵的GPU。这个方向需要同时掌握芯片架构设计（数字IC设计）和AI推理优化（模型压缩、量化等）两类技能，属于典型的交叉学科。建议"微电子科学与工程"或"集成电路设计"专业，研究生阶段转向AI芯片方向。RISC-V开源生态对国内芯片产业意义重大——不受授权限制，自主可控程度最高。</p>
+  </div>
+</div>
+
+  <div id="section-arts" style="display:flex;align-items:center;gap:10px;margin:30px 0 18px;padding:12px 20px;background:linear-gradient(90deg,#f0fff4,#fff);border-radius:10px;border-left:4px solid #48bb78;">
+    <span style="font-size:20px;">📚</span>
+    <span style="font-size:17px;font-weight:700;color:#276749;">文科资讯</span>
+    <span style="font-size:13px;color:#718096;margin-left:4px;">共 4 条</span>
+  </div>
+
+<div class="card arts">
+  <div class="card-head">
+    <h2>美国8月CPI超预期，美联储9月加息概率飙升至90%</h2>
+    <span style="background:#f0fff4;color:#48bb78;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">文科</span>
+  </div>
+  <div class="meta"><span>📰 第一财经/中国新闻网</span><span>🕓 2026-09-12</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>据第一财经9月12日报道，美国劳工统计局公布数据显示，8月美国CPI环比上涨0.4%（7月仅+0.1%），同比上涨3.4%。核心CPI环比上涨0.3%（高于市场预期的0.2%），同比上涨2.4%。受中东冲突带来的原油涨价，汽油价格环比大涨3.9%，贡献当月CPI涨幅的三分之一以上。CME美联储观察工具显示，CPI数据公布后美联储下周加息概率最高触及90%。市场预计到明年6月累计至少加息三次。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>这是美联储自2023年以来可能首次加息，标志着全球货币政策从"降息周期"向"紧缩周期"的重大转向。据华尔街机构分析，此次通胀反弹的核心驱动力包括：中东冲突推高能源价格、AI产业扩张带来的芯片及软件成本上行（计算机软件及配件价格同比大涨25.4%）、以及住房成本持续攀升。密歇根大学9月消费者信心指数从51.7暴跌至47.8，一年期通胀预期飙升至4.6%。金融分析师指出，这形成了典型的"滞胀前兆"困境——物价压不下去，收紧政策又可能打击脆弱的消费和经济。</p>
+    <h3 class="sub-title gg">关联专业</h3>
+    <p>金融学、经济学、国际经济与贸易、金融工程、统计学</p>
+    <h3 class="sub-title gg">学历·岗位·薪资</h3>
+    <p>据BOSS直聘数据，宏观经济分析师月薪15K-30K，金融合规专员月薪12K-25K，风控分析师月薪15K-30K。据猎聘数据，2026年跨境金融方向招聘需求同比增长45%，合规科技（RegTech）方向增长80%。头部券商宏观研究员年薪30-60万元，外资银行合规经理年薪25-50万元。</p>
+    <h3 class="sub-title gg">地域优势</h3>
+    <p>北京（金融监管部门+大型金融机构总部+中投公司）、上海（证券交易所+基金公司+外资金融机构聚集）、深圳（证券交易所+创投机构+金融科技企业）、杭州（蚂蚁集团+网商银行+金融科技产业链）。</p>
+  </div>
+  <div class="tip-block">
+    <h3>💡 报考小贴士</h3>
+    <p>美联储加息周期对全球金融环境有深远影响。对金融学、经济学方向的同学来说，理解"全球宏观"是核心竞争力——需要同时掌握美国货币政策传导机制、汇率变动逻辑和新兴市场资本流动规律。"合规科技"和"绿色金融"是当前金融领域两大高增长方向——前者需要懂法律和技术的复合人才，后者需要理解ESG和碳交易的专业人才。建议金融学专业关注"金融科技"方向，掌握Python和数据分析技能。硕士学历+CFA/FRM等证书是头部机构的基本门槛。</p>
+  </div>
+</div>
+
+<div class="card arts">
+  <div class="card-head">
+    <h2>广东金秋文旅消费季启动：3000万补贴+200亿项目签约</h2>
+    <span style="background:#f0fff4;color:#48bb78;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">文科</span>
+  </div>
+  <div class="meta"><span>📰 南方都市报/广东发布</span><span>🕓 2026-09-12</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>据南方都市报9月12日报道，2026广东金秋文旅消费季暨文旅产业招商推介会9月11日在广州举行。活动发布覆盖21个地市的140余个文旅重点招商项目，涵盖"南海Ⅰ号""开平碉楼""丹霞山"三大IP升级，以及滨海度假、森林康养、邮轮游艇、数智文旅等多元赛道。大会前后全省共106家单位、56个项目达成合作，签约金额超过200亿元。同时面向境内外来粤游客和广东居民发放总计3000万元文旅消费惠民补贴，活动持续至10月底，覆盖中秋、国庆两大黄金档。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>广东文旅产业正进入"金融赋能+项目招商+消费提振"三轮驱动的新阶段。广东省文旅厅联合地方金融管理局、人民银行广东省分行启动"粤润文旅·金融赋能"专项行动，交通银行广东省分行"十五五"期间将为广东文旅提供300亿元意向性支持额度。2026广东国际旅游产业博览会同期举办，吸引全球近50个国家和地区、超1200家文旅机构参展。据行业数据，2026年国内文旅市场持续复苏，"文旅+科技""文旅+美食""文旅+康养"等融合业态成为新增长点，旅游策划、景区运营、文旅IP开发等方向人才需求持续增长。</p>
+    <h3 class="sub-title gg">关联专业</h3>
+    <p>旅游管理、文化产业管理、市场营销、工商管理、电子商务、数字媒体艺术</p>
+    <h3 class="sub-title gg">学历·岗位·薪资</h3>
+    <p>据BOSS直聘数据，文旅策划经理月薪10K-20K，景区运营经理月薪8K-18K，OTA产品经理月薪15K-30K。据猎聘数据，2026年文旅IP开发方向招聘需求同比增长35%，数智文旅方向增长50%。携程、飞猪等平台文旅产品总监年薪30-50万元。大型文旅集团投资拓展经理年薪25-45万元。</p>
+    <h3 class="sub-title gg">地域优势</h3>
+    <p>广州（广东省文旅厅+携程华南总部+文旅产业链）、深圳（科技文旅+邮轮游艇+创意文化产业）、珠海（长隆+海岛度假+横琴文旅区）、成都（文旅融合标杆城市+三星堆IP+美食文旅）、杭州（宋城演艺+蚂蚁文旅金融+数字文旅产业链）。</p>
+  </div>
+  <div class="tip-block">
+    <h3>💡 报考小贴士</h3>
+    <p>广东3000万文旅消费券+200亿签约，说明文旅产业正从"疫情恢复"转向"投资扩张"阶段。对旅游管理方向的同学来说，"数智文旅"是被低估的高增长赛道——AI+文旅、沉浸式体验、IP运营等方向急需既懂旅游运营又懂数字技术的复合人才。建议旅游管理专业关注"文旅数字化"方向，学习数据分析、新媒体运营等技能。文化产业管理专业可侧重"IP运营与开发"方向。实习经验非常重要——携程、飞猪、迪士尼等头部文旅企业的实习经历是求职加分项。</p>
+  </div>
+</div>
+
+<div class="card arts">
+  <div class="card-head">
+    <h2>齐鲁小吃促消费暨海洋美食嘉年华在威海开幕</h2>
+    <span style="background:#f0fff4;color:#48bb78;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">文科</span>
+  </div>
+  <div class="meta"><span>📰 齐鲁网·闪电新闻</span><span>🕓 2026-09-12</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>据齐鲁网·闪电新闻9月12日报道，2026齐鲁小吃促消费暨海洋美食嘉年华9月11日晚在威海开幕。全省10地市近300种齐鲁名优小吃集中亮相，海鲜盛宴、万人同吃水饺等体验活动让市民游客大饱口福。威海同步发布金秋消费季活动，推出"跟着美食游威海"精品旅游线路。现场设置以旧换新惠民展区、智能化餐饮设备应用展示区等7大展区，嘉年华持续至9月13日。威海将自9月中旬起投放多轮零售类惠民消费券，激发金秋消费市场活力。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>"美食+文旅"融合模式正成为各地提振消费的重要抓手。商务部等9部门联合印发《关于进一步激发下沉市场活力 活跃县域消费的意见》，推动品牌连锁向县域下沉。据行业数据，2026年"美食文旅"带动的消费规模同比增长超30%，美食主题旅游、非遗美食体验、地方特色餐饮IP等新业态蓬勃发展。美团数据显示，年轻人更愿为体验与专业服务买单，"智能掌柜"已服务全国超130万家餐饮商家，AI技术正加速渗透餐饮消费全链条。</p>
+    <h3 class="sub-title gg">关联专业</h3>
+    <p>旅游管理、烹饪与营养教育、市场营销、文化产业管理、电子商务</p>
+    <h3 class="sub-title gg">学历·岗位·薪资</h3>
+    <p>据BOSS直聘数据，餐饮品牌策划经理月薪10K-20K，文旅活动运营经理月薪8K-18K，新媒体营销专员月薪6K-12K。据猎聘数据，2026年餐饮品牌连锁化方向招聘需求同比增长25%，美食文旅策划方向增长30%。大型餐饮集团品牌总监年薪25-45万元，美食文旅IP策划专家年薪20-40万元。</p>
+    <h3 class="sub-title gg">地域优势</h3>
+    <p>威海（海洋美食+滨海旅游+胶东文化IP）、成都（美食文旅标杆城市+川菜非遗+文旅消费示范）、长沙（网红消费城市+湘菜IP+文和友等新消费品牌）、广州（粤菜文化+早茶IP+国际美食之都）、西安（碳水文化+古城文旅+沉浸式美食体验）。</p>
+  </div>
+  <div class="tip-block">
+    <h3>💡 报考小贴士</h3>
+    <p>"美食+文旅"是当下增长最快的消费融合赛道之一。这个方向涉及的专业很广：旅游管理做目的地策划、市场营销做品牌运营、烹饪与营养教育做菜品研发和文化传承。建议旅游管理专业关注"目的地营销"方向，市场营销专业关注"新消费品牌运营"方向。"下沉市场"是未来消费增长的主战场——县域消费、小镇经济正在成为品牌连锁化的新蓝海，相关人才缺口很大。实习建议去美团、抖音生活服务、携程等平台积累实操经验。</p>
+  </div>
+</div>
+
+<div class="card arts">
+  <div class="card-head">
+    <h2>江苏专题部署文旅产业高质量发展，推入境旅游新政</h2>
+    <span style="background:#f0fff4;color:#48bb78;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">文科</span>
+  </div>
+  <div class="meta"><span>📰 央广网</span><span>🕓 2026-09-12</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>据央广网9月12日报道，江苏省文化和旅游厅近日召开文旅产业高质量发展座谈会，会上联合有关部门印发三份重磅文件：《关于进一步促进入境旅游消费的若干政策措施》《关于壮大演艺市场的若干政策措施》《关于文旅体商联合推动"票根经济"全域全链贯通的若干措施》。三份文件分别瞄准入境旅游、演艺市场和"票根经济"三大方向，标志着江苏文旅产业从"规模恢复"迈向"制度创新"。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>入境旅游是2026年文旅行业最受瞩目的增长方向之一。随着免签政策持续扩容，2026年前8个月入境游客人次同比大幅增长。"票根经济"是新兴的文旅消费模式——通过演出票、景区门票等消费凭证串联餐饮、住宿、交通、购物等多环节消费，实现文旅消费的全域全链贯通。据行业数据，2026年国内演艺市场规模突破800亿元，大型音乐节、话剧、沉浸式演出等业态带动周边消费效应显著。文旅产业正在从"单一景点经济"向"全链条体验经济"转型，旅游规划、目的地营销、演艺策划等方向人才需求持续增长。</p>
+    <h3 class="sub-title gg">关联专业</h3>
+    <p>旅游管理、文化产业管理、市场营销、公共管理、英语（旅游英语方向）、数字媒体艺术</p>
+    <h3 class="sub-title gg">学历·岗位·薪资</h3>
+    <p>据BOSS直聘数据，旅游产品经理月薪8K-18K，入境旅游运营经理月薪10K-20K，演艺项目策划经理月薪10K-22K。据猎聘数据，2026年入境旅游方向招聘需求同比增长55%，演艺策划方向增长40%。头部文旅集团战略规划总监年薪30-50万元，大型演出公司项目总监年薪25-45万元。</p>
+    <h3 class="sub-title gg">地域优势</h3>
+    <p>南京（江苏省文旅厅+长三角文旅核心城市+六朝文化底蕴）、上海（入境旅游门户+国际演艺市场+迪士尼+百老汇合作）、杭州（数字经济+文旅融合标杆+宋城演艺总部）、苏州（古典园林IP+昆曲非遗+入境旅游热门目的地）。</p>
+  </div>
+  <div class="tip-block">
+    <h3>💡 报考小贴士</h3>
+    <p>江苏三份政策文件精准瞄准了文旅产业三大增长极——入境旅游、演艺市场、票根经济。对旅游管理方向的同学来说，"入境旅游"是当前最值得关注的风口——免签政策扩容带来的不仅是游客增加，更是服务标准、产品设计、营销方式的全面国际化。建议英语能力务必过硬，再掌握一门小语种（日语、韩语、法语等）竞争力更强。"票根经济"本质上是"消费场景串联"——需要理解用户消费行为和数据运营，旅游管理+数据分析的复合能力很吃香。</p>
+  </div>
+</div>
+
+<script>
+function scrollToSection(id) {
+  var el = document.getElementById(id);
+  if (el) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+}
+function showIndex() {
+  if (typeof window.showReport === 'function') { /* noop */ }
+  window.location.href = 'index.html';
+}
+</script>
+</div>
+</body>
+</html>
