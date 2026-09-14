@@ -244,7 +244,16 @@
   .print-watermark { display: none !important; }
 
 
-  @media print {
+  .container.report-view { 
+    max-width: 900px !important; 
+    margin: 0 auto !important; 
+    padding: 40px 32px 60px !important;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  }
+  
+@media print {
   body.printing-report .container.report-view { 
     max-width: 900px !important; 
     margin: 0 auto !important; 
