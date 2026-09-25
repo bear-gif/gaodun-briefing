@@ -118,37 +118,36 @@ def build_report_item_html(date_str, issue_num, total, science, arts):
 def build_report_container(container_html, date_str, issue_num):
     """
     构建报告容器 HTML。
-    确保容器的 id 和 class 正确，并添加 index.html 特有的样式。
+    仅替换最外层容器的 id/class/style，保留内部所有元素（含 section id）不变。
     """
-    # 替换 class，确保有 print-target
-    # 移除原有的 id（如果有）
-    container_html = re.sub(r'\s+id="[^"]*"', '', container_html)
+    # 找到最外层开标签的结束位置
+    first_close = container_html.find('>')
+    if first_close == -1:
+        error_exit("简报容器开标签格式错误")
+
+    # 找到最外层容器对应的闭合 </div>，提取内部内容
+    container_end = find_matching_div_end(container_html, 0)
+    if container_end == -1:
+        error_exit("简报容器无法找到匹配的闭合标签")
+
+    inner_content = container_html[first_close + 1:container_end - 6]
 
     # 确保 class 包含 print-target
-    if 'print-target' not in container_html[:200]:
-        container_html = container_html.replace(
-            'class="container report-view"',
-            'class="container report-view print-target"',
+    opening_tag = container_html[:first_close]
+    if 'print-target' not in opening_tag:
+        opening_tag = opening_tag.replace(
+            'container report-view',
+            'container report-view print-target',
             1
         )
 
-    # 构建完整的容器，添加 style
+    # 用新的外层标签包裹内部内容（保留内部所有 id）
     result = (
         f'<div class="container report-view print-target" '
         f'id="report-{date_str}" '
         f'style="{REPORT_CONTAINER_STYLE}">'
+        f'{inner_content}\n</div>'
     )
-
-    # 提取容器内部内容（去掉外层 div 标签）
-    # 找到第一个 > 之后的内容
-    first_close = container_html.index('>')
-    inner_start = first_close + 1
-
-    # 找到最后一个 </div>
-    last_close = container_html.rfind('</div>')
-    inner_content = container_html[inner_start:last_close]
-
-    result += inner_content + '\n</div>'
 
     return result
 
@@ -247,6 +246,75 @@ def insert_report_container(index_html, container_html, date_str):
     return None, "insert_point_not_found"
 
 
+def find_matching_div_end(html_content, open_start):
+    """
+    给定一个 <div 开标签的起始位置，通过 div 嵌套计数找到匹配的闭合 </div> 结束位置。
+    返回闭合标签之后的位置；找不到返回 -1。
+    """
+    depth = 0
+    i = open_start
+    length = len(html_content)
+    while i < length:
+        if html_content[i:i+4] == '<div':
+            next_char_pos = i + 4
+            if next_char_pos < length and html_content[next_char_pos] in (' ', '>', '\n', '\r', '\t'):
+                depth += 1
+        elif html_content[i:i+6] == '</div>':
+            depth -= 1
+            if depth == 0:
+                return i + 6
+        i += 1
+    return -1
+
+
+def replace_existing_report(index_html, date_str, new_container_html, total, science, arts):
+    """
+    --force 模式：用新的报告容器替换 index.html 中已有的同名报告容器，
+    并更新索引列表条目中的资讯统计。保留原有的 latest/archive 状态。
+    返回 (新html, 状态消息)。
+    """
+    # 1. 替换报告容器
+    container_marker = f'id="report-{date_str}"'
+    marker_pos = index_html.find(container_marker)
+    if marker_pos == -1:
+        return None, "container_not_found"
+
+    container_open = index_html.rfind('<div', 0, marker_pos)
+    container_end = find_matching_div_end(index_html, container_open)
+    if container_end == -1:
+        return None, "container_close_not_found"
+
+    index_html = (
+        index_html[:container_open]
+        + new_container_html
+        + index_html[container_end:]
+    )
+
+    # 2. 更新索引条目中的统计信息
+    item_pattern = re.compile(
+        r'<div class="report-item[^"]*"[^>]*onclick="showReport\(\''
+        + re.escape(date_str)
+        + r"'\)\""
+    )
+    m = item_pattern.search(index_html)
+    if m:
+        item_end = find_matching_div_end(index_html, m.start())
+        if item_end != -1:
+            item_html = index_html[m.start():item_end]
+            new_item_html = re.sub(
+                r'资讯 \d+ 条 · 理工 \d+ · 文科 \d+',
+                f'资讯 {total} 条 · 理工 {science} · 文科 {arts}',
+                item_html
+            )
+            index_html = (
+                index_html[:m.start()]
+                + new_item_html
+                + index_html[item_end:]
+            )
+
+    return index_html, "ok"
+
+
 def validate_div_balance(html_content):
     """
     验证 HTML 的 div 嵌套平衡。
@@ -313,6 +381,8 @@ def main():
     parser.add_argument('--index-file', default=DEFAULT_INDEX_FILE, help='index.html 路径')
     parser.add_argument('--briefing-file', default=None, help='简报文件路径（默认自动推断）')
     parser.add_argument('--dry-run', action='store_true', help='只检查不修改')
+    parser.add_argument('--force', action='store_true',
+                        help='强制更新：用简报内容替换 index.html 中已有的同名报告，保留 latest/archive 状态')
     args = parser.parse_args()
 
     # 解析日期
@@ -349,7 +419,8 @@ def main():
         index_html = f.read()
 
     # 幂等性检查：是否已集成
-    if f'id="report-{date_str}"' in index_html:
+    already_integrated = f'id="report-{date_str}"' in index_html
+    if already_integrated and not args.force:
         print(f"⏭️  第{issue_num}期 ({date_str}) 已存在于 index.html 中，跳过。")
         sys.exit(0)
 
@@ -372,20 +443,29 @@ def main():
     # 构建报告容器
     new_container_html = build_report_container(container_html, date_str, issue_num)
 
-    # 更新 index.html - 添加报告列表条目
-    print(f"📝 添加报告列表条目...")
-    index_html, status = add_report_item(index_html, new_item_html, date_str)
-    if status == "already_exists":
-        print(f"⏭️  第{issue_num}期 ({date_str}) 的列表条目已存在，跳过。")
-        sys.exit(0)
-    elif status == "insert_point_not_found":
-        error_exit("未找到报告列表的插入点（📅 历史报告）")
+    if already_integrated and args.force:
+        # --force 模式：替换已有报告，保留 latest/archive 状态
+        print(f"🔄 强制更新第{issue_num}期 ({date_str}) 的报告内容...")
+        index_html, status = replace_existing_report(
+            index_html, date_str, new_container_html, total, science, arts
+        )
+        if status != "ok":
+            error_exit(f"强制更新失败: {status}")
+    else:
+        # 正常模式：更新 index.html - 添加报告列表条目
+        print(f"📝 添加报告列表条目...")
+        index_html, status = add_report_item(index_html, new_item_html, date_str)
+        if status == "already_exists":
+            print(f"⏭️  第{issue_num}期 ({date_str}) 的列表条目已存在，跳过。")
+            sys.exit(0)
+        elif status == "insert_point_not_found":
+            error_exit("未找到报告列表的插入点（📅 历史报告）")
 
-    # 插入报告容器
-    print(f"📝 插入报告容器...")
-    index_html, status = insert_report_container(index_html, new_container_html, date_str)
-    if status != "ok":
-        error_exit(f"无法插入报告容器: {status}")
+        # 插入报告容器
+        print(f"📝 插入报告容器...")
+        index_html, status = insert_report_container(index_html, new_container_html, date_str)
+        if status != "ok":
+            error_exit(f"无法插入报告容器: {status}")
 
     # 验证 HTML 结构
     print(f"🔍 验证 HTML div 嵌套平衡...")
@@ -409,7 +489,10 @@ def main():
     with open(index_path, 'w', encoding='utf-8') as f:
         f.write(index_html)
 
-    print(f"✅ 第{issue_num}期 ({date_str}) 已集成到 index.html")
+    if already_integrated and args.force:
+        print(f"✅ 第{issue_num}期 ({date_str}) 已强制更新")
+    else:
+        print(f"✅ 第{issue_num}期 ({date_str}) 已集成到 index.html")
     print(f"   资讯 {total} 条 · 理工 {science} · 文科 {arts}")
 
 
