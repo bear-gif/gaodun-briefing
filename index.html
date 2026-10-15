@@ -346,11 +346,19 @@
     </div>
     <div class="report-list">
       <h2>📅 历史报告</h2>
-<div class="report-item latest" onclick="showReport('2026-10-14')">
+<div class="report-item latest" onclick="showReport('2026-10-15')">
+  <span class="date">第60期 · 高顿升学 · 每日行业速览</span>
+  <span class="weekday">10月15日</span>
+  <span style="font-size:13px;color:#718096;margin-left:12px;">资讯 7 条 · 理工 5 · 文科 2</span>
+  <span class="badge badge-latest">最新</span>
+  <button class="pdf-btn" onclick="event.stopPropagation(); downloadPDF('2026-10-15', this)">📥 打印为PDF</button>
+</div>
+
+<div class="report-item" onclick="showReport('2026-10-14')">
   <span class="date">第59期 · 高顿升学 · 每日行业速览</span>
   <span class="weekday">10月14日</span>
   <span style="font-size:13px;color:#718096;margin-left:12px;">资讯 7 条 · 理工 4 · 文科 3</span>
-  <span class="badge badge-latest">最新</span>
+  <span class="badge badge-archive">归档</span>
   <button class="pdf-btn" onclick="event.stopPropagation(); downloadPDF('2026-10-14', this)">📥 打印为PDF</button>
 </div>
 
@@ -1006,6 +1014,219 @@
 
 
 
+
+
+
+<div class="container report-view print-target" id="report-2026-10-15" style="max-width:900px!important;margin:0 auto!important;padding:40px 32px 60px!important;background:#fff;border-radius:16px;box-shadow:0 4px 20px rgba(0,0,0,0.08)">
+  <div class="report-header">
+    <a href="javascript:void(0)" onclick="showIndex()" style="display:inline-block;margin-bottom:14px;font-size:14px;color:#4299e1;text-decoration:none;font-weight:500;cursor:pointer;">&larr; 返回列表</a>
+    <div class="date-line">📅 第60期 · 高顿升学 · 每日行业速览</div>
+    <div class="stats">
+      <span>📊 资讯共 7 条</span>
+      <span>🔬 理工科 5 条</span>
+      <span>📚 文科 2 条</span>
+    </div>
+    <div class="core-judgments">
+      <h3>📌 今日要点速览</h3>
+      <ul>
+        <li>OpenAI办公室发现隐藏录音设备，涉事员工被捕；Meta推出AI驱动的信息流自定义工具；字节跳动新设大模型安全与对齐部门启动全球招募</li>
+        <li>Anthropic被曝三季度营收168亿美元，环比增长近五成，连续第二个季度调整后盈利，计划11月上市</li>
+        <li>苹果计划12月随iOS 27.3向中国大陆推出Apple智能，接入阿里通义千问模型，新Siri不在首批范围</li>
+        <li>微信淘宝等150余款App拒绝豆包手机助手屏幕代操作，AI手机助手面临生态博弈</li>
+        <li>文旅体商融合加速释放消费潜力，国庆假期全国出游8.26亿人次，海南文昌航天旅游、贵州桥旅融合成新亮点</li>
+        <li>甘肃2026研学旅游大会今日启幕，英国大学协会发布毕业生就业路线图，推动高校培养与劳动力市场匹配</li>
+      </ul>
+    </div>
+  </div>
+
+  <div style="margin:20px 0 10px;padding:12px 20px;background:#fff;border-radius:10px;box-shadow:0 1px 3px rgba(0,0,0,0.04);display:flex;align-items:center;flex-wrap:wrap;">
+    <span style="font-size:14px;color:#718096;margin-right:12px;">快速跳转：</span>
+    <a href="javascript:void(0)" onclick="scrollToSection('section-science')" style="margin-right:20px;font-size:15px;color:#2b6cb0;text-decoration:none;font-weight:600;">🔬 理工科资讯</a>
+    <a href="javascript:void(0)" onclick="scrollToSection('section-arts')" style="margin-right:20px;font-size:15px;color:#276749;text-decoration:none;font-weight:600;">📚 文科资讯</a>
+  </div>
+
+  <div id="section-science" style="display:flex;align-items:center;gap:10px;margin:24px 0 18px;padding:12px 20px;background:linear-gradient(90deg,#ebf8ff,#fff);border-radius:10px;border-left:4px solid #4299e1;">
+    <span style="font-size:20px;">🔬</span>
+    <span style="font-size:17px;font-weight:700;color:#2b6cb0;">理工科资讯</span>
+    <span style="font-size:13px;color:#718096;margin-left:4px;">共 5 条</span>
+  </div>
+
+<div class="card science">
+  <div class="card-head">
+    <h2>OpenAI办公室发现隐藏录音设备涉事员工被捕；Meta推出AI信息流定制工具；字节新设大模型安全部门</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 界面新闻/网易智能</span><span>🕓 2026-10-15</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>10月15日消息，OpenAI在办公室内发现一台精密录音设备，借助自身AI模型分析确认系一名员工数日前安装，已将此事移交FBI，涉事员工被逮捕并解雇。暂无证据表明模型权重或源代码泄露。同日，Meta推出AI驱动的信息流自定义工具，用户可用自然语言直接向算法说明想看的内容。英伟达宣布未来五年投入2.5亿美元推进英国AI安全研究。Anthropic与新加坡政府签署AI合作协议。字节跳动宣布启动大模型安全与对齐部门全球招募，计划在全球范围内邀请10位顶尖研究员。智元机器人在上海成立新公司，注册资本1000万。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>AI行业安全与人才竞争同步升温。据猎聘2026年10月数据，大模型安全工程师月薪30-60K，AI算法工程师（大模型方向）月薪20-50K。据36氪报道，顶尖AI应届博士年薪可达200-900万元，英伟达给北大应届博士开出首年税前约290万的offer。据职友集数据，大模型工程师56%岗位月薪20-50K，应届生月薪约22K。据猎聘数据，大模型训练基础架构工程师月薪55-90K·15-16薪。FDE（前线部署工程师）成为2026年最热门岗位，国内平均年薪40.8万元，头部企业年包可达百万。</p>
+    <h3 class="sub-title gg">关联专业</h3>
+    <p>计算机科学与技术、人工智能、软件工程、数据科学与大数据技术、信息安全、网络空间安全</p>
+    <h3 class="sub-title gg">学历·岗位·薪资</h3>
+    <p>据猎聘2026年10月数据，大模型算法工程师月薪20-50K，AI Infra工程师月薪40-90K·15-16薪，大模型安全工程师月薪30-60K。据36氪报道，名校应届AI博士年包200-900万元（顶尖可达800万+）。据职友集数据，大模型工程师应届生月薪约22K，3-5年经验月薪25-50K。据BOSS直聘数据，FDE（前线部署工程师）月薪3.5-7万·15薪，年包最高109万元。核心雇主包括OpenAI、Anthropic、字节跳动、百度、阿里巴巴、腾讯、Meta、英伟达等。</p>
+    <h3 class="sub-title gg">地域优势</h3>
+    <p>北京（字节跳动+百度+OpenAI中国+清华大学+北京大学）、上海（阿里巴巴+腾讯+小红书+上海交通大学+复旦大学）、深圳（腾讯+华为+比亚迪+南方科技大学）、杭州（阿里巴巴+网易+浙江大学）、圣何塞/旧金山（OpenAI+Anthropic+Meta+英伟达+斯坦福大学）。</p>
+  </div>
+  <div class="tip-block">
+    <h3>💡 报考小贴士</h3>
+    <p>今天这条新闻告诉我们，AI公司的竞争已经从"谁的模型更强"变成了"谁能把AI用得更安全"。OpenAI办公室被人偷偷放了录音器，说明AI技术太重要了，有人想偷听秘密。字节跳动专门成立了一个部门来研究"怎么让AI更安全"，这说明他们需要的不只是会写代码的人，还需要懂安全、懂规则的人才。学"计算机科学与技术"可以学怎么开发AI，学"信息安全"可以学怎么保护AI不被滥用，学"人工智能"可以学怎么让AI更聪明又更安全。</p>
+  </div>
+</div>
+
+<div class="card science">
+  <div class="card-head">
+    <h2>Anthropic三季度营收168亿美元环比增长近五成，计划11月上市</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 金融时报/网易智能</span><span>🕓 2026-10-15</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>10月15日消息，据英国《金融时报》报道，Claude开发商Anthropic向投资者透露第三季度营收达168亿美元，环比增长约46%，连续第二个季度实现调整后盈利。公司展示了11%的运营利润率及正向现金流，每花1美元购买算力可换回1.70美元营收。今年5月Anthropic完成650亿美元H轮融资，投后估值达9650亿美元。公司计划于11月上市，预计未来十年在AI基础设施上投入至少5180亿美元，其中约八成不可取消。保密招股文件中近三分之一篇幅讨论AI模型可能出现的操纵、敲诈等风险。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>大模型赛道进入"盈利+上市"新阶段。据猎聘2026年10月数据，大模型训练工程师月薪20-60K，AI Infra工程师月薪40-90K·15-16薪，算法工程师月薪30-70K。据36氪报道，清华叉院大模型方向应届博士起薪可达400-500万元，头部大厂为顶尖应届博士开出800万+年包。据职友集数据，大模型工程师56%岗位月薪20-50K，2026年招聘职位同比增长50%。Anthropic、OpenAI等头部公司FDE（前线部署工程师）年薪可达136-203万元人民币。</p>
+    <h3 class="sub-title gg">关联专业</h3>
+    <p>计算机科学与技术、人工智能、软件工程、数据科学与大数据技术、电子信息工程</p>
+    <h3 class="sub-title gg">学历·岗位·薪资</h3>
+    <p>据猎聘2026年10月数据，大模型训练工程师月薪20-60K，AI Infra工程师月薪40-90K·15-16薪。据36氪报道，名校应届AI博士年包200-900万元。据BOSS直聘数据，FDE月薪3.5-7万·14-15薪。核心雇主包括Anthropic、OpenAI、字节跳动、百度、阿里巴巴、腾讯、智谱AI、月之暗面（Kimi）等。应届硕士年薪约25-50万元，博士年薪约40-100万元（顶尖可达数百万）。</p>
+    <h3 class="sub-title gg">地域优势</h3>
+    <p>北京（字节跳动+百度+智谱AI+月之暗面+清华大学+北京大学）、上海（阿里巴巴+腾讯+小红书+复旦大学+上海交通大学）、深圳（腾讯+华为+南方科技大学）、旧金山（Anthropic总部+OpenAI+Meta+斯坦福大学）、西雅图（OpenAI工程中心+微软+亚马逊）。</p>
+  </div>
+  <div class="tip-block">
+    <h3>💡 报考小贴士</h3>
+    <p>Anthropic是一家做AI的公司，一个季度就赚了168亿美元（折合人民币约1200亿元），这说明AI技术现在特别值钱。但赚钱的前提是要有能做出好AI的人才。这类公司最需要三种人："算法工程师"设计让AI变聪明的方法，"基础设施工程师"搭建让AI跑起来的大型计算机系统，"安全研究员"确保AI不会做坏事。学"计算机科学与技术"可以学算法和系统，学"人工智能"可以学AI的核心技术。</p>
+  </div>
+</div>
+
+<div class="card science">
+  <div class="card-head">
+    <h2>国行苹果AI被曝12月上线——接入阿里通义千问模型，新Siri仍要等</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 彭博社/网易智能</span><span>🕓 2026-10-15</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>10月15日消息，据彭博社报道，苹果计划在12月随iOS 27.3向中国大陆推出Apple智能，首批功能包括写作工具、通知摘要、智绘表情及照片"消除"功能，新一代Siri AI不在首批上线范围。苹果已于9月29日取得许可，允许近期iPhone使用Apple智能并接入阿里通义千问和通义万相模型。工信部更新的入网许可中，iPhone Duo、iPhone 18 Pro等机型已列入。苹果正与阿里合作开发安全防护机制，包括监管部门审批后续模型更新的安排；搜索和Siri相关功能与百度合作。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>端侧AI与国产大模型合作入华成为重要趋势。据猎聘2026年10月数据，iOS开发工程师月薪20-45K，AI算法工程师（端侧方向）月薪30-60K，移动端安全工程师月薪25-50K·15-16薪。据BOSS直聘数据，自然语言处理工程师月薪25-50K，大模型应用开发工程师月薪30-60K·15薪。苹果Apple Intelligence入华将带动端侧AI人才需求增长，阿里通义千问团队、百度文心一言团队等相关岗位需求上升。</p>
+    <h3 class="sub-title gg">关联专业</h3>
+    <p>计算机科学与技术、软件工程、电子信息工程、通信工程、信息安全</p>
+    <h3 class="sub-title gg">学历·岗位·薪资</h3>
+    <p>据猎聘2026年10月数据，iOS开发工程师月薪20-45K，AI算法工程师（端侧方向）月薪30-60K，移动端安全工程师月薪25-50K。据BOSS直聘数据，自然语言处理工程师月薪25-50K，大模型应用开发月薪30-60K·15薪。核心雇主包括苹果（中国）、阿里巴巴（通义千问）、百度（文心一言）、字节跳动、小米、OPPO、vivo等。应届硕士年薪约25-45万元。</p>
+    <h3 class="sub-title gg">地域优势</h3>
+    <p>北京（苹果中国研发+百度+字节跳动+小米+清华大学+北京大学）、上海（苹果中国+阿里巴巴+高通+上海交通大学+复旦大学）、杭州（阿里巴巴通义千问+网易+浙江大学）、深圳（华为+腾讯+OPPO+vivo+南方科技大学）、库比蒂诺（Apple总部+Apple Park）。</p>
+  </div>
+  <div class="tip-block">
+    <h3>💡 报考小贴士</h3>
+    <p>苹果的AI功能终于要在中国上线了！但苹果选择了一种聪明的方式——不是用自己的AI，而是和阿里巴巴合作，用阿里的"通义千问"大模型来驱动。这意味着什么？未来的手机AI不是某一家公司独占，而是"大模型+手机厂商"的合作模式。这种模式需要既懂手机系统又懂AI的跨界人才："iOS开发工程师"在手机系统里嵌入AI功能，"自然语言处理工程师"让AI听懂人话，"安全工程师"确保AI不会泄露隐私。</p>
+  </div>
+</div>
+
+<div class="card science">
+  <div class="card-head">
+    <h2>150余款App拒绝豆包手机助手代操作——AI手机生态博弈加剧</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 证券时报/网易智能</span><span>🕓 2026-10-15</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>10月15日消息，微信、淘宝、美团等150余款App明确拒绝字节跳动豆包手机助手的"屏幕代操作"功能。支付宝、拼多多、小红书、DeepSeek、Kimi等也在拒绝清单中。豆包试图通过识别屏幕、模拟点击实现AI助手代替用户操作手机，但主流平台以流量、风控和商业化考量为由集体拒绝。SAEP协议30天公示期已结束，系统将硬性限制支付转账、账号认证、内容发布等高风险操作的自动化执行。行业竞争正从"抢App入口"转向"抢AI任务调度权"。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>AI手机助手与App生态的博弈揭示移动互联网新权力格局。据猎聘2026年10月数据，移动安全工程师月薪25-50K·15-16薪，应用合规专家月薪30-60K，Android/iOS开发工程师月薪20-45K。据BOSS直聘数据，Android逆向开发工程师（移动安全方向）月薪20-30K，移动安全专家月薪40-70K·15薪。AI手机助手催生了"手机智能体"新赛道，涉及GUI自动化、跨App任务调度、应用安全等核心技术。</p>
+    <h3 class="sub-title gg">关联专业</h3>
+    <p>计算机科学与技术、信息安全、软件工程、电子信息工程、人工智能</p>
+    <h3 class="sub-title gg">学历·岗位·薪资</h3>
+    <p>据猎聘2026年10月数据，移动安全工程师月薪25-50K·15-16薪，应用合规法务专家月薪30-70K·15-16薪，Android逆向工程师月薪20-30K。据BOSS直聘数据，移动安全专家月薪40-70K·15薪，应用安全开发工程师月薪20-30K·15薪。核心雇主包括字节跳动（豆包）、腾讯、阿里巴巴、美团、蚂蚁集团、华为、小米等。</p>
+    <h3 class="sub-title gg">地域优势</h3>
+    <p>北京（字节跳动+美团+百度+小米+清华大学）、上海（哔哩哔哩+小红书+携程+上海交通大学）、深圳（腾讯+华为+OPPO+vivo+南方科技大学）、杭州（阿里巴巴+网易+浙江大学）、成都（腾讯成都研发中心+华为成研所+电子科技大学）。</p>
+  </div>
+  <div class="tip-block">
+    <h3>💡 报考小贴士</h3>
+    <p>这条新闻说的是一个很有趣的"手机争夺战"：字节跳动想让AI助手帮用户自动操作微信、淘宝、美团等App（就是AI像人一样帮你点手机），但150多个App都拒绝了！为什么？因为这些App担心AI代操作会影响自己的商业利益和安全。这就需要一类特殊的人才："移动安全工程师"保护手机不被别人随意操控，"应用合规专家"制定规则让AI和App和平共处，"Android/iOS开发工程师"开发手机系统功能。</p>
+  </div>
+</div>
+
+<div class="card science">
+  <div class="card-head">
+    <h2>马斯克自曝一年六次觉得自己有"AI精神病"——AI生成内容引发伦理讨论</h2>
+    <span style="background:#ebf8ff;color:#4299e1;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">理工科</span>
+  </div>
+  <div class="meta"><span>📰 网易智能/大西洋月刊</span><span>🕓 2026-10-15</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>10月15日消息，马斯克在X Takeover活动上称过去一年大概有六次觉得自己得了"AI精神病"（AI psychosis），起因是AI模型制作的音乐视频展现出惊人的"品味"，让他感到不可思议。"AI精神病"一词在硅谷已流行成为梗，但精神科医生讲述的是令人担忧的真实案例：有患者因长期与聊天机器人对话而出现妄想症状。MIT研究团队根据18个公开案例设计了2160种情境模拟AI对话影响，发现模型存在顺着错误信念回应、未识别心理危机等风险。OpenAI估算每周约0.07%的活跃用户对话显示可能与精神病性症状有关的心理危机迹象。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>AI安全与对齐成为行业核心议题。据猎聘2026年10月数据，AI安全研究员月薪30-60K，大模型安全工程师月薪30-50K·15薪。据BOSS直聘数据，AI伦理合规专家月薪25-50K，AI产品经理（安全方向）月薪25-45K。字节跳动新设大模型安全与对齐部门启动全球招募，研究课题包括安全评测、行为对齐、自动化Red Teaming等。据职友集数据，AI安全相关岗位2026年招聘职位同比增长超80%。</p>
+    <h3 class="sub-title gg">关联专业</h3>
+    <p>计算机科学与技术、人工智能、数据科学与大数据技术、信息安全、认知科学、心理学</p>
+    <h3 class="sub-title gg">学历·岗位·薪资</h3>
+    <p>据猎聘2026年10月数据，AI安全研究员月薪30-60K，大模型安全工程师月薪30-50K·15薪。据BOSS直聘数据，AI伦理合规专家月薪25-50K，AI产品经理（安全方向）月薪25-45K。核心雇主包括字节跳动、百度、阿里巴巴、OpenAI、Anthropic、微软等。应届硕士年薪约20-40万元，博士年薪约30-60万元。</p>
+    <h3 class="sub-title gg">地域优势</h3>
+    <p>北京（字节跳动+百度+清华大学+北京大学）、上海（上海交通大学+复旦大学+阿里巴巴）、深圳（腾讯+华为+南方科技大学）、旧金山（OpenAI+Anthropic+斯坦福大学）、西雅图（微软研究院+华盛顿大学）。</p>
+  </div>
+  <div class="tip-block">
+    <h3>💡 报考小贴士</h3>
+    <p>这条新闻有点特别——马斯克开玩笑说AI让他"精神出问题"了，但其实背后是一个严肃的话题：AI和人聊天聊久了，会不会让人"想歪"？已经有真实案例，有人因为每天和AI聊天而产生了不切实际的想法。所以需要一种新型人才："AI安全研究员"研究AI会不会对人造成心理影响，"AI伦理专家"制定AI应该怎么和人说话、什么时候应该提醒用户找真人帮助的规则。学"心理学"可以了解人的心理是怎么运作的，学"人工智能"可以让AI变得更安全。</p>
+  </div>
+</div>
+
+  <div id="section-arts" style="display:flex;align-items:center;gap:10px;margin:24px 0 18px;padding:12px 20px;background:linear-gradient(90deg,#f0fff4,#fff);border-radius:10px;border-left:4px solid #48bb78;">
+    <span style="font-size:20px;">📚</span>
+    <span style="font-size:17px;font-weight:700;color:#276749;">文科资讯</span>
+    <span style="font-size:13px;color:#718096;margin-left:4px;">共 2 条</span>
+  </div>
+
+<div class="card arts">
+  <div class="card-head">
+    <h2>文旅体商融合加速释放消费潜力——国庆出游8.26亿人次，海南文昌航天旅游成新热点</h2>
+    <span style="background:#f0fff4;color:#48bb78;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">文科</span>
+  </div>
+  <div class="meta"><span>📰 人民日报/光明日报/央视新闻</span><span>🕓 2026-10-15</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>10月15日消息，据人民日报和光明日报报道，2026年以来文旅市场持续火热，文旅体商融合潜力加速释放。2026年国庆假期全国国内出游8.26亿人次，国内出游总花费7383.75亿元，按可比口径同比分别增长6.3%、4.3%。游客平均出游半径214.56公里，较2024年同期增长15.8%。海南文昌航天旅游成为新亮点：文昌航天发射场火箭发射常态化，龙楼镇民宿从2016年的5家增至150余家，发射期间入住率超90%，超5000名群众依托航天旅游实现就近就业。贵州花江峡谷大桥"桥旅融合"，超级工程变身热门文旅目的地。山东推出"齐鲁1号"旅游专列和"半岛1号"海上文旅项目。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>文旅融合进入"百业+旅游"新业态爆发期。据猎聘2026年10月数据，文旅策划运营月薪8-18K，景区运营管理月薪10-25K，酒店总经理月薪15-30K。据BOSS直聘数据，文旅新媒体运营月薪8-18K，研学导师月薪8-18K，旅游产品经理月薪10-20K。据企查查数据，文旅相关企业2026年新注册量同比增长12%。多地推出免票优惠政策（西藏果果塘景区、丽江观音峡景区等），文旅消费从假期"流量"向全年"常量"转变。</p>
+    <h3 class="sub-title gg">关联专业</h3>
+    <p>旅游管理、酒店管理、文化产业管理、新媒体传播、市场营销、艺术设计</p>
+    <h3 class="sub-title gg">学历·岗位·薪资</h3>
+    <p>据猎聘2026年10月数据，文旅策划运营月薪8-18K，景区运营管理月薪10-25K，酒店总经理月薪15-30K。据BOSS直聘数据，研学导师月薪8-18K，旅游产品经理月薪10-20K，文旅新媒体运营月薪8-18K，民宿运营管理月薪6-15K。核心雇主包括中国旅游集团、华侨城集团、携程集团、美团酒店、各地文旅集团、乌镇旅游、融创文旅等。</p>
+    <h3 class="sub-title gg">地域优势</h3>
+    <p>北京（文旅部+中国旅游研究院+中青旅+故宫博物院+第二外国语学院）、上海（携程总部+迪士尼+上海旅游高等专科学校）、海南（自贸港政策+文昌航天旅游+三亚国际免税城+海南大学）、贵州（桥旅融合+西江千户苗寨+贵州民族大学）、山东（齐鲁1号旅游专列+山东大学旅游管理+青岛文旅集团）。</p>
+  </div>
+  <div class="tip-block">
+    <h3>💡 报考小贴士</h3>
+    <p>今年国庆假期有8亿多人次出门旅游，花费超过7000亿元！文旅行业现在最火的新玩法是"融合"——把旅游和体育、文化、科技结合在一起。比如海南文昌，游客一边看火箭发射一边度假，发射期间当地民宿全部住满。贵州一座大桥变成了旅游景点，游客可以坐电梯到桥肚子里看峡谷风景。做这一行需要"旅游管理"专业学景区怎么运营，"新媒体传播"专业学怎么在网上吸引游客，"文化产业管理"专业学怎么把文化和赚钱结合起来。</p>
+  </div>
+</div>
+
+<div class="card arts">
+  <div class="card-head">
+    <h2>甘肃研学旅游大会今日启幕；英国大学协会发布毕业生就业路线图</h2>
+    <span style="background:#f0fff4;color:#48bb78;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">文科</span>
+  </div>
+  <div class="meta"><span>📰 澎湃新闻/中国教育报</span><span>🕓 2026-10-15</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>10月15日消息，甘肃省2026研学旅游大会在临夏州和政县松鸣研学小镇正式启幕，为期5天，集资源推介、实地踩线、主旨盛会、行业交流于一体。大会推动文博溯源、黄河寻脉、民俗体验、生态探秘等研学线路发展。同日，据中国教育报报道，英国大学协会发布《未来就业路线图》，提出到2035年所有本科生应获得工作场所学习机会，每名本科生都能使用AI工具，推动高校培养与劳动力市场需求匹配。目前英国大学毕业生处于不升学、不就业状态的人口总数首次超过100万。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>研学旅游与教育就业服务市场持续升温。据猎聘2026年10月数据，研学导师/课程设计师月薪8-18K，教育产品经理月薪12-25K，高校就业指导老师月薪8-15K。据BOSS直聘数据，研学旅行指导师月薪6-15K，教育咨询顾问月薪8-20K，在线教育运营月薪10-20K。据企查查数据，研学相关企业2026年新注册量同比增长18%。教育部公布首批全国中小学科技教育实验区和实验校名单，科技教育赛道迎来政策红利。</p>
+    <h3 class="sub-title gg">关联专业</h3>
+    <p>教育学、学前教育、小学教育、旅游管理、人力资源管理、社会工作</p>
+    <h3 class="sub-title gg">学历·岗位·薪资</h3>
+    <p>据猎聘2026年10月数据，研学导师月薪8-18K，教育产品经理月薪12-25K，高校就业指导师月薪8-15K。据BOSS直聘数据，研学旅行指导师月薪6-15K，教育咨询顾问月薪8-20K，在线教育运营月薪10-20K。核心雇主包括各地研学基地、中青旅研学、新东方文旅、好未来、各地教育局教研室、高校就业指导中心等。</p>
+    <h3 class="sub-title gg">地域优势</h3>
+    <p>北京（教育部+中国教育科学研究院+中青旅研学+北京师范大学+首都师范大学）、上海（新东方文旅+好未来+华东师范大学）、成都（四川文旅研学+四川师范大学）、西安（陕西历史博物馆研学+西北大学+长安大学）、兰州/临夏（甘肃研学旅游大会举办地+西北师范大学+甘肃省文旅厅）。</p>
+  </div>
+  <div class="tip-block">
+    <h3>💡 报考小贴士</h3>
+    <p>今天有两条关于教育的好消息：一是甘肃开了一个"研学旅游大会"，就是让学生边旅游边学习的活动，这个行业越来越火，需要"研学导师"带孩子出去参观学习；二是英国发布了一份报告，说大学要帮学生找工作，让学校教的和企业需要的对得上。这说明"教育"和"就业"之间的联系越来越紧密。学"教育学"可以学怎么教学生，学"人力资源管理"可以学怎么帮人找到合适的工作，学"旅游管理"可以学怎么设计好玩的研学路线。</p>
+  </div>
+</div>
+
+
+</div>
 
 <div class="container report-view print-target" id="report-2026-10-14" style="max-width:900px!important;margin:0 auto!important;padding:40px 32px 60px!important;background:#fff;border-radius:16px;box-shadow:0 4px 20px rgba(0,0,0,0.08)">
   <div class="report-header">
