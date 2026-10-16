@@ -346,11 +346,19 @@
     </div>
     <div class="report-list">
       <h2>📅 历史报告</h2>
-<div class="report-item latest" onclick="showReport('2026-10-15')">
+<div class="report-item latest" onclick="showReport('2026-10-16')">
+  <span class="date">第61期 · 高顿升学 · 每日行业速览</span>
+  <span class="weekday">10月16日</span>
+  <span style="font-size:13px;color:#718096;margin-left:12px;">资讯 5 条 · 理工 3 · 文科 2</span>
+  <span class="badge badge-latest">最新</span>
+  <button class="pdf-btn" onclick="event.stopPropagation(); downloadPDF('2026-10-16', this)">📥 打印为PDF</button>
+</div>
+
+<div class="report-item" onclick="showReport('2026-10-15')">
   <span class="date">第60期 · 高顿升学 · 每日行业速览</span>
   <span class="weekday">10月15日</span>
   <span style="font-size:13px;color:#718096;margin-left:12px;">资讯 7 条 · 理工 5 · 文科 2</span>
-  <span class="badge badge-latest">最新</span>
+  <span class="badge badge-archive">归档</span>
   <button class="pdf-btn" onclick="event.stopPropagation(); downloadPDF('2026-10-15', this)">📥 打印为PDF</button>
 </div>
 
@@ -1016,6 +1024,166 @@
 
 
 
+
+<div class="container report-view print-target" id="report-2026-10-16" style="max-width:900px!important;margin:0 auto!important;padding:40px 32px 60px!important;background:#fff;border-radius:16px;box-shadow:0 4px 20px rgba(0,0,0,0.08)">
+  <div class="report-header">
+    <a href="javascript:void(0)" onclick="showIndex()" style="display:inline-block;margin-bottom:14px;font-size:14px;color:#4299e1;text-decoration:none;font-weight:500;cursor:pointer;">&larr; 返回列表</a>
+    <div class="date-line">📅 第61期 · 高顿升学 · 每日行业速览</div>
+    <div class="stats">
+      <span>📊 资讯共 5 条</span>
+      <span>🔬 理工科 3 条</span>
+      <span>📚 文科 2 条</span>
+    </div>
+    <div class="core-judgments">
+      <h3>📌 今日要点速览</h3>
+      <ul>
+        <li>Meta发布Muse Spark开源大模型（816亿参数），号称美国最强，采用智能体优先多模态架构；苹果与Meta破冰合作，首次将Meta开源模型部署至Mac平台</li>
+        <li>谷歌量子计算取得重大突破，"魔态培育"技术使Willow芯片错误率降低约40倍，向实用化量子计算迈出关键一步</li>
+        <li>教育部2026年银龄计划拟招6000名退休教师支援义务教育，中央财政人均补助2万元/年</li>
+        <li>中国冰雪产业规模突破万亿元，参与人数达3.08亿人，旅游人次达22亿</li>
+      </ul>
+    </div>
+  </div>
+
+  <div style="margin:20px 0 10px;padding:12px 20px;background:#fff;border-radius:10px;box-shadow:0 1px 3px rgba(0,0,0,0.04);display:flex;align-items:center;flex-wrap:wrap;">
+    <span style="font-size:14px;color:#718096;margin-right:12px;">快速跳转：</span>
+    <a href="javascript:void(0)" onclick="scrollToSection('section-science')" style="margin-right:20px;font-size:15px;color:#2b6cb0;text-decoration:none;font-weight:600;">🔬 理工科资讯</a>
+    <a href="javascript:void(0)" onclick="scrollToSection('section-arts')" style="margin-right:20px;font-size:15px;color:#276749;text-decoration:none;font-weight:600;">📚 文科资讯</a>
+  </div>
+
+  <div id="section-science" style="display:flex;align-items:center;gap:10px;margin:24px 0 18px;padding:12px 20px;background:linear-gradient(90deg,#ebf8ff,#fff);border-radius:10px;border-left:4px solid #4299e1;">
+    <span style="font-size:20px;">🔬</span>
+    <span style="font-size:17px;font-weight:700;color:#2b6cb0;">理工科资讯</span>
+    <span style="font-size:13px;color:#718096;margin-left:auto;">3 条</span>
+  </div>
+
+<div class="card">
+  <div class="card-head">
+    <h2>Meta发布Muse Spark开源大模型——号称美国最强，816亿参数智能体架构</h2>
+    <span class="tag tag-science">理工科</span>
+  </div>
+  <div class="meta"><span>📰 环球Tech/新浪财经/IT之家等多家媒体</span><span>🕓 2026-10-16</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>10月16日，Meta在Connect大会上正式发布Muse Spark开源大模型，号称"美国迄今最强大的开源模型"。该模型拥有816亿参数，采用智能体优先（Agentic-First）的多模态架构，专为AI智能体任务设计。CEO扎克伯格表示，Muse Spark在多项基准测试中超越同类开源模型，且将核心尖端技术保持闭源。这是Meta首次以智能体为核心设计理念构建开源大模型，标志着开源AI进入"智能体时代"。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>开源大模型竞争进入白热化阶段。2026年10月数据显示，大模型开发工程师岗位数量两个月增长12倍，平均月薪6万元，大模型科学家平均月薪超13.3万元。据工信部数据，我国AI核心产业规模持续扩大，大模型备案数量已超200个。全球范围内，Meta、谷歌、微软等巨头持续加码开源AI生态，智能体（AI Agent）成为2026年最热门的技术方向。据IDC预测，到2027年全球AI智能体市场规模将达480亿美元。</p>
+    <h3 class="sub-title gg">关联专业</h3>
+    <p>计算机科学与技术、人工智能、软件工程、数据科学与大数据技术、电子信息工程</p>
+    <h3 class="sub-title gg">学历·岗位·薪资</h3>
+    <p>据猎聘2026年10月数据，大模型算法工程师月薪20-40K，AI研究员月薪25-50K，自然语言处理工程师月薪18-35K，机器学习工程师月薪18-35K。据BOSS直聘数据，大模型岗位数量两个月增长12倍，平均月薪6万元。核心雇主包括字节跳动、百度、阿里达摩院、华为、商汤科技、智谱AI等。应届硕士年薪约25-45万元，资深大模型科学家年薪可达160万元以上。</p>
+    <h3 class="sub-title gg">地域优势</h3>
+    <p>北京（中关村+百度/字节/智谱总部+清华大学+中科院计算所）、上海（商汤总部+上海AI实验室+复旦大学+张江人工智能岛）、深圳（华为/腾讯总部+南方科技大学+深圳算力中心）、杭州（阿里达摩院+之江实验室+浙江大学）。</p>
+  </div>
+  <div class="tip-block">
+    <h3>💡 报考小贴士</h3>
+    <p>这条新闻讲的是美国最大的社交平台公司Meta，发布了一个非常厉害的AI模型，叫Muse Spark。它有多大呢？它有816亿个"脑细胞"（参数），能同时理解文字和图片，而且专门擅长帮人自动完成任务——比如自动帮你订机票、查资料、做表格，就像一个能自己思考和行动的"数字小助手"。做这类AI需要三类人才："AI算法工程师"负责教AI变聪明，"数据工程师"负责给AI准备"学习材料"，"AI产品经理"负责想出AI能帮人做什么。学"计算机科学与技术"或"人工智能"专业，可以学到怎么设计和训练这类大模型。这个领域薪资很高，有经验的工程师月薪能到好几万元。</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-head">
+    <h2>苹果与Meta破冰合作——开源AI首次在Mac上运行，消费级AI推理时代开启</h2>
+    <span class="tag tag-science">理工科</span>
+  </div>
+  <div class="meta"><span>📰 新浪财经/新浪财经/IT之家</span><span>🕓 2026-10-16</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>10月16日消息，苹果公司与Meta宣布合作，将Meta最新开源的Muse Spark模型部署到Mac平台上运行。这是Meta开源AI模型首次在Mac上原生运行，标志着苹果对第三方AI模型的开放态度发生重大转变。据报道，仅需两台配备512GB统一内存的Mac Studio即可完整运行该模型。苹果方面表示，此次合作旨在探索消费级设备上的本地AI推理能力，减少对云端的依赖，同时保障用户隐私。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>消费级AI推理正成为行业新趋势。苹果M系列芯片的统一内存架构使大型AI模型在本地运行成为可能。据IDC数据，2026年全球边缘AI市场规模预计突破350亿美元，年增长率超30%。本地AI推理相比云端具有隐私保护、低延迟、无网络依赖等优势。苹果Apple Intelligence生态持续扩展，已有超过100个国家和地区上线。本地AI推理工程师、边缘计算架构师等新兴岗位需求旺盛，据猎聘数据，边缘计算工程师月薪15-30K，AI系统架构师月薪25-45K。</p>
+    <h3 class="sub-title gg">关联专业</h3>
+    <p>计算机科学与技术、电子信息工程、集成电路设计与集成系统、通信工程、自动化</p>
+    <h3 class="sub-title gg">学历·岗位·薪资</h3>
+    <p>据猎聘2026年10月数据，AI系统架构师月薪25-45K，边缘计算工程师月薪15-30K，AI芯片优化工程师月薪20-38K，MLOps工程师月薪18-35K。据BOSS直聘数据，AI推理优化方向岗位同比增长超200%。核心雇主包括苹果、华为、高通、英伟达、寒武纪、地平线等芯片和终端厂商。应届硕士年薪约20-35万元，资深架构师年薪50-80万元。</p>
+    <h3 class="sub-title gg">地域优势</h3>
+    <p>上海（苹果中国研发中心+商汤+张江芯片产业+复旦大学）、深圳（华为/腾讯总部+南方科技大学+深圳集成电路产业基地）、北京（中科院微电子所+清华大学+中关村芯片设计企业集群）、成都（成都集成电路产业园+电子科技大学+华为成研所）。</p>
+  </div>
+  <div class="tip-block">
+    <h3>💡 报考小贴士</h3>
+    <p>这条新闻讲的是苹果公司和Meta公司"破冰合作"了。以前苹果只用自家的AI技术，但现在他们决定让Meta的AI模型也能在苹果电脑上运行。这意味着什么？意味着你家里的Mac电脑，不用联网就能运行一个超级聪明的AI！它只需要两台苹果的工作站电脑就能跑起来。这就像把一个"大脑"装进了你家电脑里，不需要通过网络连到远端的服务器。做这件事需要三类人才："芯片设计师"设计让AI跑得快的硬件，"系统优化师"让AI在电脑上运行得又快又省电，"AI应用开发者"基于本地AI做出好用的软件。学"集成电路设计"可以学怎么设计芯片，学"计算机科学与技术"可以学怎么优化AI系统。</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-head">
+    <h2>谷歌量子计算重大突破——"魔态培育"技术使量子芯片错误率降低约40倍</h2>
+    <span class="tag tag-science">理工科</span>
+  </div>
+  <div class="meta"><span>📰 IT之家/科学探索频道</span><span>🕓 2026-10-16</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>10月16日消息，谷歌量子AI团队近日宣布在量子纠错领域取得重大突破。通过创新的"魔态培育"（magic state distillation）技术，团队成功将Willow量子芯片的逻辑错误率降低了约40倍，大幅提升了量子计算的可靠性。这一成果发表在《自然》杂志上，被业界视为量子计算从实验室走向实用化的关键一步。此前量子计算最大的瓶颈是"噪声"问题——量子比特极易受环境干扰产生计算错误，而谷歌的突破使得大规模量子计算成为可能。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>量子计算进入"纠错时代"。据中商产业研究院数据，2025年全球量子计算市场规模约6.9亿美元，预计2030年将突破130亿美元。全球量子计算专利超1.2万件，中国占比近30%。国内本源量子、中科院、阿里达摩院等在量子计算领域持续投入。量子计算人才极度稀缺，量子算法研究员年薪60-120万元，量子硬件工程师年薪50-100万元，量子软件开发者年薪40-80万元。教育部已将量子信息科学纳入本科专业目录，中国科学技术大学、清华大学、南方科技大学等率先开设。</p>
+    <h3 class="sub-title gg">关联专业</h3>
+    <p>量子信息科学、物理学、计算机科学与技术、微电子科学与工程、信息安全</p>
+    <h3 class="sub-title gg">学历·岗位·薪资</h3>
+    <p>据猎聘2026年10月数据，量子算法研究员年薪60-120万元，量子硬件工程师年薪50-100万元。据BOSS直聘数据，量子软件开发者年薪40-80万元，量子计算系统架构师年薪60-100万元，量子通信工程师年薪30-60万元。核心雇主包括本源量子、中科院量子信息与量子科技创新研究院、阿里达摩院、百度量子、国盾量子、启科量子等。应届博士年薪约40-60万元，资深研究员年薪可达120万元以上。</p>
+    <h3 class="sub-title gg">地域优势</h3>
+    <p>合肥（本源量子总部+中科院量子创新研究院+中国科学技术大学量子物理实验室）、北京（中科院物理所+百度量子+清华大学量子信息中心）、上海（阿里达摩院量子实验室+复旦大学量子研究中心+上海量子科学研究中心）、深圳（深圳量子科学与工程研究院+南方科技大学+启科量子）。</p>
+  </div>
+  <div class="tip-block">
+    <h3>💡 报考小贴士</h3>
+    <p>这条新闻讲的是谷歌的科学家在量子计算领域解决了一个大难题。量子计算机和我们平时用的电脑不一样，它用的是"量子比特"——一种非常非常小、非常敏感的"信息单元"。但它有个大问题：很容易被周围环境"打扰"而出错，就像一个非常聪明但注意力不集中的小朋友。谷歌发明了一种叫"魔态培育"的技术，就像给这个"小朋友"戴上了降噪耳机，让它的错误率降低了40倍！这意味着量子计算机变得更加可靠，未来可能帮我们发现新药、破解密码、模拟天气。做这个领域需要："量子物理学家"研究量子世界的规律，"量子工程师"设计量子芯片，"量子程序员"写量子计算机能理解的程序。学"量子信息科学"或"物理学"是进入这个领域的主要途径。</p>
+  </div>
+</div>
+
+  <div id="section-arts" style="display:flex;align-items:center;gap:10px;margin:28px 0 18px;padding:12px 20px;background:linear-gradient(90deg,#f0fff4,#fff);border-radius:10px;border-left:4px solid #48bb78;">
+    <span style="font-size:20px;">📚</span>
+    <span style="font-size:17px;font-weight:700;color:#276749;">文科资讯</span>
+    <span style="font-size:13px;color:#718096;margin-left:auto;">2 条</span>
+  </div>
+
+<div class="card arts">
+  <div class="card-head">
+    <h2>教育部2026年银龄计划拟招6000名退休教师支援义务教育——中央财政人均补助2万元</h2>
+    <span style="background:#f0fff4;color:#48bb78;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">文科</span>
+  </div>
+  <div class="meta"><span>📰 新华社/中国教育报</span><span>🕓 2026-10-16</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>10月16日消息，新华社报道，教育部近日发布2026年"银龄教师行动计划"，拟面向全国招募6000名退休教师，赴中西部地区和基层学校支援义务教育。中央财政对受援教师给予人均每年2万元补助，用于交通、生活等方面的支持。该计划旨在缓解农村和边远地区优质师资短缺问题，发挥退休教师经验丰富的优势，促进义务教育优质均衡发展。同时，教育部修订的《城乡义务教育补助经费管理办法》已于10月15日起施行，进一步优化补助资金分配机制。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>教育资源均衡化政策持续推进。据教育部数据，全国义务教育阶段专任教师约1070万人，农村及边远地区师资缺口仍然较大。2026年中央安排城乡义务教育补助经费大幅增长，重点向中西部倾斜。据猎聘数据，中小学高级教师月薪8-15K，教研员月薪8-14K，教育管理者月薪10-18K。特岗教师政策持续扩面，2025年计划招募约4.7万人。银龄计划为退休教师提供了"退而不休"的渠道，也为教育类专业毕业生创造了更多基层教育岗位机会。</p>
+    <h3 class="sub-title gg">关联专业</h3>
+    <p>教育学、小学教育、学前教育、教育技术学、学科教学（各方向）</p>
+    <h3 class="sub-title gg">学历·岗位·薪资</h3>
+    <p>据猎聘2026年10月数据，中小学高级教师月薪8-15K，教研员月薪8-14K，教育管理者（副校长/教导主任）月薪10-18K。据BOSS直聘数据，教育培训行业教研岗月薪6-12K，课程设计师月薪8-15K，教育咨询师月薪6-12K。特岗教师年薪约3.5-5万元（中央财政保障），银龄教师补助2万元/年（中央财政）。核心雇主包括各地公立中小学、教育局教研室、教育公益组织等。应届本科年薪约5-8万元，高级职称教师年薪10-18万元。</p>
+    <h3 class="sub-title gg">地域优势</h3>
+    <p>郑州/河南（教育部重点支持区域+河南师范大学+乡村教育大省）、成都/西南（银龄计划重点覆盖地区+四川师范大学+西华师范大学）、昆明/云南（边疆教育重点地区+云南师范大学+特岗教师需求大）、兰州/甘肃（乡村教育振兴核心区+西北师范大学+教育部重点扶持地区）。</p>
+  </div>
+  <div class="tip-block">
+    <h3>💡 报考小贴士</h3>
+    <p>这条新闻讲的是国家出了一个叫"银龄计划"的好政策——招募6000名已经退休的老师，去农村和偏远地区的学校帮忙教课。这些退休老师经验非常丰富，但以前退休后可能就在家休息了。现在国家给他们每人每年补贴2万元，鼓励他们重新走上讲台，把知识和经验传给更多的孩子。同时，国家还修订了义务教育的补助经费管理办法，让更多钱花到农村孩子身上。这说明国家非常重视教育公平——不管你在城市还是农村，都应该享受到好的教育。做这个领域需要："一线教师"在教室里教学生，"教研员"研究怎么教得更好，"教育管理者"让学校运转得更好。学"教育学"或"小学教育"专业，毕业后可以成为教师，也可以从事教育研究和管理工作。</p>
+  </div>
+</div>
+
+<div class="card arts">
+  <div class="card-head">
+    <h2>中国冰雪产业规模突破万亿元——3.08亿人参与，旅游人次达22亿</h2>
+    <span style="background:#f0fff4;color:#48bb78;font-size:12px;padding:2px 10px;border-radius:10px;white-space:nowrap;">文科</span>
+  </div>
+  <div class="meta"><span>📰 新华社/中国旅游研究院</span><span>🕓 2026-10-16</span></div>
+  <div class="content">
+    <h3 class="sub-title sc">事件背景</h3>
+    <p>10月16日消息，新华社援引中国旅游研究院发布的《中国冰雪旅游发展报告》显示，2025-2026冰雪季，我国冰雪旅游参与人数达到3.08亿人，旅游人次达22亿，冰雪产业整体规模突破万亿元大关。冰雪旅游消费同比增长9.3%。北京冬奥会遗产效应持续释放，"带动三亿人参与冰雪运动"目标已超额实现。报告指出，冰雪产业正从"一季热"向"四季旺"转变，室内冰雪场馆、冰雪装备国产化、冰雪文旅融合等新业态蓬勃发展。</p>
+    <h3 class="sub-title sc">行业简述</h3>
+    <p>冰雪产业进入万亿时代。据中国旅游研究院数据，冰雪旅游消费保持强劲增长态势，2025-2026冰雪季消费同比增长9.3%。据猎聘数据，冰雪旅游度假区运营经理月薪15-25K，冰雪装备产品经理月薪12-22K，冰雪旅游策划师月薪10-18K。据BOSS直聘数据，滑雪教练月薪8-20K（含提成），冰雪场馆运营主管月薪10-18K，冰雪装备研发工程师月薪12-20K。冰雪产业人才需求覆盖旅游管理、体育产业、装备制造、文旅策划等多个领域，北京冬奥会后产业人才缺口持续扩大。</p>
+    <h3 class="sub-title gg">关联专业</h3>
+    <p>旅游管理、体育经济与管理、文化产业管理、酒店管理、休闲体育</p>
+    <h3 class="sub-title gg">学历·岗位·薪资</h3>
+    <p>据猎聘2026年10月数据，冰雪旅游度假区运营经理月薪15-25K，冰雪装备产品经理月薪12-22K，冰雪旅游策划师月薪10-18K。据BOSS直聘数据，滑雪教练月薪8-20K（含提成），冰雪场馆运营主管月薪10-18K，冰雪赛事运营经理月薪12-22K。核心雇主包括万科冰雪、融创文旅、长白山度假区、崇礼万龙/太舞/云顶等雪场、哈尔滨冰雪大世界、各地室内冰雪馆等。应届本科年薪约8-12万元，资深度假区运营总监年薪25-40万元。</p>
+    <h3 class="sub-title gg">地域优势</h3>
+    <p>北京/张家口（冬奥遗产+崇礼雪场集群+北京第二外国语学院旅游学院）、哈尔滨/牡丹江（冰雪旅游标杆+哈尔滨冰雪大世界+黑龙江冰雪产业研究所）、长春/吉林（长白山冰雪度假区+吉林体育学院+北大湖/松花湖雪场）、乌鲁木齐/阿勒泰（新兴冰雪旅游目的地+新疆丝绸之路度假区+国家冰雪经济试验区）。</p>
+  </div>
+  <div class="tip-block">
+    <h3>💡 报考小贴士</h3>
+    <p>这条新闻讲的是中国的冰雪产业已经发展成了一个超过一万亿元的大市场！有超过3亿人在玩冰雪运动，一年有22亿人次去冰雪旅游景点玩。以前冬奥会是在北京和张家口举办的，现在冬奥会的影响还在持续——不仅北方人在冬天滑雪，很多南方城市也建了室内冰场和雪场，一年四季都能玩冰雪。这个万亿市场需要很多专业人才："度假区运营官"管理冰雪旅游度假区，"冰雪装备产品经理"设计更好的滑雪板和装备，"冰雪旅游策划师"设计好玩的冰雪活动。学"旅游管理"可以学怎么运营冰雪度假区，学"体育经济与管理"可以学怎么把体育运动变成赚钱的产业。</p>
+  </div>
+</div>
+
+</div>
 
 <div class="container report-view print-target" id="report-2026-10-15" style="max-width:900px!important;margin:0 auto!important;padding:40px 32px 60px!important;background:#fff;border-radius:16px;box-shadow:0 4px 20px rgba(0,0,0,0.08)">
   <div class="report-header">
